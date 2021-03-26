@@ -16,6 +16,7 @@ template<typename T>
 void print_ap_bits(const T& in, const unsigned W) {
   printf ("   ");
   for (unsigned i = 0; i < W; ++i)
+    // #pragma HLS PIPELINE II=1
     printf ("%3d", in[i] ? -1 : 0);
   printf ("\n");
 }
@@ -25,6 +26,7 @@ void print_params(T params[CONVOLVERS][K][K]) {
   for (unsigned m = 0; m < CONVOLVERS; ++m) {
     for (unsigned wr = 0; wr < K; ++wr) {
       for (unsigned wc = 0; wc < K; ++wc) {
+        // #pragma HLS PIPELINE II=1
         printf ("%3d", (params[m][wr][wc]==0) ? 0 : 1);
       }
       printf("\n");
@@ -38,6 +40,7 @@ void print_line_buffer_m(T lbuf[CONV_BANKS]) {
   for (unsigned wr = 0; wr < CONV_ROWS; ++wr) {
   for (unsigned bank = 0; bank < CONV_BANKS; ++bank) {
     for (unsigned wc = 0; wc < CONV_COLS; ++wc) {
+      // #pragma HLS PIPELINE II=1
       printf ("%3d", lbuf[bank][wr][wc].to_int());
     }
     printf (" |");
@@ -62,6 +65,7 @@ ConvOut conv3x3b(
   ConvOut sum = 0;
   for (ap_uint<2> kr = 0; kr < K; ++kr) {
     for (ap_uint<2> kc = 0; kc < K; ++kc) {
+      // #pragma HLS PIPELINE II=1
       TwoBit data = line_buffer_m[bank][kr][cc+kc];
       const Bit& wt = conv_params_m[2-kr][2-kc];
       data[1] = (wt & data[0]) ^ data[1];
@@ -81,6 +85,7 @@ void conv_word(
 ) {
   for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
     for (ap_uint<4> cc = 0; cc < BANK_WIDTH; ++cc) {
+      // #pragma HLS PIPELINE II=1
       conv_out_buffer_m[bank*BANK_WIDTH+cc] = conv3x3b( line_buffer_m, conv_params_m, bank, cc );
     }
   }
@@ -115,6 +120,7 @@ void process_word(
     if (s_idx < 0) {
       // set to zero or copy from old word (middle row)
       for (ap_uint<4> cc = 1; cc < CONV_COLS-1; ++cc) {
+        // #pragma HLS PIPELINE II=1
         line_buffer_m[bank][CONV_ROWS-1][cc] = old_word_buffer_m[CONV_BANKS+s_idx][cc];
       }
       line_buffer_m[bank][CONV_ROWS-1][0          ] = lb[bank] ? TwoBit(0) : old_word_buffer_m[CONV_BANKS+s_idx][0];
@@ -122,6 +128,7 @@ void process_word(
     } else {
       // fill from new word
       for (ap_uint<4> cc = 1; cc < CONV_COLS-1; ++cc) {
+        // #pragma HLS PIPELINE II=1
         line_buffer_m[bank][CONV_ROWS-1][cc] = (last_wrd) ? TwoBit(0) : word_buffer_m[s_idx][cc];
       }
       line_buffer_m[bank][CONV_ROWS-1][0          ] = (last_wrd || lb[bank]) ? TwoBit(0) : word_buffer_m[s_idx][0];
@@ -146,6 +153,7 @@ void process_word(
     if (s_idx0 >= 0) {
       // slice from input word
       for (ap_uint<4> cc = 1; cc < CONV_COLS-1; ++cc) {
+        // #pragma HLS PIPELINE II=1
         line_buffer_m[bank][0][cc] = word_buffer_m[s_idx0][cc];
       }
       line_buffer_m[bank][0][0          ] = lb[bank] ? TwoBit(0) : word_buffer_m[s_idx0][0];
@@ -153,6 +161,7 @@ void process_word(
     } else {
       // set to zero or copy from old word (middle row)
       for (ap_uint<4> cc = 1; cc < CONV_COLS-1; ++cc) {
+        // #pragma HLS PIPELINE II=1
         line_buffer_m[bank][0][cc] = (first_wrd) ? TwoBit(0) : old_word_buffer_m[CONV_BANKS+s_idx0][cc];
       }
       line_buffer_m[bank][0][0          ] = (first_wrd || lb[bank]) ? TwoBit(0) : old_word_buffer_m[CONV_BANKS+s_idx0][0];
@@ -162,6 +171,7 @@ void process_word(
     // --------------------------------------------------------------
     // Middle row, simply copy the word into the line buffer
     for (ap_uint<4> cc = 1; cc < CONV_COLS-1; ++cc) {
+      // #pragma HLS PIPELINE II=1
       line_buffer_m[bank][1][cc] = word_buffer_m[bank][cc];
     }
     // Fill end buffer bits
@@ -229,6 +239,7 @@ void bin_conv(
   ap_uint<4> mask = ~ap_uint<4>(0);   // set mask to all 1s
   mask = mask >> (4-log_slice);
   for (ap_uint<4> bank = 0; bank < 64/8; ++bank) {
+    // #pragma HLS PIPELINE II=1
     #pragma HLS unroll
     const ap_uint<4> x = bank & mask;
     lb[bank] = (x == 0);          // (bank % w_div_8) == 0
@@ -239,6 +250,7 @@ void bin_conv(
   // Reset conv buffer
   for (IdxType i = 0; i < 32; ++i) {
     for (IdxType j = 0; j < 64; ++j) {
+      // #pragma HLS PIPELINE II=1
       #pragma HLS UNROLL
       fixed_buffer[i][j] = 0;
     }
@@ -274,6 +286,7 @@ void bin_conv(
         // -------------------------------------------------------------------
         LOOP_WT_WORDS:
         for (IdxType m = 0; m < 2; ++m) {
+          // #pragma HLS PIPELINE II=1
           /*if (wt_offset == 0)
             wt_word_buffer[m] = wt_mem[m][wt_addr];
           else
@@ -297,8 +310,10 @@ void bin_conv(
         LOOP_LOAD_WTS:
         for (IdxType m = 0; m < 2; ++m) {
           for (ap_uint<2> kr = 0; kr < 3; ++kr) {
-            for (ap_uint<2> kc = 0; kc < 3; ++kc)
+            for (ap_uint<2> kc = 0; kc < 3; ++kc){
+              // #pragma HLS PIPELINE II=1
               conv_params[m][kr][kc] = wt_word_buffer[m][kr*K+kc];
+            }
           }
         }
 
@@ -316,6 +331,7 @@ void bin_conv(
           Word word = dmem[d_i_idx][m][p*words_per_image + wrd_phase];
           for (IdxType bank = 0; bank < 8; ++bank) {
             for (IdxType cc = 0; cc < 10-2; ++cc) {
+              // #pragma HLS PIPELINE II=1
               word_buffer[m][bank][cc+1] = encode_bit(word[ap_uint<6>(bank*BANK_WIDTH+cc)]);
             }
             word_buffer[m][bank][0          ] = (bank==0)            ?
@@ -329,6 +345,7 @@ void bin_conv(
       // Compute
       LOOP_CONVOLVERS:
       for (IdxType m = 0; m < 2; ++m) {
+        // #pragma HLS PIPELINE II=1
         // Do the following for each word in an image
         process_word( word_buffer[m], old_word_buffer[m], lb, rb, line_buffer[m], conv_params[m],
             conv_out_buffer[m], log_width, words_per_image, wrd );
@@ -337,6 +354,7 @@ void bin_conv(
       for (IdxType m = 0; m < 2; ++m) {
         for (IdxType bank = 0; bank < 8; ++bank) {
           for (IdxType cc = 0; cc < 10; ++cc) {
+            // #pragma HLS PIPELINE II=1
             old_word_buffer[m][bank][cc] = word_buffer[m][bank][cc];
         } }
       }
@@ -348,8 +366,10 @@ void bin_conv(
         // Ignore conv results after processing the first word
         if (wrd > 0) {
           ConvSum s = 0;
-          for (IdxType m = 0; m < 2; ++m)
+          for (IdxType m = 0; m < 2; ++m){
+            // #pragma HLS PIPELINE II=1            
             s += conv_out_buffer[m][i];
+          }
           fixed_buffer[wrd_phase-1][i] += s;
         }
       }
@@ -370,6 +390,7 @@ void bin_conv(
   LOOP_ACC_PHASES:
   for (ap_uint<5> w = 0; w < 1; ++w) {
     for (IdxType b = 0; b < 64; ++b) {
+      // #pragma HLS PIPELINE II=1
       #pragma HLS unroll
       fixed_temp[b] = fixed_buffer[w][b];
     }
@@ -377,10 +398,12 @@ void bin_conv(
     LOOP_ACC_PHASES_I:
     for (ap_uint<8> i = 1; i < 32; i += 1) {
       for (IdxType b = 0; b < 64; ++b) {
+        // #pragma HLS PIPELINE II=1
         fixed_temp[b] += fixed_buffer[w+i][b];
     } }
 
     for (IdxType b = 0; b < 64; ++b) {
+      // #pragma HLS PIPELINE II=1
       #pragma HLS unroll
       fixed_buffer[w][b] = fixed_temp[b];
     }
@@ -747,6 +770,7 @@ void top(
   Address img_idx = 0;  // i / words_per_image;
   IdxType img_off = 0;  // i % words_per_image;
   LOOP_DMEM_I: for (Address i = 0; i < 64; ++i) {
+    #pragma HLS PIPELINE II=1
     if (layer_type == LAYER_CONV) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
@@ -766,13 +790,16 @@ void top(
   // Weight input, we must copy every 64-bit Word from the interface
   // into the accelerator
   LOOP_WT_I: for (Address i = 0; i < C_WT_WORDS*CONVOLVERS; ++i) {
+    #pragma HLS PIPELINE II=1
     wt_mem[i%CONVOLVERS][i/CONVOLVERS] = wt_i[i];
   }
   //printf ("\nAccel Weights:\n");
   //print_params3d(wt_mem[0], 0, n_inputs*n_outputs);
 
-  LOOP_KH_I: for (ap_uint<16> i = 0; i < KH_WORDS; ++i)
+  LOOP_KH_I: for (ap_uint<16> i = 0; i < KH_WORDS; ++i){
+    #pragma HLS PIPELINE II=1
     kh_mem[i] = kh_i[i];
+  }
 
   if (layer_type == LAYER_CONV1) {
     assert(n_inputs == 3);
@@ -798,6 +825,7 @@ void top(
     LOOP_IMG_BATCH:
     for (IdxType i = 0; i < 1; ++i) {
       // Load the batch-norm parameters for this output
+      // #pragma HLS PIPELINE II=1
       NormComp nc;
       load_kh(nc, kh_mem, kh_index);
 
@@ -836,6 +864,7 @@ void top(
   img_idx = 0;
   img_off = 0;
   LOOP_DMEM_O: for (Address i = 0; i < 1; ++i) {
+    #pragma HLS PIPELINE II=1
     // exclude conv6 (width==8, norm_mode==2) here because it writes
     // the output fmaps linearly
     if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {

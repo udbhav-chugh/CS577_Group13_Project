@@ -20,7 +20,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../cpp/accel/accel_test_random.cpp ../../../../cpp/accel/Accel.cpp ../../../../cpp/accel/AccelPrint.cpp ../../../../cpp/accel/AccelSchedule.cpp ../../../../cpp/accel/AccelTest.cpp ../../../../cpp/accel/Common.cpp ../../../../cpp/accel/Dense.cpp ../../../../cpp/accel/InputConv.cpp ../../../../cpp/accel/Timer.cpp
+HLS_SOURCES = ../../../../cpp/accel/accel_test_random.cpp ../../../../cpp/accel/Timer.cpp ../../../../cpp/accel/InputConv.cpp ../../../../cpp/accel/Dense.cpp ../../../../cpp/accel/Common.cpp ../../../../cpp/accel/AccelTest.cpp ../../../../cpp/accel/AccelSchedule.cpp ../../../../cpp/accel/AccelPrint.cpp ../../../../cpp/accel/Accel.cpp
 
 TARGET := csim.exe
 
@@ -77,45 +77,15 @@ all: $(TARGET)
 
 $(ObjDir)/accel_test_random.o: ../../../../cpp/accel/accel_test_random.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../cpp/accel/accel_test_random.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -DHW_COSIM -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -DHW_COSIM -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/accel_test_random.d
 
-$(ObjDir)/Accel.o: ../../../../cpp/accel/Accel.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/Accel.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/Timer.o: ../../../../cpp/accel/Timer.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/Timer.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/Accel.d
-
-$(ObjDir)/AccelPrint.o: ../../../../cpp/accel/AccelPrint.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/AccelPrint.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/AccelPrint.d
-
-$(ObjDir)/AccelSchedule.o: ../../../../cpp/accel/AccelSchedule.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/AccelSchedule.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/AccelSchedule.d
-
-$(ObjDir)/AccelTest.o: ../../../../cpp/accel/AccelTest.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/AccelTest.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/AccelTest.d
-
-$(ObjDir)/Common.o: ../../../../cpp/accel/Common.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/Common.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/Common.d
-
-$(ObjDir)/Dense.o: ../../../../cpp/accel/Dense.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/Dense.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/Dense.d
+-include $(ObjDir)/Timer.d
 
 $(ObjDir)/InputConv.o: ../../../../cpp/accel/InputConv.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../cpp/accel/InputConv.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -123,8 +93,38 @@ $(ObjDir)/InputConv.o: ../../../../cpp/accel/InputConv.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/InputConv.d
 
-$(ObjDir)/Timer.o: ../../../../cpp/accel/Timer.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../cpp/accel/Timer.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/Dense.o: ../../../../cpp/accel/Dense.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/Dense.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/Timer.d
+-include $(ObjDir)/Dense.d
+
+$(ObjDir)/Common.o: ../../../../cpp/accel/Common.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/Common.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/Common.d
+
+$(ObjDir)/AccelTest.o: ../../../../cpp/accel/AccelTest.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/AccelTest.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/AccelTest.d
+
+$(ObjDir)/AccelSchedule.o: ../../../../cpp/accel/AccelSchedule.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/AccelSchedule.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/AccelSchedule.d
+
+$(ObjDir)/AccelPrint.o: ../../../../cpp/accel/AccelPrint.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/AccelPrint.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/AccelPrint.d
+
+$(ObjDir)/Accel.o: ../../../../cpp/accel/Accel.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../cpp/accel/Accel.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/Accel.d

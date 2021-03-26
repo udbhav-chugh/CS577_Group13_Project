@@ -144,7 +144,7 @@
     "ClockPeriod": "12",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "9628",
+    "Latency": "4821",
     "Uncertainty": "1.5"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 12.000 [get_ports ap_clk]"]},
@@ -161,14 +161,14 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/cpp\/accel\/Timer.cpp",
-      "..\/..\/cpp\/accel\/InputConv.cpp",
-      "..\/..\/cpp\/accel\/Dense.cpp",
-      "..\/..\/cpp\/accel\/Common.cpp",
-      "..\/..\/cpp\/accel\/AccelTest.cpp",
-      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
+      "..\/..\/cpp\/accel\/Accel.cpp",
       "..\/..\/cpp\/accel\/AccelPrint.cpp",
-      "..\/..\/cpp\/accel\/Accel.cpp"
+      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
+      "..\/..\/cpp\/accel\/AccelTest.cpp",
+      "..\/..\/cpp\/accel\/Common.cpp",
+      "..\/..\/cpp\/accel\/Dense.cpp",
+      "..\/..\/cpp\/accel\/InputConv.cpp",
+      "..\/..\/cpp\/accel\/Timer.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/bin_conv.vhd",
@@ -550,7 +550,7 @@
       "Instances": [
         {
           "ModuleName": "bin_conv",
-          "InstanceName": "grp_bin_conv_fu_401",
+          "InstanceName": "grp_bin_conv_fu_409",
           "Instances": [{
               "ModuleName": "process_word",
               "InstanceName": "grp_process_word_fu_2613",
@@ -562,11 +562,11 @@
         },
         {
           "ModuleName": "fp_conv",
-          "InstanceName": "grp_fp_conv_fu_417"
+          "InstanceName": "grp_fp_conv_fu_425"
         },
         {
           "ModuleName": "bin_dense",
-          "InstanceName": "grp_bin_dense_fu_432"
+          "InstanceName": "grp_bin_dense_fu_440"
         }
       ]
     },
@@ -1098,12 +1098,12 @@
       },
       "top": {
         "Latency": {
-          "LatencyBest": "9628",
+          "LatencyBest": "4821",
           "LatencyAvg": "",
-          "LatencyWorst": "11438881738",
-          "PipelineIIMin": "9629",
-          "PipelineIIMax": "11438881739",
-          "PipelineII": "9629 ~ 11438881739",
+          "LatencyWorst": "11438876931",
+          "PipelineIIMin": "4822",
+          "PipelineIIMax": "11438876932",
+          "PipelineII": "4822 ~ 11438876932",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1116,30 +1116,30 @@
           {
             "Name": "LOOP_DMEM_I",
             "TripCount": "64",
-            "Latency": "128",
-            "PipelineII": "",
+            "Latency": "64",
+            "PipelineII": "1",
             "PipelineDepth": "2"
           },
           {
             "Name": "LOOP_WT_I",
             "TripCount": "4682",
-            "Latency": "9364",
-            "PipelineII": "",
+            "Latency": "4682",
+            "PipelineII": "1",
             "PipelineDepth": "2"
           },
           {
             "Name": "LOOP_KH_I",
             "TripCount": "64",
-            "Latency": "128",
-            "PipelineII": "",
+            "Latency": "64",
+            "PipelineII": "1",
             "PipelineDepth": "2"
           }
         ],
         "Area": {
           "BRAM_18K": "61",
           "DSP48E": "1",
-          "FF": "2664",
-          "LUT": "12049",
+          "FF": "2645",
+          "LUT": "12136",
           "URAM": "0"
         }
       }
@@ -1155,7 +1155,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-03-26 21:31:06 +0530",
+    "Time": "2021-03-26 22:47:30 +0530",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

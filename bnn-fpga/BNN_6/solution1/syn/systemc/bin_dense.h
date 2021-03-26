@@ -62,8 +62,8 @@ struct bin_dense : public sc_module {
     sc_signal< sc_lv<2> > add_ln700_10_fu_460_p2;
     sc_signal< sc_lv<2> > add_ln700_10_reg_1918;
     sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_lv<13> > add_ln620_fu_470_p2;
-    sc_signal< sc_lv<13> > add_ln620_reg_1923;
+    sc_signal< sc_lv<13> > add_ln643_fu_470_p2;
+    sc_signal< sc_lv<13> > add_ln643_reg_1923;
     sc_signal< sc_lv<1> > icmp_ln887_fu_454_p2;
     sc_signal< sc_lv<1> > trunc_ln180_fu_494_p1;
     sc_signal< sc_lv<1> > trunc_ln180_reg_1938;
@@ -94,10 +94,10 @@ struct bin_dense : public sc_module {
     sc_signal< sc_lv<13> > phi_mul_reg_344;
     sc_signal< sc_lv<16> > p_0257_1_0_0_reg_355;
     sc_signal< sc_lv<2> > p_0759_0_0_0_reg_367;
-    sc_signal< sc_lv<64> > zext_ln608_fu_414_p1;
+    sc_signal< sc_lv<64> > zext_ln631_fu_414_p1;
     sc_signal< sc_lv<64> > zext_ln180_fu_432_p1;
     sc_signal< sc_lv<64> > zext_ln887_fu_449_p1;
-    sc_signal< sc_lv<64> > zext_ln619_fu_489_p1;
+    sc_signal< sc_lv<64> > zext_ln642_fu_489_p1;
     sc_signal< sc_logic > ap_CS_fsm_state7;
     sc_signal< sc_lv<64> > select_ln879_fu_1862_p3;
     sc_signal< sc_logic > ap_CS_fsm_state8;
@@ -107,8 +107,8 @@ struct bin_dense : public sc_module {
     sc_signal< sc_lv<12> > tmp_34_fu_404_p4;
     sc_signal< sc_lv<12> > tmp_s_fu_425_p3;
     sc_signal< sc_lv<2> > tmp_31_fu_437_p3;
-    sc_signal< sc_lv<3> > zext_ln620_fu_466_p1;
-    sc_signal< sc_lv<3> > add_ln619_fu_476_p2;
+    sc_signal< sc_lv<3> > zext_ln643_fu_466_p1;
+    sc_signal< sc_lv<3> > add_ln642_fu_476_p2;
     sc_signal< sc_lv<13> > tmp_35_fu_481_p3;
     sc_signal< sc_lv<64> > xor_ln1357_fu_498_p2;
     sc_signal< sc_lv<1> > tmp_36_fu_504_p3;
@@ -318,8 +318,8 @@ struct bin_dense : public sc_module {
     void thread_add_ln1503_1_fu_1753_p2();
     void thread_add_ln1503_2_fu_1759_p2();
     void thread_add_ln1503_fu_1747_p2();
-    void thread_add_ln619_fu_476_p2();
-    void thread_add_ln620_fu_470_p2();
+    void thread_add_ln642_fu_476_p2();
+    void thread_add_ln643_fu_470_p2();
     void thread_add_ln68_1_fu_1516_p2();
     void thread_add_ln68_2_fu_1522_p2();
     void thread_add_ln68_3_fu_1482_p2();
@@ -466,9 +466,9 @@ struct bin_dense : public sc_module {
     void thread_zext_ln180_fu_432_p1();
     void thread_zext_ln209_fu_445_p1();
     void thread_zext_ln555_fu_1840_p1();
-    void thread_zext_ln608_fu_414_p1();
-    void thread_zext_ln619_fu_489_p1();
-    void thread_zext_ln620_fu_466_p1();
+    void thread_zext_ln631_fu_414_p1();
+    void thread_zext_ln642_fu_489_p1();
+    void thread_zext_ln643_fu_466_p1();
     void thread_zext_ln68_1_fu_1512_p1();
     void thread_zext_ln68_fu_1650_p1();
     void thread_zext_ln700_1_fu_1498_p1();

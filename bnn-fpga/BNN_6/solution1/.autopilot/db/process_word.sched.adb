@@ -330,7 +330,7 @@
 						<name>wrd_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -345,7 +345,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -379,7 +379,7 @@
 						<name>words_per_image_V_re</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -394,7 +394,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -428,7 +428,7 @@
 						<name>log_width_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -443,7 +443,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -477,7 +477,7 @@
 						<name>word_buffer_m_V_offs</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -492,7 +492,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -526,7 +526,7 @@
 						<name>tmp</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -541,7 +541,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -573,10 +573,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>zext_ln94</name>
+						<name>zext_ln99</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>99</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -591,7 +591,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>94</second>
+										<second>99</second>
 									</item>
 								</second>
 							</item>
@@ -621,10 +621,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>zext_ln94_1</name>
+						<name>zext_ln99_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>94</lineNumber>
+						<lineNumber>99</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -639,7 +639,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>94</second>
+										<second>99</second>
 									</item>
 								</second>
 							</item>
@@ -669,10 +669,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>zext_ln106</name>
+						<name>zext_ln111</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>106</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -687,7 +687,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>106</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -717,10 +717,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>add_ln106</name>
+						<name>add_ln111</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>106</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -735,7 +735,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>106</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -766,10 +766,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>sext_ln106</name>
+						<name>sext_ln111</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>106</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -784,7 +784,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>106</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -817,7 +817,7 @@
 						<name>slices_per_line_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>106</lineNumber>
+						<lineNumber>111</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -832,7 +832,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>106</second>
+										<second>111</second>
 									</item>
 								</second>
 							</item>
@@ -866,7 +866,7 @@
 						<name>first_wrd</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -881,7 +881,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>107</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -915,7 +915,7 @@
 						<name>zext_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -930,7 +930,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>108</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -963,7 +963,7 @@
 						<name>last_wrd</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -978,7 +978,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>108</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -1012,7 +1012,7 @@
 						<name>rhs_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1027,7 +1027,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>114</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -1060,7 +1060,7 @@
 						<name>trunc_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1075,7 +1075,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>114</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -1105,10 +1105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>_ln113</name>
+						<name>_ln118</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1123,7 +1123,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -1190,10 +1190,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>icmp_ln113</name>
+						<name>icmp_ln118</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1208,7 +1208,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -1242,7 +1242,7 @@
 						<name>bank_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1257,7 +1257,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -1288,10 +1288,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>_ln113</name>
+						<name>_ln118</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1306,7 +1306,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -1341,7 +1341,7 @@
 						<name>xor_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1356,7 +1356,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>114</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -1390,7 +1390,7 @@
 						<name>sext_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1405,7 +1405,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>114</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -1438,7 +1438,7 @@
 						<name>s_idx_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>114</lineNumber>
+						<lineNumber>119</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1453,7 +1453,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>114</second>
+										<second>119</second>
 									</item>
 								</second>
 							</item>
@@ -1484,10 +1484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>tmp_5</name>
+						<name>tmp_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1502,7 +1502,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>115</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -1537,7 +1537,7 @@
 						<name>zext_ln544</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1552,7 +1552,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1585,7 +1585,7 @@
 						<name>zext_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1600,7 +1600,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1633,7 +1633,7 @@
 						<name>add_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1648,7 +1648,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1682,7 +1682,7 @@
 						<name>trunc_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1697,7 +1697,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1730,7 +1730,7 @@
 						<name>p_shl_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1745,7 +1745,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1777,10 +1777,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_6</name>
+						<name>tmp_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1795,7 +1795,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1827,10 +1827,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>zext_ln180_6</name>
+						<name>zext_ln180_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1845,7 +1845,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1878,7 +1878,7 @@
 						<name>sub_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1893,7 +1893,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1927,7 +1927,7 @@
 						<name>add_ln180_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1942,7 +1942,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -1973,10 +1973,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>zext_ln180_7</name>
+						<name>zext_ln180_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1991,7 +1991,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -2024,7 +2024,7 @@
 						<name>line_buffer_m_V_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2039,7 +2039,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -2074,7 +2074,7 @@
 						<name>add_ln180_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2089,7 +2089,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -2120,10 +2120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>zext_ln180_8</name>
+						<name>zext_ln180_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2138,7 +2138,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -2171,7 +2171,7 @@
 						<name>line_buffer_m_V_addr_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2186,7 +2186,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -2218,10 +2218,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>_ln115</name>
+						<name>_ln120</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>115</lineNumber>
+						<lineNumber>120</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2236,7 +2236,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>115</second>
+										<second>120</second>
 									</item>
 								</second>
 							</item>
@@ -2268,10 +2268,10 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>add_ln125</name>
+						<name>add_ln132</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2286,7 +2286,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2320,7 +2320,7 @@
 						<name>p_shl5_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2335,7 +2335,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2367,10 +2367,10 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>tmp_8</name>
+						<name>tmp_11</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2385,7 +2385,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2417,10 +2417,10 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>zext_ln125</name>
+						<name>zext_ln132</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2435,7 +2435,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2465,10 +2465,10 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>add_ln125_1</name>
+						<name>add_ln132_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2483,7 +2483,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2514,10 +2514,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>zext_ln125_1</name>
+						<name>zext_ln132_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2532,7 +2532,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2565,7 +2565,7 @@
 						<name>word_buffer_m_V_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2580,7 +2580,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -2612,10 +2612,10 @@
 					<Obj>
 						<type>0</type>
 						<id>63</id>
-						<name>add_ln128</name>
+						<name>add_ln135</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2630,7 +2630,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -2661,10 +2661,10 @@
 					<Obj>
 						<type>0</type>
 						<id>64</id>
-						<name>zext_ln128</name>
+						<name>zext_ln135</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2679,7 +2679,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -2712,7 +2712,7 @@
 						<name>word_buffer_m_V_addr_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2727,7 +2727,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -2759,10 +2759,10 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>_ln124</name>
+						<name>_ln130</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2777,7 +2777,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>124</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2844,10 +2844,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>icmp_ln124</name>
+						<name>icmp_ln130</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2862,7 +2862,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>124</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2893,10 +2893,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>_ln124</name>
+						<name>_ln130</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2911,7 +2911,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>124</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -2943,10 +2943,10 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>zext_ln125_2</name>
+						<name>zext_ln132_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2961,7 +2961,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -2991,10 +2991,10 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>zext_ln125_3</name>
+						<name>zext_ln132_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3009,7 +3009,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3039,10 +3039,10 @@
 					<Obj>
 						<type>0</type>
 						<id>75</id>
-						<name>add_ln125_2</name>
+						<name>add_ln132_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3057,7 +3057,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3088,10 +3088,10 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>zext_ln125_4</name>
+						<name>zext_ln132_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3106,7 +3106,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3139,7 +3139,7 @@
 						<name>word_buffer_m_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3154,7 +3154,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3189,7 +3189,7 @@
 						<name>add_ln180_15</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3204,7 +3204,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3235,10 +3235,10 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>zext_ln180_25</name>
+						<name>zext_ln180_26</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3253,7 +3253,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3286,7 +3286,7 @@
 						<name>line_buffer_m_V_addr_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3301,7 +3301,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3336,7 +3336,7 @@
 						<name>word_buffer_m_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3351,7 +3351,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3384,7 +3384,7 @@
 						<name>select_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>113</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3399,7 +3399,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>108</second>
+										<second>113</second>
 									</item>
 								</second>
 							</item>
@@ -3431,10 +3431,10 @@
 					<Obj>
 						<type>0</type>
 						<id>83</id>
-						<name>line_buffer_m_V_addr_3_write_ln125</name>
+						<name>line_buffer_m_V_addr_3_write_ln132</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>125</lineNumber>
+						<lineNumber>132</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3449,7 +3449,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>125</second>
+										<second>132</second>
 									</item>
 								</second>
 							</item>
@@ -3483,7 +3483,7 @@
 						<name>cc_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3498,7 +3498,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>124</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -3529,10 +3529,10 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>_ln124</name>
+						<name>_ln130</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>124</lineNumber>
+						<lineNumber>130</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3547,7 +3547,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>124</second>
+										<second>130</second>
 									</item>
 								</second>
 							</item>
@@ -3580,7 +3580,7 @@
 						<name>lb_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3595,7 +3595,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3630,7 +3630,7 @@
 						<name>lb_load_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3645,7 +3645,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3678,7 +3678,7 @@
 						<name>word_buffer_m_V_load_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3693,7 +3693,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3723,10 +3723,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>or_ln127</name>
+						<name>or_ln134</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3741,7 +3741,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3772,10 +3772,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>select_ln127</name>
+						<name>select_ln134</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3790,7 +3790,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3822,10 +3822,10 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>line_buffer_m_V_addr_2_write_ln127</name>
+						<name>line_buffer_m_V_addr_2_write_ln134</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>134</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3840,7 +3840,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>127</second>
+										<second>134</second>
 									</item>
 								</second>
 							</item>
@@ -3874,7 +3874,7 @@
 						<name>rb_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3889,7 +3889,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -3924,7 +3924,7 @@
 						<name>rb_load_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3939,7 +3939,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -3972,7 +3972,7 @@
 						<name>word_buffer_m_V_load_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3987,7 +3987,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -4017,10 +4017,10 @@
 					<Obj>
 						<type>0</type>
 						<id>96</id>
-						<name>or_ln128</name>
+						<name>or_ln135</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4035,7 +4035,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -4066,10 +4066,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>select_ln128</name>
+						<name>select_ln135</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4084,7 +4084,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -4153,7 +4153,7 @@
 						<name>add_ln1353</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4168,7 +4168,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4202,7 +4202,7 @@
 						<name>ret_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4217,7 +4217,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4248,10 +4248,10 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>zext_ln180_9</name>
+						<name>zext_ln180_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4266,7 +4266,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4299,7 +4299,7 @@
 						<name>add_ln180_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4314,7 +4314,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4348,7 +4348,7 @@
 						<name>p_shl3_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4363,7 +4363,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4395,10 +4395,10 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>tmp_7</name>
+						<name>tmp_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4413,7 +4413,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4445,10 +4445,10 @@
 					<Obj>
 						<type>0</type>
 						<id>106</id>
-						<name>zext_ln180_10</name>
+						<name>zext_ln180_11</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4463,7 +4463,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4496,7 +4496,7 @@
 						<name>add_ln180_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4511,7 +4511,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4542,10 +4542,10 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>zext_ln180_11</name>
+						<name>zext_ln180_12</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4560,7 +4560,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -4593,7 +4593,7 @@
 						<name>old_word_buffer_m_V_s</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4608,7 +4608,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -4640,10 +4640,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>add_ln121</name>
+						<name>add_ln127</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4658,7 +4658,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -4689,10 +4689,10 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>zext_ln121</name>
+						<name>zext_ln127</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4707,7 +4707,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -4740,7 +4740,7 @@
 						<name>old_word_buffer_m_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4755,7 +4755,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -4787,10 +4787,10 @@
 					<Obj>
 						<type>0</type>
 						<id>113</id>
-						<name>_ln117</name>
+						<name>_ln122</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>122</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4805,7 +4805,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>117</second>
+										<second>122</second>
 									</item>
 								</second>
 							</item>
@@ -4872,10 +4872,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>icmp_ln117</name>
+						<name>icmp_ln122</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>122</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4890,7 +4890,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>117</second>
+										<second>122</second>
 									</item>
 								</second>
 							</item>
@@ -4921,10 +4921,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>_ln117</name>
+						<name>_ln122</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>122</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4939,7 +4939,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>117</second>
+										<second>122</second>
 									</item>
 								</second>
 							</item>
@@ -4971,10 +4971,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>zext_ln180_21</name>
+						<name>zext_ln180_22</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4989,7 +4989,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5019,10 +5019,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>zext_ln180_22</name>
+						<name>zext_ln180_23</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5037,7 +5037,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5070,7 +5070,7 @@
 						<name>add_ln180_13</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5085,7 +5085,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5116,10 +5116,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>zext_ln180_23</name>
+						<name>zext_ln180_24</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5134,7 +5134,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5167,7 +5167,7 @@
 						<name>old_word_buffer_m_V_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5182,7 +5182,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5217,7 +5217,7 @@
 						<name>add_ln180_14</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5232,7 +5232,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5263,10 +5263,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>zext_ln180_24</name>
+						<name>zext_ln180_25</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5281,7 +5281,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5314,7 +5314,7 @@
 						<name>line_buffer_m_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5329,7 +5329,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5364,7 +5364,7 @@
 						<name>old_word_buffer_m_V_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5379,7 +5379,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5409,10 +5409,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>line_buffer_m_V_addr_write_ln118</name>
+						<name>line_buffer_m_V_addr_write_ln124</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>118</lineNumber>
+						<lineNumber>124</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5427,7 +5427,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>118</second>
+										<second>124</second>
 									</item>
 								</second>
 							</item>
@@ -5461,7 +5461,7 @@
 						<name>cc_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>122</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5476,7 +5476,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>117</second>
+										<second>122</second>
 									</item>
 								</second>
 							</item>
@@ -5507,10 +5507,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>_ln117</name>
+						<name>_ln122</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>117</lineNumber>
+						<lineNumber>122</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5525,7 +5525,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>117</second>
+										<second>122</second>
 									</item>
 								</second>
 							</item>
@@ -5558,7 +5558,7 @@
 						<name>lb_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5573,7 +5573,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5608,7 +5608,7 @@
 						<name>lb_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5623,7 +5623,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5656,7 +5656,7 @@
 						<name>old_word_buffer_m_V_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5671,7 +5671,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5701,10 +5701,10 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>select_ln120</name>
+						<name>select_ln126</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5719,7 +5719,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5751,10 +5751,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>line_buffer_m_V_addr_2_write_ln120</name>
+						<name>line_buffer_m_V_addr_2_write_ln126</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>120</lineNumber>
+						<lineNumber>126</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5769,7 +5769,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>120</second>
+										<second>126</second>
 									</item>
 								</second>
 							</item>
@@ -5803,7 +5803,7 @@
 						<name>rb_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5818,7 +5818,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -5853,7 +5853,7 @@
 						<name>rb_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5868,7 +5868,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -5901,7 +5901,7 @@
 						<name>old_word_buffer_m_V_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5916,7 +5916,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -5946,10 +5946,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>select_ln121</name>
+						<name>select_ln127</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5964,7 +5964,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -5996,10 +5996,10 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>_ln122</name>
+						<name>_ln128</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>122</lineNumber>
+						<lineNumber>128</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6014,7 +6014,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>122</second>
+										<second>128</second>
 									</item>
 								</second>
 							</item>
@@ -6047,7 +6047,7 @@
 						<name>storemerge</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>128</lineNumber>
+						<lineNumber>135</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6062,7 +6062,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>128</second>
+										<second>135</second>
 									</item>
 								</second>
 							</item>
@@ -6095,10 +6095,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>line_buffer_m_V_addr_4_write_ln121</name>
+						<name>line_buffer_m_V_addr_4_write_ln127</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>121</lineNumber>
+						<lineNumber>127</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6113,7 +6113,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>121</second>
+										<second>127</second>
 									</item>
 								</second>
 							</item>
@@ -6144,10 +6144,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>_ln113</name>
+						<name>_ln118</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>113</lineNumber>
+						<lineNumber>118</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6162,7 +6162,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>113</second>
+										<second>118</second>
 									</item>
 								</second>
 							</item>
@@ -6192,10 +6192,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>trunc_ln138</name>
+						<name>trunc_ln145</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6210,7 +6210,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>138</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -6240,10 +6240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>_ln138</name>
+						<name>_ln145</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>145</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6258,7 +6258,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>138</second>
+										<second>145</second>
 									</item>
 								</second>
 							</item>
@@ -6292,10 +6292,10 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>_ln142</name>
+						<name>_ln149</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6310,7 +6310,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>142</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -6377,10 +6377,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>icmp_ln142</name>
+						<name>icmp_ln149</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6395,7 +6395,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>142</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -6429,7 +6429,7 @@
 						<name>bank_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6444,7 +6444,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>142</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -6475,10 +6475,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>_ln142</name>
+						<name>_ln149</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6493,7 +6493,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>142</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -6528,7 +6528,7 @@
 						<name>lhs_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>145</lineNumber>
+						<lineNumber>152</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6543,7 +6543,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>145</second>
+										<second>152</second>
 									</item>
 								</second>
 							</item>
@@ -6573,10 +6573,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>ret_V_7</name>
+						<name>ret_V_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>145</lineNumber>
+						<lineNumber>152</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6591,7 +6591,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>145</second>
+										<second>152</second>
 									</item>
 								</second>
 							</item>
@@ -6622,10 +6622,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>tmp_9</name>
+						<name>tmp_12</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>146</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6640,7 +6640,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>146</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -6675,7 +6675,7 @@
 						<name>zext_ln544_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6690,7 +6690,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -6723,7 +6723,7 @@
 						<name>add_ln180_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6738,7 +6738,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -6772,7 +6772,7 @@
 						<name>p_shl9_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6787,7 +6787,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -6819,10 +6819,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>tmp_10</name>
+						<name>tmp_13</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6837,7 +6837,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -6869,10 +6869,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>zext_ln180_12</name>
+						<name>zext_ln180_13</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6887,7 +6887,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -6917,10 +6917,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>zext_ln180_13</name>
+						<name>zext_ln180_14</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6935,7 +6935,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -6968,7 +6968,7 @@
 						<name>add_ln180_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6983,7 +6983,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -7014,10 +7014,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>zext_ln180_14</name>
+						<name>zext_ln180_15</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7032,7 +7032,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -7065,7 +7065,7 @@
 						<name>word_buffer_m_V_addr_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7080,7 +7080,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -7112,10 +7112,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>add_ln169</name>
+						<name>add_ln179</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7130,7 +7130,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7161,10 +7161,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>zext_ln169</name>
+						<name>zext_ln179</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7179,7 +7179,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7212,7 +7212,7 @@
 						<name>word_buffer_m_V_addr_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7227,7 +7227,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7262,7 +7262,7 @@
 						<name>trunc_ln180_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7277,7 +7277,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -7310,7 +7310,7 @@
 						<name>p_shl7_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7325,7 +7325,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -7360,7 +7360,7 @@
 						<name>sub_ln180_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7375,7 +7375,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -7406,10 +7406,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>zext_ln180_15</name>
+						<name>zext_ln180_16</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7424,7 +7424,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -7457,7 +7457,7 @@
 						<name>line_buffer_m_V_addr_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7472,7 +7472,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -7507,7 +7507,7 @@
 						<name>add_ln180_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7522,7 +7522,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -7553,10 +7553,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>zext_ln180_16</name>
+						<name>zext_ln180_17</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7571,7 +7571,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -7604,7 +7604,7 @@
 						<name>line_buffer_m_V_addr_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7619,7 +7619,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -7654,7 +7654,7 @@
 						<name>add_ln180_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7669,7 +7669,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -7700,10 +7700,10 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>zext_ln180_17</name>
+						<name>zext_ln180_18</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7718,7 +7718,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -7751,7 +7751,7 @@
 						<name>line_buffer_m_V_addr_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7766,7 +7766,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -7801,7 +7801,7 @@
 						<name>add_ln180_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7816,7 +7816,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7847,10 +7847,10 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>zext_ln180_18</name>
+						<name>zext_ln180_19</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7865,7 +7865,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7898,7 +7898,7 @@
 						<name>line_buffer_m_V_addr_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7913,7 +7913,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -7945,10 +7945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>_ln146</name>
+						<name>_ln153</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>146</lineNumber>
+						<lineNumber>153</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7963,7 +7963,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>146</second>
+										<second>153</second>
 									</item>
 								</second>
 							</item>
@@ -7998,7 +7998,7 @@
 						<name>add_ln180_11</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8013,7 +8013,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8047,7 +8047,7 @@
 						<name>p_shl10_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8062,7 +8062,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8094,10 +8094,10 @@
 					<Obj>
 						<type>0</type>
 						<id>191</id>
-						<name>tmp_12</name>
+						<name>tmp_15</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8112,7 +8112,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8144,10 +8144,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>zext_ln180_19</name>
+						<name>zext_ln180_20</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8162,7 +8162,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8195,7 +8195,7 @@
 						<name>add_ln180_12</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8210,7 +8210,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8241,10 +8241,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>zext_ln180_20</name>
+						<name>zext_ln180_21</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8259,7 +8259,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8292,7 +8292,7 @@
 						<name>word_buffer_m_V_addr_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8307,7 +8307,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -8339,10 +8339,10 @@
 					<Obj>
 						<type>0</type>
 						<id>196</id>
-						<name>add_ln152</name>
+						<name>add_ln160</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8357,7 +8357,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -8388,10 +8388,10 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>zext_ln152</name>
+						<name>zext_ln160</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8406,7 +8406,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -8439,7 +8439,7 @@
 						<name>word_buffer_m_V_addr_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8454,7 +8454,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -8486,10 +8486,10 @@
 					<Obj>
 						<type>0</type>
 						<id>199</id>
-						<name>_ln148</name>
+						<name>_ln155</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8504,7 +8504,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>148</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -8571,10 +8571,10 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>icmp_ln148</name>
+						<name>icmp_ln155</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8589,7 +8589,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>148</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -8620,10 +8620,10 @@
 					<Obj>
 						<type>0</type>
 						<id>204</id>
-						<name>_ln148</name>
+						<name>_ln155</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8638,7 +8638,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>148</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -8670,10 +8670,10 @@
 					<Obj>
 						<type>0</type>
 						<id>206</id>
-						<name>zext_ln180_27</name>
+						<name>zext_ln180_28</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8688,7 +8688,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8718,10 +8718,10 @@
 					<Obj>
 						<type>0</type>
 						<id>207</id>
-						<name>zext_ln180_28</name>
+						<name>zext_ln180_29</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8736,7 +8736,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8769,7 +8769,7 @@
 						<name>add_ln180_16</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8784,7 +8784,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8815,10 +8815,10 @@
 					<Obj>
 						<type>0</type>
 						<id>209</id>
-						<name>zext_ln180_29</name>
+						<name>zext_ln180_30</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8833,7 +8833,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8866,7 +8866,7 @@
 						<name>word_buffer_m_V_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8881,7 +8881,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8916,7 +8916,7 @@
 						<name>add_ln180_17</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8931,7 +8931,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -8962,10 +8962,10 @@
 					<Obj>
 						<type>0</type>
 						<id>212</id>
-						<name>zext_ln180_30</name>
+						<name>zext_ln180_31</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8980,7 +8980,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -9013,7 +9013,7 @@
 						<name>line_buffer_m_V_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9028,7 +9028,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -9063,7 +9063,7 @@
 						<name>word_buffer_m_V_load_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9078,7 +9078,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -9108,10 +9108,10 @@
 					<Obj>
 						<type>0</type>
 						<id>215</id>
-						<name>line_buffer_m_V_addr_1_write_ln149</name>
+						<name>line_buffer_m_V_addr_1_write_ln157</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>149</lineNumber>
+						<lineNumber>157</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9126,7 +9126,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>149</second>
+										<second>157</second>
 									</item>
 								</second>
 							</item>
@@ -9160,7 +9160,7 @@
 						<name>cc_V_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9175,7 +9175,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>148</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -9206,10 +9206,10 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>_ln148</name>
+						<name>_ln155</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>155</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9224,7 +9224,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>148</second>
+										<second>155</second>
 									</item>
 								</second>
 							</item>
@@ -9257,7 +9257,7 @@
 						<name>lb_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9272,7 +9272,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -9307,7 +9307,7 @@
 						<name>lb_load_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9322,7 +9322,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -9355,7 +9355,7 @@
 						<name>word_buffer_m_V_load_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9370,7 +9370,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -9400,10 +9400,10 @@
 					<Obj>
 						<type>0</type>
 						<id>222</id>
-						<name>select_ln151</name>
+						<name>select_ln159</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9418,7 +9418,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -9450,10 +9450,10 @@
 					<Obj>
 						<type>0</type>
 						<id>223</id>
-						<name>line_buffer_m_V_addr_5_write_ln151</name>
+						<name>line_buffer_m_V_addr_5_write_ln159</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>151</lineNumber>
+						<lineNumber>159</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9468,7 +9468,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>151</second>
+										<second>159</second>
 									</item>
 								</second>
 							</item>
@@ -9502,7 +9502,7 @@
 						<name>rb_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9517,7 +9517,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -9552,7 +9552,7 @@
 						<name>rb_load_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9567,7 +9567,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -9600,7 +9600,7 @@
 						<name>word_buffer_m_V_load_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9615,7 +9615,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -9645,10 +9645,10 @@
 					<Obj>
 						<type>0</type>
 						<id>227</id>
-						<name>select_ln152</name>
+						<name>select_ln160</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9663,7 +9663,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -9695,10 +9695,10 @@
 					<Obj>
 						<type>0</type>
 						<id>228</id>
-						<name>_ln153</name>
+						<name>_ln161</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>153</lineNumber>
+						<lineNumber>161</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9713,7 +9713,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>153</second>
+										<second>161</second>
 									</item>
 								</second>
 							</item>
@@ -9743,10 +9743,10 @@
 					<Obj>
 						<type>0</type>
 						<id>230</id>
-						<name>ret_V_6</name>
+						<name>ret_V_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9761,7 +9761,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -9792,10 +9792,10 @@
 					<Obj>
 						<type>0</type>
 						<id>231</id>
-						<name>sext_ln156</name>
+						<name>sext_ln165</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9810,7 +9810,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -9840,10 +9840,10 @@
 					<Obj>
 						<type>0</type>
 						<id>232</id>
-						<name>add_ln156</name>
+						<name>add_ln165</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9858,7 +9858,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -9889,10 +9889,10 @@
 					<Obj>
 						<type>0</type>
 						<id>233</id>
-						<name>trunc_ln156</name>
+						<name>trunc_ln165</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9907,7 +9907,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -9940,7 +9940,7 @@
 						<name>p_shl12_cast</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9955,7 +9955,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -9987,10 +9987,10 @@
 					<Obj>
 						<type>0</type>
 						<id>235</id>
-						<name>tmp_11</name>
+						<name>tmp_14</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10005,7 +10005,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10037,10 +10037,10 @@
 					<Obj>
 						<type>0</type>
 						<id>236</id>
-						<name>sext_ln156_1</name>
+						<name>sext_ln165_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10055,7 +10055,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10085,10 +10085,10 @@
 					<Obj>
 						<type>0</type>
 						<id>237</id>
-						<name>add_ln156_1</name>
+						<name>add_ln165_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10103,7 +10103,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10134,10 +10134,10 @@
 					<Obj>
 						<type>0</type>
 						<id>238</id>
-						<name>zext_ln156</name>
+						<name>zext_ln165</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10152,7 +10152,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10185,7 +10185,7 @@
 						<name>old_word_buffer_m_V_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10200,7 +10200,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -10232,10 +10232,10 @@
 					<Obj>
 						<type>0</type>
 						<id>240</id>
-						<name>add_ln159</name>
+						<name>add_ln168</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10250,7 +10250,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -10281,10 +10281,10 @@
 					<Obj>
 						<type>0</type>
 						<id>241</id>
-						<name>zext_ln159</name>
+						<name>zext_ln168</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10299,7 +10299,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -10332,7 +10332,7 @@
 						<name>old_word_buffer_m_V_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10347,7 +10347,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -10379,10 +10379,10 @@
 					<Obj>
 						<type>0</type>
 						<id>243</id>
-						<name>_ln155</name>
+						<name>_ln163</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10397,7 +10397,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>155</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -10464,10 +10464,10 @@
 					<Obj>
 						<type>0</type>
 						<id>246</id>
-						<name>icmp_ln155</name>
+						<name>icmp_ln163</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10482,7 +10482,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>155</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -10513,10 +10513,10 @@
 					<Obj>
 						<type>0</type>
 						<id>248</id>
-						<name>_ln155</name>
+						<name>_ln163</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10531,7 +10531,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>155</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -10563,10 +10563,10 @@
 					<Obj>
 						<type>0</type>
 						<id>250</id>
-						<name>zext_ln156_1</name>
+						<name>zext_ln165_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10581,7 +10581,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10611,10 +10611,10 @@
 					<Obj>
 						<type>0</type>
 						<id>251</id>
-						<name>zext_ln156_2</name>
+						<name>zext_ln165_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10629,7 +10629,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10659,10 +10659,10 @@
 					<Obj>
 						<type>0</type>
 						<id>252</id>
-						<name>add_ln156_2</name>
+						<name>add_ln165_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10677,7 +10677,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10708,10 +10708,10 @@
 					<Obj>
 						<type>0</type>
 						<id>253</id>
-						<name>zext_ln156_3</name>
+						<name>zext_ln165_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10726,7 +10726,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10759,7 +10759,7 @@
 						<name>old_word_buffer_m_V_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10774,7 +10774,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10809,7 +10809,7 @@
 						<name>add_ln180_18</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10824,7 +10824,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10855,10 +10855,10 @@
 					<Obj>
 						<type>0</type>
 						<id>256</id>
-						<name>zext_ln180_26</name>
+						<name>zext_ln180_27</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10873,7 +10873,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10906,7 +10906,7 @@
 						<name>line_buffer_m_V_addr_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10921,7 +10921,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -10956,7 +10956,7 @@
 						<name>old_word_buffer_m_V_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -10971,7 +10971,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -11004,7 +11004,7 @@
 						<name>select_ln879_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>107</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11019,7 +11019,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>107</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>
@@ -11051,10 +11051,10 @@
 					<Obj>
 						<type>0</type>
 						<id>260</id>
-						<name>line_buffer_m_V_addr_6_write_ln156</name>
+						<name>line_buffer_m_V_addr_6_write_ln165</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>156</lineNumber>
+						<lineNumber>165</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11069,7 +11069,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>156</second>
+										<second>165</second>
 									</item>
 								</second>
 							</item>
@@ -11103,7 +11103,7 @@
 						<name>cc_V_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11118,7 +11118,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>155</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -11149,10 +11149,10 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>_ln155</name>
+						<name>_ln163</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>155</lineNumber>
+						<lineNumber>163</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11167,7 +11167,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>155</second>
+										<second>163</second>
 									</item>
 								</second>
 							</item>
@@ -11200,7 +11200,7 @@
 						<name>lb_addr_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11215,7 +11215,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11250,7 +11250,7 @@
 						<name>lb_load_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11265,7 +11265,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11298,7 +11298,7 @@
 						<name>old_word_buffer_m_V_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11313,7 +11313,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11343,10 +11343,10 @@
 					<Obj>
 						<type>0</type>
 						<id>267</id>
-						<name>or_ln158</name>
+						<name>or_ln167</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11361,7 +11361,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11392,10 +11392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>268</id>
-						<name>select_ln158</name>
+						<name>select_ln167</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11410,7 +11410,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11442,10 +11442,10 @@
 					<Obj>
 						<type>0</type>
 						<id>269</id>
-						<name>line_buffer_m_V_addr_5_write_ln158</name>
+						<name>line_buffer_m_V_addr_5_write_ln167</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>158</lineNumber>
+						<lineNumber>167</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11460,7 +11460,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>158</second>
+										<second>167</second>
 									</item>
 								</second>
 							</item>
@@ -11494,7 +11494,7 @@
 						<name>rb_addr_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11509,7 +11509,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11544,7 +11544,7 @@
 						<name>rb_load_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11559,7 +11559,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11592,7 +11592,7 @@
 						<name>old_word_buffer_m_V_11</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11607,7 +11607,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11637,10 +11637,10 @@
 					<Obj>
 						<type>0</type>
 						<id>273</id>
-						<name>or_ln159</name>
+						<name>or_ln168</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11655,7 +11655,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11686,10 +11686,10 @@
 					<Obj>
 						<type>0</type>
 						<id>274</id>
-						<name>select_ln159</name>
+						<name>select_ln168</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11704,7 +11704,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11773,7 +11773,7 @@
 						<name>storemerge1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>159</lineNumber>
+						<lineNumber>168</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11788,7 +11788,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>159</second>
+										<second>168</second>
 									</item>
 								</second>
 							</item>
@@ -11821,10 +11821,10 @@
 					<Obj>
 						<type>0</type>
 						<id>278</id>
-						<name>line_buffer_m_V_addr_7_write_ln152</name>
+						<name>line_buffer_m_V_addr_7_write_ln160</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>152</lineNumber>
+						<lineNumber>160</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11839,7 +11839,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>152</second>
+										<second>160</second>
 									</item>
 								</second>
 							</item>
@@ -11870,10 +11870,10 @@
 					<Obj>
 						<type>0</type>
 						<id>279</id>
-						<name>_ln164</name>
+						<name>_ln173</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>164</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11888,7 +11888,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>164</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -11955,10 +11955,10 @@
 					<Obj>
 						<type>0</type>
 						<id>282</id>
-						<name>icmp_ln164</name>
+						<name>icmp_ln173</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>164</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -11973,7 +11973,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>164</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -12004,10 +12004,10 @@
 					<Obj>
 						<type>0</type>
 						<id>284</id>
-						<name>_ln164</name>
+						<name>_ln173</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>164</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12022,7 +12022,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>164</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -12054,10 +12054,10 @@
 					<Obj>
 						<type>0</type>
 						<id>286</id>
-						<name>zext_ln180_31</name>
+						<name>zext_ln180_32</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12072,7 +12072,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12102,10 +12102,10 @@
 					<Obj>
 						<type>0</type>
 						<id>287</id>
-						<name>zext_ln180_32</name>
+						<name>zext_ln180_33</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12120,7 +12120,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12153,7 +12153,7 @@
 						<name>add_ln180_19</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12168,7 +12168,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12199,10 +12199,10 @@
 					<Obj>
 						<type>0</type>
 						<id>289</id>
-						<name>zext_ln180_33</name>
+						<name>zext_ln180_34</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12217,7 +12217,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12250,7 +12250,7 @@
 						<name>word_buffer_m_V_addr_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12265,7 +12265,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12300,7 +12300,7 @@
 						<name>add_ln180_20</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12315,7 +12315,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12346,10 +12346,10 @@
 					<Obj>
 						<type>0</type>
 						<id>292</id>
-						<name>zext_ln180_34</name>
+						<name>zext_ln180_35</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12364,7 +12364,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12397,7 +12397,7 @@
 						<name>line_buffer_m_V_addr_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12412,7 +12412,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12447,7 +12447,7 @@
 						<name>word_buffer_m_V_load_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12462,7 +12462,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12492,10 +12492,10 @@
 					<Obj>
 						<type>0</type>
 						<id>295</id>
-						<name>line_buffer_m_V_addr_10_write_ln165</name>
+						<name>line_buffer_m_V_addr_10_write_ln175</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>175</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12510,7 +12510,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>165</second>
+										<second>175</second>
 									</item>
 								</second>
 							</item>
@@ -12544,7 +12544,7 @@
 						<name>cc_V_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>164</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12559,7 +12559,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>164</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -12590,10 +12590,10 @@
 					<Obj>
 						<type>0</type>
 						<id>297</id>
-						<name>_ln164</name>
+						<name>_ln173</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>164</lineNumber>
+						<lineNumber>173</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12608,7 +12608,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>164</second>
+										<second>173</second>
 									</item>
 								</second>
 							</item>
@@ -12641,7 +12641,7 @@
 						<name>lb_addr_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12656,7 +12656,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -12691,7 +12691,7 @@
 						<name>lb_load_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12706,7 +12706,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -12739,7 +12739,7 @@
 						<name>word_buffer_m_V_load_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12754,7 +12754,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -12784,10 +12784,10 @@
 					<Obj>
 						<type>0</type>
 						<id>302</id>
-						<name>select_ln168</name>
+						<name>select_ln178</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12802,7 +12802,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -12834,10 +12834,10 @@
 					<Obj>
 						<type>0</type>
 						<id>303</id>
-						<name>line_buffer_m_V_addr_8_write_ln168</name>
+						<name>line_buffer_m_V_addr_8_write_ln178</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>178</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12852,7 +12852,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>168</second>
+										<second>178</second>
 									</item>
 								</second>
 							</item>
@@ -12886,7 +12886,7 @@
 						<name>rb_addr_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12901,7 +12901,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -12936,7 +12936,7 @@
 						<name>rb_load_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12951,7 +12951,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -12984,7 +12984,7 @@
 						<name>word_buffer_m_V_load_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -12999,7 +12999,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -13029,10 +13029,10 @@
 					<Obj>
 						<type>0</type>
 						<id>307</id>
-						<name>select_ln169</name>
+						<name>select_ln179</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -13047,7 +13047,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -13079,10 +13079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>308</id>
-						<name>line_buffer_m_V_addr_9_write_ln169</name>
+						<name>line_buffer_m_V_addr_9_write_ln179</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>169</lineNumber>
+						<lineNumber>179</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -13097,7 +13097,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>169</second>
+										<second>179</second>
 									</item>
 								</second>
 							</item>
@@ -13128,10 +13128,10 @@
 					<Obj>
 						<type>0</type>
 						<id>309</id>
-						<name>_ln142</name>
+						<name>_ln149</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>142</lineNumber>
+						<lineNumber>149</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -13146,7 +13146,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>142</second>
+										<second>149</second>
 									</item>
 								</second>
 							</item>
@@ -13176,10 +13176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>311</id>
-						<name>_ln176</name>
+						<name>_ln186</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>176</lineNumber>
+						<lineNumber>186</lineNumber>
 						<contextFuncName>process_word</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -13194,7 +13194,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>process_word</second>
 										</first>
-										<second>176</second>
+										<second>186</second>
 									</item>
 								</second>
 							</item>

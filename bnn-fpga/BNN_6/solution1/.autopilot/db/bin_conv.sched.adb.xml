@@ -675,14 +675,14 @@
 
 <trans id="1532" from="89" to="92">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="1533" from="89" to="90">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -901,16 +901,16 @@
 
 <trans id="1571" from="124" to="125">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="1574" from="124" to="127">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_20" val="0"/>
-</and_exp><and_exp><literal name="icmp_ln408" val="1"/>
+</and_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -918,7 +918,7 @@
 
 <trans id="1575" from="124" to="126">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="0"/>
 <literal name="icmp_ln879_20" val="1"/>
 </and_exp></or_exp>
@@ -933,14 +933,14 @@
 
 <trans id="1576" from="126" to="126">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="1577" from="126" to="127">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="1"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -1150,10 +1150,10 @@
 
 <Node id="95" bw="7" op_0_bw="3">
 <![CDATA[
-._crit_edge:85  %zext_ln217_1 = zext i3 %log_width_V to i7
+._crit_edge:85  %zext_ln227_1 = zext i3 %log_width_V to i7
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln217_1"/></StgValue>
+<StgValue><ssdm name="zext_ln227_1"/></StgValue>
 </operation>
 
 <operation id="141" st_id="1" stage="1" lat="1">
@@ -1165,10 +1165,10 @@
 
 <Node id="96" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-._crit_edge:86  %shl_ln227 = shl i7 1, %zext_ln217_1
+._crit_edge:86  %shl_ln237 = shl i7 1, %zext_ln227_1
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln227"/></StgValue>
+<StgValue><ssdm name="shl_ln237"/></StgValue>
 </operation>
 
 <operation id="142" st_id="1" stage="1" lat="1">
@@ -1180,7 +1180,7 @@
 
 <Node id="97" bw="4" op_0_bw="4" op_1_bw="7" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-._crit_edge:87  %w_div_8_V = call i4 @_ssdm_op_PartSelect.i4.i7.i32.i32(i7 %shl_ln227, i32 3, i32 6)
+._crit_edge:87  %w_div_8_V = call i4 @_ssdm_op_PartSelect.i4.i7.i32.i32(i7 %shl_ln237, i32 3, i32 6)
 
 ]]></Node>
 <StgValue><ssdm name="w_div_8_V"/></StgValue>
@@ -1303,7 +1303,7 @@
 ._crit_edge:95  store i1 true, i1* %lb_addr, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="151" st_id="1" stage="1" lat="1">
@@ -1348,7 +1348,7 @@
 ._crit_edge:98  store i1 %icmp_ln879, i1* %rb_addr, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="154" st_id="1" stage="1" lat="1">
@@ -1393,7 +1393,7 @@
 ._crit_edge:101  store i1 %xor_ln879, i1* %lb_addr_1, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="157" st_id="1" stage="1" lat="1">
@@ -1453,7 +1453,7 @@
 ._crit_edge:105  store i1 %icmp_ln879_6, i1* %rb_addr_1, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="161" st_id="1" stage="1" lat="1">
@@ -1936,7 +1936,7 @@
 ._crit_edge:109  store i1 %xor_ln879_2, i1* %lb_addr_2, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="193" st_id="2" stage="1" lat="1">
@@ -1966,7 +1966,7 @@
 ._crit_edge:114  store i1 %icmp_ln879_7, i1* %rb_addr_2, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="195" st_id="2" stage="1" lat="1">
@@ -1996,7 +1996,7 @@
 ._crit_edge:117  store i1 %icmp_ln879_8, i1* %lb_addr_3, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="197" st_id="2" stage="1" lat="1">
@@ -2026,7 +2026,7 @@
 ._crit_edge:123  store i1 %icmp_ln879_9, i1* %rb_addr_3, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 </state>
 
@@ -2059,7 +2059,7 @@
 ._crit_edge:128  store i1 %icmp_ln879_10, i1* %lb_addr_4, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="201" st_id="3" stage="1" lat="1">
@@ -2089,7 +2089,7 @@
 ._crit_edge:133  store i1 %icmp_ln879_11, i1* %rb_addr_4, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="203" st_id="3" stage="1" lat="1">
@@ -2119,7 +2119,7 @@
 ._crit_edge:138  store i1 %icmp_ln879_12, i1* %lb_addr_5, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="205" st_id="3" stage="1" lat="1">
@@ -2149,7 +2149,7 @@
 ._crit_edge:142  store i1 %icmp_ln879_13, i1* %rb_addr_5, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 </state>
 
@@ -3214,10 +3214,10 @@
 
 <Node id="92" bw="5" op_0_bw="3">
 <![CDATA[
-._crit_edge:82  %zext_ln196 = zext i3 %shl_ln to i5
+._crit_edge:82  %zext_ln206 = zext i3 %shl_ln to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln196"/></StgValue>
+<StgValue><ssdm name="zext_ln206"/></StgValue>
 </operation>
 
 <operation id="278" st_id="4" stage="1" lat="1">
@@ -3229,7 +3229,7 @@
 
 <Node id="93" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-._crit_edge:83  %words_per_image_V = shl i5 1, %zext_ln196
+._crit_edge:83  %words_per_image_V = shl i5 1, %zext_ln206
 
 ]]></Node>
 <StgValue><ssdm name="words_per_image_V"/></StgValue>
@@ -3244,10 +3244,10 @@
 
 <Node id="94" bw="5" op_0_bw="3">
 <![CDATA[
-._crit_edge:84  %zext_ln217 = zext i3 %log_width_V to i5
+._crit_edge:84  %zext_ln227 = zext i3 %log_width_V to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln217"/></StgValue>
+<StgValue><ssdm name="zext_ln227"/></StgValue>
 </operation>
 
 <operation id="280" st_id="4" stage="1" lat="1">
@@ -3277,7 +3277,7 @@
 ._crit_edge:146  store i1 %icmp_ln879_14, i1* %lb_addr_6, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="282" st_id="4" stage="1" lat="1">
@@ -3307,7 +3307,7 @@
 ._crit_edge:151  store i1 %icmp_ln879_15, i1* %rb_addr_6, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="284" st_id="4" stage="1" lat="1">
@@ -3337,7 +3337,7 @@
 ._crit_edge:155  store i1 %icmp_ln879_16, i1* %lb_addr_7, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln234"/></StgValue>
+<StgValue><ssdm name="store_ln245"/></StgValue>
 </operation>
 
 <operation id="286" st_id="4" stage="1" lat="1">
@@ -3367,7 +3367,7 @@
 ._crit_edge:159  store i1 %icmp_ln879_17, i1* %rb_addr_7, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln235"/></StgValue>
+<StgValue><ssdm name="store_ln246"/></StgValue>
 </operation>
 
 <operation id="288" st_id="4" stage="1" lat="1">
@@ -3382,7 +3382,7 @@
 ._crit_edge:160  br label %.preheader3442
 
 ]]></Node>
-<StgValue><ssdm name="br_ln240"/></StgValue>
+<StgValue><ssdm name="br_ln251"/></StgValue>
 </operation>
 </state>
 
@@ -3460,7 +3460,7 @@
 .preheader3442:4  br i1 %icmp_ln887, label %LOOP_PHASES_begin, label %.preheader3441.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln240"/></StgValue>
+<StgValue><ssdm name="br_ln251"/></StgValue>
 </operation>
 
 <operation id="294" st_id="5" stage="1" lat="1">
@@ -3572,7 +3572,7 @@
 .preheader3441.preheader:192  store i12 0, i12* %fixed_buffer_V_addr, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="301" st_id="5" stage="1" lat="1">
@@ -3588,7 +3588,7 @@
 .preheader3441.preheader:193  store i12 0, i12* %fixed_buffer_V_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="302" st_id="5" stage="1" lat="1">
@@ -3697,10 +3697,10 @@ LOOP_PHASES_begin:5  %tmp_107 = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %d_
 
 <Node id="442" bw="3" op_0_bw="2">
 <![CDATA[
-LOOP_PHASES_begin:6  %zext_ln252 = zext i2 %tmp_107 to i3
+LOOP_PHASES_begin:6  %zext_ln264 = zext i2 %tmp_107 to i3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln252"/></StgValue>
+<StgValue><ssdm name="zext_ln264"/></StgValue>
 </operation>
 
 <operation id="309" st_id="5" stage="1" lat="1">
@@ -3713,7 +3713,7 @@ LOOP_PHASES_begin:6  %zext_ln252 = zext i2 %tmp_107 to i3
 
 <Node id="443" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_PHASES_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17148)
+LOOP_PHASES_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -3732,7 +3732,7 @@ LOOP_PHASES_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]*
 LOOP_PHASES_begin:8  store i3 0, i3* %wt_offset_V_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln265"/></StgValue>
+<StgValue><ssdm name="store_ln277"/></StgValue>
 </operation>
 
 <operation id="311" st_id="5" stage="1" lat="1">
@@ -3748,7 +3748,7 @@ LOOP_PHASES_begin:8  store i3 0, i3* %wt_offset_V_0
 LOOP_PHASES_begin:9  store i16 0, i16* %wt_addr_V_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln265"/></StgValue>
+<StgValue><ssdm name="store_ln277"/></StgValue>
 </operation>
 
 <operation id="312" st_id="5" stage="1" lat="1">
@@ -3764,7 +3764,7 @@ LOOP_PHASES_begin:9  store i16 0, i16* %wt_addr_V_0
 LOOP_PHASES_begin:10  br label %0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln265"/></StgValue>
+<StgValue><ssdm name="br_ln277"/></StgValue>
 </operation>
 </state>
 
@@ -3872,7 +3872,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:194  store i12 0, i12* %fixed_buffer_V_addr_2, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="320" st_id="6" stage="1" lat="1">
@@ -3887,7 +3887,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:195  store i12 0, i12* %fixed_buffer_V_addr_4, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -3995,7 +3995,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:196  store i12 0, i12* %fixed_buffer_V_addr_5, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="328" st_id="7" stage="1" lat="1">
@@ -4010,7 +4010,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:197  store i12 0, i12* %fixed_buffer_V_addr_18, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4118,7 +4118,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:198  store i12 0, i12* %fixed_buffer_V_addr_6, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="336" st_id="8" stage="1" lat="1">
@@ -4133,7 +4133,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:199  store i12 0, i12* %fixed_buffer_V_addr_7, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4241,7 +4241,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:200  store i12 0, i12* %fixed_buffer_V_addr_8, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="344" st_id="9" stage="1" lat="1">
@@ -4256,7 +4256,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:201  store i12 0, i12* %fixed_buffer_V_addr_9, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4364,7 +4364,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:202  store i12 0, i12* %fixed_buffer_V_addr_10, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="352" st_id="10" stage="1" lat="1">
@@ -4379,7 +4379,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:203  store i12 0, i12* %fixed_buffer_V_addr_11, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4487,7 +4487,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:204  store i12 0, i12* %fixed_buffer_V_addr_12, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="360" st_id="11" stage="1" lat="1">
@@ -4502,7 +4502,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:205  store i12 0, i12* %fixed_buffer_V_addr_13, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4610,7 +4610,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:206  store i12 0, i12* %fixed_buffer_V_addr_14, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="368" st_id="12" stage="1" lat="1">
@@ -4625,7 +4625,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:207  store i12 0, i12* %fixed_buffer_V_addr_15, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4733,7 +4733,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:208  store i12 0, i12* %fixed_buffer_V_addr_16, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="376" st_id="13" stage="1" lat="1">
@@ -4748,7 +4748,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:209  store i12 0, i12* %fixed_buffer_V_addr_17, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4856,7 +4856,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:210  store i12 0, i12* %fixed_buffer_V_addr_29, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="384" st_id="14" stage="1" lat="1">
@@ -4871,7 +4871,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:211  store i12 0, i12* %fixed_buffer_V_addr_19, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -4979,7 +4979,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:212  store i12 0, i12* %fixed_buffer_V_addr_20, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="392" st_id="15" stage="1" lat="1">
@@ -4994,7 +4994,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:213  store i12 0, i12* %fixed_buffer_V_addr_21, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5102,7 +5102,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:214  store i12 0, i12* %fixed_buffer_V_addr_22, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="400" st_id="16" stage="1" lat="1">
@@ -5117,7 +5117,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:215  store i12 0, i12* %fixed_buffer_V_addr_23, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5225,7 +5225,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:216  store i12 0, i12* %fixed_buffer_V_addr_24, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="408" st_id="17" stage="1" lat="1">
@@ -5240,7 +5240,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:217  store i12 0, i12* %fixed_buffer_V_addr_25, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5348,7 +5348,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:218  store i12 0, i12* %fixed_buffer_V_addr_26, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="416" st_id="18" stage="1" lat="1">
@@ -5363,7 +5363,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:219  store i12 0, i12* %fixed_buffer_V_addr_27, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5471,7 +5471,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:220  store i12 0, i12* %fixed_buffer_V_addr_28, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="424" st_id="19" stage="1" lat="1">
@@ -5486,7 +5486,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:221  store i12 0, i12* %fixed_buffer_V_addr_64, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5594,7 +5594,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:222  store i12 0, i12* %fixed_buffer_V_addr_30, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="432" st_id="20" stage="1" lat="1">
@@ -5609,7 +5609,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:223  store i12 0, i12* %fixed_buffer_V_addr_31, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5717,7 +5717,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:224  store i12 0, i12* %fixed_buffer_V_addr_32, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="440" st_id="21" stage="1" lat="1">
@@ -5732,7 +5732,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:225  store i12 0, i12* %fixed_buffer_V_addr_33, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5840,7 +5840,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:226  store i12 0, i12* %fixed_buffer_V_addr_34, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="448" st_id="22" stage="1" lat="1">
@@ -5855,7 +5855,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:227  store i12 0, i12* %fixed_buffer_V_addr_35, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -5963,7 +5963,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:228  store i12 0, i12* %fixed_buffer_V_addr_36, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="456" st_id="23" stage="1" lat="1">
@@ -5978,7 +5978,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:229  store i12 0, i12* %fixed_buffer_V_addr_37, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6086,7 +6086,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:230  store i12 0, i12* %fixed_buffer_V_addr_38, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="464" st_id="24" stage="1" lat="1">
@@ -6101,7 +6101,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:231  store i12 0, i12* %fixed_buffer_V_addr_39, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6209,7 +6209,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:232  store i12 0, i12* %fixed_buffer_V_addr_40, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="472" st_id="25" stage="1" lat="1">
@@ -6224,7 +6224,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:233  store i12 0, i12* %fixed_buffer_V_addr_41, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6332,7 +6332,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:234  store i12 0, i12* %fixed_buffer_V_addr_42, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="480" st_id="26" stage="1" lat="1">
@@ -6347,7 +6347,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:235  store i12 0, i12* %fixed_buffer_V_addr_43, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6455,7 +6455,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:236  store i12 0, i12* %fixed_buffer_V_addr_44, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="488" st_id="27" stage="1" lat="1">
@@ -6470,7 +6470,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:237  store i12 0, i12* %fixed_buffer_V_addr_45, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6578,7 +6578,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:238  store i12 0, i12* %fixed_buffer_V_addr_46, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="496" st_id="28" stage="1" lat="1">
@@ -6593,7 +6593,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:239  store i12 0, i12* %fixed_buffer_V_addr_47, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6701,7 +6701,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:240  store i12 0, i12* %fixed_buffer_V_addr_48, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="504" st_id="29" stage="1" lat="1">
@@ -6716,7 +6716,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:241  store i12 0, i12* %fixed_buffer_V_addr_49, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6824,7 +6824,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:242  store i12 0, i12* %fixed_buffer_V_addr_50, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="512" st_id="30" stage="1" lat="1">
@@ -6839,7 +6839,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:243  store i12 0, i12* %fixed_buffer_V_addr_51, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -6947,7 +6947,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:244  store i12 0, i12* %fixed_buffer_V_addr_52, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="520" st_id="31" stage="1" lat="1">
@@ -6962,7 +6962,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:245  store i12 0, i12* %fixed_buffer_V_addr_53, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -7070,7 +7070,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:246  store i12 0, i12* %fixed_buffer_V_addr_54, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="528" st_id="32" stage="1" lat="1">
@@ -7085,7 +7085,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:247  store i12 0, i12* %fixed_buffer_V_addr_55, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -7193,7 +7193,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:248  store i12 0, i12* %fixed_buffer_V_addr_56, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="536" st_id="33" stage="1" lat="1">
@@ -7208,7 +7208,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:249  store i12 0, i12* %fixed_buffer_V_addr_57, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -7316,7 +7316,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:250  store i12 0, i12* %fixed_buffer_V_addr_58, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="544" st_id="34" stage="1" lat="1">
@@ -7331,7 +7331,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:251  store i12 0, i12* %fixed_buffer_V_addr_59, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -7439,7 +7439,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:252  store i12 0, i12* %fixed_buffer_V_addr_60, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="552" st_id="35" stage="1" lat="1">
@@ -7454,7 +7454,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:253  store i12 0, i12* %fixed_buffer_V_addr_61, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 </state>
 
@@ -7562,7 +7562,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:254  store i12 0, i12* %fixed_buffer_V_addr_62, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="560" st_id="36" stage="1" lat="1">
@@ -7577,7 +7577,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:255  store i12 0, i12* %fixed_buffer_V_addr_63, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln243"/></StgValue>
+<StgValue><ssdm name="store_ln255"/></StgValue>
 </operation>
 
 <operation id="561" st_id="36" stage="1" lat="1">
@@ -7592,7 +7592,7 @@ LOOP_PHASES_begin:10  br label %0
 .preheader3441.preheader:256  br label %.preheader3442
 
 ]]></Node>
-<StgValue><ssdm name="br_ln240"/></StgValue>
+<StgValue><ssdm name="br_ln251"/></StgValue>
 </operation>
 </state>
 
@@ -7667,10 +7667,10 @@ LOOP_PHASES_begin:10  br label %0
 
 <Node id="452" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:4  %empty_68 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+:4  %empty_71 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_68"/></StgValue>
+<StgValue><ssdm name="empty_71"/></StgValue>
 </operation>
 
 <operation id="567" st_id="37" stage="1" lat="1">
@@ -7700,7 +7700,7 @@ LOOP_PHASES_begin:10  br label %0
 :6  br i1 %icmp_ln887_18, label %LOOP_ACC_PHASES_begin, label %LOOP_WORDS_IN_PHASE_begin
 
 ]]></Node>
-<StgValue><ssdm name="br_ln265"/></StgValue>
+<StgValue><ssdm name="br_ln277"/></StgValue>
 </operation>
 
 <operation id="569" st_id="37" stage="1" lat="1">
@@ -7713,10 +7713,10 @@ LOOP_PHASES_begin:10  br label %0
 
 <Node id="456" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18149) nounwind
+LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln265"/></StgValue>
+<StgValue><ssdm name="specloopname_ln277"/></StgValue>
 </operation>
 
 <operation id="570" st_id="37" stage="1" lat="1">
@@ -7729,10 +7729,10 @@ LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* 
 
 <Node id="457" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_begin:1  %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18149)
+LOOP_WORDS_IN_PHASE_begin:1  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_8"/></StgValue>
+<StgValue><ssdm name="tmp_s"/></StgValue>
 </operation>
 
 <operation id="571" st_id="37" stage="1" lat="1">
@@ -7764,7 +7764,7 @@ LOOP_WORDS_IN_PHASE_begin:2  %icmp_ln879_18 = icmp eq i8 %t_V_0, 0
 LOOP_WORDS_IN_PHASE_begin:3  br i1 %icmp_ln879_18, label %.preheader3439.0.preheader, label %.loopexit3438.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln267"/></StgValue>
+<StgValue><ssdm name="br_ln279"/></StgValue>
 </operation>
 
 <operation id="573" st_id="37" stage="1" lat="1">
@@ -7815,7 +7815,7 @@ LOOP_WORDS_IN_PHASE_begin:3  br i1 %icmp_ln879_18, label %.preheader3439.0.prehe
 .preheader3439.0.preheader:2  br label %.preheader3439.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln276"/></StgValue>
+<StgValue><ssdm name="br_ln288"/></StgValue>
 </operation>
 
 <operation id="576" st_id="37" stage="2" lat="2">
@@ -7922,10 +7922,10 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="469" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3439.0:4  %empty_76 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+.preheader3439.0:4  %empty_79 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_76"/></StgValue>
+<StgValue><ssdm name="empty_79"/></StgValue>
 </operation>
 
 <operation id="583" st_id="38" stage="1" lat="1">
@@ -7955,7 +7955,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 .preheader3439.0:6  br i1 %icmp_ln887_19, label %4, label %5
 
 ]]></Node>
-<StgValue><ssdm name="br_ln276"/></StgValue>
+<StgValue><ssdm name="br_ln288"/></StgValue>
 </operation>
 
 <operation id="585" st_id="38" stage="1" lat="1">
@@ -8144,10 +8144,10 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="497" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-:5  %select_ln284 = select i1 %icmp_ln879_21, i16 %add_ln700_14, i16 %wt_addr_V_0_load
+:5  %select_ln297 = select i1 %icmp_ln879_21, i16 %add_ln700_14, i16 %wt_addr_V_0_load
 
 ]]></Node>
-<StgValue><ssdm name="select_ln284"/></StgValue>
+<StgValue><ssdm name="select_ln297"/></StgValue>
 </operation>
 
 <operation id="597" st_id="38" stage="1" lat="1">
@@ -8160,10 +8160,10 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="498" bw="3" op_0_bw="1" op_1_bw="3" op_2_bw="3">
 <![CDATA[
-:6  %select_ln284_1 = select i1 %icmp_ln879_21, i3 0, i3 %add_ln700_15
+:6  %select_ln297_1 = select i1 %icmp_ln879_21, i3 0, i3 %add_ln700_15
 
 ]]></Node>
-<StgValue><ssdm name="select_ln284_1"/></StgValue>
+<StgValue><ssdm name="select_ln297_1"/></StgValue>
 </operation>
 
 <operation id="598" st_id="38" stage="1" lat="1">
@@ -8179,7 +8179,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 :7  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln298"/></StgValue>
+<StgValue><ssdm name="br_ln311"/></StgValue>
 </operation>
 </state>
 
@@ -8241,10 +8241,10 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="476" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19150) nounwind
+:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln276"/></StgValue>
+<StgValue><ssdm name="specloopname_ln288"/></StgValue>
 </operation>
 
 <operation id="603" st_id="39" stage="1" lat="1">
@@ -8349,7 +8349,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 :15  store i64 %wt_word_buffer_1_V_5, i64* %wt_word_buffer_1_V_3
 
 ]]></Node>
-<StgValue><ssdm name="store_ln276"/></StgValue>
+<StgValue><ssdm name="store_ln288"/></StgValue>
 </operation>
 
 <operation id="610" st_id="39" stage="1" lat="1">
@@ -8364,7 +8364,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 :16  store i64 %wt_word_buffer_1_V_6, i64* %wt_word_buffer_1_V
 
 ]]></Node>
-<StgValue><ssdm name="store_ln276"/></StgValue>
+<StgValue><ssdm name="store_ln288"/></StgValue>
 </operation>
 
 <operation id="611" st_id="39" stage="1" lat="1">
@@ -8379,7 +8379,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 :17  br label %.preheader3439.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln276"/></StgValue>
+<StgValue><ssdm name="br_ln288"/></StgValue>
 </operation>
 </state>
 
@@ -8427,10 +8427,10 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="503" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_75 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+:2  %empty_78 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_75"/></StgValue>
+<StgValue><ssdm name="empty_78"/></StgValue>
 </operation>
 
 <operation id="615" st_id="40" stage="1" lat="1">
@@ -8462,7 +8462,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 :4  br i1 %icmp_ln887_21, label %.loopexit3438.0.loopexit, label %LOOP_LOAD_WTS_begin
 
 ]]></Node>
-<StgValue><ssdm name="br_ln298"/></StgValue>
+<StgValue><ssdm name="br_ln311"/></StgValue>
 </operation>
 
 <operation id="617" st_id="40" stage="1" lat="1">
@@ -8493,10 +8493,10 @@ LOOP_LOAD_WTS_begin:0  %wt_word_buffer_1_V_2 = load i64* %wt_word_buffer_1_V
 
 <Node id="508" bw="64" op_0_bw="64">
 <![CDATA[
-LOOP_LOAD_WTS_begin:1  %wt_word_buffer_1_V_3_79 = load i64* %wt_word_buffer_1_V_3
+LOOP_LOAD_WTS_begin:1  %wt_word_buffer_1_V_3_82 = load i64* %wt_word_buffer_1_V_3
 
 ]]></Node>
-<StgValue><ssdm name="wt_word_buffer_1_V_3_79"/></StgValue>
+<StgValue><ssdm name="wt_word_buffer_1_V_3_82"/></StgValue>
 </operation>
 
 <operation id="619" st_id="40" stage="1" lat="1">
@@ -8510,10 +8510,10 @@ LOOP_LOAD_WTS_begin:1  %wt_word_buffer_1_V_3_79 = load i64* %wt_word_buffer_1_V_
 
 <Node id="509" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20151) nounwind
+LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln298"/></StgValue>
+<StgValue><ssdm name="specloopname_ln311"/></StgValue>
 </operation>
 
 <operation id="620" st_id="40" stage="1" lat="1">
@@ -8527,10 +8527,10 @@ LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str
 
 <Node id="510" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_LOAD_WTS_begin:3  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20151)
+LOOP_LOAD_WTS_begin:3  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_3"/></StgValue>
 </operation>
 
 <operation id="621" st_id="40" stage="1" lat="1">
@@ -8544,10 +8544,10 @@ LOOP_LOAD_WTS_begin:3  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x 
 
 <Node id="511" bw="5" op_0_bw="2">
 <![CDATA[
-LOOP_LOAD_WTS_begin:4  %zext_ln180_35 = zext i2 %p_0570_0_0 to i5
+LOOP_LOAD_WTS_begin:4  %zext_ln180_36 = zext i2 %p_0570_0_0 to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_35"/></StgValue>
+<StgValue><ssdm name="zext_ln180_36"/></StgValue>
 </operation>
 
 <operation id="622" st_id="40" stage="1" lat="1">
@@ -8578,10 +8578,10 @@ LOOP_LOAD_WTS_begin:5  %tmp_178 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %
 
 <Node id="513" bw="5" op_0_bw="4">
 <![CDATA[
-LOOP_LOAD_WTS_begin:6  %zext_ln180_36 = zext i4 %tmp_178 to i5
+LOOP_LOAD_WTS_begin:6  %zext_ln180_37 = zext i4 %tmp_178 to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_36"/></StgValue>
+<StgValue><ssdm name="zext_ln180_37"/></StgValue>
 </operation>
 
 <operation id="624" st_id="40" stage="1" lat="1">
@@ -8595,7 +8595,7 @@ LOOP_LOAD_WTS_begin:6  %zext_ln180_36 = zext i4 %tmp_178 to i5
 
 <Node id="514" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-LOOP_LOAD_WTS_begin:7  %sub_ln180 = sub i5 %zext_ln180_36, %zext_ln180_35
+LOOP_LOAD_WTS_begin:7  %sub_ln180 = sub i5 %zext_ln180_37, %zext_ln180_36
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln180"/></StgValue>
@@ -8646,7 +8646,7 @@ LOOP_LOAD_WTS_begin:9  %trunc_ln791 = trunc i2 %p_0570_0_0 to i1
 
 <Node id="517" bw="64" op_0_bw="1" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-LOOP_LOAD_WTS_begin:10  %select_ln791 = select i1 %trunc_ln791, i64 %wt_word_buffer_1_V_3_79, i64 %wt_word_buffer_1_V_2
+LOOP_LOAD_WTS_begin:10  %select_ln791 = select i1 %trunc_ln791, i64 %wt_word_buffer_1_V_3_82, i64 %wt_word_buffer_1_V_2
 
 ]]></Node>
 <StgValue><ssdm name="select_ln791"/></StgValue>
@@ -8666,7 +8666,7 @@ LOOP_LOAD_WTS_begin:10  %select_ln791 = select i1 %trunc_ln791, i64 %wt_word_buf
 LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 ]]></Node>
-<StgValue><ssdm name="br_ln299"/></StgValue>
+<StgValue><ssdm name="br_ln312"/></StgValue>
 </operation>
 
 <operation id="629" st_id="40" stage="1" lat="1">
@@ -8680,10 +8680,10 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="558" bw="0" op_0_bw="3" op_1_bw="3" op_2_bw="0" op_3_bw="3">
 <![CDATA[
-.loopexit3438.0.loopexit:0  store i3 %select_ln284_1, i3* %wt_offset_V_0
+.loopexit3438.0.loopexit:0  store i3 %select_ln297_1, i3* %wt_offset_V_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln284"/></StgValue>
+<StgValue><ssdm name="store_ln297"/></StgValue>
 </operation>
 
 <operation id="630" st_id="40" stage="1" lat="1">
@@ -8697,10 +8697,10 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="559" bw="0" op_0_bw="16" op_1_bw="16" op_2_bw="0" op_3_bw="16" op_4_bw="16">
 <![CDATA[
-.loopexit3438.0.loopexit:1  store i16 %select_ln284, i16* %wt_addr_V_0
+.loopexit3438.0.loopexit:1  store i16 %select_ln297, i16* %wt_addr_V_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln284"/></StgValue>
+<StgValue><ssdm name="store_ln297"/></StgValue>
 </operation>
 
 <operation id="631" st_id="40" stage="1" lat="1">
@@ -8751,7 +8751,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 .loopexit3438.0:1  br i1 %icmp_ln883_1, label %.loopexit.0, label %.preheader3436.0.preheader
 
 ]]></Node>
-<StgValue><ssdm name="br_ln313"/></StgValue>
+<StgValue><ssdm name="br_ln328"/></StgValue>
 </operation>
 
 <operation id="634" st_id="40" stage="1" lat="1">
@@ -8770,7 +8770,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 .preheader3436.0.preheader:0  br label %.preheader3436.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln315"/></StgValue>
+<StgValue><ssdm name="br_ln330"/></StgValue>
 </operation>
 </state>
 
@@ -8815,10 +8815,10 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="522" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.loopexit:2  %empty_78 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+.loopexit:2  %empty_81 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_78"/></StgValue>
+<StgValue><ssdm name="empty_81"/></StgValue>
 </operation>
 
 <operation id="638" st_id="41" stage="1" lat="1">
@@ -8848,7 +8848,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 .loopexit:4  br i1 %icmp_ln887_23, label %LOOP_LOAD_WTS_end, label %.preheader3437.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln299"/></StgValue>
+<StgValue><ssdm name="br_ln312"/></StgValue>
 </operation>
 
 <operation id="640" st_id="41" stage="1" lat="1">
@@ -8861,10 +8861,10 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="526" bw="6" op_0_bw="2">
 <![CDATA[
-.preheader3437.preheader.0:0  %zext_ln180_37 = zext i2 %p_0560_0_0 to i6
+.preheader3437.preheader.0:0  %zext_ln180_38 = zext i2 %p_0560_0_0 to i6
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_37"/></StgValue>
+<StgValue><ssdm name="zext_ln180_38"/></StgValue>
 </operation>
 
 <operation id="641" st_id="41" stage="1" lat="1">
@@ -8877,7 +8877,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="527" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-.preheader3437.preheader.0:1  %add_ln180 = add i6 %sext_ln180, %zext_ln180_37
+.preheader3437.preheader.0:1  %add_ln180 = add i6 %sext_ln180, %zext_ln180_38
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180"/></StgValue>
@@ -8992,7 +8992,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 .preheader3437.preheader.0:8  br label %.preheader3437.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln300"/></StgValue>
+<StgValue><ssdm name="br_ln313"/></StgValue>
 </operation>
 
 <operation id="649" st_id="41" stage="1" lat="1">
@@ -9005,10 +9005,10 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="555" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_LOAD_WTS_end:0  %empty_77 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20151, i32 %tmp_1)
+LOOP_LOAD_WTS_end:0  %empty_80 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20, i32 %tmp_3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_77"/></StgValue>
+<StgValue><ssdm name="empty_80"/></StgValue>
 </operation>
 
 <operation id="650" st_id="41" stage="1" lat="1">
@@ -9024,7 +9024,7 @@ LOOP_LOAD_WTS_end:0  %empty_77 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i
 LOOP_LOAD_WTS_end:1  br label %3
 
 ]]></Node>
-<StgValue><ssdm name="br_ln298"/></StgValue>
+<StgValue><ssdm name="br_ln311"/></StgValue>
 </operation>
 </state>
 
@@ -9069,10 +9069,10 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="538" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3437.0:2  %empty_80 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+.preheader3437.0:2  %empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_80"/></StgValue>
+<StgValue><ssdm name="empty_83"/></StgValue>
 </operation>
 
 <operation id="654" st_id="42" stage="1" lat="1">
@@ -9102,7 +9102,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 .preheader3437.0:4  br i1 %icmp_ln887_25, label %.loopexit.loopexit, label %6
 
 ]]></Node>
-<StgValue><ssdm name="br_ln300"/></StgValue>
+<StgValue><ssdm name="br_ln313"/></StgValue>
 </operation>
 
 <operation id="656" st_id="42" stage="1" lat="1">
@@ -9115,10 +9115,10 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="542" bw="6" op_0_bw="2">
 <![CDATA[
-:0  %zext_ln180_38 = zext i2 %p_0709_0_0 to i6
+:0  %zext_ln180_39 = zext i2 %p_0709_0_0 to i6
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_38"/></StgValue>
+<StgValue><ssdm name="zext_ln180_39"/></StgValue>
 </operation>
 
 <operation id="657" st_id="42" stage="1" lat="1">
@@ -9131,7 +9131,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="543" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-:1  %add_ln180_21 = add i6 %sub_ln180_2, %zext_ln180_38
+:1  %add_ln180_21 = add i6 %sub_ln180_2, %zext_ln180_39
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_21"/></StgValue>
@@ -9147,10 +9147,10 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="544" bw="64" op_0_bw="6">
 <![CDATA[
-:2  %zext_ln180_39 = zext i6 %add_ln180_21 to i64
+:2  %zext_ln180_40 = zext i6 %add_ln180_21 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_39"/></StgValue>
+<StgValue><ssdm name="zext_ln180_40"/></StgValue>
 </operation>
 
 <operation id="659" st_id="42" stage="1" lat="1">
@@ -9163,7 +9163,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="545" bw="5" op_0_bw="1" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %conv_params_V_addr = getelementptr [18 x i1]* %conv_params_V, i64 0, i64 %zext_ln180_39
+:3  %conv_params_V_addr = getelementptr [18 x i1]* %conv_params_V, i64 0, i64 %zext_ln180_40
 
 ]]></Node>
 <StgValue><ssdm name="conv_params_V_addr"/></StgValue>
@@ -9246,7 +9246,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 :8  store i1 %p_Result_s, i1* %conv_params_V_addr, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln301"/></StgValue>
+<StgValue><ssdm name="store_ln315"/></StgValue>
 </operation>
 
 <operation id="665" st_id="42" stage="1" lat="1">
@@ -9262,7 +9262,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 :9  br label %.preheader3437.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln300"/></StgValue>
+<StgValue><ssdm name="br_ln313"/></StgValue>
 </operation>
 
 <operation id="666" st_id="42" stage="1" lat="1">
@@ -9326,10 +9326,10 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="569" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3436.0:2  %empty_81 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+.preheader3436.0:2  %empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_81"/></StgValue>
+<StgValue><ssdm name="empty_84"/></StgValue>
 </operation>
 
 <operation id="670" st_id="43" stage="1" lat="1">
@@ -9361,7 +9361,7 @@ LOOP_LOAD_WTS_end:1  br label %3
 .preheader3436.0:4  br i1 %icmp_ln887_24, label %.loopexit.0.loopexit, label %LOOP_CONVOLVER_LOAD_begin
 
 ]]></Node>
-<StgValue><ssdm name="br_ln315"/></StgValue>
+<StgValue><ssdm name="br_ln330"/></StgValue>
 </operation>
 
 <operation id="672" st_id="43" stage="1" lat="1">
@@ -9375,10 +9375,10 @@ LOOP_LOAD_WTS_end:1  br label %3
 
 <Node id="575" bw="3" op_0_bw="2">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:2  %zext_ln316 = zext i2 %p_0783_0_0 to i3
+LOOP_CONVOLVER_LOAD_begin:2  %zext_ln331 = zext i2 %p_0783_0_0 to i3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln316"/></StgValue>
+<StgValue><ssdm name="zext_ln331"/></StgValue>
 </operation>
 
 <operation id="673" st_id="43" stage="1" lat="1">
@@ -9392,10 +9392,10 @@ LOOP_CONVOLVER_LOAD_begin:2  %zext_ln316 = zext i2 %p_0783_0_0 to i3
 
 <Node id="576" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:3  %add_ln316 = add i3 %zext_ln316, %zext_ln252
+LOOP_CONVOLVER_LOAD_begin:3  %add_ln331 = add i3 %zext_ln331, %zext_ln264
 
 ]]></Node>
-<StgValue><ssdm name="add_ln316"/></StgValue>
+<StgValue><ssdm name="add_ln331"/></StgValue>
 </operation>
 
 <operation id="674" st_id="43" stage="1" lat="1">
@@ -9409,7 +9409,7 @@ LOOP_CONVOLVER_LOAD_begin:3  %add_ln316 = add i3 %zext_ln316, %zext_ln252
 
 <Node id="577" bw="13" op_0_bw="13" op_1_bw="3" op_2_bw="2" op_3_bw="8">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:4  %tmp_180 = call i13 @_ssdm_op_BitConcatenate.i13.i3.i2.i8(i3 %add_ln316, i2 0, i8 %t_V_2_0)
+LOOP_CONVOLVER_LOAD_begin:4  %tmp_180 = call i13 @_ssdm_op_BitConcatenate.i13.i3.i2.i8(i3 %add_ln331, i2 0, i8 %t_V_2_0)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_180"/></StgValue>
@@ -9426,10 +9426,10 @@ LOOP_CONVOLVER_LOAD_begin:4  %tmp_180 = call i13 @_ssdm_op_BitConcatenate.i13.i3
 
 <Node id="578" bw="64" op_0_bw="13">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:5  %zext_ln316_1 = zext i13 %tmp_180 to i64
+LOOP_CONVOLVER_LOAD_begin:5  %zext_ln331_1 = zext i13 %tmp_180 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln316_1"/></StgValue>
+<StgValue><ssdm name="zext_ln331_1"/></StgValue>
 </operation>
 
 <operation id="676" st_id="43" stage="1" lat="1">
@@ -9443,7 +9443,7 @@ LOOP_CONVOLVER_LOAD_begin:5  %zext_ln316_1 = zext i13 %tmp_180 to i64
 
 <Node id="579" bw="12" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:6  %dmem_V_5_addr = getelementptr [4096 x i64]* %dmem_V_6, i64 0, i64 %zext_ln316_1
+LOOP_CONVOLVER_LOAD_begin:6  %dmem_V_5_addr = getelementptr [4096 x i64]* %dmem_V_6, i64 0, i64 %zext_ln331_1
 
 ]]></Node>
 <StgValue><ssdm name="dmem_V_5_addr"/></StgValue>
@@ -9497,7 +9497,7 @@ LOOP_CONVOLVER_LOAD_begin:9  %dmem_V_5_load = load i64* %dmem_V_5_addr, align 8
 .loopexit.0:0  br label %2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln347"/></StgValue>
 </operation>
 </state>
 
@@ -9512,10 +9512,10 @@ LOOP_CONVOLVER_LOAD_begin:9  %dmem_V_5_load = load i64* %dmem_V_5_addr, align 8
 
 <Node id="573" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21152) nounwind
+LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln315"/></StgValue>
+<StgValue><ssdm name="specloopname_ln330"/></StgValue>
 </operation>
 
 <operation id="681" st_id="44" stage="1" lat="1">
@@ -9527,10 +9527,10 @@ LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* 
 
 <Node id="574" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21152)
+LOOP_CONVOLVER_LOAD_begin:1  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_2"/></StgValue>
+<StgValue><ssdm name="tmp_4"/></StgValue>
 </operation>
 
 <operation id="682" st_id="44" stage="1" lat="1">
@@ -9557,10 +9557,10 @@ LOOP_CONVOLVER_LOAD_begin:7  %tmp_181 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i
 
 <Node id="581" bw="6" op_0_bw="5">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:8  %zext_ln316_2 = zext i5 %tmp_181 to i6
+LOOP_CONVOLVER_LOAD_begin:8  %zext_ln331_2 = zext i5 %tmp_181 to i6
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln316_2"/></StgValue>
+<StgValue><ssdm name="zext_ln331_2"/></StgValue>
 </operation>
 
 <operation id="684" st_id="44" stage="1" lat="2">
@@ -9590,7 +9590,7 @@ LOOP_CONVOLVER_LOAD_begin:9  %dmem_V_5_load = load i64* %dmem_V_5_addr, align 8
 LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln332"/></StgValue>
 </operation>
 </state>
 
@@ -9635,10 +9635,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="587" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_83 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+:2  %empty_86 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_83"/></StgValue>
+<StgValue><ssdm name="empty_86"/></StgValue>
 </operation>
 
 <operation id="689" st_id="45" stage="1" lat="1">
@@ -9668,7 +9668,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 :4  br i1 %icmp_ln887_27, label %LOOP_CONVOLVER_LOAD_end, label %.preheader3435.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln332"/></StgValue>
 </operation>
 
 <operation id="691" st_id="45" stage="1" lat="1">
@@ -9681,10 +9681,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="591" bw="6" op_0_bw="4">
 <![CDATA[
-.preheader3435.preheader.0:0  %zext_ln180_40 = zext i4 %p_0728_0_0 to i6
+.preheader3435.preheader.0:0  %zext_ln180_41 = zext i4 %p_0728_0_0 to i6
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_40"/></StgValue>
+<StgValue><ssdm name="zext_ln180_41"/></StgValue>
 </operation>
 
 <operation id="692" st_id="45" stage="1" lat="1">
@@ -9697,7 +9697,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="592" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-.preheader3435.preheader.0:1  %add_ln180_22 = add i6 %zext_ln316_2, %zext_ln180_40
+.preheader3435.preheader.0:1  %add_ln180_22 = add i6 %zext_ln331_2, %zext_ln180_41
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_22"/></StgValue>
@@ -9745,10 +9745,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="595" bw="9" op_0_bw="7">
 <![CDATA[
-.preheader3435.preheader.0:4  %zext_ln180_41 = zext i7 %tmp_183 to i9
+.preheader3435.preheader.0:4  %zext_ln180_42 = zext i7 %tmp_183 to i9
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_41"/></StgValue>
+<StgValue><ssdm name="zext_ln180_42"/></StgValue>
 </operation>
 
 <operation id="696" st_id="45" stage="1" lat="1">
@@ -9761,7 +9761,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="596" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader3435.preheader.0:5  %add_ln180_23 = add i9 %zext_ln180_41, %p_shl4_cast
+.preheader3435.preheader.0:5  %add_ln180_23 = add i9 %zext_ln180_42, %p_shl4_cast
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_23"/></StgValue>
@@ -9777,10 +9777,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="597" bw="64" op_0_bw="9">
 <![CDATA[
-.preheader3435.preheader.0:6  %zext_ln180_42 = zext i9 %add_ln180_23 to i64
+.preheader3435.preheader.0:6  %zext_ln180_43 = zext i9 %add_ln180_23 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_42"/></StgValue>
+<StgValue><ssdm name="zext_ln180_43"/></StgValue>
 </operation>
 
 <operation id="698" st_id="45" stage="1" lat="1">
@@ -9793,7 +9793,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="598" bw="8" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-.preheader3435.preheader.0:7  %word_buffer_V_addr_1 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_42
+.preheader3435.preheader.0:7  %word_buffer_V_addr_1 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_43
 
 ]]></Node>
 <StgValue><ssdm name="word_buffer_V_addr_1"/></StgValue>
@@ -9825,10 +9825,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="600" bw="64" op_0_bw="9">
 <![CDATA[
-.preheader3435.preheader.0:9  %zext_ln180_43 = zext i9 %add_ln180_24 to i64
+.preheader3435.preheader.0:9  %zext_ln180_44 = zext i9 %add_ln180_24 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_43"/></StgValue>
+<StgValue><ssdm name="zext_ln180_44"/></StgValue>
 </operation>
 
 <operation id="701" st_id="45" stage="1" lat="1">
@@ -9841,7 +9841,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="601" bw="8" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-.preheader3435.preheader.0:10  %word_buffer_V_addr_3 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_43
+.preheader3435.preheader.0:10  %word_buffer_V_addr_3 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_44
 
 ]]></Node>
 <StgValue><ssdm name="word_buffer_V_addr_3"/></StgValue>
@@ -9892,7 +9892,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 .preheader3435.preheader.0:13  br label %.preheader3435.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln318"/></StgValue>
+<StgValue><ssdm name="br_ln333"/></StgValue>
 </operation>
 
 <operation id="705" st_id="45" stage="1" lat="1">
@@ -9905,10 +9905,10 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="641" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_end:0  %empty_82 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21152, i32 %tmp_2)
+LOOP_CONVOLVER_LOAD_end:0  %empty_85 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21, i32 %tmp_4)
 
 ]]></Node>
-<StgValue><ssdm name="empty_82"/></StgValue>
+<StgValue><ssdm name="empty_85"/></StgValue>
 </operation>
 
 <operation id="706" st_id="45" stage="1" lat="1">
@@ -9924,7 +9924,7 @@ LOOP_CONVOLVER_LOAD_end:0  %empty_82 = call i32 (...)* @_ssdm_op_SpecRegionEnd([
 LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln315"/></StgValue>
+<StgValue><ssdm name="br_ln330"/></StgValue>
 </operation>
 </state>
 
@@ -9969,10 +9969,10 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="608" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3435.0:2  %empty_84 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+.preheader3435.0:2  %empty_87 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_84"/></StgValue>
+<StgValue><ssdm name="empty_87"/></StgValue>
 </operation>
 
 <operation id="710" st_id="46" stage="1" lat="1">
@@ -10002,7 +10002,7 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 .preheader3435.0:4  br i1 %icmp_ln887_29, label %_ifconv, label %8
 
 ]]></Node>
-<StgValue><ssdm name="br_ln318"/></StgValue>
+<StgValue><ssdm name="br_ln333"/></StgValue>
 </operation>
 
 <operation id="712" st_id="46" stage="1" lat="1">
@@ -10015,10 +10015,10 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="612" bw="9" op_0_bw="4">
 <![CDATA[
-:0  %zext_ln180_46 = zext i4 %add_ln1353_4 to i9
+:0  %zext_ln180_47 = zext i4 %add_ln1353_4 to i9
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_46"/></StgValue>
+<StgValue><ssdm name="zext_ln180_47"/></StgValue>
 </operation>
 
 <operation id="713" st_id="46" stage="1" lat="1">
@@ -10031,7 +10031,7 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="613" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-:1  %add_ln180_26 = add i9 %add_ln180_23, %zext_ln180_46
+:1  %add_ln180_26 = add i9 %add_ln180_23, %zext_ln180_47
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_26"/></StgValue>
@@ -10047,10 +10047,10 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="614" bw="64" op_0_bw="9">
 <![CDATA[
-:2  %zext_ln180_47 = zext i9 %add_ln180_26 to i64
+:2  %zext_ln180_48 = zext i9 %add_ln180_26 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_47"/></StgValue>
+<StgValue><ssdm name="zext_ln180_48"/></StgValue>
 </operation>
 
 <operation id="715" st_id="46" stage="1" lat="1">
@@ -10063,7 +10063,7 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="615" bw="8" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %word_buffer_V_addr = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_47
+:3  %word_buffer_V_addr = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_48
 
 ]]></Node>
 <StgValue><ssdm name="word_buffer_V_addr"/></StgValue>
@@ -10127,10 +10127,10 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="619" bw="2" op_0_bw="1" op_1_bw="2" op_2_bw="2">
 <![CDATA[
-:7  %select_ln50 = select i1 %b_V_read_assign, i2 -1, i2 1
+:7  %select_ln53 = select i1 %b_V_read_assign, i2 -1, i2 1
 
 ]]></Node>
-<StgValue><ssdm name="select_ln50"/></StgValue>
+<StgValue><ssdm name="select_ln53"/></StgValue>
 </operation>
 
 <operation id="720" st_id="46" stage="1" lat="1">
@@ -10143,10 +10143,10 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 
 <Node id="620" bw="0" op_0_bw="2" op_1_bw="8">
 <![CDATA[
-:8  store i2 %select_ln50, i2* %word_buffer_V_addr, align 1
+:8  store i2 %select_ln53, i2* %word_buffer_V_addr, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln319"/></StgValue>
+<StgValue><ssdm name="store_ln335"/></StgValue>
 </operation>
 
 <operation id="721" st_id="46" stage="1" lat="1">
@@ -10162,7 +10162,7 @@ LOOP_CONVOLVER_LOAD_end:1  br label %.preheader3436.0
 :9  br label %.preheader3435.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln318"/></StgValue>
+<StgValue><ssdm name="br_ln333"/></StgValue>
 </operation>
 
 <operation id="722" st_id="46" stage="1" lat="1">
@@ -10290,7 +10290,7 @@ _ifconv:6  %select_ln879_5 = select i1 %or_ln879, i2 %select_ln879, i2 1
 _ifconv:7  store i2 %select_ln879_5, i2* %word_buffer_V_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln322"/></StgValue>
+<StgValue><ssdm name="store_ln338"/></StgValue>
 </operation>
 
 <operation id="730" st_id="46" stage="1" lat="1">
@@ -10418,7 +10418,7 @@ _ifconv:14  %select_ln879_7 = select i1 %or_ln879_2, i2 %select_ln879_6, i2 1
 _ifconv:15  store i2 %select_ln879_7, i2* %word_buffer_V_addr_3, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln324"/></StgValue>
+<StgValue><ssdm name="store_ln340"/></StgValue>
 </operation>
 
 <operation id="738" st_id="46" stage="1" lat="1">
@@ -10434,7 +10434,7 @@ _ifconv:15  store i2 %select_ln879_7, i2* %word_buffer_V_addr_3, align 1
 _ifconv:16  br label %7
 
 ]]></Node>
-<StgValue><ssdm name="br_ln317"/></StgValue>
+<StgValue><ssdm name="br_ln332"/></StgValue>
 </operation>
 </state>
 
@@ -10479,10 +10479,10 @@ _ifconv:16  br label %7
 
 <Node id="650" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_74 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+:2  %empty_77 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_74"/></StgValue>
+<StgValue><ssdm name="empty_77"/></StgValue>
 </operation>
 
 <operation id="742" st_id="47" stage="1" lat="1">
@@ -10512,7 +10512,7 @@ _ifconv:16  br label %7
 :4  br i1 %icmp_ln887_26, label %.preheader3434.0.preheader, label %9
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln347"/></StgValue>
 </operation>
 
 <operation id="744" st_id="47" stage="2" lat="2">
@@ -10528,7 +10528,7 @@ _ifconv:16  br label %7
 :1  call fastcc void @process_word([160 x i2]* %word_buffer_V, i2 %p_01092_0_0, [160 x i2]* %old_word_buffer_V, [8 x i1]* %lb, [8 x i1]* %rb, [480 x i2]* %line_buffer, [18 x i1]* %conv_params_V, [128 x i5]* %conv_out_buffer_V, i3 %log_width_V, i5 %words_per_image_V, i8 %t_V_0)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln334"/></StgValue>
+<StgValue><ssdm name="call_ln351"/></StgValue>
 </operation>
 
 <operation id="745" st_id="47" stage="1" lat="1">
@@ -10544,7 +10544,7 @@ _ifconv:16  br label %7
 .preheader3434.0.preheader:0  br label %.preheader3434.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln337"/></StgValue>
+<StgValue><ssdm name="br_ln354"/></StgValue>
 </operation>
 </state>
 
@@ -10559,10 +10559,10 @@ _ifconv:16  br label %7
 
 <Node id="654" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22153) nounwind
+:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln331"/></StgValue>
+<StgValue><ssdm name="specloopname_ln347"/></StgValue>
 </operation>
 
 <operation id="747" st_id="48" stage="1" lat="2">
@@ -10577,7 +10577,7 @@ _ifconv:16  br label %7
 :1  call fastcc void @process_word([160 x i2]* %word_buffer_V, i2 %p_01092_0_0, [160 x i2]* %old_word_buffer_V, [8 x i1]* %lb, [8 x i1]* %rb, [480 x i2]* %line_buffer, [18 x i1]* %conv_params_V, [128 x i5]* %conv_out_buffer_V, i3 %log_width_V, i5 %words_per_image_V, i8 %t_V_0)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln334"/></StgValue>
+<StgValue><ssdm name="call_ln351"/></StgValue>
 </operation>
 
 <operation id="748" st_id="48" stage="1" lat="1">
@@ -10592,7 +10592,7 @@ _ifconv:16  br label %7
 :2  br label %2
 
 ]]></Node>
-<StgValue><ssdm name="br_ln331"/></StgValue>
+<StgValue><ssdm name="br_ln347"/></StgValue>
 </operation>
 </state>
 
@@ -10637,10 +10637,10 @@ _ifconv:16  br label %7
 
 <Node id="662" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3434.0:2  %empty_71 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+.preheader3434.0:2  %empty_74 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_71"/></StgValue>
+<StgValue><ssdm name="empty_74"/></StgValue>
 </operation>
 
 <operation id="752" st_id="49" stage="1" lat="1">
@@ -10670,7 +10670,7 @@ _ifconv:16  br label %7
 .preheader3434.0:4  br i1 %icmp_ln887_28, label %.preheader3431.preheader.0, label %.preheader3433.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln337"/></StgValue>
+<StgValue><ssdm name="br_ln354"/></StgValue>
 </operation>
 
 <operation id="754" st_id="49" stage="1" lat="1">
@@ -10718,7 +10718,7 @@ _ifconv:16  br label %7
 .preheader3433.preheader.0:2  br label %.preheader3433.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln338"/></StgValue>
+<StgValue><ssdm name="br_ln355"/></StgValue>
 </operation>
 
 <operation id="757" st_id="49" stage="1" lat="1">
@@ -10731,10 +10731,10 @@ _ifconv:16  br label %7
 
 <Node id="703" bw="7" op_0_bw="8">
 <![CDATA[
-.preheader3431.preheader.0:0  %trunc_ln887_5 = trunc i8 %t_V_2_0 to i7
+.preheader3431.preheader.0:0  %trunc_ln887_3 = trunc i8 %t_V_2_0 to i7
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln887_5"/></StgValue>
+<StgValue><ssdm name="trunc_ln887_3"/></StgValue>
 </operation>
 
 <operation id="758" st_id="49" stage="1" lat="1">
@@ -10747,7 +10747,7 @@ _ifconv:16  br label %7
 
 <Node id="704" bw="7" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-.preheader3431.preheader.0:1  %add_ln887 = add i7 -1, %trunc_ln887_5
+.preheader3431.preheader.0:1  %add_ln887 = add i7 -1, %trunc_ln887_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln887"/></StgValue>
@@ -10782,7 +10782,7 @@ _ifconv:16  br label %7
 .preheader3431.preheader.0:3  br label %.preheader3431.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln347"/></StgValue>
+<StgValue><ssdm name="br_ln365"/></StgValue>
 </operation>
 </state>
 
@@ -10827,10 +10827,10 @@ _ifconv:16  br label %7
 
 <Node id="672" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3433.0:2  %empty_72 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+.preheader3433.0:2  %empty_75 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_72"/></StgValue>
+<StgValue><ssdm name="empty_75"/></StgValue>
 </operation>
 
 <operation id="764" st_id="50" stage="1" lat="1">
@@ -10860,7 +10860,7 @@ _ifconv:16  br label %7
 .preheader3433.0:4  br i1 %icmp_ln887_31, label %.preheader3434.0.loopexit, label %.preheader3432.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln338"/></StgValue>
+<StgValue><ssdm name="br_ln355"/></StgValue>
 </operation>
 
 <operation id="766" st_id="50" stage="1" lat="1">
@@ -10873,10 +10873,10 @@ _ifconv:16  br label %7
 
 <Node id="676" bw="6" op_0_bw="4">
 <![CDATA[
-.preheader3432.preheader.0:0  %zext_ln180_48 = zext i4 %p_01205_0_0 to i6
+.preheader3432.preheader.0:0  %zext_ln180_49 = zext i4 %p_01205_0_0 to i6
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_48"/></StgValue>
+<StgValue><ssdm name="zext_ln180_49"/></StgValue>
 </operation>
 
 <operation id="767" st_id="50" stage="1" lat="1">
@@ -10889,7 +10889,7 @@ _ifconv:16  br label %7
 
 <Node id="677" bw="6" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-.preheader3432.preheader.0:1  %add_ln180_27 = add i6 %zext_ln180_48, %zext_ln887_2
+.preheader3432.preheader.0:1  %add_ln180_27 = add i6 %zext_ln180_49, %zext_ln887_2
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_27"/></StgValue>
@@ -10937,10 +10937,10 @@ _ifconv:16  br label %7
 
 <Node id="680" bw="9" op_0_bw="7">
 <![CDATA[
-.preheader3432.preheader.0:4  %zext_ln180_49 = zext i7 %tmp_186 to i9
+.preheader3432.preheader.0:4  %zext_ln180_50 = zext i7 %tmp_186 to i9
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_49"/></StgValue>
+<StgValue><ssdm name="zext_ln180_50"/></StgValue>
 </operation>
 
 <operation id="771" st_id="50" stage="1" lat="1">
@@ -10953,7 +10953,7 @@ _ifconv:16  br label %7
 
 <Node id="681" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader3432.preheader.0:5  %add_ln180_28 = add i9 %p_shl_cast, %zext_ln180_49
+.preheader3432.preheader.0:5  %add_ln180_28 = add i9 %p_shl_cast, %zext_ln180_50
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_28"/></StgValue>
@@ -10972,7 +10972,7 @@ _ifconv:16  br label %7
 .preheader3432.preheader.0:6  br label %.preheader3432.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln339"/></StgValue>
+<StgValue><ssdm name="br_ln356"/></StgValue>
 </operation>
 
 <operation id="773" st_id="50" stage="1" lat="1">
@@ -11033,10 +11033,10 @@ _ifconv:16  br label %7
 
 <Node id="686" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3432.0:2  %empty_73 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
+.preheader3432.0:2  %empty_76 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10)
 
 ]]></Node>
-<StgValue><ssdm name="empty_73"/></StgValue>
+<StgValue><ssdm name="empty_76"/></StgValue>
 </operation>
 
 <operation id="777" st_id="51" stage="1" lat="1">
@@ -11066,7 +11066,7 @@ _ifconv:16  br label %7
 .preheader3432.0:4  br i1 %icmp_ln887_32, label %.preheader3433.0.loopexit, label %1
 
 ]]></Node>
-<StgValue><ssdm name="br_ln339"/></StgValue>
+<StgValue><ssdm name="br_ln356"/></StgValue>
 </operation>
 
 <operation id="779" st_id="51" stage="1" lat="1">
@@ -11079,10 +11079,10 @@ _ifconv:16  br label %7
 
 <Node id="690" bw="9" op_0_bw="4">
 <![CDATA[
-:0  %zext_ln180_50 = zext i4 %p_01195_0_0 to i9
+:0  %zext_ln180_51 = zext i4 %p_01195_0_0 to i9
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_50"/></StgValue>
+<StgValue><ssdm name="zext_ln180_51"/></StgValue>
 </operation>
 
 <operation id="780" st_id="51" stage="1" lat="1">
@@ -11095,7 +11095,7 @@ _ifconv:16  br label %7
 
 <Node id="691" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-:1  %add_ln180_29 = add i9 %add_ln180_28, %zext_ln180_50
+:1  %add_ln180_29 = add i9 %add_ln180_28, %zext_ln180_51
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_29"/></StgValue>
@@ -11111,10 +11111,10 @@ _ifconv:16  br label %7
 
 <Node id="692" bw="64" op_0_bw="9">
 <![CDATA[
-:2  %zext_ln180_51 = zext i9 %add_ln180_29 to i64
+:2  %zext_ln180_52 = zext i9 %add_ln180_29 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_51"/></StgValue>
+<StgValue><ssdm name="zext_ln180_52"/></StgValue>
 </operation>
 
 <operation id="782" st_id="51" stage="1" lat="1">
@@ -11127,7 +11127,7 @@ _ifconv:16  br label %7
 
 <Node id="693" bw="8" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:3  %word_buffer_V_addr_2 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_51
+:3  %word_buffer_V_addr_2 = getelementptr [160 x i2]* %word_buffer_V, i64 0, i64 %zext_ln180_52
 
 ]]></Node>
 <StgValue><ssdm name="word_buffer_V_addr_2"/></StgValue>
@@ -11177,7 +11177,7 @@ _ifconv:16  br label %7
 
 <Node id="694" bw="8" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-:4  %old_word_buffer_V_ad = getelementptr [160 x i2]* %old_word_buffer_V, i64 0, i64 %zext_ln180_51
+:4  %old_word_buffer_V_ad = getelementptr [160 x i2]* %old_word_buffer_V, i64 0, i64 %zext_ln180_52
 
 ]]></Node>
 <StgValue><ssdm name="old_word_buffer_V_ad"/></StgValue>
@@ -11210,7 +11210,7 @@ _ifconv:16  br label %7
 :6  store i2 %word_buffer_V_load, i2* %old_word_buffer_V_ad, align 1
 
 ]]></Node>
-<StgValue><ssdm name="store_ln340"/></StgValue>
+<StgValue><ssdm name="store_ln358"/></StgValue>
 </operation>
 
 <operation id="788" st_id="52" stage="1" lat="1">
@@ -11225,7 +11225,7 @@ _ifconv:16  br label %7
 :7  br label %.preheader3432.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln339"/></StgValue>
+<StgValue><ssdm name="br_ln356"/></StgValue>
 </operation>
 </state>
 
@@ -11270,10 +11270,10 @@ _ifconv:16  br label %7
 
 <Node id="710" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3431.0:2  %empty_70 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+.preheader3431.0:2  %empty_73 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_70"/></StgValue>
+<StgValue><ssdm name="empty_73"/></StgValue>
 </operation>
 
 <operation id="792" st_id="53" stage="1" lat="1">
@@ -11303,7 +11303,7 @@ _ifconv:16  br label %7
 .preheader3431.0:4  br i1 %icmp_ln887_30, label %LOOP_WORDS_IN_PHASE_end, label %10
 
 ]]></Node>
-<StgValue><ssdm name="br_ln347"/></StgValue>
+<StgValue><ssdm name="br_ln365"/></StgValue>
 </operation>
 
 <operation id="794" st_id="53" stage="1" lat="1">
@@ -11319,7 +11319,7 @@ _ifconv:16  br label %7
 :0  br i1 %icmp_ln879_18, label %._crit_edge3449.0, label %.preheader3430.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln349"/></StgValue>
+<StgValue><ssdm name="br_ln367"/></StgValue>
 </operation>
 
 <operation id="795" st_id="53" stage="1" lat="1">
@@ -11421,7 +11421,7 @@ _ifconv:16  br label %7
 .preheader3430.preheader.0:5  br label %.preheader3430.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln351"/></StgValue>
+<StgValue><ssdm name="br_ln369"/></StgValue>
 </operation>
 
 <operation id="801" st_id="53" stage="1" lat="1">
@@ -11500,10 +11500,10 @@ LOOP_WORDS_IN_PHASE_end:3  %select_ln883_1 = select i1 %icmp_ln883_1, i8 %t_V_2_
 
 <Node id="752" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_end:4  %empty_69 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18149, i32 %tmp_8)
+LOOP_WORDS_IN_PHASE_end:4  %empty_72 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18, i32 %tmp_s)
 
 ]]></Node>
-<StgValue><ssdm name="empty_69"/></StgValue>
+<StgValue><ssdm name="empty_72"/></StgValue>
 </operation>
 
 <operation id="806" st_id="53" stage="1" lat="1">
@@ -11519,7 +11519,7 @@ LOOP_WORDS_IN_PHASE_end:4  %empty_69 = call i32 (...)* @_ssdm_op_SpecRegionEnd([
 LOOP_WORDS_IN_PHASE_end:5  br label %0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln265"/></StgValue>
+<StgValue><ssdm name="br_ln277"/></StgValue>
 </operation>
 </state>
 
@@ -11579,10 +11579,10 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 
 <Node id="726" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3430.0:3  %empty_85 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
+.preheader3430.0:3  %empty_88 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_85"/></StgValue>
+<StgValue><ssdm name="empty_88"/></StgValue>
 </operation>
 
 <operation id="811" st_id="54" stage="1" lat="1">
@@ -11612,7 +11612,7 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 .preheader3430.0:5  br i1 %icmp_ln887_33, label %11, label %12
 
 ]]></Node>
-<StgValue><ssdm name="br_ln351"/></StgValue>
+<StgValue><ssdm name="br_ln369"/></StgValue>
 </operation>
 
 <operation id="813" st_id="54" stage="1" lat="1">
@@ -11787,7 +11787,7 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 :8  br label %.preheader3430.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln351"/></StgValue>
+<StgValue><ssdm name="br_ln369"/></StgValue>
 </operation>
 </state>
 
@@ -11854,7 +11854,7 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 :3  store i12 %add_ln700_34, i12* %fixed_buffer_V_addr_130, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln353"/></StgValue>
+<StgValue><ssdm name="store_ln373"/></StgValue>
 </operation>
 
 <operation id="828" st_id="56" stage="1" lat="1">
@@ -11870,7 +11870,7 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 :4  br label %._crit_edge3449.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln354"/></StgValue>
+<StgValue><ssdm name="br_ln374"/></StgValue>
 </operation>
 
 <operation id="829" st_id="56" stage="1" lat="1">
@@ -11885,7 +11885,7 @@ LOOP_WORDS_IN_PHASE_end:5  br label %0
 ._crit_edge3449.0:0  br label %.preheader3431.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln347"/></StgValue>
+<StgValue><ssdm name="br_ln365"/></StgValue>
 </operation>
 </state>
 
@@ -11933,7 +11933,7 @@ LOOP_ACC_PHASES_begin:4  %fixed_temp_V_addr = getelementptr [64 x i12]* %fixed_t
 LOOP_ACC_PHASES_begin:5  store i12 %fixed_buffer_V_load, i12* %fixed_temp_V_addr, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="833" st_id="57" stage="1" lat="2">
@@ -11978,7 +11978,7 @@ LOOP_ACC_PHASES_begin:7  %fixed_temp_V_addr_1 = getelementptr [64 x i12]* %fixed
 LOOP_ACC_PHASES_begin:8  store i12 %fixed_buffer_V_load_2, i12* %fixed_temp_V_addr_1, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="836" st_id="57" stage="2" lat="2">
@@ -12056,7 +12056,7 @@ LOOP_ACC_PHASES_begin:10  %fixed_temp_V_addr_64 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:11  store i12 %fixed_buffer_V_load_64, i12* %fixed_temp_V_addr_64, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="841" st_id="58" stage="1" lat="2">
@@ -12101,7 +12101,7 @@ LOOP_ACC_PHASES_begin:13  %fixed_temp_V_addr_3 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:14  store i12 %fixed_buffer_V_load_3, i12* %fixed_temp_V_addr_3, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="844" st_id="58" stage="2" lat="2">
@@ -12179,7 +12179,7 @@ LOOP_ACC_PHASES_begin:16  %fixed_temp_V_addr_4 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:17  store i12 %fixed_buffer_V_load_4, i12* %fixed_temp_V_addr_4, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="849" st_id="59" stage="1" lat="2">
@@ -12224,7 +12224,7 @@ LOOP_ACC_PHASES_begin:19  %fixed_temp_V_addr_5 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:20  store i12 %fixed_buffer_V_load_5, i12* %fixed_temp_V_addr_5, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="852" st_id="59" stage="2" lat="2">
@@ -12302,7 +12302,7 @@ LOOP_ACC_PHASES_begin:22  %fixed_temp_V_addr_6 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:23  store i12 %fixed_buffer_V_load_6, i12* %fixed_temp_V_addr_6, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="857" st_id="60" stage="1" lat="2">
@@ -12347,7 +12347,7 @@ LOOP_ACC_PHASES_begin:25  %fixed_temp_V_addr_7 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:26  store i12 %fixed_buffer_V_load_7, i12* %fixed_temp_V_addr_7, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="860" st_id="60" stage="2" lat="2">
@@ -12425,7 +12425,7 @@ LOOP_ACC_PHASES_begin:28  %fixed_temp_V_addr_8 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:29  store i12 %fixed_buffer_V_load_8, i12* %fixed_temp_V_addr_8, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="865" st_id="61" stage="1" lat="2">
@@ -12470,7 +12470,7 @@ LOOP_ACC_PHASES_begin:31  %fixed_temp_V_addr_9 = getelementptr [64 x i12]* %fixe
 LOOP_ACC_PHASES_begin:32  store i12 %fixed_buffer_V_load_9, i12* %fixed_temp_V_addr_9, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="868" st_id="61" stage="2" lat="2">
@@ -12548,7 +12548,7 @@ LOOP_ACC_PHASES_begin:34  %fixed_temp_V_addr_10 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:35  store i12 %fixed_buffer_V_load_10, i12* %fixed_temp_V_addr_10, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="873" st_id="62" stage="1" lat="2">
@@ -12593,7 +12593,7 @@ LOOP_ACC_PHASES_begin:37  %fixed_temp_V_addr_11 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:38  store i12 %fixed_buffer_V_load_11, i12* %fixed_temp_V_addr_11, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="876" st_id="62" stage="2" lat="2">
@@ -12671,7 +12671,7 @@ LOOP_ACC_PHASES_begin:40  %fixed_temp_V_addr_12 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:41  store i12 %fixed_buffer_V_load_12, i12* %fixed_temp_V_addr_12, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="881" st_id="63" stage="1" lat="2">
@@ -12716,7 +12716,7 @@ LOOP_ACC_PHASES_begin:43  %fixed_temp_V_addr_13 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:44  store i12 %fixed_buffer_V_load_13, i12* %fixed_temp_V_addr_13, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="884" st_id="63" stage="2" lat="2">
@@ -12794,7 +12794,7 @@ LOOP_ACC_PHASES_begin:46  %fixed_temp_V_addr_14 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:47  store i12 %fixed_buffer_V_load_14, i12* %fixed_temp_V_addr_14, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="889" st_id="64" stage="1" lat="2">
@@ -12839,7 +12839,7 @@ LOOP_ACC_PHASES_begin:49  %fixed_temp_V_addr_15 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:50  store i12 %fixed_buffer_V_load_15, i12* %fixed_temp_V_addr_15, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="892" st_id="64" stage="2" lat="2">
@@ -12917,7 +12917,7 @@ LOOP_ACC_PHASES_begin:52  %fixed_temp_V_addr_16 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:53  store i12 %fixed_buffer_V_load_16, i12* %fixed_temp_V_addr_16, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="897" st_id="65" stage="1" lat="2">
@@ -12962,7 +12962,7 @@ LOOP_ACC_PHASES_begin:55  %fixed_temp_V_addr_17 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:56  store i12 %fixed_buffer_V_load_17, i12* %fixed_temp_V_addr_17, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="900" st_id="65" stage="2" lat="2">
@@ -13040,7 +13040,7 @@ LOOP_ACC_PHASES_begin:58  %fixed_temp_V_addr_18 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:59  store i12 %fixed_buffer_V_load_18, i12* %fixed_temp_V_addr_18, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="905" st_id="66" stage="1" lat="2">
@@ -13085,7 +13085,7 @@ LOOP_ACC_PHASES_begin:61  %fixed_temp_V_addr_19 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:62  store i12 %fixed_buffer_V_load_19, i12* %fixed_temp_V_addr_19, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="908" st_id="66" stage="2" lat="2">
@@ -13163,7 +13163,7 @@ LOOP_ACC_PHASES_begin:64  %fixed_temp_V_addr_20 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:65  store i12 %fixed_buffer_V_load_20, i12* %fixed_temp_V_addr_20, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="913" st_id="67" stage="1" lat="2">
@@ -13208,7 +13208,7 @@ LOOP_ACC_PHASES_begin:67  %fixed_temp_V_addr_21 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:68  store i12 %fixed_buffer_V_load_21, i12* %fixed_temp_V_addr_21, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="916" st_id="67" stage="2" lat="2">
@@ -13286,7 +13286,7 @@ LOOP_ACC_PHASES_begin:70  %fixed_temp_V_addr_22 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:71  store i12 %fixed_buffer_V_load_22, i12* %fixed_temp_V_addr_22, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="921" st_id="68" stage="1" lat="2">
@@ -13331,7 +13331,7 @@ LOOP_ACC_PHASES_begin:73  %fixed_temp_V_addr_23 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:74  store i12 %fixed_buffer_V_load_23, i12* %fixed_temp_V_addr_23, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="924" st_id="68" stage="2" lat="2">
@@ -13409,7 +13409,7 @@ LOOP_ACC_PHASES_begin:76  %fixed_temp_V_addr_24 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:77  store i12 %fixed_buffer_V_load_24, i12* %fixed_temp_V_addr_24, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="929" st_id="69" stage="1" lat="2">
@@ -13454,7 +13454,7 @@ LOOP_ACC_PHASES_begin:79  %fixed_temp_V_addr_25 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:80  store i12 %fixed_buffer_V_load_25, i12* %fixed_temp_V_addr_25, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="932" st_id="69" stage="2" lat="2">
@@ -13532,7 +13532,7 @@ LOOP_ACC_PHASES_begin:82  %fixed_temp_V_addr_26 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:83  store i12 %fixed_buffer_V_load_26, i12* %fixed_temp_V_addr_26, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="937" st_id="70" stage="1" lat="2">
@@ -13577,7 +13577,7 @@ LOOP_ACC_PHASES_begin:85  %fixed_temp_V_addr_27 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:86  store i12 %fixed_buffer_V_load_27, i12* %fixed_temp_V_addr_27, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="940" st_id="70" stage="2" lat="2">
@@ -13655,7 +13655,7 @@ LOOP_ACC_PHASES_begin:88  %fixed_temp_V_addr_28 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:89  store i12 %fixed_buffer_V_load_28, i12* %fixed_temp_V_addr_28, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="945" st_id="71" stage="1" lat="2">
@@ -13700,7 +13700,7 @@ LOOP_ACC_PHASES_begin:91  %fixed_temp_V_addr_29 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:92  store i12 %fixed_buffer_V_load_29, i12* %fixed_temp_V_addr_29, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="948" st_id="71" stage="2" lat="2">
@@ -13778,7 +13778,7 @@ LOOP_ACC_PHASES_begin:94  %fixed_temp_V_addr_30 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:95  store i12 %fixed_buffer_V_load_30, i12* %fixed_temp_V_addr_30, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="953" st_id="72" stage="1" lat="2">
@@ -13823,7 +13823,7 @@ LOOP_ACC_PHASES_begin:97  %fixed_temp_V_addr_31 = getelementptr [64 x i12]* %fix
 LOOP_ACC_PHASES_begin:98  store i12 %fixed_buffer_V_load_31, i12* %fixed_temp_V_addr_31, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="956" st_id="72" stage="2" lat="2">
@@ -13901,7 +13901,7 @@ LOOP_ACC_PHASES_begin:100  %fixed_temp_V_addr_32 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:101  store i12 %fixed_buffer_V_load_32, i12* %fixed_temp_V_addr_32, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="961" st_id="73" stage="1" lat="2">
@@ -13946,7 +13946,7 @@ LOOP_ACC_PHASES_begin:103  %fixed_temp_V_addr_33 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:104  store i12 %fixed_buffer_V_load_33, i12* %fixed_temp_V_addr_33, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="964" st_id="73" stage="2" lat="2">
@@ -14024,7 +14024,7 @@ LOOP_ACC_PHASES_begin:106  %fixed_temp_V_addr_34 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:107  store i12 %fixed_buffer_V_load_34, i12* %fixed_temp_V_addr_34, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="969" st_id="74" stage="1" lat="2">
@@ -14069,7 +14069,7 @@ LOOP_ACC_PHASES_begin:109  %fixed_temp_V_addr_35 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:110  store i12 %fixed_buffer_V_load_35, i12* %fixed_temp_V_addr_35, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="972" st_id="74" stage="2" lat="2">
@@ -14147,7 +14147,7 @@ LOOP_ACC_PHASES_begin:112  %fixed_temp_V_addr_36 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:113  store i12 %fixed_buffer_V_load_36, i12* %fixed_temp_V_addr_36, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="977" st_id="75" stage="1" lat="2">
@@ -14192,7 +14192,7 @@ LOOP_ACC_PHASES_begin:115  %fixed_temp_V_addr_37 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:116  store i12 %fixed_buffer_V_load_37, i12* %fixed_temp_V_addr_37, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="980" st_id="75" stage="2" lat="2">
@@ -14270,7 +14270,7 @@ LOOP_ACC_PHASES_begin:118  %fixed_temp_V_addr_38 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:119  store i12 %fixed_buffer_V_load_38, i12* %fixed_temp_V_addr_38, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="985" st_id="76" stage="1" lat="2">
@@ -14315,7 +14315,7 @@ LOOP_ACC_PHASES_begin:121  %fixed_temp_V_addr_39 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:122  store i12 %fixed_buffer_V_load_39, i12* %fixed_temp_V_addr_39, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="988" st_id="76" stage="2" lat="2">
@@ -14393,7 +14393,7 @@ LOOP_ACC_PHASES_begin:124  %fixed_temp_V_addr_40 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:125  store i12 %fixed_buffer_V_load_40, i12* %fixed_temp_V_addr_40, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="993" st_id="77" stage="1" lat="2">
@@ -14438,7 +14438,7 @@ LOOP_ACC_PHASES_begin:127  %fixed_temp_V_addr_41 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:128  store i12 %fixed_buffer_V_load_41, i12* %fixed_temp_V_addr_41, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="996" st_id="77" stage="2" lat="2">
@@ -14516,7 +14516,7 @@ LOOP_ACC_PHASES_begin:130  %fixed_temp_V_addr_42 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:131  store i12 %fixed_buffer_V_load_42, i12* %fixed_temp_V_addr_42, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1001" st_id="78" stage="1" lat="2">
@@ -14561,7 +14561,7 @@ LOOP_ACC_PHASES_begin:133  %fixed_temp_V_addr_43 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:134  store i12 %fixed_buffer_V_load_43, i12* %fixed_temp_V_addr_43, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1004" st_id="78" stage="2" lat="2">
@@ -14639,7 +14639,7 @@ LOOP_ACC_PHASES_begin:136  %fixed_temp_V_addr_44 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:137  store i12 %fixed_buffer_V_load_44, i12* %fixed_temp_V_addr_44, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1009" st_id="79" stage="1" lat="2">
@@ -14684,7 +14684,7 @@ LOOP_ACC_PHASES_begin:139  %fixed_temp_V_addr_45 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:140  store i12 %fixed_buffer_V_load_45, i12* %fixed_temp_V_addr_45, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1012" st_id="79" stage="2" lat="2">
@@ -14762,7 +14762,7 @@ LOOP_ACC_PHASES_begin:142  %fixed_temp_V_addr_46 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:143  store i12 %fixed_buffer_V_load_46, i12* %fixed_temp_V_addr_46, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1017" st_id="80" stage="1" lat="2">
@@ -14807,7 +14807,7 @@ LOOP_ACC_PHASES_begin:145  %fixed_temp_V_addr_47 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:146  store i12 %fixed_buffer_V_load_47, i12* %fixed_temp_V_addr_47, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1020" st_id="80" stage="2" lat="2">
@@ -14885,7 +14885,7 @@ LOOP_ACC_PHASES_begin:148  %fixed_temp_V_addr_48 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:149  store i12 %fixed_buffer_V_load_48, i12* %fixed_temp_V_addr_48, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1025" st_id="81" stage="1" lat="2">
@@ -14930,7 +14930,7 @@ LOOP_ACC_PHASES_begin:151  %fixed_temp_V_addr_49 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:152  store i12 %fixed_buffer_V_load_49, i12* %fixed_temp_V_addr_49, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1028" st_id="81" stage="2" lat="2">
@@ -15008,7 +15008,7 @@ LOOP_ACC_PHASES_begin:154  %fixed_temp_V_addr_50 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:155  store i12 %fixed_buffer_V_load_50, i12* %fixed_temp_V_addr_50, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1033" st_id="82" stage="1" lat="2">
@@ -15053,7 +15053,7 @@ LOOP_ACC_PHASES_begin:157  %fixed_temp_V_addr_51 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:158  store i12 %fixed_buffer_V_load_51, i12* %fixed_temp_V_addr_51, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1036" st_id="82" stage="2" lat="2">
@@ -15131,7 +15131,7 @@ LOOP_ACC_PHASES_begin:160  %fixed_temp_V_addr_52 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:161  store i12 %fixed_buffer_V_load_52, i12* %fixed_temp_V_addr_52, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1041" st_id="83" stage="1" lat="2">
@@ -15176,7 +15176,7 @@ LOOP_ACC_PHASES_begin:163  %fixed_temp_V_addr_53 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:164  store i12 %fixed_buffer_V_load_53, i12* %fixed_temp_V_addr_53, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1044" st_id="83" stage="2" lat="2">
@@ -15254,7 +15254,7 @@ LOOP_ACC_PHASES_begin:166  %fixed_temp_V_addr_54 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:167  store i12 %fixed_buffer_V_load_54, i12* %fixed_temp_V_addr_54, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1049" st_id="84" stage="1" lat="2">
@@ -15299,7 +15299,7 @@ LOOP_ACC_PHASES_begin:169  %fixed_temp_V_addr_55 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:170  store i12 %fixed_buffer_V_load_55, i12* %fixed_temp_V_addr_55, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1052" st_id="84" stage="2" lat="2">
@@ -15377,7 +15377,7 @@ LOOP_ACC_PHASES_begin:172  %fixed_temp_V_addr_56 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:173  store i12 %fixed_buffer_V_load_56, i12* %fixed_temp_V_addr_56, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1057" st_id="85" stage="1" lat="2">
@@ -15422,7 +15422,7 @@ LOOP_ACC_PHASES_begin:175  %fixed_temp_V_addr_57 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:176  store i12 %fixed_buffer_V_load_57, i12* %fixed_temp_V_addr_57, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1060" st_id="85" stage="2" lat="2">
@@ -15500,7 +15500,7 @@ LOOP_ACC_PHASES_begin:178  %fixed_temp_V_addr_58 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:179  store i12 %fixed_buffer_V_load_58, i12* %fixed_temp_V_addr_58, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1065" st_id="86" stage="1" lat="2">
@@ -15545,7 +15545,7 @@ LOOP_ACC_PHASES_begin:181  %fixed_temp_V_addr_59 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:182  store i12 %fixed_buffer_V_load_59, i12* %fixed_temp_V_addr_59, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1068" st_id="86" stage="2" lat="2">
@@ -15623,7 +15623,7 @@ LOOP_ACC_PHASES_begin:184  %fixed_temp_V_addr_60 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:185  store i12 %fixed_buffer_V_load_60, i12* %fixed_temp_V_addr_60, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1073" st_id="87" stage="1" lat="2">
@@ -15668,7 +15668,7 @@ LOOP_ACC_PHASES_begin:187  %fixed_temp_V_addr_61 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:188  store i12 %fixed_buffer_V_load_61, i12* %fixed_temp_V_addr_61, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1076" st_id="87" stage="2" lat="2">
@@ -15713,10 +15713,10 @@ LOOP_ACC_PHASES_begin:192  %fixed_buffer_V_load_63 = load i12* %fixed_buffer_V_a
 
 <Node id="755" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_ACC_PHASES_begin:0  %empty_67 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17148, i32 %tmp)
+LOOP_ACC_PHASES_begin:0  %empty_70 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17, i32 %tmp)
 
 ]]></Node>
-<StgValue><ssdm name="empty_67"/></StgValue>
+<StgValue><ssdm name="empty_70"/></StgValue>
 </operation>
 
 <operation id="1079" st_id="88" stage="1" lat="1">
@@ -15728,10 +15728,10 @@ LOOP_ACC_PHASES_begin:0  %empty_67 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12
 
 <Node id="756" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23154) nounwind
+LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln371"/></StgValue>
+<StgValue><ssdm name="specloopname_ln391"/></StgValue>
 </operation>
 
 <operation id="1080" st_id="88" stage="1" lat="1">
@@ -15743,10 +15743,10 @@ LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_s
 
 <Node id="757" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_begin:2  %tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23154)
+LOOP_ACC_PHASES_begin:2  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_7"/></StgValue>
+<StgValue><ssdm name="tmp_9"/></StgValue>
 </operation>
 
 <operation id="1081" st_id="88" stage="1" lat="2">
@@ -15791,7 +15791,7 @@ LOOP_ACC_PHASES_begin:190  %fixed_temp_V_addr_62 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:191  store i12 %fixed_buffer_V_load_62, i12* %fixed_temp_V_addr_62, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1084" st_id="88" stage="1" lat="2">
@@ -15836,7 +15836,7 @@ LOOP_ACC_PHASES_begin:193  %fixed_temp_V_addr_63 = getelementptr [64 x i12]* %fi
 LOOP_ACC_PHASES_begin:194  store i12 %fixed_buffer_V_load_63, i12* %fixed_temp_V_addr_63, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln374"/></StgValue>
+<StgValue><ssdm name="store_ln395"/></StgValue>
 </operation>
 
 <operation id="1087" st_id="88" stage="1" lat="1">
@@ -15851,7 +15851,7 @@ LOOP_ACC_PHASES_begin:194  store i12 %fixed_buffer_V_load_63, i12* %fixed_temp_V
 LOOP_ACC_PHASES_begin:195  br label %.preheader3428
 
 ]]></Node>
-<StgValue><ssdm name="br_ln378"/></StgValue>
+<StgValue><ssdm name="br_ln399"/></StgValue>
 </operation>
 </state>
 
@@ -15881,10 +15881,10 @@ LOOP_ACC_PHASES_begin:195  br label %.preheader3428
 
 <Node id="953" bw="1" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-.preheader3428:1  %icmp_ln378 = icmp eq i6 %p_01321_0, -32
+.preheader3428:1  %icmp_ln399 = icmp eq i6 %p_01321_0, -32
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln378"/></StgValue>
+<StgValue><ssdm name="icmp_ln399"/></StgValue>
 </operation>
 
 <operation id="1090" st_id="89" stage="1" lat="1">
@@ -15896,10 +15896,10 @@ LOOP_ACC_PHASES_begin:195  br label %.preheader3428
 
 <Node id="954" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3428:2  %empty_86 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
+.preheader3428:2  %empty_89 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)
 
 ]]></Node>
-<StgValue><ssdm name="empty_86"/></StgValue>
+<StgValue><ssdm name="empty_89"/></StgValue>
 </operation>
 
 <operation id="1091" st_id="89" stage="1" lat="1">
@@ -15911,49 +15911,49 @@ LOOP_ACC_PHASES_begin:195  br label %.preheader3428
 
 <Node id="955" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader3428:3  br i1 %icmp_ln378, label %LOOP_BATCH_NORM_begin, label %LOOP_ACC_PHASES_I_begin
+.preheader3428:3  br i1 %icmp_ln399, label %LOOP_BATCH_NORM_begin, label %LOOP_ACC_PHASES_I_begin
 
 ]]></Node>
-<StgValue><ssdm name="br_ln378"/></StgValue>
+<StgValue><ssdm name="br_ln399"/></StgValue>
 </operation>
 
 <operation id="1092" st_id="89" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="957" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_I_begin:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25156) nounwind
+LOOP_ACC_PHASES_I_begin:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln378"/></StgValue>
+<StgValue><ssdm name="specloopname_ln399"/></StgValue>
 </operation>
 
 <operation id="1093" st_id="89" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="958" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_I_begin:1  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25156)
+LOOP_ACC_PHASES_I_begin:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_s"/></StgValue>
+<StgValue><ssdm name="tmp_2"/></StgValue>
 </operation>
 
 <operation id="1094" st_id="89" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -15969,23 +15969,23 @@ LOOP_ACC_PHASES_I_begin:2  %tmp_176 = call i12 @_ssdm_op_BitConcatenate.i12.i6.i
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="960" bw="13" op_0_bw="12">
 <![CDATA[
-LOOP_ACC_PHASES_I_begin:3  %zext_ln379 = zext i12 %tmp_176 to i13
+LOOP_ACC_PHASES_I_begin:3  %zext_ln400 = zext i12 %tmp_176 to i13
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln379"/></StgValue>
+<StgValue><ssdm name="zext_ln400"/></StgValue>
 </operation>
 
 <operation id="1096" st_id="89" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -15994,14 +15994,14 @@ LOOP_ACC_PHASES_I_begin:3  %zext_ln379 = zext i12 %tmp_176 to i13
 LOOP_ACC_PHASES_I_begin:4  br label %13
 
 ]]></Node>
-<StgValue><ssdm name="br_ln379"/></StgValue>
+<StgValue><ssdm name="br_ln400"/></StgValue>
 </operation>
 
 <operation id="1097" st_id="89" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -16017,7 +16017,7 @@ LOOP_BATCH_NORM_begin:0  %fixed_temp_V_load = load i12* %fixed_temp_V_addr, alig
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -16033,7 +16033,7 @@ LOOP_BATCH_NORM_begin:2  %fixed_temp_V_load_64 = load i12* %fixed_temp_V_addr_1,
 <core>Cmp</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln378" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln399" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -16087,10 +16087,10 @@ LOOP_BATCH_NORM_begin:140  %icmp_ln883 = icmp eq i2 %width_mode_V_read, 0
 
 <Node id="965" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:2  %empty_87 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+:2  %empty_90 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_87"/></StgValue>
+<StgValue><ssdm name="empty_90"/></StgValue>
 </operation>
 
 <operation id="1103" st_id="90" stage="1" lat="1">
@@ -16120,7 +16120,7 @@ LOOP_BATCH_NORM_begin:140  %icmp_ln883 = icmp eq i2 %width_mode_V_read, 0
 :4  br i1 %icmp_ln887_20, label %LOOP_ACC_PHASES_I_end, label %14
 
 ]]></Node>
-<StgValue><ssdm name="br_ln379"/></StgValue>
+<StgValue><ssdm name="br_ln400"/></StgValue>
 </operation>
 
 <operation id="1105" st_id="90" stage="1" lat="1">
@@ -16165,7 +16165,7 @@ LOOP_BATCH_NORM_begin:140  %icmp_ln883 = icmp eq i2 %width_mode_V_read, 0
 
 <Node id="971" bw="13" op_0_bw="13" op_1_bw="13">
 <![CDATA[
-:2  %add_ln700_27 = add i13 %zext_ln379, %zext_ln700
+:2  %add_ln700_27 = add i13 %zext_ln400, %zext_ln700
 
 ]]></Node>
 <StgValue><ssdm name="add_ln700_27"/></StgValue>
@@ -16261,10 +16261,10 @@ LOOP_BATCH_NORM_begin:140  %icmp_ln883 = icmp eq i2 %width_mode_V_read, 0
 
 <Node id="981" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_ACC_PHASES_I_end:0  %empty_88 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25156, i32 %tmp_s)
+LOOP_ACC_PHASES_I_end:0  %empty_91 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25, i32 %tmp_2)
 
 ]]></Node>
-<StgValue><ssdm name="empty_88"/></StgValue>
+<StgValue><ssdm name="empty_91"/></StgValue>
 </operation>
 
 <operation id="1114" st_id="90" stage="1" lat="1">
@@ -16296,7 +16296,7 @@ LOOP_ACC_PHASES_I_end:1  %i_V_3 = add i6 %p_01321_0, 1
 LOOP_ACC_PHASES_I_end:2  br label %.preheader3428
 
 ]]></Node>
-<StgValue><ssdm name="br_ln378"/></StgValue>
+<StgValue><ssdm name="br_ln399"/></StgValue>
 </operation>
 </state>
 
@@ -16359,7 +16359,7 @@ LOOP_ACC_PHASES_I_end:2  br label %.preheader3428
 :9  store i12 %add_ln700_11, i12* %fixed_temp_V_addr_2, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln380"/></StgValue>
+<StgValue><ssdm name="store_ln402"/></StgValue>
 </operation>
 
 <operation id="1120" st_id="91" stage="1" lat="1">
@@ -16374,7 +16374,7 @@ LOOP_ACC_PHASES_I_end:2  br label %.preheader3428
 :10  br label %13
 
 ]]></Node>
-<StgValue><ssdm name="br_ln379"/></StgValue>
+<StgValue><ssdm name="br_ln400"/></StgValue>
 </operation>
 </state>
 
@@ -16407,7 +16407,7 @@ LOOP_BATCH_NORM_begin:0  %fixed_temp_V_load = load i12* %fixed_temp_V_addr, alig
 LOOP_BATCH_NORM_begin:1  store i12 %fixed_temp_V_load, i12* %fixed_buffer_V_addr_65, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1123" st_id="92" stage="1" lat="2">
@@ -16437,7 +16437,7 @@ LOOP_BATCH_NORM_begin:2  %fixed_temp_V_load_64 = load i12* %fixed_temp_V_addr_1,
 LOOP_BATCH_NORM_begin:3  store i12 %fixed_temp_V_load_64, i12* %fixed_buffer_V_addr_66, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1125" st_id="92" stage="2" lat="2">
@@ -16500,7 +16500,7 @@ LOOP_BATCH_NORM_begin:4  %fixed_temp_V_load_2 = load i12* %fixed_temp_V_addr_64,
 LOOP_BATCH_NORM_begin:5  store i12 %fixed_temp_V_load_2, i12* %fixed_buffer_V_addr_67, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1129" st_id="93" stage="1" lat="2">
@@ -16530,7 +16530,7 @@ LOOP_BATCH_NORM_begin:6  %fixed_temp_V_load_3 = load i12* %fixed_temp_V_addr_3, 
 LOOP_BATCH_NORM_begin:7  store i12 %fixed_temp_V_load_3, i12* %fixed_buffer_V_addr_68, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1131" st_id="93" stage="2" lat="2">
@@ -16593,7 +16593,7 @@ LOOP_BATCH_NORM_begin:8  %fixed_temp_V_load_4 = load i12* %fixed_temp_V_addr_4, 
 LOOP_BATCH_NORM_begin:9  store i12 %fixed_temp_V_load_4, i12* %fixed_buffer_V_addr_69, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1135" st_id="94" stage="1" lat="2">
@@ -16623,7 +16623,7 @@ LOOP_BATCH_NORM_begin:10  %fixed_temp_V_load_5 = load i12* %fixed_temp_V_addr_5,
 LOOP_BATCH_NORM_begin:11  store i12 %fixed_temp_V_load_5, i12* %fixed_buffer_V_addr_70, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1137" st_id="94" stage="2" lat="2">
@@ -16686,7 +16686,7 @@ LOOP_BATCH_NORM_begin:12  %fixed_temp_V_load_6 = load i12* %fixed_temp_V_addr_6,
 LOOP_BATCH_NORM_begin:13  store i12 %fixed_temp_V_load_6, i12* %fixed_buffer_V_addr_71, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1141" st_id="95" stage="1" lat="2">
@@ -16716,7 +16716,7 @@ LOOP_BATCH_NORM_begin:14  %fixed_temp_V_load_7 = load i12* %fixed_temp_V_addr_7,
 LOOP_BATCH_NORM_begin:15  store i12 %fixed_temp_V_load_7, i12* %fixed_buffer_V_addr_72, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1143" st_id="95" stage="2" lat="2">
@@ -16779,7 +16779,7 @@ LOOP_BATCH_NORM_begin:16  %fixed_temp_V_load_8 = load i12* %fixed_temp_V_addr_8,
 LOOP_BATCH_NORM_begin:17  store i12 %fixed_temp_V_load_8, i12* %fixed_buffer_V_addr_73, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1147" st_id="96" stage="1" lat="2">
@@ -16809,7 +16809,7 @@ LOOP_BATCH_NORM_begin:18  %fixed_temp_V_load_9 = load i12* %fixed_temp_V_addr_9,
 LOOP_BATCH_NORM_begin:19  store i12 %fixed_temp_V_load_9, i12* %fixed_buffer_V_addr_74, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1149" st_id="96" stage="2" lat="2">
@@ -16872,7 +16872,7 @@ LOOP_BATCH_NORM_begin:20  %fixed_temp_V_load_10 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:21  store i12 %fixed_temp_V_load_10, i12* %fixed_buffer_V_addr_75, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1153" st_id="97" stage="1" lat="2">
@@ -16902,7 +16902,7 @@ LOOP_BATCH_NORM_begin:22  %fixed_temp_V_load_11 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:23  store i12 %fixed_temp_V_load_11, i12* %fixed_buffer_V_addr_76, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1155" st_id="97" stage="2" lat="2">
@@ -16965,7 +16965,7 @@ LOOP_BATCH_NORM_begin:24  %fixed_temp_V_load_12 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:25  store i12 %fixed_temp_V_load_12, i12* %fixed_buffer_V_addr_77, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1159" st_id="98" stage="1" lat="2">
@@ -16995,7 +16995,7 @@ LOOP_BATCH_NORM_begin:26  %fixed_temp_V_load_13 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:27  store i12 %fixed_temp_V_load_13, i12* %fixed_buffer_V_addr_78, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1161" st_id="98" stage="2" lat="2">
@@ -17058,7 +17058,7 @@ LOOP_BATCH_NORM_begin:28  %fixed_temp_V_load_14 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:29  store i12 %fixed_temp_V_load_14, i12* %fixed_buffer_V_addr_79, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1165" st_id="99" stage="1" lat="2">
@@ -17088,7 +17088,7 @@ LOOP_BATCH_NORM_begin:30  %fixed_temp_V_load_15 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:31  store i12 %fixed_temp_V_load_15, i12* %fixed_buffer_V_addr_80, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1167" st_id="99" stage="2" lat="2">
@@ -17151,7 +17151,7 @@ LOOP_BATCH_NORM_begin:32  %fixed_temp_V_load_16 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:33  store i12 %fixed_temp_V_load_16, i12* %fixed_buffer_V_addr_81, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1171" st_id="100" stage="1" lat="2">
@@ -17181,7 +17181,7 @@ LOOP_BATCH_NORM_begin:34  %fixed_temp_V_load_17 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:35  store i12 %fixed_temp_V_load_17, i12* %fixed_buffer_V_addr_82, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1173" st_id="100" stage="2" lat="2">
@@ -17244,7 +17244,7 @@ LOOP_BATCH_NORM_begin:36  %fixed_temp_V_load_18 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:37  store i12 %fixed_temp_V_load_18, i12* %fixed_buffer_V_addr_83, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1177" st_id="101" stage="1" lat="2">
@@ -17274,7 +17274,7 @@ LOOP_BATCH_NORM_begin:38  %fixed_temp_V_load_19 = load i12* %fixed_temp_V_addr_1
 LOOP_BATCH_NORM_begin:39  store i12 %fixed_temp_V_load_19, i12* %fixed_buffer_V_addr_84, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1179" st_id="101" stage="2" lat="2">
@@ -17337,7 +17337,7 @@ LOOP_BATCH_NORM_begin:40  %fixed_temp_V_load_20 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:41  store i12 %fixed_temp_V_load_20, i12* %fixed_buffer_V_addr_85, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1183" st_id="102" stage="1" lat="2">
@@ -17367,7 +17367,7 @@ LOOP_BATCH_NORM_begin:42  %fixed_temp_V_load_21 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:43  store i12 %fixed_temp_V_load_21, i12* %fixed_buffer_V_addr_86, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1185" st_id="102" stage="2" lat="2">
@@ -17430,7 +17430,7 @@ LOOP_BATCH_NORM_begin:44  %fixed_temp_V_load_22 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:45  store i12 %fixed_temp_V_load_22, i12* %fixed_buffer_V_addr_87, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1189" st_id="103" stage="1" lat="2">
@@ -17460,7 +17460,7 @@ LOOP_BATCH_NORM_begin:46  %fixed_temp_V_load_23 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:47  store i12 %fixed_temp_V_load_23, i12* %fixed_buffer_V_addr_88, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1191" st_id="103" stage="2" lat="2">
@@ -17523,7 +17523,7 @@ LOOP_BATCH_NORM_begin:48  %fixed_temp_V_load_24 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:49  store i12 %fixed_temp_V_load_24, i12* %fixed_buffer_V_addr_89, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1195" st_id="104" stage="1" lat="2">
@@ -17553,7 +17553,7 @@ LOOP_BATCH_NORM_begin:50  %fixed_temp_V_load_25 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:51  store i12 %fixed_temp_V_load_25, i12* %fixed_buffer_V_addr_90, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1197" st_id="104" stage="2" lat="2">
@@ -17616,7 +17616,7 @@ LOOP_BATCH_NORM_begin:52  %fixed_temp_V_load_26 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:53  store i12 %fixed_temp_V_load_26, i12* %fixed_buffer_V_addr_91, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1201" st_id="105" stage="1" lat="2">
@@ -17646,7 +17646,7 @@ LOOP_BATCH_NORM_begin:54  %fixed_temp_V_load_27 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:55  store i12 %fixed_temp_V_load_27, i12* %fixed_buffer_V_addr_92, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1203" st_id="105" stage="2" lat="2">
@@ -17709,7 +17709,7 @@ LOOP_BATCH_NORM_begin:56  %fixed_temp_V_load_28 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:57  store i12 %fixed_temp_V_load_28, i12* %fixed_buffer_V_addr_93, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1207" st_id="106" stage="1" lat="2">
@@ -17739,7 +17739,7 @@ LOOP_BATCH_NORM_begin:58  %fixed_temp_V_load_29 = load i12* %fixed_temp_V_addr_2
 LOOP_BATCH_NORM_begin:59  store i12 %fixed_temp_V_load_29, i12* %fixed_buffer_V_addr_94, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1209" st_id="106" stage="2" lat="2">
@@ -17802,7 +17802,7 @@ LOOP_BATCH_NORM_begin:60  %fixed_temp_V_load_30 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:61  store i12 %fixed_temp_V_load_30, i12* %fixed_buffer_V_addr_95, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1213" st_id="107" stage="1" lat="2">
@@ -17832,7 +17832,7 @@ LOOP_BATCH_NORM_begin:62  %fixed_temp_V_load_31 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:63  store i12 %fixed_temp_V_load_31, i12* %fixed_buffer_V_addr_96, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1215" st_id="107" stage="2" lat="2">
@@ -17895,7 +17895,7 @@ LOOP_BATCH_NORM_begin:64  %fixed_temp_V_load_32 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:65  store i12 %fixed_temp_V_load_32, i12* %fixed_buffer_V_addr_97, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1219" st_id="108" stage="1" lat="2">
@@ -17925,7 +17925,7 @@ LOOP_BATCH_NORM_begin:66  %fixed_temp_V_load_33 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:67  store i12 %fixed_temp_V_load_33, i12* %fixed_buffer_V_addr_98, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1221" st_id="108" stage="2" lat="2">
@@ -17988,7 +17988,7 @@ LOOP_BATCH_NORM_begin:68  %fixed_temp_V_load_34 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:69  store i12 %fixed_temp_V_load_34, i12* %fixed_buffer_V_addr_99, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1225" st_id="109" stage="1" lat="2">
@@ -18018,7 +18018,7 @@ LOOP_BATCH_NORM_begin:70  %fixed_temp_V_load_35 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:71  store i12 %fixed_temp_V_load_35, i12* %fixed_buffer_V_addr_100, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1227" st_id="109" stage="2" lat="2">
@@ -18081,7 +18081,7 @@ LOOP_BATCH_NORM_begin:72  %fixed_temp_V_load_36 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:73  store i12 %fixed_temp_V_load_36, i12* %fixed_buffer_V_addr_101, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1231" st_id="110" stage="1" lat="2">
@@ -18111,7 +18111,7 @@ LOOP_BATCH_NORM_begin:74  %fixed_temp_V_load_37 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:75  store i12 %fixed_temp_V_load_37, i12* %fixed_buffer_V_addr_102, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1233" st_id="110" stage="2" lat="2">
@@ -18174,7 +18174,7 @@ LOOP_BATCH_NORM_begin:76  %fixed_temp_V_load_38 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:77  store i12 %fixed_temp_V_load_38, i12* %fixed_buffer_V_addr_103, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1237" st_id="111" stage="1" lat="2">
@@ -18204,7 +18204,7 @@ LOOP_BATCH_NORM_begin:78  %fixed_temp_V_load_39 = load i12* %fixed_temp_V_addr_3
 LOOP_BATCH_NORM_begin:79  store i12 %fixed_temp_V_load_39, i12* %fixed_buffer_V_addr_104, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1239" st_id="111" stage="2" lat="2">
@@ -18267,7 +18267,7 @@ LOOP_BATCH_NORM_begin:80  %fixed_temp_V_load_40 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:81  store i12 %fixed_temp_V_load_40, i12* %fixed_buffer_V_addr_105, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1243" st_id="112" stage="1" lat="2">
@@ -18297,7 +18297,7 @@ LOOP_BATCH_NORM_begin:82  %fixed_temp_V_load_41 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:83  store i12 %fixed_temp_V_load_41, i12* %fixed_buffer_V_addr_106, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1245" st_id="112" stage="2" lat="2">
@@ -18360,7 +18360,7 @@ LOOP_BATCH_NORM_begin:84  %fixed_temp_V_load_42 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:85  store i12 %fixed_temp_V_load_42, i12* %fixed_buffer_V_addr_107, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1249" st_id="113" stage="1" lat="2">
@@ -18390,7 +18390,7 @@ LOOP_BATCH_NORM_begin:86  %fixed_temp_V_load_43 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:87  store i12 %fixed_temp_V_load_43, i12* %fixed_buffer_V_addr_108, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1251" st_id="113" stage="2" lat="2">
@@ -18453,7 +18453,7 @@ LOOP_BATCH_NORM_begin:88  %fixed_temp_V_load_44 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:89  store i12 %fixed_temp_V_load_44, i12* %fixed_buffer_V_addr_109, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1255" st_id="114" stage="1" lat="2">
@@ -18483,7 +18483,7 @@ LOOP_BATCH_NORM_begin:90  %fixed_temp_V_load_45 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:91  store i12 %fixed_temp_V_load_45, i12* %fixed_buffer_V_addr_110, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1257" st_id="114" stage="2" lat="2">
@@ -18546,7 +18546,7 @@ LOOP_BATCH_NORM_begin:92  %fixed_temp_V_load_46 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:93  store i12 %fixed_temp_V_load_46, i12* %fixed_buffer_V_addr_111, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1261" st_id="115" stage="1" lat="2">
@@ -18576,7 +18576,7 @@ LOOP_BATCH_NORM_begin:94  %fixed_temp_V_load_47 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:95  store i12 %fixed_temp_V_load_47, i12* %fixed_buffer_V_addr_112, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1263" st_id="115" stage="2" lat="2">
@@ -18639,7 +18639,7 @@ LOOP_BATCH_NORM_begin:96  %fixed_temp_V_load_48 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:97  store i12 %fixed_temp_V_load_48, i12* %fixed_buffer_V_addr_113, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1267" st_id="116" stage="1" lat="2">
@@ -18669,7 +18669,7 @@ LOOP_BATCH_NORM_begin:98  %fixed_temp_V_load_49 = load i12* %fixed_temp_V_addr_4
 LOOP_BATCH_NORM_begin:99  store i12 %fixed_temp_V_load_49, i12* %fixed_buffer_V_addr_114, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1269" st_id="116" stage="2" lat="2">
@@ -18732,7 +18732,7 @@ LOOP_BATCH_NORM_begin:100  %fixed_temp_V_load_50 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:101  store i12 %fixed_temp_V_load_50, i12* %fixed_buffer_V_addr_115, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1273" st_id="117" stage="1" lat="2">
@@ -18762,7 +18762,7 @@ LOOP_BATCH_NORM_begin:102  %fixed_temp_V_load_51 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:103  store i12 %fixed_temp_V_load_51, i12* %fixed_buffer_V_addr_116, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1275" st_id="117" stage="2" lat="2">
@@ -18825,7 +18825,7 @@ LOOP_BATCH_NORM_begin:104  %fixed_temp_V_load_52 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:105  store i12 %fixed_temp_V_load_52, i12* %fixed_buffer_V_addr_117, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1279" st_id="118" stage="1" lat="2">
@@ -18855,7 +18855,7 @@ LOOP_BATCH_NORM_begin:106  %fixed_temp_V_load_53 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:107  store i12 %fixed_temp_V_load_53, i12* %fixed_buffer_V_addr_118, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1281" st_id="118" stage="2" lat="2">
@@ -18918,7 +18918,7 @@ LOOP_BATCH_NORM_begin:108  %fixed_temp_V_load_54 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:109  store i12 %fixed_temp_V_load_54, i12* %fixed_buffer_V_addr_119, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1285" st_id="119" stage="1" lat="2">
@@ -18948,7 +18948,7 @@ LOOP_BATCH_NORM_begin:110  %fixed_temp_V_load_55 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:111  store i12 %fixed_temp_V_load_55, i12* %fixed_buffer_V_addr_120, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1287" st_id="119" stage="2" lat="2">
@@ -19011,7 +19011,7 @@ LOOP_BATCH_NORM_begin:112  %fixed_temp_V_load_56 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:113  store i12 %fixed_temp_V_load_56, i12* %fixed_buffer_V_addr_121, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1291" st_id="120" stage="1" lat="2">
@@ -19041,7 +19041,7 @@ LOOP_BATCH_NORM_begin:114  %fixed_temp_V_load_57 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:115  store i12 %fixed_temp_V_load_57, i12* %fixed_buffer_V_addr_122, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1293" st_id="120" stage="2" lat="2">
@@ -19104,7 +19104,7 @@ LOOP_BATCH_NORM_begin:116  %fixed_temp_V_load_58 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:117  store i12 %fixed_temp_V_load_58, i12* %fixed_buffer_V_addr_123, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1297" st_id="121" stage="1" lat="2">
@@ -19134,7 +19134,7 @@ LOOP_BATCH_NORM_begin:118  %fixed_temp_V_load_59 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:119  store i12 %fixed_temp_V_load_59, i12* %fixed_buffer_V_addr_124, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1299" st_id="121" stage="2" lat="2">
@@ -19197,7 +19197,7 @@ LOOP_BATCH_NORM_begin:120  %fixed_temp_V_load_60 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:121  store i12 %fixed_temp_V_load_60, i12* %fixed_buffer_V_addr_125, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1303" st_id="122" stage="1" lat="2">
@@ -19227,7 +19227,7 @@ LOOP_BATCH_NORM_begin:122  %fixed_temp_V_load_61 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:123  store i12 %fixed_temp_V_load_61, i12* %fixed_buffer_V_addr_126, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1305" st_id="122" stage="2" lat="2">
@@ -19290,7 +19290,7 @@ LOOP_BATCH_NORM_begin:124  %fixed_temp_V_load_62 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:125  store i12 %fixed_temp_V_load_62, i12* %fixed_buffer_V_addr_127, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1309" st_id="123" stage="1" lat="2">
@@ -19320,7 +19320,7 @@ LOOP_BATCH_NORM_begin:126  %fixed_temp_V_load_63 = load i12* %fixed_temp_V_addr_
 LOOP_BATCH_NORM_begin:127  store i12 %fixed_temp_V_load_63, i12* %fixed_buffer_V_addr_128, align 2
 
 ]]></Node>
-<StgValue><ssdm name="store_ln385"/></StgValue>
+<StgValue><ssdm name="store_ln408"/></StgValue>
 </operation>
 
 <operation id="1311" st_id="123" stage="1" lat="1">
@@ -19332,10 +19332,10 @@ LOOP_BATCH_NORM_begin:127  store i12 %fixed_temp_V_load_63, i12* %fixed_buffer_V
 
 <Node id="1113" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_BATCH_NORM_begin:128  %empty_89 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23154, i32 %tmp_7)
+LOOP_BATCH_NORM_begin:128  %empty_92 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23, i32 %tmp_9)
 
 ]]></Node>
-<StgValue><ssdm name="empty_89"/></StgValue>
+<StgValue><ssdm name="empty_92"/></StgValue>
 </operation>
 
 <operation id="1312" st_id="123" stage="1" lat="1">
@@ -19377,10 +19377,10 @@ LOOP_BATCH_NORM_begin:130  %ret_V_s = call i15 @_ssdm_op_PartSelect.i15.i16.i32.
 
 <Node id="1116" bw="16" op_0_bw="15">
 <![CDATA[
-LOOP_BATCH_NORM_begin:131  %ret_V_22 = zext i15 %ret_V_s to i16
+LOOP_BATCH_NORM_begin:131  %ret_V_25 = zext i15 %ret_V_s to i16
 
 ]]></Node>
-<StgValue><ssdm name="ret_V_22"/></StgValue>
+<StgValue><ssdm name="ret_V_25"/></StgValue>
 </operation>
 
 <operation id="1315" st_id="123" stage="1" lat="1">
@@ -19392,10 +19392,10 @@ LOOP_BATCH_NORM_begin:131  %ret_V_22 = zext i15 %ret_V_s to i16
 
 <Node id="1117" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-LOOP_BATCH_NORM_begin:132  %add_ln391 = add i3 2, %log_slice_V
+LOOP_BATCH_NORM_begin:132  %add_ln414 = add i3 2, %log_slice_V
 
 ]]></Node>
-<StgValue><ssdm name="add_ln391"/></StgValue>
+<StgValue><ssdm name="add_ln414"/></StgValue>
 </operation>
 
 <operation id="1316" st_id="123" stage="1" lat="1">
@@ -19407,10 +19407,10 @@ LOOP_BATCH_NORM_begin:132  %add_ln391 = add i3 2, %log_slice_V
 
 <Node id="1118" bw="4" op_0_bw="3">
 <![CDATA[
-LOOP_BATCH_NORM_begin:133  %zext_ln391 = zext i3 %add_ln391 to i4
+LOOP_BATCH_NORM_begin:133  %zext_ln414 = zext i3 %add_ln414 to i4
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln391"/></StgValue>
+<StgValue><ssdm name="zext_ln414"/></StgValue>
 </operation>
 
 <operation id="1317" st_id="123" stage="1" lat="1">
@@ -19422,10 +19422,10 @@ LOOP_BATCH_NORM_begin:133  %zext_ln391 = zext i3 %add_ln391 to i4
 
 <Node id="1119" bw="5" op_0_bw="3">
 <![CDATA[
-LOOP_BATCH_NORM_begin:134  %zext_ln391_1 = zext i3 %add_ln391 to i5
+LOOP_BATCH_NORM_begin:134  %zext_ln414_1 = zext i3 %add_ln414 to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln391_1"/></StgValue>
+<StgValue><ssdm name="zext_ln414_1"/></StgValue>
 </operation>
 
 <operation id="1318" st_id="123" stage="1" lat="1">
@@ -19437,7 +19437,7 @@ LOOP_BATCH_NORM_begin:134  %zext_ln391_1 = zext i3 %add_ln391 to i5
 
 <Node id="1120" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-LOOP_BATCH_NORM_begin:135  %pool_width_V = shl i5 1, %zext_ln391_1
+LOOP_BATCH_NORM_begin:135  %pool_width_V = shl i5 1, %zext_ln414_1
 
 ]]></Node>
 <StgValue><ssdm name="pool_width_V"/></StgValue>
@@ -19467,7 +19467,7 @@ LOOP_BATCH_NORM_begin:136  %zext_ln209_4 = zext i5 %words_per_image_V to i16
 
 <Node id="1122" bw="16" op_0_bw="16" op_1_bw="16">
 <![CDATA[
-LOOP_BATCH_NORM_begin:137  %o_bank_offset_V = mul i16 %ret_V_22, %zext_ln209_4
+LOOP_BATCH_NORM_begin:137  %o_bank_offset_V = mul i16 %ret_V_25, %zext_ln209_4
 
 ]]></Node>
 <StgValue><ssdm name="o_bank_offset_V"/></StgValue>
@@ -19557,10 +19557,10 @@ LOOP_BATCH_NORM_begin:143  %o_bank_offset_V_2 = zext i13 %o_bank_offset_V_1 to i
 
 <Node id="1129" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_BATCH_NORM_begin:144  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str27)
+LOOP_BATCH_NORM_begin:144  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str27)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_9"/></StgValue>
+<StgValue><ssdm name="tmp_1"/></StgValue>
 </operation>
 
 <operation id="1327" st_id="123" stage="1" lat="1">
@@ -19575,7 +19575,7 @@ LOOP_BATCH_NORM_begin:144  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([1
 LOOP_BATCH_NORM_begin:145  br label %17
 
 ]]></Node>
-<StgValue><ssdm name="br_ln408"/></StgValue>
+<StgValue><ssdm name="br_ln431"/></StgValue>
 </operation>
 </state>
 
@@ -19620,10 +19620,10 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1134" bw="1" op_0_bw="7" op_1_bw="7">
 <![CDATA[
-:2  %icmp_ln408 = icmp eq i7 %p_01576_0_0, -64
+:2  %icmp_ln431 = icmp eq i7 %p_01576_0_0, -64
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln408"/></StgValue>
+<StgValue><ssdm name="icmp_ln431"/></StgValue>
 </operation>
 
 <operation id="1331" st_id="124" stage="1" lat="1">
@@ -19635,10 +19635,10 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1135" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-:3  %empty_91 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
+:3  %empty_94 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)
 
 ]]></Node>
-<StgValue><ssdm name="empty_91"/></StgValue>
+<StgValue><ssdm name="empty_94"/></StgValue>
 </operation>
 
 <operation id="1332" st_id="124" stage="1" lat="1">
@@ -19665,17 +19665,17 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1137" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-:5  br i1 %icmp_ln408, label %16, label %18
+:5  br i1 %icmp_ln431, label %16, label %18
 
 ]]></Node>
-<StgValue><ssdm name="br_ln408"/></StgValue>
+<StgValue><ssdm name="br_ln431"/></StgValue>
 </operation>
 
 <operation id="1334" st_id="124" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -19691,7 +19691,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -19707,7 +19707,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -19723,7 +19723,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -19739,7 +19739,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -19748,14 +19748,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :1  br i1 %icmp_ln879_19, label %15, label %19
 
 ]]></Node>
-<StgValue><ssdm name="br_ln412"/></StgValue>
+<StgValue><ssdm name="br_ln435"/></StgValue>
 </operation>
 
 <operation id="1339" st_id="124" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="0"/>
 </and_exp></or_exp>
 </condition>
@@ -19765,14 +19765,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :0  br i1 %icmp_ln879_20, label %.preheader3426.0.preheader, label %LOOP_BATCH_NORM_end
 
 ]]></Node>
-<StgValue><ssdm name="br_ln415"/></StgValue>
+<StgValue><ssdm name="br_ln438"/></StgValue>
 </operation>
 
 <operation id="1340" st_id="124" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="0"/>
 <literal name="icmp_ln879_20" val="1"/>
 </and_exp></or_exp>
@@ -19790,7 +19790,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="0"/>
 <literal name="icmp_ln879_20" val="1"/>
 </and_exp></or_exp>
@@ -19801,14 +19801,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 .preheader3426.0.preheader:1  br label %.preheader3426.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln418"/></StgValue>
+<StgValue><ssdm name="br_ln441"/></StgValue>
 </operation>
 
 <operation id="1342" st_id="124" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -19818,14 +19818,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :0  store i64 %p_Val2_0, i64* @outword_V, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln413"/></StgValue>
+<StgValue><ssdm name="store_ln436"/></StgValue>
 </operation>
 
 <operation id="1343" st_id="124" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln408" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln431" val="1"/>
 <literal name="icmp_ln879_19" val="1"/>
 </and_exp></or_exp>
 </condition>
@@ -19835,7 +19835,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :1  br label %LOOP_BATCH_NORM_end
 
 ]]></Node>
-<StgValue><ssdm name="br_ln414"/></StgValue>
+<StgValue><ssdm name="br_ln437"/></StgValue>
 </operation>
 </state>
 
@@ -19943,7 +19943,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :8  br label %17
 
 ]]></Node>
-<StgValue><ssdm name="br_ln408"/></StgValue>
+<StgValue><ssdm name="br_ln431"/></StgValue>
 </operation>
 </state>
 
@@ -19973,10 +19973,10 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1158" bw="1" op_0_bw="6" op_1_bw="6">
 <![CDATA[
-.preheader3426.0:1  %icmp_ln418 = icmp eq i6 %p_01698_0_0, -32
+.preheader3426.0:1  %icmp_ln441 = icmp eq i6 %p_01698_0_0, -32
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln418"/></StgValue>
+<StgValue><ssdm name="icmp_ln441"/></StgValue>
 </operation>
 
 <operation id="1353" st_id="126" stage="1" lat="1">
@@ -19988,10 +19988,10 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1159" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader3426.0:2  %empty_93 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
+.preheader3426.0:2  %empty_96 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)
 
 ]]></Node>
-<StgValue><ssdm name="empty_93"/></StgValue>
+<StgValue><ssdm name="empty_96"/></StgValue>
 </operation>
 
 <operation id="1354" st_id="126" stage="1" lat="1">
@@ -20018,17 +20018,17 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1161" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-.preheader3426.0:4  br i1 %icmp_ln418, label %.preheader.0.preheader, label %22
+.preheader3426.0:4  br i1 %icmp_ln441, label %.preheader.0.preheader, label %22
 
 ]]></Node>
-<StgValue><ssdm name="br_ln418"/></StgValue>
+<StgValue><ssdm name="br_ln441"/></StgValue>
 </operation>
 
 <operation id="1356" st_id="126" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20044,7 +20044,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20060,7 +20060,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20076,7 +20076,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20092,7 +20092,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20108,7 +20108,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20124,7 +20124,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20140,7 +20140,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20156,29 +20156,29 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>LogicGate</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="1171" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-:8  %and_ln419 = and i1 %p_Result_2, %p_Result_3
+:8  %and_ln442 = and i1 %p_Result_2, %p_Result_3
 
 ]]></Node>
-<StgValue><ssdm name="and_ln419"/></StgValue>
+<StgValue><ssdm name="and_ln442"/></StgValue>
 </operation>
 
 <operation id="1365" st_id="126" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="1172" bw="32" op_0_bw="1">
 <![CDATA[
-:9  %zext_ln816_1 = zext i1 %and_ln419 to i32
+:9  %zext_ln816_1 = zext i1 %and_ln442 to i32
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln816_1"/></StgValue>
@@ -20188,7 +20188,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20204,7 +20204,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20213,14 +20213,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :11  store i32 %tmp_179, i32* %p_Val2_25_0
 
 ]]></Node>
-<StgValue><ssdm name="store_ln418"/></StgValue>
+<StgValue><ssdm name="store_ln441"/></StgValue>
 </operation>
 
 <operation id="1368" st_id="126" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="0"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20229,14 +20229,14 @@ LOOP_BATCH_NORM_begin:145  br label %17
 :12  br label %.preheader3426.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln418"/></StgValue>
+<StgValue><ssdm name="br_ln441"/></StgValue>
 </operation>
 
 <operation id="1369" st_id="126" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln418" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln441" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -20245,7 +20245,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 .preheader.0.preheader:0  br label %.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln423"/></StgValue>
+<StgValue><ssdm name="br_ln446"/></StgValue>
 </operation>
 </state>
 
@@ -20313,10 +20313,10 @@ LOOP_BATCH_NORM_begin:145  br label %17
 
 <Node id="1182" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.0:3  %empty_92 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)
+.preheader.0:3  %empty_95 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 16, i64 16, i64 16)
 
 ]]></Node>
-<StgValue><ssdm name="empty_92"/></StgValue>
+<StgValue><ssdm name="empty_95"/></StgValue>
 </operation>
 
 <operation id="1374" st_id="127" stage="1" lat="1">
@@ -20350,7 +20350,7 @@ LOOP_BATCH_NORM_begin:145  br label %17
 .preheader.0:5  br i1 %icmp_ln887_22, label %21, label %_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln423"/></StgValue>
+<StgValue><ssdm name="br_ln446"/></StgValue>
 </operation>
 
 <operation id="1376" st_id="127" stage="1" lat="1">
@@ -20419,7 +20419,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:2  %tru
 
 <Node id="1189" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:3  %lshr_ln808 = lshr i4 %trunc_ln808, %zext_ln391
+_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:3  %lshr_ln808 = lshr i4 %trunc_ln808, %zext_ln414
 
 ]]></Node>
 <StgValue><ssdm name="lshr_ln808"/></StgValue>
@@ -20455,7 +20455,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:4  %zex
 
 <Node id="1191" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:5  %shl_ln790 = shl i5 %zext_ln802, %zext_ln217
+_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:5  %shl_ln790 = shl i5 %zext_ln802, %zext_ln227
 
 ]]></Node>
 <StgValue><ssdm name="shl_ln790"/></StgValue>
@@ -20635,10 +20635,10 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:14  %p_
 
 <Node id="1201" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:15  %and_ln430 = and i1 %p_Result_6, %p_Result_7
+_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:15  %and_ln453 = and i1 %p_Result_6, %p_Result_7
 
 ]]></Node>
-<StgValue><ssdm name="and_ln430"/></StgValue>
+<StgValue><ssdm name="and_ln453"/></StgValue>
 </operation>
 
 <operation id="1392" st_id="127" stage="1" lat="1">
@@ -20653,7 +20653,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:15  %an
 
 <Node id="1202" bw="32" op_0_bw="1">
 <![CDATA[
-_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:16  %zext_ln816_2 = zext i1 %and_ln430 to i32
+_ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:16  %zext_ln816_2 = zext i1 %and_ln453 to i32
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln816_2"/></StgValue>
@@ -20692,7 +20692,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:17  %tm
 _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:18  br label %.preheader.0
 
 ]]></Node>
-<StgValue><ssdm name="br_ln423"/></StgValue>
+<StgValue><ssdm name="br_ln446"/></StgValue>
 </operation>
 
 <operation id="1395" st_id="127" stage="1" lat="1">
@@ -20710,7 +20710,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:18  br 
 :0  br i1 %icmp_ln883, label %23, label %20
 
 ]]></Node>
-<StgValue><ssdm name="br_ln437"/></StgValue>
+<StgValue><ssdm name="br_ln460"/></StgValue>
 </operation>
 
 <operation id="1396" st_id="127" stage="1" lat="1">
@@ -20767,7 +20767,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:18  br 
 :2  store i64 %p_Val2_28_0, i64* @outword_V, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln439"/></StgValue>
+<StgValue><ssdm name="store_ln462"/></StgValue>
 </operation>
 
 <operation id="1399" st_id="127" stage="1" lat="1">
@@ -20786,7 +20786,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:18  br 
 :3  br label %LOOP_BATCH_NORM_end
 
 ]]></Node>
-<StgValue><ssdm name="br_ln440"/></StgValue>
+<StgValue><ssdm name="br_ln463"/></StgValue>
 </operation>
 
 <operation id="1400" st_id="127" stage="1" lat="1">
@@ -20881,7 +20881,7 @@ _ZNK11ap_int_baseILi6ELb0EErsILi33EEE7ap_uintILi6EERKS_IXT_ELb1EE.exit.0:18  br 
 :4  store i64 %p_Result_1, i64* @outword_V, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln442"/></StgValue>
+<StgValue><ssdm name="store_ln465"/></StgValue>
 </operation>
 
 <operation id="1405" st_id="127" stage="1" lat="1">
@@ -21005,10 +21005,10 @@ LOOP_BATCH_NORM_end:4  %tmp_184 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i1
 
 <Node id="1228" bw="14" op_0_bw="12">
 <![CDATA[
-LOOP_BATCH_NORM_end:5  %zext_ln180_44 = zext i12 %tmp_184 to i14
+LOOP_BATCH_NORM_end:5  %zext_ln180_45 = zext i12 %tmp_184 to i14
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_44"/></StgValue>
+<StgValue><ssdm name="zext_ln180_45"/></StgValue>
 </operation>
 
 <operation id="1412" st_id="127" stage="1" lat="1">
@@ -21023,7 +21023,7 @@ LOOP_BATCH_NORM_end:5  %zext_ln180_44 = zext i12 %tmp_184 to i14
 
 <Node id="1229" bw="14" op_0_bw="14" op_1_bw="14">
 <![CDATA[
-LOOP_BATCH_NORM_end:6  %add_ln180_25 = add i14 %trunc_ln180_2, %zext_ln180_44
+LOOP_BATCH_NORM_end:6  %add_ln180_25 = add i14 %trunc_ln180_2, %zext_ln180_45
 
 ]]></Node>
 <StgValue><ssdm name="add_ln180_25"/></StgValue>
@@ -21041,10 +21041,10 @@ LOOP_BATCH_NORM_end:6  %add_ln180_25 = add i14 %trunc_ln180_2, %zext_ln180_44
 
 <Node id="1230" bw="64" op_0_bw="14">
 <![CDATA[
-LOOP_BATCH_NORM_end:7  %zext_ln180_45 = zext i14 %add_ln180_25 to i64
+LOOP_BATCH_NORM_end:7  %zext_ln180_46 = zext i14 %add_ln180_25 to i64
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln180_45"/></StgValue>
+<StgValue><ssdm name="zext_ln180_46"/></StgValue>
 </operation>
 
 <operation id="1414" st_id="127" stage="1" lat="1">
@@ -21059,7 +21059,7 @@ LOOP_BATCH_NORM_end:7  %zext_ln180_45 = zext i14 %add_ln180_25 to i64
 
 <Node id="1231" bw="12" op_0_bw="64" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-LOOP_BATCH_NORM_end:8  %dmem_V_5_addr_1 = getelementptr [4096 x i64]* %dmem_V_6, i64 0, i64 %zext_ln180_45
+LOOP_BATCH_NORM_end:8  %dmem_V_5_addr_1 = getelementptr [4096 x i64]* %dmem_V_6, i64 0, i64 %zext_ln180_46
 
 ]]></Node>
 <StgValue><ssdm name="dmem_V_5_addr_1"/></StgValue>
@@ -21080,7 +21080,7 @@ LOOP_BATCH_NORM_end:8  %dmem_V_5_addr_1 = getelementptr [4096 x i64]* %dmem_V_6,
 LOOP_BATCH_NORM_end:9  store i64 %outword_V_loc_0, i64* %dmem_V_5_addr_1, align 8
 
 ]]></Node>
-<StgValue><ssdm name="store_ln448"/></StgValue>
+<StgValue><ssdm name="store_ln471"/></StgValue>
 </operation>
 
 <operation id="1416" st_id="127" stage="1" lat="1">
@@ -21095,10 +21095,10 @@ LOOP_BATCH_NORM_end:9  store i64 %outword_V_loc_0, i64* %dmem_V_5_addr_1, align 
 
 <Node id="1233" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_BATCH_NORM_end:10  %empty_90 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str27, i32 %tmp_9)
+LOOP_BATCH_NORM_end:10  %empty_93 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str27, i32 %tmp_1)
 
 ]]></Node>
-<StgValue><ssdm name="empty_90"/></StgValue>
+<StgValue><ssdm name="empty_93"/></StgValue>
 </operation>
 
 <operation id="1417" st_id="127" stage="1" lat="1">
@@ -21116,7 +21116,7 @@ LOOP_BATCH_NORM_end:10  %empty_90 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 
 LOOP_BATCH_NORM_end:11  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln450"/></StgValue>
+<StgValue><ssdm name="ret_ln473"/></StgValue>
 </operation>
 </state>
 </state_list>

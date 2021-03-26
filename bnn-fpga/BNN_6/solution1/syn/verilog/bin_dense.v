@@ -87,8 +87,8 @@ reg   [63:0] dmem_V_3_load_reg_1909;
 wire   [1:0] add_ln700_10_fu_460_p2;
 reg   [1:0] add_ln700_10_reg_1918;
 wire    ap_CS_fsm_state3;
-wire   [12:0] add_ln620_fu_470_p2;
-reg   [12:0] add_ln620_reg_1923;
+wire   [12:0] add_ln643_fu_470_p2;
+reg   [12:0] add_ln643_reg_1923;
 wire   [0:0] icmp_ln887_fu_454_p2;
 wire   [0:0] trunc_ln180_fu_494_p1;
 reg   [0:0] trunc_ln180_reg_1938;
@@ -119,10 +119,10 @@ reg   [1:0] p_0348_0_0_0_reg_333;
 reg   [12:0] phi_mul_reg_344;
 reg   [15:0] p_0257_1_0_0_reg_355;
 reg   [1:0] p_0759_0_0_0_reg_367;
-wire   [63:0] zext_ln608_fu_414_p1;
+wire   [63:0] zext_ln631_fu_414_p1;
 wire   [63:0] zext_ln180_fu_432_p1;
 wire   [63:0] zext_ln887_fu_449_p1;
-wire   [63:0] zext_ln619_fu_489_p1;
+wire   [63:0] zext_ln642_fu_489_p1;
 wire    ap_CS_fsm_state7;
 wire   [63:0] select_ln879_fu_1862_p3;
 wire    ap_CS_fsm_state8;
@@ -132,8 +132,8 @@ wire   [9:0] zext_ln1371_fu_400_p1;
 wire   [11:0] tmp_34_fu_404_p4;
 wire   [11:0] tmp_s_fu_425_p3;
 wire   [1:0] tmp_31_fu_437_p3;
-wire   [2:0] zext_ln620_fu_466_p1;
-wire   [2:0] add_ln619_fu_476_p2;
+wire   [2:0] zext_ln643_fu_466_p1;
+wire   [2:0] add_ln642_fu_476_p2;
 wire   [12:0] tmp_35_fu_481_p3;
 wire   [63:0] xor_ln1357_fu_498_p2;
 wire   [0:0] tmp_36_fu_504_p3;
@@ -288,7 +288,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        phi_mul_reg_344 <= add_ln620_reg_1923;
+        phi_mul_reg_344 <= add_ln643_reg_1923;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
         phi_mul_reg_344 <= 13'd0;
     end
@@ -296,7 +296,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((icmp_ln887_fu_454_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state3))) begin
-        add_ln620_reg_1923 <= add_ln620_fu_470_p2;
+        add_ln643_reg_1923 <= add_ln643_fu_470_p2;
         trunc_ln180_reg_1938 <= trunc_ln180_fu_494_p1;
     end
 end
@@ -332,8 +332,8 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b1))) begin
-        dmem_V_3_addr_reg_1879[8 : 0] <= zext_ln608_fu_414_p1[8 : 0];
-dmem_V_3_addr_reg_1879[11 : 10] <= zext_ln608_fu_414_p1[11 : 10];
+        dmem_V_3_addr_reg_1879[8 : 0] <= zext_ln631_fu_414_p1[8 : 0];
+dmem_V_3_addr_reg_1879[11 : 10] <= zext_ln631_fu_414_p1[11 : 10];
         o_offset_V_reg_1874 <= o_offset_V_fu_378_p1;
     end
 end
@@ -381,9 +381,9 @@ always @ (*) begin
     end else if ((1'b1 == ap_CS_fsm_state7)) begin
         dmem_V_4_address0 = dmem_V_3_addr_reg_1879;
     end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        dmem_V_4_address0 = zext_ln619_fu_489_p1;
+        dmem_V_4_address0 = zext_ln642_fu_489_p1;
     end else if ((1'b1 == ap_CS_fsm_state1)) begin
-        dmem_V_4_address0 = zext_ln608_fu_414_p1;
+        dmem_V_4_address0 = zext_ln631_fu_414_p1;
     end else begin
         dmem_V_4_address0 = 'bx;
     end
@@ -481,9 +481,9 @@ assign add_ln1503_2_fu_1759_p2 = (add_ln1503_1_fu_1753_p2 + add_ln1503_fu_1747_p
 
 assign add_ln1503_fu_1747_p2 = (trunc_ln1503_1_fu_1727_p4 + trunc_ln1503_2_fu_1737_p4);
 
-assign add_ln619_fu_476_p2 = (zext_ln620_fu_466_p1 + zext_ln209_reg_1904);
+assign add_ln642_fu_476_p2 = (zext_ln643_fu_466_p1 + zext_ln209_reg_1904);
 
-assign add_ln620_fu_470_p2 = (13'd2341 + phi_mul_reg_344);
+assign add_ln643_fu_470_p2 = (13'd2341 + phi_mul_reg_344);
 
 assign add_ln68_1_fu_1516_p2 = (trunc_ln68_3_fu_1354_p31 + trunc_ln68_4_fu_1418_p31);
 
@@ -580,7 +580,7 @@ assign tmp_33_fu_390_p4 = {{o_index_V_4[15:7]}};
 
 assign tmp_34_fu_404_p4 = {{{d_o_idx_V}, {tmp_32_fu_382_p3}}, {zext_ln1371_fu_400_p1}};
 
-assign tmp_35_fu_481_p3 = {{add_ln619_fu_476_p2}, {10'd0}};
+assign tmp_35_fu_481_p3 = {{add_ln642_fu_476_p2}, {10'd0}};
 
 assign tmp_36_fu_504_p3 = xor_ln1357_fu_498_p2[32'd63];
 
@@ -762,11 +762,11 @@ assign zext_ln209_fu_445_p1 = tmp_31_fu_437_p3;
 
 assign zext_ln555_fu_1840_p1 = o_offset_V_reg_1874;
 
-assign zext_ln608_fu_414_p1 = tmp_34_fu_404_p4;
+assign zext_ln631_fu_414_p1 = tmp_34_fu_404_p4;
 
-assign zext_ln619_fu_489_p1 = tmp_35_fu_481_p3;
+assign zext_ln642_fu_489_p1 = tmp_35_fu_481_p3;
 
-assign zext_ln620_fu_466_p1 = p_0348_0_0_0_reg_333;
+assign zext_ln643_fu_466_p1 = p_0348_0_0_0_reg_333;
 
 assign zext_ln68_1_fu_1512_p1 = tmp_99_fu_1502_p4;
 

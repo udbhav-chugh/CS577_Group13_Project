@@ -218,7 +218,7 @@
 						<name>o_index_V_4_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>607</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -233,7 +233,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>584</second>
+										<second>607</second>
 									</item>
 								</second>
 							</item>
@@ -267,7 +267,7 @@
 						<name>d_o_idx_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>607</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -282,7 +282,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>584</second>
+										<second>607</second>
 									</item>
 								</second>
 							</item>
@@ -316,7 +316,7 @@
 						<name>d_i_idx_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>607</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -331,7 +331,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>584</second>
+										<second>607</second>
 									</item>
 								</second>
 							</item>
@@ -365,7 +365,7 @@
 						<name>layer_type_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>607</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -380,7 +380,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>584</second>
+										<second>607</second>
 									</item>
 								</second>
 							</item>
@@ -414,7 +414,7 @@
 						<name>kh_mem_V_4_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>584</lineNumber>
+						<lineNumber>607</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -429,7 +429,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>584</second>
+										<second>607</second>
 									</item>
 								</second>
 							</item>
@@ -464,7 +464,7 @@
 						<name>icmp_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>594</lineNumber>
+						<lineNumber>617</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -479,7 +479,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>594</second>
+										<second>617</second>
 									</item>
 								</second>
 							</item>
@@ -513,7 +513,7 @@
 						<name>o_offset_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>607</lineNumber>
+						<lineNumber>630</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -528,7 +528,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>607</second>
+										<second>630</second>
 									</item>
 								</second>
 							</item>
@@ -561,7 +561,7 @@
 						<name>tmp_s</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>689</lineNumber>
+						<lineNumber>712</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -576,7 +576,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>689</second>
+										<second>712</second>
 									</item>
 								</second>
 							</item>
@@ -611,7 +611,7 @@
 						<name>zext_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>689</lineNumber>
+						<lineNumber>712</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -626,7 +626,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>689</second>
+										<second>712</second>
 									</item>
 								</second>
 							</item>
@@ -659,7 +659,7 @@
 						<name>dmem_V_3_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>689</lineNumber>
+						<lineNumber>712</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -674,7 +674,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>689</second>
+										<second>712</second>
 									</item>
 								</second>
 							</item>
@@ -709,7 +709,7 @@
 						<name>tmp_31</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -724,7 +724,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -759,7 +759,7 @@
 						<name>zext_ln209</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>606</lineNumber>
+						<lineNumber>629</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -774,7 +774,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>606</second>
+										<second>629</second>
 									</item>
 								</second>
 							</item>
@@ -807,7 +807,7 @@
 						<name>tmp_32</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>606</lineNumber>
+						<lineNumber>629</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -822,7 +822,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>606</second>
+										<second>629</second>
 									</item>
 								</second>
 							</item>
@@ -857,7 +857,7 @@
 						<name>tmp_33</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -872,7 +872,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -908,7 +908,7 @@
 						<name>zext_ln1371</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -923,7 +923,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -956,7 +956,7 @@
 						<name>tmp_34</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -971,7 +971,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -1004,10 +1004,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>zext_ln608</name>
+						<name>zext_ln631</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1022,7 +1022,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -1055,7 +1055,7 @@
 						<name>dmem_V_3_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1070,7 +1070,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -1105,7 +1105,7 @@
 						<name>dmem_V_3_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>608</lineNumber>
+						<lineNumber>631</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1120,7 +1120,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>608</second>
+										<second>631</second>
 									</item>
 								</second>
 							</item>
@@ -1150,10 +1150,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>_ln616</name>
+						<name>_ln639</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1168,7 +1168,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1275,7 +1275,7 @@
 						<name>p_0348_0_0_0</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1290,7 +1290,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1326,7 +1326,7 @@
 						<name>phi_mul</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>620</lineNumber>
+						<lineNumber>643</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1341,7 +1341,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>620</second>
+										<second>643</second>
 									</item>
 								</second>
 							</item>
@@ -1377,7 +1377,7 @@
 						<name>zext_ln887</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1392,7 +1392,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1425,7 +1425,7 @@
 						<name>icmp_ln887</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1440,7 +1440,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1474,7 +1474,7 @@
 						<name>add_ln700_10</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1489,7 +1489,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1520,10 +1520,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>_ln616</name>
+						<name>_ln639</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1538,7 +1538,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -1570,10 +1570,10 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>zext_ln620</name>
+						<name>zext_ln643</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>620</lineNumber>
+						<lineNumber>643</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1588,7 +1588,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>620</second>
+										<second>643</second>
 									</item>
 								</second>
 							</item>
@@ -1618,10 +1618,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>add_ln620</name>
+						<name>add_ln643</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>620</lineNumber>
+						<lineNumber>643</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1636,7 +1636,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>620</second>
+										<second>643</second>
 									</item>
 								</second>
 							</item>
@@ -1670,7 +1670,7 @@
 						<name>wt_mem_V_3_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>620</lineNumber>
+						<lineNumber>643</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1685,7 +1685,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>620</second>
+										<second>643</second>
 									</item>
 								</second>
 							</item>
@@ -1717,10 +1717,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>add_ln619</name>
+						<name>add_ln642</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1735,7 +1735,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -1769,7 +1769,7 @@
 						<name>tmp_35</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1784,7 +1784,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -1816,10 +1816,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>zext_ln619</name>
+						<name>zext_ln642</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1834,7 +1834,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -1867,7 +1867,7 @@
 						<name>dmem_V_3_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1882,7 +1882,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -1917,7 +1917,7 @@
 						<name>dmem_V_3_load_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>619</lineNumber>
+						<lineNumber>642</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1932,7 +1932,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>619</second>
+										<second>642</second>
 									</item>
 								</second>
 							</item>
@@ -1965,7 +1965,7 @@
 						<name>wt_mem_V_3_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>620</lineNumber>
+						<lineNumber>643</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1980,7 +1980,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>620</second>
+										<second>643</second>
 									</item>
 								</second>
 							</item>
@@ -2013,7 +2013,7 @@
 						<name>xor_ln1357</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>622</lineNumber>
+						<lineNumber>645</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2028,7 +2028,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>622</second>
+										<second>645</second>
 									</item>
 								</second>
 							</item>
@@ -2062,7 +2062,7 @@
 						<name>tmp_36</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2077,7 +2077,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2112,7 +2112,7 @@
 						<name>tmp_37</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2127,7 +2127,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2162,7 +2162,7 @@
 						<name>tmp_38</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2177,7 +2177,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2212,7 +2212,7 @@
 						<name>tmp_39</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2227,7 +2227,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2262,7 +2262,7 @@
 						<name>tmp_40</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2277,7 +2277,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2312,7 +2312,7 @@
 						<name>tmp_41</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2327,7 +2327,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2362,7 +2362,7 @@
 						<name>tmp_42</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2377,7 +2377,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2412,7 +2412,7 @@
 						<name>tmp_43</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2427,7 +2427,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2462,7 +2462,7 @@
 						<name>tmp_44</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2477,7 +2477,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2512,7 +2512,7 @@
 						<name>tmp_45</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2527,7 +2527,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2562,7 +2562,7 @@
 						<name>tmp_46</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2577,7 +2577,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2612,7 +2612,7 @@
 						<name>tmp_47</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2627,7 +2627,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2662,7 +2662,7 @@
 						<name>tmp_48</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2677,7 +2677,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2712,7 +2712,7 @@
 						<name>tmp_49</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2727,7 +2727,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2762,7 +2762,7 @@
 						<name>tmp_50</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2777,7 +2777,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2812,7 +2812,7 @@
 						<name>tmp_51</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2827,7 +2827,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2862,7 +2862,7 @@
 						<name>tmp_52</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2877,7 +2877,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2912,7 +2912,7 @@
 						<name>tmp_53</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2927,7 +2927,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -2962,7 +2962,7 @@
 						<name>tmp_54</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2977,7 +2977,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3012,7 +3012,7 @@
 						<name>tmp_55</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3027,7 +3027,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3062,7 +3062,7 @@
 						<name>tmp_56</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3077,7 +3077,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3112,7 +3112,7 @@
 						<name>tmp_57</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3127,7 +3127,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3162,7 +3162,7 @@
 						<name>tmp_58</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3177,7 +3177,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3212,7 +3212,7 @@
 						<name>tmp_59</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3227,7 +3227,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3262,7 +3262,7 @@
 						<name>tmp_60</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3277,7 +3277,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3312,7 +3312,7 @@
 						<name>tmp_61</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3327,7 +3327,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3362,7 +3362,7 @@
 						<name>tmp_62</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3377,7 +3377,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3412,7 +3412,7 @@
 						<name>tmp_63</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3427,7 +3427,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3462,7 +3462,7 @@
 						<name>tmp_64</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3477,7 +3477,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3512,7 +3512,7 @@
 						<name>tmp_65</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3527,7 +3527,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3562,7 +3562,7 @@
 						<name>tmp_66</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3577,7 +3577,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3612,7 +3612,7 @@
 						<name>tmp_67</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3627,7 +3627,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3662,7 +3662,7 @@
 						<name>and_ln</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3677,7 +3677,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3773,7 +3773,7 @@
 						<name>zext_ln1355</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3788,7 +3788,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3821,7 +3821,7 @@
 						<name>sub_ln701</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>625</lineNumber>
+						<lineNumber>648</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3836,7 +3836,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>625</second>
+										<second>648</second>
 									</item>
 								</second>
 							</item>
@@ -3870,7 +3870,7 @@
 						<name>tmp_68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3885,7 +3885,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -3921,7 +3921,7 @@
 						<name>tmp_69</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3936,7 +3936,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -3972,7 +3972,7 @@
 						<name>tmp_70</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3987,7 +3987,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4023,7 +4023,7 @@
 						<name>tmp_71</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4038,7 +4038,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4074,7 +4074,7 @@
 						<name>tmp_72</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4089,7 +4089,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4125,7 +4125,7 @@
 						<name>tmp_73</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4140,7 +4140,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4176,7 +4176,7 @@
 						<name>tmp_74</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4191,7 +4191,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4227,7 +4227,7 @@
 						<name>tmp_75</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4242,7 +4242,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4278,7 +4278,7 @@
 						<name>tmp_76</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4293,7 +4293,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4329,7 +4329,7 @@
 						<name>tmp_77</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4344,7 +4344,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4380,7 +4380,7 @@
 						<name>tmp_78</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4395,7 +4395,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4431,7 +4431,7 @@
 						<name>tmp_79</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4446,7 +4446,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4482,7 +4482,7 @@
 						<name>tmp_80</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4497,7 +4497,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4533,7 +4533,7 @@
 						<name>tmp_81</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4548,7 +4548,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4584,7 +4584,7 @@
 						<name>tmp_82</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4599,7 +4599,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4635,7 +4635,7 @@
 						<name>trunc_ln1355</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4650,7 +4650,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4683,7 +4683,7 @@
 						<name>and_ln1355_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4698,7 +4698,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4762,7 +4762,7 @@
 						<name>zext_ln1355_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4777,7 +4777,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4810,7 +4810,7 @@
 						<name>tmp_83</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4825,7 +4825,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4861,7 +4861,7 @@
 						<name>tmp_84</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4876,7 +4876,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4912,7 +4912,7 @@
 						<name>tmp_85</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4927,7 +4927,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -4963,7 +4963,7 @@
 						<name>tmp_86</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4978,7 +4978,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5014,7 +5014,7 @@
 						<name>tmp_87</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5029,7 +5029,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5065,7 +5065,7 @@
 						<name>tmp_88</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5080,7 +5080,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5116,7 +5116,7 @@
 						<name>tmp_89</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5131,7 +5131,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5167,7 +5167,7 @@
 						<name>tmp_90</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5182,7 +5182,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5218,7 +5218,7 @@
 						<name>tmp_91</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5233,7 +5233,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5269,7 +5269,7 @@
 						<name>tmp_92</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5284,7 +5284,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5320,7 +5320,7 @@
 						<name>tmp_93</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5335,7 +5335,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5371,7 +5371,7 @@
 						<name>tmp_94</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5386,7 +5386,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5422,7 +5422,7 @@
 						<name>tmp_95</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5437,7 +5437,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5473,7 +5473,7 @@
 						<name>tmp_96</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5488,7 +5488,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5524,7 +5524,7 @@
 						<name>tmp_97</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5539,7 +5539,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5575,7 +5575,7 @@
 						<name>tmp_98</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5590,7 +5590,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5626,7 +5626,7 @@
 						<name>and_ln1355_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5641,7 +5641,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5705,7 +5705,7 @@
 						<name>zext_ln1355_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5720,7 +5720,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5753,7 +5753,7 @@
 						<name>trunc_ln68_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5768,7 +5768,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5831,7 +5831,7 @@
 						<name>trunc_ln68_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5846,7 +5846,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5909,7 +5909,7 @@
 						<name>add_ln68_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5924,7 +5924,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -5958,7 +5958,7 @@
 						<name>add_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>626</lineNumber>
+						<lineNumber>649</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5973,7 +5973,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>626</second>
+										<second>649</second>
 									</item>
 								</second>
 							</item>
@@ -6007,7 +6007,7 @@
 						<name>zext_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6022,7 +6022,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -6055,7 +6055,7 @@
 						<name>zext_ln700_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6070,7 +6070,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -6103,7 +6103,7 @@
 						<name>tmp_99</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6118,7 +6118,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6154,7 +6154,7 @@
 						<name>zext_ln68_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6169,7 +6169,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6202,7 +6202,7 @@
 						<name>add_ln68_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6217,7 +6217,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6251,7 +6251,7 @@
 						<name>add_ln68_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6266,7 +6266,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6300,7 +6300,7 @@
 						<name>trunc_ln6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6315,7 +6315,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -6351,7 +6351,7 @@
 						<name>tmp_100</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6366,7 +6366,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6402,7 +6402,7 @@
 						<name>tmp_101</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6417,7 +6417,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6453,7 +6453,7 @@
 						<name>tmp_102</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6468,7 +6468,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6504,7 +6504,7 @@
 						<name>tmp_103</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6519,7 +6519,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6555,7 +6555,7 @@
 						<name>tmp_104</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6570,7 +6570,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6606,7 +6606,7 @@
 						<name>tmp_105</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6621,7 +6621,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6657,7 +6657,7 @@
 						<name>tmp_106</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6672,7 +6672,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6708,7 +6708,7 @@
 						<name>trunc_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6723,7 +6723,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6756,7 +6756,7 @@
 						<name>and_ln1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6771,7 +6771,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6819,7 +6819,7 @@
 						<name>zext_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>627</lineNumber>
+						<lineNumber>650</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6834,7 +6834,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>627</second>
+										<second>650</second>
 									</item>
 								</second>
 							</item>
@@ -6867,7 +6867,7 @@
 						<name>lshr_ln1503_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6882,7 +6882,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -6928,7 +6928,7 @@
 						<name>zext_ln1503_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6943,7 +6943,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -6976,7 +6976,7 @@
 						<name>zext_ln1503</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6991,7 +6991,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -7024,7 +7024,7 @@
 						<name>add_ln700_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7039,7 +7039,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -7073,7 +7073,7 @@
 						<name>add_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7088,7 +7088,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -7122,7 +7122,7 @@
 						<name>add_ln700_13</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7137,7 +7137,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -7171,7 +7171,7 @@
 						<name>add_ln700_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>628</lineNumber>
+						<lineNumber>651</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7186,7 +7186,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>628</second>
+										<second>651</second>
 									</item>
 								</second>
 							</item>
@@ -7220,7 +7220,7 @@
 						<name>lshr_ln1503_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>629</lineNumber>
+						<lineNumber>652</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7235,7 +7235,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>629</second>
+										<second>652</second>
 									</item>
 								</second>
 							</item>
@@ -7271,7 +7271,7 @@
 						<name>zext_ln1503_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>629</lineNumber>
+						<lineNumber>652</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7286,7 +7286,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>629</second>
+										<second>652</second>
 									</item>
 								</second>
 							</item>
@@ -7319,7 +7319,7 @@
 						<name>add_ln700_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>629</lineNumber>
+						<lineNumber>652</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7334,7 +7334,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>629</second>
+										<second>652</second>
 									</item>
 								</second>
 							</item>
@@ -7368,7 +7368,7 @@
 						<name>zext_ln1503_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7383,7 +7383,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7416,7 +7416,7 @@
 						<name>trunc_ln7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7431,7 +7431,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7466,7 +7466,7 @@
 						<name>trunc_ln1503_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7481,7 +7481,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7517,7 +7517,7 @@
 						<name>trunc_ln1503_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7532,7 +7532,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7568,7 +7568,7 @@
 						<name>add_ln1503</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7583,7 +7583,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7617,7 +7617,7 @@
 						<name>add_ln1503_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7632,7 +7632,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7666,7 +7666,7 @@
 						<name>add_ln1503_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7681,7 +7681,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7715,7 +7715,7 @@
 						<name>shl_ln</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7730,7 +7730,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7765,7 +7765,7 @@
 						<name>zext_ln1503_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7780,7 +7780,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7813,7 +7813,7 @@
 						<name>sum_m_0_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7828,7 +7828,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7862,7 +7862,7 @@
 						<name>sext_ln68</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7877,7 +7877,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7910,7 +7910,7 @@
 						<name>trunc_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7925,7 +7925,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -7958,7 +7958,7 @@
 						<name>sum_m_1_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -7973,7 +7973,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -8008,7 +8008,7 @@
 						<name>sum_m_1_V_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>633</lineNumber>
+						<lineNumber>656</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8023,7 +8023,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>633</second>
+										<second>656</second>
 									</item>
 								</second>
 							</item>
@@ -8055,10 +8055,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>_ln616</name>
+						<name>_ln639</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>616</lineNumber>
+						<lineNumber>639</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8073,7 +8073,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>616</second>
+										<second>639</second>
 									</item>
 								</second>
 							</item>
@@ -8103,10 +8103,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>_ln636</name>
+						<name>_ln659</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8121,7 +8121,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8154,7 +8154,7 @@
 						<name>p_0257_1_0_0</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>637</lineNumber>
+						<lineNumber>660</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8169,7 +8169,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>637</second>
+										<second>660</second>
 									</item>
 								</second>
 							</item>
@@ -8205,7 +8205,7 @@
 						<name>p_0759_0_0_0</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8220,7 +8220,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8256,7 +8256,7 @@
 						<name>icmp_ln887_17</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8271,7 +8271,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8305,7 +8305,7 @@
 						<name>add_ln700_12</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8320,7 +8320,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8351,10 +8351,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>_ln636</name>
+						<name>_ln659</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8369,7 +8369,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8404,7 +8404,7 @@
 						<name>trunc_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>637</lineNumber>
+						<lineNumber>660</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8419,7 +8419,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>637</second>
+										<second>660</second>
 									</item>
 								</second>
 							</item>
@@ -8452,7 +8452,7 @@
 						<name>select_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>637</lineNumber>
+						<lineNumber>660</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8467,7 +8467,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>637</second>
+										<second>660</second>
 									</item>
 								</second>
 							</item>
@@ -8502,7 +8502,7 @@
 						<name>add_ln700_11</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>637</lineNumber>
+						<lineNumber>660</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8517,7 +8517,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>637</second>
+										<second>660</second>
 									</item>
 								</second>
 							</item>
@@ -8548,10 +8548,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>_ln636</name>
+						<name>_ln659</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>636</lineNumber>
+						<lineNumber>659</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8566,7 +8566,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>636</second>
+										<second>659</second>
 									</item>
 								</second>
 							</item>
@@ -8599,7 +8599,7 @@
 						<name>kh_mem_V_4_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>644</lineNumber>
+						<lineNumber>667</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8614,7 +8614,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>644</second>
+										<second>667</second>
 									</item>
 								</second>
 							</item>
@@ -8647,7 +8647,7 @@
 						<name>trunc_ln647</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>649</lineNumber>
+						<lineNumber>672</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8662,7 +8662,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>649</second>
+										<second>672</second>
 									</item>
 								</second>
 							</item>
@@ -8695,7 +8695,7 @@
 						<name>zext_ln555</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>657</lineNumber>
+						<lineNumber>680</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8710,7 +8710,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>657</second>
+										<second>680</second>
 									</item>
 								</second>
 							</item>
@@ -8743,7 +8743,7 @@
 						<name>icmp_ln816</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>657</lineNumber>
+						<lineNumber>680</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8758,7 +8758,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>657</second>
+										<second>680</second>
 									</item>
 								</second>
 							</item>
@@ -8792,7 +8792,7 @@
 						<name>zext_ln816</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>657</lineNumber>
+						<lineNumber>680</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8807,7 +8807,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>657</second>
+										<second>680</second>
 									</item>
 								</second>
 							</item>
@@ -8840,7 +8840,7 @@
 						<name>tmp_107</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>657</lineNumber>
+						<lineNumber>680</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8855,7 +8855,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>657</second>
+										<second>680</second>
 									</item>
 								</second>
 							</item>
@@ -8891,7 +8891,7 @@
 						<name>select_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>594</lineNumber>
+						<lineNumber>617</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8906,7 +8906,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>594</second>
+										<second>617</second>
 									</item>
 								</second>
 							</item>
@@ -8938,10 +8938,10 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>dmem_V_3_addr_write_ln681</name>
+						<name>dmem_V_3_addr_write_ln704</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>681</lineNumber>
+						<lineNumber>704</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -8956,7 +8956,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>681</second>
+										<second>704</second>
 									</item>
 								</second>
 							</item>
@@ -8990,7 +8990,7 @@
 						<name>icmp_ln879_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>685</lineNumber>
+						<lineNumber>708</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9005,7 +9005,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>685</second>
+										<second>708</second>
 									</item>
 								</second>
 							</item>
@@ -9036,10 +9036,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>_ln685</name>
+						<name>_ln708</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>685</lineNumber>
+						<lineNumber>708</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9054,7 +9054,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>685</second>
+										<second>708</second>
 									</item>
 								</second>
 							</item>
@@ -9086,10 +9086,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>dmem_V_3_addr_2_write_ln689</name>
+						<name>dmem_V_3_addr_2_write_ln712</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>689</lineNumber>
+						<lineNumber>712</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9104,7 +9104,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>689</second>
+										<second>712</second>
 									</item>
 								</second>
 							</item>
@@ -9136,10 +9136,10 @@
 					<Obj>
 						<type>0</type>
 						<id>195</id>
-						<name>_ln690</name>
+						<name>_ln713</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>690</lineNumber>
+						<lineNumber>713</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9154,7 +9154,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>690</second>
+										<second>713</second>
 									</item>
 								</second>
 							</item>
@@ -9184,10 +9184,10 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>_ln691</name>
+						<name>_ln714</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>691</lineNumber>
+						<lineNumber>714</lineNumber>
 						<contextFuncName>bin_dense</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -9202,7 +9202,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>bin_dense</second>
 										</first>
-										<second>691</second>
+										<second>714</second>
 									</item>
 								</second>
 							</item>

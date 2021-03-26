@@ -13,6 +13,8 @@
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/Kintex-7/Kintex-7</Platform>
+            <Platform>xilinx/kintex7/kintex7</Platform>
+            <Platform>xilinx/kintex7/kintex7_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -66,8 +68,8 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/Kintex-7/Kintex-7"/>
-        <library value="xilinx/kintex7/kintex7" name="DefaultPlatform"/>
-        <library value="xilinx/kintex7/kintex7_fpv6" name="DefaultPlatform"/>
+        <library name="DefaultPlatform" value="xilinx/kintex7/kintex7"/>
+        <library name="DefaultPlatform" value="xilinx/kintex7/kintex7_fpv6"/>
     </libraryList>
     <clockList>
         <clock name="default" uncertainty="12.5%" period="12"/>

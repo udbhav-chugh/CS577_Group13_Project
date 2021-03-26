@@ -649,7 +649,8 @@ extern "C" {
 
 # 1 "D:/Installations/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw_print_pop.h" 1 3
 # 511 "D:/Installations/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
-# 2 "cpp/accel/Common.cpp" 2
+# 1 "cpp/accel/Common.cpp" 2
+
 # 1 "cpp/accel/Common.h" 1
 
 
@@ -15325,7 +15326,8 @@ Bit sgn(const T x) {
 _ssdm_InlineSelf(0, "");
  return (x < 0) ? -1 : 0;
 }
-# 3 "cpp/accel/Common.cpp" 2
+# 2 "cpp/accel/Common.cpp" 2
+
 
 
 std::string get_root_dir() {

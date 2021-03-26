@@ -61,34 +61,34 @@ $(ObjDir)/accel_test_random.cpp_pre.cpp.tb.o : accel_test_random.cpp_pre.cpp.tb.
 	$(Echo) "   Compiling accel_test_random.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/Timer.cpp_pre.cpp.tb.o : Timer.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling Timer.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/InputConv.cpp_pre.cpp.tb.o : InputConv.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling InputConv.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/Dense.cpp_pre.cpp.tb.o : Dense.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling Dense.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/Common.cpp_pre.cpp.tb.o : Common.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling Common.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/AccelTest.cpp_pre.cpp.tb.o : AccelTest.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling AccelTest.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
-	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
-
-$(ObjDir)/AccelSchedule.cpp_pre.cpp.tb.o : AccelSchedule.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling AccelSchedule.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/Accel.cpp_pre.cpp.tb.o : Accel.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling Accel.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/AccelPrint.cpp_pre.cpp.tb.o : AccelPrint.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling AccelPrint.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/Accel.cpp_pre.cpp.tb.o : Accel.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling Accel.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/AccelSchedule.cpp_pre.cpp.tb.o : AccelSchedule.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling AccelSchedule.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/AccelTest.cpp_pre.cpp.tb.o : AccelTest.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling AccelTest.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/Common.cpp_pre.cpp.tb.o : Common.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling Common.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/Dense.cpp_pre.cpp.tb.o : Dense.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling Dense.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/InputConv.cpp_pre.cpp.tb.o : InputConv.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling InputConv.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
+
+$(ObjDir)/Timer.cpp_pre.cpp.tb.o : Timer.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling Timer.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
