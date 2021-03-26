@@ -1,0 +1,53 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'process_word'" level="0">
+<item name = "Date">Fri Mar 26 21:30:30 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">BNN_6</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k70t-fbv676-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">12.00, 6.858, 1.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2140, 2140, 2140, 2140, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_conv_word_fu_525">conv_word, 1681, 1681, 1681, 1681, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">160, 160, 20, -, -, 8, no</column>
+<column name=" + Loop 1.1">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 1.2">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 2">296, 296, 37, -, -, 8, no</column>
+<column name=" + Loop 2.1">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 2.2">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 2.3">16, 16, 2, -, -, 8, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

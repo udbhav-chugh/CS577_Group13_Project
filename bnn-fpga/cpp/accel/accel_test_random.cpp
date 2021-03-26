@@ -1,6 +1,7 @@
 #include <cstddef>
 #include <hls_video.h>
 
+#include <bits/stdc++.h>
 #include "Accel.h"
 #include "AccelSchedule.h"
 #include "AccelTest.h"
@@ -41,12 +42,17 @@ void test_conv_layer_random(
   );
 
   // Compute conv reference
-  Word conv_ref[S*S];
+  // Word conv_ref[S*S];  
+  Word *conv_ref = new Word[S*S];  
+  
+
+
   padded_conv(data_i, wt, conv_ref, M, S);
   // Compute bin reference
   Word khword = kh[0];
   NormComp nc;  nc(15,0) = khword(15,0);
-  Word bin_ref[S*S];
+  // Word bin_ref[S*S];
+  Word *bin_ref = new Word[S*S];  
   for (unsigned i = 0; i < S*S; ++i) {
     Bit b = (conv_ref[i] < nc) ? -1 : 0;
     set_bit(bin_ref, i, b);
@@ -86,9 +92,12 @@ int main() {
     kh[n/KH_PER_WORD] = w;
   }
 
+// #ifdef HW_COSIM
   test_conv_layer_random( 8, wt, kh);
-  test_conv_layer_random(16, wt, kh);
-  test_conv_layer_random(32, wt, kh);
+// #endif
+  // test_conv_layer_random(16, wt, kh);
+  // test_conv_layer_random(32, wt, kh);
+
 
   delete[] wt;
   delete[] kh;
