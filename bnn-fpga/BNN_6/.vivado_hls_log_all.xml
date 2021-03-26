@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:30.144+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:30.093+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:24.168+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wt_offset_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:24.149+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'wt_addr_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:24.145+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'top' consists of the following:&#xD;&#xA;&#x9;'phi' operation ('p_0713_2', cpp/accel/Accel.cpp:849) with incoming values : ('select_ln849', cpp/accel/Accel.cpp:849) [254]  (0 ns)&#xD;&#xA;&#x9;'mul' operation of DSP[269] ('mul_ln838', cpp/accel/Accel.cpp:838) [267]  (2.84 ns)&#xD;&#xA;&#x9;'add' operation of DSP[269] ('add_ln838', cpp/accel/Accel.cpp:838) [269]  (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('add_ln180_5', cpp/accel/Accel.cpp:844) [273]  (1.46 ns)&#xD;&#xA;&#x9;'getelementptr' operation ('dmem_V_addr_3', cpp/accel/Accel.cpp:844) [275]  (0 ns)&#xD;&#xA;&#x9;'load' operation ('dmem_V_load', cpp/accel/Accel.cpp:844) on array 'dmem_V' [276]  (2.66 ns)" projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:19.445+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.918ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:06:19.441+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:499: variable-indexed range selection may cause suboptimal QoR." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:05:57.069+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:02:52.459+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-24T20:02:51.602+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T13:07:41.404+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T13:07:40.401+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T12:58:25.095+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T12:58:23.112+0530" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

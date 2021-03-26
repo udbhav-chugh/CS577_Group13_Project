@@ -1,0 +1,68 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'bin_conv'" level="0">
+<item name = "Date">Wed Mar 24 20:06:14 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">BNN_6</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k70t-fbv676-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.858, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1024, 1024, 32, -, -, 32, no</column>
+<column name="- LOOP_PHASES">?, ?, 152770 ~ 339202, -, -, ?, no</column>
+<column name=" + LOOP_WORDS_IN_PHASE">152768, 339200, 4774 ~ 5300, -, -, 32 ~ 64, no</column>
+<column name="  ++ LOOP_WT_WORDS">4, 4, 2, -, -, 2, no</column>
+<column name="  ++ LOOP_LOAD_WTS">34, 34, 17, -, -, 2, no</column>
+<column name="   +++ LOOP_LOAD_WTS.1">15, 15, 5, -, -, 3, no</column>
+<column name="    ++++ LOOP_LOAD_WTS.1.1">3, 3, 1, -, -, 3, no</column>
+<column name="  ++ LOOP_CONVOLVER_LOAD">166, 166, 83, -, -, 2, no</column>
+<column name="   +++ LOOP_CONVOLVER_LOAD.1">80, 80, 10, -, -, 8, no</column>
+<column name="    ++++ LOOP_CONVOLVER_LOAD.1.1">8, 8, 1, -, -, 8, no</column>
+<column name="  ++ LOOP_CONVOLVERS">4284, 4284, 2142, -, -, 2, no</column>
+<column name="  ++ LOOP_WORDS_IN_PHASE.5">356, 356, 178, -, -, 2, no</column>
+<column name="   +++ LOOP_WORDS_IN_PHASE.5.1">176, 176, 22, -, -, 8, no</column>
+<column name="    ++++ LOOP_WORDS_IN_PHASE.5.1.1">20, 20, 2, -, -, 10, no</column>
+<column name="  ++ LOOP_WORDS_IN_PHASE.6">128, 448, 2 ~ 7, -, -, 64, no</column>
+<column name="   +++ LOOP_WORDS_IN_PHASE.6.1">4, 4, 2, -, -, 2, no</column>
+<column name="- LOOP_ACC_PHASES">?, ?, ?, -, -, ?, no</column>
+<column name=" + LOOP_ACC_PHASES_I">?, ?, 130, -, -, ?, no</column>
+<column name="  ++ LOOP_ACC_PHASES_I.1">128, 128, 2, -, -, 64, no</column>
+<column name="- LOOP_BATCH_NORM">0, 5611, 132 ~ 181, -, -, 0 ~ 31, no</column>
+<column name=" + LOOP_BATCH_NORM.1">128, 128, 2, -, -, 64, no</column>
+<column name=" + LOOP_BATCH_NORM.2">32, 32, 1, -, -, 32, no</column>
+<column name=" + LOOP_BATCH_NORM.3">16, 16, 1, -, -, 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,6 +1,7 @@
 #ifndef ACCEL_PRINT_H
 #define ACCEL_PRINT_H
 
+#include <bits/stdc++.h>
 #include "Accel.h"
 #include <stdio.h>
 

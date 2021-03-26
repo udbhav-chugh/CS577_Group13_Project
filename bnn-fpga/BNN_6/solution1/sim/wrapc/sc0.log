@@ -1,0 +1,12 @@
+   Build using "D:/Installations/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling AccelSchedule.cpp_pre.cpp.tb.cpp
+   Compiling Common.cpp_pre.cpp.tb.cpp
+   Compiling Dense.cpp_pre.cpp.tb.cpp
+   Compiling InputConv.cpp_pre.cpp.tb.cpp
+   Compiling apatb_top.cpp
+   Compiling Accel.cpp_pre.cpp.tb.cpp
+   Compiling accel_test_random.cpp_pre.cpp.tb.cpp
+   Compiling AccelPrint.cpp_pre.cpp.tb.cpp
+   Compiling AccelTest.cpp_pre.cpp.tb.cpp
+   Compiling Timer.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
