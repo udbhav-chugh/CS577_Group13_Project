@@ -137,11 +137,6 @@
 			<location>D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Typedefs.h</location>
 		</link>
 		<link>
-			<name>source/accel_test_random.cpp</name>
-			<type>1</type>
-			<location>D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/accel_test_random.cpp</location>
-		</link>
-		<link>
 			<name>testbench/accel_test_random.cpp</name>
 			<type>1</type>
 			<location>D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/accel_test_random.cpp</location>

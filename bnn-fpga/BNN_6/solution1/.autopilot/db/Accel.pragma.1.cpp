@@ -76582,7 +76582,7 @@ void bin_conv(
   (void) ((!!(w_div_8 > 0)) || (_assert("w_div_8 > 0","cpp/accel/Accel.cpp",228),0));
   ap_uint<4> mask = ~ap_uint<4>(0);
   mask = mask >> (4-log_slice);
-  for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
+  for (ap_uint<4> bank = 0; bank < 64/8; ++bank) {
 _ssdm_Unroll(0,0,0, "");
  const ap_uint<4> x = bank & mask;
     lb[bank] = (x == 0);
@@ -76591,8 +76591,8 @@ _ssdm_Unroll(0,0,0, "");
 
 
 
-  for (IdxType i = 0; i < WORDS_PER_PHASE; ++i) {
-    for (IdxType j = 0; j < WORD_SIZE; ++j) {
+  for (IdxType i = 0; i < 32; ++i) {
+    for (IdxType j = 0; j < 64; ++j) {
 _ssdm_Unroll(0,0,0, "");
  fixed_buffer[i][j] = 0;
     }
@@ -76603,7 +76603,7 @@ _ssdm_Unroll(0,0,0, "");
 
 
   LOOP_PHASES:
-  for (ap_uint<10> p = 0; p < n_phases; p += images_per_phase) {
+  for (ap_uint<10> p = 0; p < 64/2; p += 32) {
     if (3 <= 0) {printf ("=== PHASE %d ===\n", p.to_int());};
 
 
@@ -76616,7 +76616,7 @@ _ssdm_Unroll(0,0,0, "");
 
 
     LOOP_WORDS_IN_PHASE:
-    for (ap_uint<8> count = 0; count < WORDS_PER_PHASE+images_per_phase; ++count) {
+    for (ap_uint<8> count = 0; count < 32+32; ++count) {
 
       if (wrd == 0) {
         Word wt_word_buffer[CONVOLVERS];
@@ -76627,7 +76627,7 @@ _ssdm_Unroll(0,0,0, "");
 
 
         LOOP_WT_WORDS:
-        for (IdxType m = 0; m < CONVOLVERS; ++m) {
+        for (IdxType m = 0; m < 2; ++m) {
 
 
 
@@ -76649,9 +76649,9 @@ _ssdm_Unroll(0,0,0, "");
 
 
         LOOP_LOAD_WTS:
-        for (IdxType m = 0; m < CONVOLVERS; ++m) {
-          for (ap_uint<2> kr = 0; kr < K; ++kr) {
-            for (ap_uint<2> kc = 0; kc < K; ++kc)
+        for (IdxType m = 0; m < 2; ++m) {
+          for (ap_uint<2> kr = 0; kr < 3; ++kr) {
+            for (ap_uint<2> kc = 0; kc < 3; ++kc)
               conv_params[m][kr][kc] = wt_word_buffer[m][kr*K+kc];
           }
         }
@@ -76666,10 +76666,10 @@ _ssdm_Unroll(0,0,0, "");
 
       if (wrd != words_per_image) {
         LOOP_CONVOLVER_LOAD:
-        for (IdxType m = 0; m < CONVOLVERS; ++m) {
+        for (IdxType m = 0; m < 2; ++m) {
           Word word = dmem[d_i_idx][m][p*words_per_image + wrd_phase];
-          for (IdxType bank = 0; bank < CONV_BANKS; ++bank) {
-            for (IdxType cc = 0; cc < CONV_COLS-2; ++cc) {
+          for (IdxType bank = 0; bank < 8; ++bank) {
+            for (IdxType cc = 0; cc < 10-2; ++cc) {
               word_buffer[m][bank][cc+1] = encode_bit(word[ap_uint<6>(bank*BANK_WIDTH+cc)]);
             }
             word_buffer[m][bank][0 ] = (bank==0) ?
@@ -76682,15 +76682,15 @@ _ssdm_Unroll(0,0,0, "");
 
 
       LOOP_CONVOLVERS:
-      for (IdxType m = 0; m < CONVOLVERS; ++m) {
+      for (IdxType m = 0; m < 2; ++m) {
 
         process_word( word_buffer[m], old_word_buffer[m], lb, rb, line_buffer[m], conv_params[m],
             conv_out_buffer[m], log_width, words_per_image, wrd );
       }
 
-      for (IdxType m = 0; m < CONVOLVERS; ++m) {
-        for (IdxType bank = 0; bank < CONV_BANKS; ++bank) {
-          for (IdxType cc = 0; cc < CONV_COLS; ++cc) {
+      for (IdxType m = 0; m < 2; ++m) {
+        for (IdxType bank = 0; bank < 8; ++bank) {
+          for (IdxType cc = 0; cc < 10; ++cc) {
             old_word_buffer[m][bank][cc] = word_buffer[m][bank][cc];
         } }
       }
@@ -76698,11 +76698,11 @@ _ssdm_Unroll(0,0,0, "");
 
 
 
-      for (IdxType i = 0; i < WORD_SIZE; ++i) {
+      for (IdxType i = 0; i < 64; ++i) {
 
         if (wrd > 0) {
           ConvSum s = 0;
-          for (IdxType m = 0; m < CONVOLVERS; ++m)
+          for (IdxType m = 0; m < 2; ++m)
             s += conv_out_buffer[m][i];
           fixed_buffer[wrd_phase-1][i] += s;
         }
@@ -76722,19 +76722,19 @@ _ssdm_Unroll(0,0,0, "");
   }
 
   LOOP_ACC_PHASES:
-  for (ap_uint<5> w = 0; w < words_per_image; ++w) {
-    for (IdxType b = 0; b < WORD_SIZE; ++b) {
+  for (ap_uint<5> w = 0; w < 1; ++w) {
+    for (IdxType b = 0; b < 64; ++b) {
 _ssdm_Unroll(0,0,0, "");
  fixed_temp[b] = fixed_buffer[w][b];
     }
 
     LOOP_ACC_PHASES_I:
-    for (ap_uint<8> i = words_per_image; i < WORDS_PER_PHASE; i += words_per_image) {
-      for (IdxType b = 0; b < WORD_SIZE; ++b) {
+    for (ap_uint<8> i = 1; i < 32; i += 1) {
+      for (IdxType b = 0; b < 64; ++b) {
         fixed_temp[b] += fixed_buffer[w+i][b];
     } }
 
-    for (IdxType b = 0; b < WORD_SIZE; ++b) {
+    for (IdxType b = 0; b < 64; ++b) {
 _ssdm_Unroll(0,0,0, "");
  fixed_buffer[w][b] = fixed_temp[b];
     }
@@ -76753,13 +76753,13 @@ _ssdm_Unroll(0,0,0, "");
   static Word outword;
   Word poolword;
   LOOP_BATCH_NORM:
-  for (ap_uint<6> w = 0; w < words_per_image; ++w) {
+  for (ap_uint<6> w = 0; w < 1; ++w) {
     Word binword;
     Address o_bank_idx = bank_idx;
     Address o_bank_offset = bank_off*words_per_image + w;
     const ap_uint<6> out_offset = (w % 4) << 4;
 
-    for (ap_uint<7> i = 0; i < WORD_SIZE; ++i) {
+    for (ap_uint<7> i = 0; i < 64; ++i) {
       binword[i] = (fixed_buffer[w][i] >= nc) ? 0 : 1;
     }
 
@@ -76769,12 +76769,12 @@ _ssdm_Unroll(0,0,0, "");
     else if (norm_mode == 2) {
 
       ap_int<WORD_SIZE/2> poolword_h;
-      for (ap_uint<6> i = 0; i < WORD_SIZE/2; ++i) {
+      for (ap_uint<6> i = 0; i < 64/2; ++i) {
         poolword_h[i] = binword[2*i] & binword[2*i+1];
       }
 
 
-      for (ap_uint<6> i = 0; i < WORD_SIZE/4; ++i) {
+      for (ap_uint<6> i = 0; i < 64/4; ++i) {
 
         ap_uint<5> i0 = i >> (log_width-1);
         i0 = (i0 << log_width) + i(log_width-2,0);
@@ -76956,7 +76956,7 @@ void bin_dense(
 
 
   LOOP_DENSE_O:
-  for (Address o = 0; o < n_outputs; ++o) {
+  for (Address o = 0; o < 1; ++o) {
     const Address o_addr = (o_index+o)/WORD_SIZE;
     const ap_uint<6> o_offset = (o_index+o) % WORD_SIZE;
     Word o_word = dmem[d_o_idx][o_addr%CONVOLVERS][o_addr/CONVOLVERS];
@@ -76964,10 +76964,10 @@ void bin_dense(
     DenseSum sum = 0;
 
     LOOP_DENSE_I:
-    for (Address i = 0; i < n_inputs; i+=CONVOLVERS*WORD_SIZE) {
+    for (Address i = 0; i < 64; i+=CONVOLVERS*WORD_SIZE) {
       const Address wt_addr = (o*n_inputs+i) / WORD_SIZE;
 
-      for (IdxType j = 0; j < CONVOLVERS; ++j) {
+      for (IdxType j = 0; j < 2; ++j) {
 
 
         const Word in_wrd = dmem[d_i_idx][j][i/WORD_SIZE/CONVOLVERS];
@@ -76987,7 +76987,7 @@ void bin_dense(
         sum_m[j] = WORD_SIZE - (DenseSum)(x<<1);
       }
 
-      for (IdxType j = 0; j < CONVOLVERS; ++j)
+      for (IdxType j = 0; j < 2; ++j)
         sum += sum_m[j];
     }
 
@@ -77100,7 +77100,7 @@ void top(
   const ap_uint<5> words_per_image = 1 << (2*width_mode);
   Address img_idx = 0;
   IdxType img_off = 0;
-  LOOP_DMEM_I: for (Address i = 0; i < input_words; ++i) {
+  LOOP_DMEM_I: for (Address i = 0; i < 64; ++i) {
     if (layer_type == LAYER_CONV) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
@@ -77150,7 +77150,7 @@ void top(
     (void) ((!!(n_inputs % CONVOLVERS == 0)) || (_assert("n_inputs % CONVOLVERS == 0","cpp/accel/Accel.cpp",796),0));
 
     LOOP_IMG_BATCH:
-    for (IdxType i = 0; i < n_outputs; ++i) {
+    for (IdxType i = 0; i < 1; ++i) {
 
       NormComp nc;
       load_kh(nc, kh_mem, kh_index);
@@ -77189,7 +77189,7 @@ void top(
   ap_uint<5> words_per_out = words_per_image / ((norm_mode!=2) ? 1 : 4);
   img_idx = 0;
   img_off = 0;
-  LOOP_DMEM_O: for (Address i = 0; i < output_words; ++i) {
+  LOOP_DMEM_O: for (Address i = 0; i < 1; ++i) {
 
 
     if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {

@@ -40,14 +40,8 @@ using namespace sc_dt;
 // wrapc file define: "dmem_o_V"
 #define AUTOTB_TVOUT_dmem_o_V  "../tv/cdatafile/c.top.autotvout_dmem_o_V.dat"
 #define AUTOTB_TVIN_dmem_o_V  "../tv/cdatafile/c.top.autotvin_dmem_o_V.dat"
-// wrapc file define: "n_inputs_V"
-#define AUTOTB_TVIN_n_inputs_V  "../tv/cdatafile/c.top.autotvin_n_inputs_V.dat"
 // wrapc file define: "n_outputs_V"
 #define AUTOTB_TVIN_n_outputs_V  "../tv/cdatafile/c.top.autotvin_n_outputs_V.dat"
-// wrapc file define: "input_words_V"
-#define AUTOTB_TVIN_input_words_V  "../tv/cdatafile/c.top.autotvin_input_words_V.dat"
-// wrapc file define: "output_words_V"
-#define AUTOTB_TVIN_output_words_V  "../tv/cdatafile/c.top.autotvin_output_words_V.dat"
 // wrapc file define: "layer_mode_V"
 #define AUTOTB_TVIN_layer_mode_V  "../tv/cdatafile/c.top.autotvin_layer_mode_V.dat"
 // wrapc file define: "dmem_mode_V"
@@ -70,10 +64,7 @@ class INTER_TCL_FILE {
 			kh_i_V_depth = 0;
 			dmem_i_V_depth = 0;
 			dmem_o_V_depth = 0;
-			n_inputs_V_depth = 0;
 			n_outputs_V_depth = 0;
-			input_words_V_depth = 0;
-			output_words_V_depth = 0;
 			layer_mode_V_depth = 0;
 			dmem_mode_V_depth = 0;
 			width_mode_V_depth = 0;
@@ -101,10 +92,7 @@ class INTER_TCL_FILE {
 			total_list << "{kh_i_V " << kh_i_V_depth << "}\n";
 			total_list << "{dmem_i_V " << dmem_i_V_depth << "}\n";
 			total_list << "{dmem_o_V " << dmem_o_V_depth << "}\n";
-			total_list << "{n_inputs_V " << n_inputs_V_depth << "}\n";
 			total_list << "{n_outputs_V " << n_outputs_V_depth << "}\n";
-			total_list << "{input_words_V " << input_words_V_depth << "}\n";
-			total_list << "{output_words_V " << output_words_V_depth << "}\n";
 			total_list << "{layer_mode_V " << layer_mode_V_depth << "}\n";
 			total_list << "{dmem_mode_V " << dmem_mode_V_depth << "}\n";
 			total_list << "{width_mode_V " << width_mode_V_depth << "}\n";
@@ -120,10 +108,7 @@ class INTER_TCL_FILE {
 		int kh_i_V_depth;
 		int dmem_i_V_depth;
 		int dmem_o_V_depth;
-		int n_inputs_V_depth;
 		int n_outputs_V_depth;
-		int input_words_V_depth;
-		int output_words_V_depth;
 		int layer_mode_V_depth;
 		int dmem_mode_V_depth;
 		int width_mode_V_depth;
@@ -338,21 +323,9 @@ const ap_uint<2> norm_mode)
 		char* tvout_dmem_o_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVOUT_dmem_o_V);
 
-		// "n_inputs_V"
-		char* tvin_n_inputs_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_n_inputs_V);
-
 		// "n_outputs_V"
 		char* tvin_n_outputs_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_n_outputs_V);
-
-		// "input_words_V"
-		char* tvin_input_words_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_input_words_V);
-
-		// "output_words_V"
-		char* tvin_output_words_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_output_words_V);
 
 		// "layer_mode_V"
 		char* tvin_layer_mode_V = new char[50];
@@ -567,48 +540,6 @@ const ap_uint<2> norm_mode)
 		delete [] dmem_o_V_tvin_wrapc_buffer;
 
 		// [[transaction]]
-		sprintf(tvin_n_inputs_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_n_inputs_V, tvin_n_inputs_V);
-
-		sc_bv<16> n_inputs_V_tvin_wrapc_buffer;
-
-		// RTL Name: n_inputs_V
-		{
-			// bitslice(15, 0)
-			{
-				// celement: n_inputs.V(15, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : n_inputs
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : n_inputs
-						// regulate_c_name       : n_inputs_V
-						// input_type_conversion : (n_inputs).to_string(2).c_str()
-						if (&(n_inputs) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<16> n_inputs_V_tmp_mem;
-							n_inputs_V_tmp_mem = (n_inputs).to_string(2).c_str();
-							n_inputs_V_tvin_wrapc_buffer.range(15, 0) = n_inputs_V_tmp_mem.range(15, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_n_inputs_V, "%s\n", (n_inputs_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_n_inputs_V, tvin_n_inputs_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.n_inputs_V_depth);
-		sprintf(tvin_n_inputs_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_n_inputs_V, tvin_n_inputs_V);
-
-		// [[transaction]]
 		sprintf(tvin_n_outputs_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_n_outputs_V, tvin_n_outputs_V);
 
@@ -649,90 +580,6 @@ const ap_uint<2> norm_mode)
 		tcl_file.set_num(1, &tcl_file.n_outputs_V_depth);
 		sprintf(tvin_n_outputs_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_n_outputs_V, tvin_n_outputs_V);
-
-		// [[transaction]]
-		sprintf(tvin_input_words_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_input_words_V, tvin_input_words_V);
-
-		sc_bv<16> input_words_V_tvin_wrapc_buffer;
-
-		// RTL Name: input_words_V
-		{
-			// bitslice(15, 0)
-			{
-				// celement: input_words.V(15, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : input_words
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : input_words
-						// regulate_c_name       : input_words_V
-						// input_type_conversion : (input_words).to_string(2).c_str()
-						if (&(input_words) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<16> input_words_V_tmp_mem;
-							input_words_V_tmp_mem = (input_words).to_string(2).c_str();
-							input_words_V_tvin_wrapc_buffer.range(15, 0) = input_words_V_tmp_mem.range(15, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_input_words_V, "%s\n", (input_words_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_input_words_V, tvin_input_words_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.input_words_V_depth);
-		sprintf(tvin_input_words_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_input_words_V, tvin_input_words_V);
-
-		// [[transaction]]
-		sprintf(tvin_output_words_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_output_words_V, tvin_output_words_V);
-
-		sc_bv<16> output_words_V_tvin_wrapc_buffer;
-
-		// RTL Name: output_words_V
-		{
-			// bitslice(15, 0)
-			{
-				// celement: output_words.V(15, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : output_words
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : output_words
-						// regulate_c_name       : output_words_V
-						// input_type_conversion : (output_words).to_string(2).c_str()
-						if (&(output_words) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<16> output_words_V_tmp_mem;
-							output_words_V_tmp_mem = (output_words).to_string(2).c_str();
-							output_words_V_tvin_wrapc_buffer.range(15, 0) = output_words_V_tmp_mem.range(15, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_output_words_V, "%s\n", (output_words_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_output_words_V, tvin_output_words_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.output_words_V_depth);
-		sprintf(tvin_output_words_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_output_words_V, tvin_output_words_V);
 
 		// [[transaction]]
 		sprintf(tvin_layer_mode_V, "[[transaction]] %d\n", AESL_transaction);
@@ -967,14 +814,8 @@ const ap_uint<2> norm_mode)
 		// release memory allocation: "dmem_o_V"
 		delete [] tvout_dmem_o_V;
 		delete [] tvin_dmem_o_V;
-		// release memory allocation: "n_inputs_V"
-		delete [] tvin_n_inputs_V;
 		// release memory allocation: "n_outputs_V"
 		delete [] tvin_n_outputs_V;
-		// release memory allocation: "input_words_V"
-		delete [] tvin_input_words_V;
-		// release memory allocation: "output_words_V"
-		delete [] tvin_output_words_V;
 		// release memory allocation: "layer_mode_V"
 		delete [] tvin_layer_mode_V;
 		// release memory allocation: "dmem_mode_V"

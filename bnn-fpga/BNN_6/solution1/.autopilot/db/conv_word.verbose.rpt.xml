@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_word'" level="0">
-<item name = "Date">Wed Mar 24 20:06:22 2021
+<item name = "Date">Fri Mar 26 21:30:45 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 4.361, 1.25</column>
+<column name="ap_clk">12.00, 4.361, 1.50</column>
 </table>
 </item>
 </section>
@@ -141,7 +141,7 @@
 <column name="select_ln215_reg_508">2, 0, 4, 2</column>
 <column name="sub_ln215_reg_557">6, 0, 6, 0</column>
 <column name="sub_ln65_reg_526">64, 0, 64, 0</column>
-<column name="zext_ln215_1_reg_503">1, 0, 5, 4</column>
+<column name="zext_ln215_3_reg_503">1, 0, 5, 4</column>
 </table>
 </item>
 </section>

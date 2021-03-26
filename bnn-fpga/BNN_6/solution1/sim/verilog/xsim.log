@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Mar 26 13:11:59 2021
-# Process ID: 1624
+# Start of session at: Fri Mar 26 21:37:52 2021
+# Process ID: 17940
 # Current directory: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/top/xsim_script.tcl}
 # Log file: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.log
@@ -21,12 +21,10 @@ source top.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 3 [n/a] @ "125000"
-// RTL Simulation : 1 / 3 [n/a] @ "3372745000"
-// RTL Simulation : 2 / 3 [n/a] @ "5592095000"
-// RTL Simulation : 3 / 3 [n/a] @ "7531005000"
+// RTL Simulation : 0 / 1 [0.00%] @ "126000"
+// RTL Simulation : 1 / 1 [100.00%] @ "4046754000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 7531045 ns : File "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 847
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:20 . Memory (MB): peak = 220.898 ; gain = 0.000
+$finish called at time : 4046802 ns : File "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 688
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:42 . Memory (MB): peak = 220.418 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Mar 26 13:13:44 2021...
+INFO: [Common 17-206] Exiting xsim at Fri Mar 26 21:38:51 2021...

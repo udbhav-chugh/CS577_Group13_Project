@@ -110,10 +110,10 @@
 
 <Node id="7" bw="5" op_0_bw="4">
 <![CDATA[
-:2  %zext_ln215_1 = zext i4 %tmp to i5
+:2  %zext_ln215_3 = zext i4 %tmp to i5
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln215_1"/></StgValue>
+<StgValue><ssdm name="zext_ln215_3"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -282,7 +282,7 @@
 
 <Node id="20" bw="5" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-.preheader.preheader:3  %add_ln65 = add i5 %zext_ln65, %zext_ln215_1
+.preheader.preheader:3  %add_ln65 = add i5 %zext_ln65, %zext_ln215_3
 
 ]]></Node>
 <StgValue><ssdm name="add_ln65"/></StgValue>
@@ -426,10 +426,10 @@
 
 <Node id="29" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader:2  %empty_68 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+.preheader:2  %empty_62 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
 
 ]]></Node>
-<StgValue><ssdm name="empty_68"/></StgValue>
+<StgValue><ssdm name="empty_62"/></StgValue>
 </operation>
 
 <operation id="30" st_id="3" stage="1" lat="1">
@@ -646,10 +646,10 @@
 
 <Node id="44" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.loopexit:4  %empty_69 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+.loopexit:4  %empty_63 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_69"/></StgValue>
+<StgValue><ssdm name="empty_63"/></StgValue>
 </operation>
 
 <operation id="44" st_id="4" stage="1" lat="1">
@@ -1026,10 +1026,10 @@ conv3x3b.exit:1  br label %.preheader
 
 <Node id="68" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader.i:4  %empty_70 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+.preheader.i:4  %empty_64 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
 
 ]]></Node>
-<StgValue><ssdm name="empty_70"/></StgValue>
+<StgValue><ssdm name="empty_64"/></StgValue>
 </operation>
 
 <operation id="68" st_id="5" stage="1" lat="1">
@@ -1072,10 +1072,10 @@ conv3x3b.exit:1  br label %.preheader
 
 <Node id="72" bw="4" op_0_bw="2">
 <![CDATA[
-:0  %zext_ln215_2 = zext i2 %p_087_0_i to i4
+:0  %zext_ln215_1 = zext i2 %p_087_0_i to i4
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln215_2"/></StgValue>
+<StgValue><ssdm name="zext_ln215_1"/></StgValue>
 </operation>
 
 <operation id="71" st_id="5" stage="1" lat="1">
@@ -1088,7 +1088,7 @@ conv3x3b.exit:1  br label %.preheader
 
 <Node id="73" bw="4" op_0_bw="4" op_1_bw="4">
 <![CDATA[
-:1  %ret_V_17 = add i4 %p_084_0, %zext_ln215_2
+:1  %ret_V_17 = add i4 %p_084_0, %zext_ln215_1
 
 ]]></Node>
 <StgValue><ssdm name="ret_V_17"/></StgValue>
@@ -1184,10 +1184,10 @@ conv3x3b.exit:1  br label %.preheader
 
 <Node id="80" bw="3" op_0_bw="2">
 <![CDATA[
-:8  %zext_ln215_3 = zext i2 %p_087_0_i to i3
+:8  %zext_ln215_2 = zext i2 %p_087_0_i to i3
 
 ]]></Node>
-<StgValue><ssdm name="zext_ln215_3"/></StgValue>
+<StgValue><ssdm name="zext_ln215_2"/></StgValue>
 </operation>
 
 <operation id="78" st_id="5" stage="1" lat="1">
@@ -1200,7 +1200,7 @@ conv3x3b.exit:1  br label %.preheader
 
 <Node id="81" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-:9  %ret_V_18 = sub i3 2, %zext_ln215_3
+:9  %ret_V_18 = sub i3 2, %zext_ln215_2
 
 ]]></Node>
 <StgValue><ssdm name="ret_V_18"/></StgValue>

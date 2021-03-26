@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 49
+set id 41
 set name top_mux_32_9_1_1
 set corename simcore_mux
 set op mux
@@ -80,7 +80,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 
 
 # Memory (RAM/ROM)  definition:
-set ID 51
+set ID 43
 set hasByteEnable 0
 set MemName fp_conv_win_V
 set CoreName ap_simcore_mem
@@ -96,7 +96,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 1.425
-set ClkPeriod 10
+set ClkPeriod 12
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -165,7 +165,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 52
+set ID 44
 set hasByteEnable 0
 set MemName fp_conv_lbuf_V
 set CoreName ap_simcore_mem
@@ -181,7 +181,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.664
-set ClkPeriod 10
+set ClkPeriod 12
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -250,7 +250,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 53
+set ID 45
 set hasByteEnable 1
 set MemName fp_conv_outwords_V
 set CoreName ap_simcore_mem
@@ -266,7 +266,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.664
-set ClkPeriod 10
+set ClkPeriod 12
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -345,7 +345,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 54 \
+    id 46 \
     name wt_mem_V_2 \
     reset_level 1 \
     sync_rst true \
@@ -364,7 +364,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 55 \
+    id 47 \
     name kh_mem_V_2 \
     reset_level 1 \
     sync_rst true \
@@ -383,7 +383,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 56 \
+    id 48 \
     name dmem_V_2 \
     reset_level 1 \
     sync_rst true \
@@ -401,7 +401,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 57 \
+    id 49 \
     name d_i_idx_V \
     type other \
     dir I \
@@ -416,7 +416,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 58 \
+    id 50 \
     name d_o_idx_V \
     type other \
     dir I \
@@ -431,7 +431,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 59 \
+    id 51 \
     name kh_index_V_2 \
     type other \
     dir I \
@@ -446,7 +446,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 60 \
+    id 52 \
     name o_index_V_2 \
     type other \
     dir I \
@@ -461,7 +461,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 61 \
+    id 53 \
     name N \
     type other \
     dir I \

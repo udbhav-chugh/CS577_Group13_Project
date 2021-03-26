@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'top'" level="0">
-<item name = "Date">Wed Mar 24 20:06:20 2021
+<item name = "Date">Fri Mar 26 21:30:41 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 9.918, 1.25</column>
+<column name="ap_clk">12.00, 10.489, 1.50</column>
 </table>
 </item>
 </section>
@@ -24,25 +24,23 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">9628, 11438881738, 9628, 11438881738, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_bin_conv_fu_485">bin_conv, ?, ?, ?, ?, none</column>
-<column name="grp_fp_conv_fu_507">fp_conv, 1, 11438872111, 1, 11438872111, none</column>
-<column name="grp_bin_dense_fu_523">bin_dense, ?, ?, ?, ?, none</column>
+<column name="grp_bin_conv_fu_401">bin_conv, 310790, 344439, 310790, 344439, none</column>
+<column name="grp_fp_conv_fu_417">fp_conv, 1, 11438872111, 1, 11438872111, none</column>
+<column name="grp_bin_dense_fu_432">bin_dense, 13, 13, 13, 13, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LOOP_DMEM_I">?, ?, 2, -, -, ?, no</column>
+<column name="- LOOP_DMEM_I">128, 128, 2, -, -, 64, no</column>
 <column name="- LOOP_WT_I">9364, 9364, 2, -, -, 4682, no</column>
 <column name="- LOOP_KH_I">128, 128, 2, -, -, 64, no</column>
-<column name="- LOOP_IMG_BATCH">?, ?, ?, -, -, 0 ~ 65535, no</column>
-<column name="- LOOP_DMEM_O">?, ?, 2, -, -, ?, no</column>
 </table>
 </item>
 </section>

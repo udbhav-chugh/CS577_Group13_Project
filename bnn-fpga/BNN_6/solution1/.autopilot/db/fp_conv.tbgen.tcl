@@ -108,7 +108,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.win_V_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lbuf_V_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.outwords_V_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.top_mux_32_9_1_1_U49", "Parent" : "0"}]}
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.top_mux_32_9_1_1_U41", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

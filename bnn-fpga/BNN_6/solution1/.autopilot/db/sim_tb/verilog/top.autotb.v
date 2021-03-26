@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "top.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_top_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 6.00
 
 `define AESL_MEM_wt_i_V AESL_automem_wt_i_V
 `define AESL_MEM_INST_wt_i_V mem_inst_wt_i_V
@@ -34,10 +34,7 @@
 `define AUTOTB_TVIN_kh_i_V  "./c.top.autotvin_kh_i_V.dat"
 `define AUTOTB_TVIN_dmem_i_V  "./c.top.autotvin_dmem_i_V.dat"
 `define AUTOTB_TVIN_dmem_o_V  "./c.top.autotvin_dmem_o_V.dat"
-`define AUTOTB_TVIN_n_inputs_V  "./c.top.autotvin_n_inputs_V.dat"
 `define AUTOTB_TVIN_n_outputs_V  "./c.top.autotvin_n_outputs_V.dat"
-`define AUTOTB_TVIN_input_words_V  "./c.top.autotvin_input_words_V.dat"
-`define AUTOTB_TVIN_output_words_V  "./c.top.autotvin_output_words_V.dat"
 `define AUTOTB_TVIN_layer_mode_V  "./c.top.autotvin_layer_mode_V.dat"
 `define AUTOTB_TVIN_dmem_mode_V  "./c.top.autotvin_dmem_mode_V.dat"
 `define AUTOTB_TVIN_width_mode_V  "./c.top.autotvin_width_mode_V.dat"
@@ -46,10 +43,7 @@
 `define AUTOTB_TVIN_kh_i_V_out_wrapc  "./rtl.top.autotvin_kh_i_V.dat"
 `define AUTOTB_TVIN_dmem_i_V_out_wrapc  "./rtl.top.autotvin_dmem_i_V.dat"
 `define AUTOTB_TVIN_dmem_o_V_out_wrapc  "./rtl.top.autotvin_dmem_o_V.dat"
-`define AUTOTB_TVIN_n_inputs_V_out_wrapc  "./rtl.top.autotvin_n_inputs_V.dat"
 `define AUTOTB_TVIN_n_outputs_V_out_wrapc  "./rtl.top.autotvin_n_outputs_V.dat"
-`define AUTOTB_TVIN_input_words_V_out_wrapc  "./rtl.top.autotvin_input_words_V.dat"
-`define AUTOTB_TVIN_output_words_V_out_wrapc  "./rtl.top.autotvin_output_words_V.dat"
 `define AUTOTB_TVIN_layer_mode_V_out_wrapc  "./rtl.top.autotvin_layer_mode_V.dat"
 `define AUTOTB_TVIN_dmem_mode_V_out_wrapc  "./rtl.top.autotvin_dmem_mode_V.dat"
 `define AUTOTB_TVIN_width_mode_V_out_wrapc  "./rtl.top.autotvin_width_mode_V.dat"
@@ -58,17 +52,14 @@
 `define AUTOTB_TVOUT_dmem_o_V_out_wrapc  "./impl_rtl.top.autotvout_dmem_o_V.dat"
 module `AUTOTB_TOP;
 
-parameter AUTOTB_TRANSACTION_NUM = 3;
+parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = -1;
+parameter LATENCY_ESTIMATION = 2147483647;
 parameter LENGTH_wt_i_V = 4682;
 parameter LENGTH_kh_i_V = 64;
 parameter LENGTH_dmem_i_V = 2048;
 parameter LENGTH_dmem_o_V = 128;
-parameter LENGTH_n_inputs_V = 1;
 parameter LENGTH_n_outputs_V = 1;
-parameter LENGTH_input_words_V = 1;
-parameter LENGTH_output_words_V = 1;
 parameter LENGTH_layer_mode_V = 1;
 parameter LENGTH_dmem_mode_V = 1;
 parameter LENGTH_width_mode_V = 1;
@@ -415,56 +406,6 @@ assign arraydmem_o_V_done =    AESL_done_delay;
 // The signal of port n_inputs_V
 reg [15: 0] AESL_REG_n_inputs_V = 0;
 assign n_inputs_V = AESL_REG_n_inputs_V;
-initial begin : read_file_process_n_inputs_V
-    integer fp;
-    integer err;
-    integer ret;
-    integer proc_rand;
-    reg [159  : 0] token;
-    integer i;
-    reg transaction_finish;
-    integer transaction_idx;
-    transaction_idx = 0;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_n_inputs_V,"r");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_n_inputs_V);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    if (token != "[[[runtime]]]") begin
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    while (token != "[[[/runtime]]]") begin
-        if (token != "[[transaction]]") begin
-            $display("ERROR: Simulation using HLS TB failed.");
-              $finish;
-        end
-        read_token(fp, token);  // skip transaction number
-          read_token(fp, token);
-            # 0.2;
-            while(ready_wire !== 1) begin
-                @(posedge AESL_clock);
-                # 0.2;
-            end
-        if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_n_inputs_V);
-              if (ret != 1) begin
-                  $display("Failed to parse token!");
-                $display("ERROR: Simulation using HLS TB failed.");
-                  $finish;
-              end
-            @(posedge AESL_clock);
-              read_token(fp, token);
-        end
-          read_token(fp, token);
-    end
-    $fclose(fp);
-end
-
 
 // The signal of port n_outputs_V
 reg [15: 0] AESL_REG_n_outputs_V = 0;
@@ -523,110 +464,10 @@ end
 // The signal of port input_words_V
 reg [15: 0] AESL_REG_input_words_V = 0;
 assign input_words_V = AESL_REG_input_words_V;
-initial begin : read_file_process_input_words_V
-    integer fp;
-    integer err;
-    integer ret;
-    integer proc_rand;
-    reg [159  : 0] token;
-    integer i;
-    reg transaction_finish;
-    integer transaction_idx;
-    transaction_idx = 0;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_input_words_V,"r");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_input_words_V);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    if (token != "[[[runtime]]]") begin
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    while (token != "[[[/runtime]]]") begin
-        if (token != "[[transaction]]") begin
-            $display("ERROR: Simulation using HLS TB failed.");
-              $finish;
-        end
-        read_token(fp, token);  // skip transaction number
-          read_token(fp, token);
-            # 0.2;
-            while(ready_wire !== 1) begin
-                @(posedge AESL_clock);
-                # 0.2;
-            end
-        if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_input_words_V);
-              if (ret != 1) begin
-                  $display("Failed to parse token!");
-                $display("ERROR: Simulation using HLS TB failed.");
-                  $finish;
-              end
-            @(posedge AESL_clock);
-              read_token(fp, token);
-        end
-          read_token(fp, token);
-    end
-    $fclose(fp);
-end
-
 
 // The signal of port output_words_V
 reg [15: 0] AESL_REG_output_words_V = 0;
 assign output_words_V = AESL_REG_output_words_V;
-initial begin : read_file_process_output_words_V
-    integer fp;
-    integer err;
-    integer ret;
-    integer proc_rand;
-    reg [159  : 0] token;
-    integer i;
-    reg transaction_finish;
-    integer transaction_idx;
-    transaction_idx = 0;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_output_words_V,"r");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_output_words_V);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    if (token != "[[[runtime]]]") begin
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    while (token != "[[[/runtime]]]") begin
-        if (token != "[[transaction]]") begin
-            $display("ERROR: Simulation using HLS TB failed.");
-              $finish;
-        end
-        read_token(fp, token);  // skip transaction number
-          read_token(fp, token);
-            # 0.2;
-            while(ready_wire !== 1) begin
-                @(posedge AESL_clock);
-                # 0.2;
-            end
-        if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_output_words_V);
-              if (ret != 1) begin
-                  $display("Failed to parse token!");
-                $display("ERROR: Simulation using HLS TB failed.");
-                  $finish;
-              end
-            @(posedge AESL_clock);
-              read_token(fp, token);
-        end
-          read_token(fp, token);
-    end
-    $fclose(fp);
-end
-
 
 // The signal of port layer_mode_V
 reg [2: 0] AESL_REG_layer_mode_V = 0;
@@ -933,18 +774,9 @@ reg [31:0] size_dmem_i_V_backup;
 reg end_dmem_o_V;
 reg [31:0] size_dmem_o_V;
 reg [31:0] size_dmem_o_V_backup;
-reg end_n_inputs_V;
-reg [31:0] size_n_inputs_V;
-reg [31:0] size_n_inputs_V_backup;
 reg end_n_outputs_V;
 reg [31:0] size_n_outputs_V;
 reg [31:0] size_n_outputs_V_backup;
-reg end_input_words_V;
-reg [31:0] size_input_words_V;
-reg [31:0] size_input_words_V_backup;
-reg end_output_words_V;
-reg [31:0] size_output_words_V;
-reg [31:0] size_output_words_V_backup;
 reg end_layer_mode_V;
 reg [31:0] size_layer_mode_V;
 reg [31:0] size_layer_mode_V_backup;

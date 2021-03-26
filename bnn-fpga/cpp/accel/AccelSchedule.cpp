@@ -120,6 +120,7 @@ void run_accel_schedule(
 
     timers[LAYERS-1-layer_idx].start();
 
+// #ifdef HW_COSIM
     top(
         wt_i, kh_i, data_i, data_o,
         s[i].n_inputs, s[i].n_outputs,
@@ -130,10 +131,10 @@ void run_accel_schedule(
         s[i].width_mode,
         s[i].norm_mode
     );
+// #endif
 
     timers[LAYERS-1-layer_idx].stop();
   }
-
   //MEM_FREE( wt_i );
   //MEM_FREE( kh_i );
 }

@@ -45,8 +45,8 @@ struct conv_word : public sc_module {
 
     sc_signal< sc_lv<6> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<5> > zext_ln215_1_fu_206_p1;
-    sc_signal< sc_lv<5> > zext_ln215_1_reg_503;
+    sc_signal< sc_lv<5> > zext_ln215_3_fu_206_p1;
+    sc_signal< sc_lv<5> > zext_ln215_3_reg_503;
     sc_signal< sc_lv<4> > select_ln215_fu_210_p3;
     sc_signal< sc_lv<4> > select_ln215_reg_508;
     sc_signal< sc_lv<4> > bank_V_fu_224_p2;
@@ -109,11 +109,11 @@ struct conv_word : public sc_module {
     sc_signal< sc_lv<4> > add_ln215_fu_371_p2;
     sc_signal< sc_lv<6> > p_shl1_cast_fu_380_p3;
     sc_signal< sc_lv<6> > sext_ln215_1_fu_376_p1;
-    sc_signal< sc_lv<4> > zext_ln215_2_fu_406_p1;
+    sc_signal< sc_lv<4> > zext_ln215_1_fu_406_p1;
     sc_signal< sc_lv<4> > ret_V_17_fu_410_p2;
     sc_signal< sc_lv<10> > zext_ln65_3_fu_416_p1;
     sc_signal< sc_lv<10> > add_ln65_3_fu_420_p2;
-    sc_signal< sc_lv<3> > zext_ln215_3_fu_430_p1;
+    sc_signal< sc_lv<3> > zext_ln215_2_fu_430_p1;
     sc_signal< sc_lv<3> > ret_V_18_fu_434_p2;
     sc_signal< sc_lv<6> > sext_ln215_2_fu_440_p1;
     sc_signal< sc_lv<6> > add_ln215_1_fu_444_p2;
@@ -213,9 +213,9 @@ struct conv_word : public sc_module {
     void thread_xor_ln841_fu_472_p2();
     void thread_zext_ln1354_fu_357_p1();
     void thread_zext_ln180_fu_301_p1();
-    void thread_zext_ln215_1_fu_206_p1();
-    void thread_zext_ln215_2_fu_406_p1();
-    void thread_zext_ln215_3_fu_430_p1();
+    void thread_zext_ln215_1_fu_406_p1();
+    void thread_zext_ln215_2_fu_430_p1();
+    void thread_zext_ln215_3_fu_206_p1();
     void thread_zext_ln215_4_fu_449_p1();
     void thread_zext_ln215_fu_285_p1();
     void thread_zext_ln544_fu_318_p1();

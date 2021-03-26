@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bin_dense'" level="0">
-<item name = "Date">Wed Mar 24 20:06:10 2021
+<item name = "Date">Fri Mar 26 21:30:26 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.178, 1.25</column>
+<column name="ap_clk">12.00, 10.489, 1.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">13, 13, 13, 13, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LOOP_DENSE_O">?, ?, ?, -, -, 0 ~ 65535, no</column>
-<column name=" + LOOP_DENSE_I">?, ?, 13, -, -, ?, no</column>
-<column name="  ++ LOOP_DENSE_I.1">8, 8, 4, -, -, 2, no</column>
-<column name="  ++ LOOP_DENSE_I.2">2, 2, 1, -, -, 2, no</column>
+<column name="- Loop 1">6, 6, 3, -, -, 2, no</column>
+<column name="- Loop 2">2, 2, 1, -, -, 2, no</column>
 </table>
 </item>
 </section>

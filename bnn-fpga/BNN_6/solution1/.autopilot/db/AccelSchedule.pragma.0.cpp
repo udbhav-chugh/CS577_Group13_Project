@@ -76683,6 +76683,7 @@ void run_accel_schedule(
 
     timers[LAYERS-1-layer_idx].start();
 
+
     top(
         wt_i, kh_i, data_i, data_o,
         s[i].n_inputs, s[i].n_outputs,
@@ -76694,9 +76695,9 @@ void run_accel_schedule(
         s[i].norm_mode
     );
 
+
     timers[LAYERS-1-layer_idx].stop();
   }
-
 
 
 }
@@ -76719,7 +76720,7 @@ unsigned find_conv_batch_size(unsigned width, unsigned width_o,
   while (n_outputs % imgs_per_batch != 0) {
     imgs_per_batch--;
   }
-  (void) ((!!(imgs_per_batch != 0)) || (_assert("imgs_per_batch != 0","cpp/accel/AccelSchedule.cpp",159),0));
+  (void) ((!!(imgs_per_batch != 0)) || (_assert("imgs_per_batch != 0","cpp/accel/AccelSchedule.cpp",160),0));
 
   if (0 <= 0) printf (">> (Wt, KH) batch: (%u %u)\n", wt_bsize, kh_bsize);
   if (0 <= 0) printf (">> Final batch: %u\n", imgs_per_batch);
@@ -76727,15 +76728,15 @@ unsigned find_conv_batch_size(unsigned width, unsigned width_o,
 
 
 
-  (void) ((!!(n_inputs <= input_bsize)) || (_assert("n_inputs <= input_bsize","cpp/accel/AccelSchedule.cpp",167),0));
-  (void) ((!!(wt_bsize != 0)) || (_assert("wt_bsize != 0","cpp/accel/AccelSchedule.cpp",168),0));
+  (void) ((!!(n_inputs <= input_bsize)) || (_assert("n_inputs <= input_bsize","cpp/accel/AccelSchedule.cpp",168),0));
+  (void) ((!!(wt_bsize != 0)) || (_assert("wt_bsize != 0","cpp/accel/AccelSchedule.cpp",169),0));
 
   return imgs_per_batch;
 }
 
 
 unsigned find_dense_batch_size(unsigned n_inputs, unsigned n_outputs) {
-  (void) ((!!(WT_WORDS*WORD_SIZE >= n_inputs)) || (_assert("WT_WORDS*WORD_SIZE >= n_inputs","cpp/accel/AccelSchedule.cpp",175),0));
+  (void) ((!!(WT_WORDS*WORD_SIZE >= n_inputs)) || (_assert("WT_WORDS*WORD_SIZE >= n_inputs","cpp/accel/AccelSchedule.cpp",176),0));
   const unsigned wt_bsize = WT_WORDS*WORD_SIZE / n_inputs;
   const unsigned kh_bsize = KH_WORDS*KH_PER_WORD;
   unsigned bits_per_batch = DMEM_WORDS*WORD_SIZE;
@@ -76747,7 +76748,7 @@ unsigned find_dense_batch_size(unsigned n_inputs, unsigned n_outputs) {
   while (n_outputs % bits_per_batch != 0) {
     bits_per_batch--;
   }
-  (void) ((!!(bits_per_batch != 0)) || (_assert("bits_per_batch != 0","cpp/accel/AccelSchedule.cpp",187),0));
+  (void) ((!!(bits_per_batch != 0)) || (_assert("bits_per_batch != 0","cpp/accel/AccelSchedule.cpp",188),0));
 
   if (0 <= 0) printf (">> (Wt, KH) bits batch: (%u %u)\n", wt_bsize, kh_bsize);
   if (0 <= 0) printf (">> Final bits batch: %u\n", bits_per_batch);
@@ -76805,7 +76806,7 @@ void load_conv_weights(Word* wt, Word* wt_o,
   unsigned addr_i = curr / CONV_W_PER_WORD;
   unsigned off_i = curr % CONV_W_PER_WORD;
   unsigned wt_words = WTS_TO_WORDS(n_in*n_out);
-  (void) ((!!(wt_words <= WT_WORDS)) || (_assert("wt_words <= WT_WORDS","cpp/accel/AccelSchedule.cpp",245),0));
+  (void) ((!!(wt_words <= WT_WORDS)) || (_assert("wt_words <= WT_WORDS","cpp/accel/AccelSchedule.cpp",246),0));
 
   Word w = wt[addr_i] >> off_i*WT_SIZE;
   Word w_o[CONVOLVERS];
@@ -76844,7 +76845,7 @@ void load_conv_weights(Word* wt, Word* wt_o,
 void load_dense_weights(Word* wt, Word* wt_o,
                       unsigned o, unsigned n_in, unsigned n_out
 ) {
-  (void) ((!!(n_in % WORD_SIZE == 0)) || (_assert("n_in % WORD_SIZE == 0","cpp/accel/AccelSchedule.cpp",284),0));
+  (void) ((!!(n_in % WORD_SIZE == 0)) || (_assert("n_in % WORD_SIZE == 0","cpp/accel/AccelSchedule.cpp",285),0));
 
   for (unsigned i = 0; i < n_in*n_out/WORD_SIZE; ++i) {
     wt_o[i] = wt[o*n_in/WORD_SIZE + i];

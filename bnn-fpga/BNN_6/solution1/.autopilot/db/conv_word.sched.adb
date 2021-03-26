@@ -244,7 +244,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>zext_ln215_1</name>
+						<name>zext_ln215_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
 						<lineNumber>67</lineNumber>
@@ -2992,7 +2992,7 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>zext_ln215_2</name>
+						<name>zext_ln215_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
 						<lineNumber>65</lineNumber>
@@ -3436,7 +3436,7 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>zext_ln215_3</name>
+						<name>zext_ln215_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga</fileDirectory>
 						<lineNumber>66</lineNumber>

@@ -92,9 +92,12 @@ int main() {
     kh[n/KH_PER_WORD] = w;
   }
 
+// #ifdef HW_COSIM
   test_conv_layer_random( 8, wt, kh);
-  test_conv_layer_random(16, wt, kh);
-  test_conv_layer_random(32, wt, kh);
+// #endif
+  // test_conv_layer_random(16, wt, kh);
+  // test_conv_layer_random(32, wt, kh);
+
 
   delete[] wt;
   delete[] kh;

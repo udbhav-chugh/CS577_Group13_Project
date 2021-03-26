@@ -244,7 +244,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>zext_ln215_1</name>
+              <name>zext_ln215_3</name>
               <fileName>cpp/accel/Accel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>67</lineNumber>
@@ -275,7 +275,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln215_1_fu_206_p1</rtlName>
+              <rtlName>zext_ln215_3_fu_206_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>5</bitwidth>
@@ -2992,7 +2992,7 @@
             <Obj>
               <type>0</type>
               <id>72</id>
-              <name>zext_ln215_2</name>
+              <name>zext_ln215_1</name>
               <fileName>cpp/accel/Accel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>65</lineNumber>
@@ -3023,7 +3023,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln215_2_fu_406_p1</rtlName>
+              <rtlName>zext_ln215_1_fu_406_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>4</bitwidth>
@@ -3436,7 +3436,7 @@
             <Obj>
               <type>0</type>
               <id>80</id>
-              <name>zext_ln215_3</name>
+              <name>zext_ln215_2</name>
               <fileName>cpp/accel/Accel.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>66</lineNumber>
@@ -3467,7 +3467,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln215_3_fu_430_p1</rtlName>
+              <rtlName>zext_ln215_2_fu_430_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>3</bitwidth>
@@ -8430,7 +8430,7 @@
           </second>
         </item>
         <item>
-          <first>zext_ln215_1_reg_503</first>
+          <first>zext_ln215_3_reg_503</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -10333,15 +10333,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln215_1_fu_206</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>7</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln215_2_fu_406</first>
+        <first>zext_ln215_1_fu_406</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10349,11 +10341,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln215_3_fu_430</first>
+        <first>zext_ln215_2_fu_430</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>80</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln215_3_fu_206</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>7</item>
         </second>
       </item>
       <item>
@@ -10848,7 +10848,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln215_1_reg_503</first>
+        <first>zext_ln215_3_reg_503</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
