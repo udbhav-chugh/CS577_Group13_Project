@@ -134,12 +134,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "o_index_V", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "dmem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "dmem_V_2"},
-					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "dmem_V_4"}]},
+					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "dmem_V_4"},
+					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "dmem_V_2"}]},
 			{"Name" : "wt_mem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "wt_mem_V_2"},
-					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "wt_mem_V_4"}]},
+					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "wt_mem_V_4"},
+					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "wt_mem_V_2"}]},
 			{"Name" : "kh_mem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "kh_mem_V_2"}]},
@@ -241,7 +241,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "13", "EstimateLatencyMax" : "13",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -309,7 +309,7 @@ set ArgLastReadFirstWriteLatency {
 		wt_mem_V_2 {Type I LastRead 2 FirstWrite -1}
 		kh_mem_V_2 {Type I LastRead 3 FirstWrite -1}
 		dmem_V_2 {Type IO LastRead 2 FirstWrite 4}
-		layer_type_V {Type I LastRead 1 FirstWrite -1}
+		layer_type_V {Type I LastRead 4 FirstWrite -1}
 		d_i_idx_V {Type I LastRead 1 FirstWrite -1}
 		d_o_idx_V {Type I LastRead 0 FirstWrite -1}
 		o_index_V_2 {Type I LastRead 0 FirstWrite -1}}}

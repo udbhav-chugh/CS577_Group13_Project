@@ -1,8 +1,28 @@
 INFO: [HLS 200-10] Running 'D:/Softwares/VLSI/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'SDTheSlayer' on host 'omen' (Windows NT_amd64 version 6.2) on Sun Mar 28 12:15:28 +0530 2021
+INFO: [HLS 200-10] For user 'SDTheSlayer' on host 'omen' (Windows NT_amd64 version 6.2) on Sun Mar 28 14:37:47 +0530 2021
 INFO: [HLS 200-10] In directory 'C:/Work/CS577_Group13_Project/bnn-fpga'
-Sourcing Tcl script 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/cosim.tcl'
+Sourcing Tcl script 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6'.
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Typedefs.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Timer.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Timer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/SArray.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/InputConv.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/InputConv.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Dense.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Dense.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Debug.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Common.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Common.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelTest.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelTest.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelSchedule.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelSchedule.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelPrint.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelPrint.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Accel.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Accel.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'cpp/accel/accel_test_random.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
@@ -11,223 +31,204 @@ WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
 INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/bin/g++"
-   Compiling AccelSchedule.cpp_pre.cpp.tb.cpp
-   Compiling Common.cpp_pre.cpp.tb.cpp
-   Compiling Dense.cpp_pre.cpp.tb.cpp
-   Compiling InputConv.cpp_pre.cpp.tb.cpp
-   Compiling apatb_top.cpp
-   Compiling Accel.cpp_pre.cpp.tb.cpp
-   Compiling accel_test_random.cpp_pre.cpp.tb.cpp
-   Compiling AccelPrint.cpp_pre.cpp.tb.cpp
-   Compiling AccelTest.cpp_pre.cpp.tb.cpp
-   Compiling Timer.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
-#### Testing convolution with 64 inputs, width 8 ####
->> (Wt, KH) batch: (512 256)
->> Final batch: 1
-*bin out*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-*bin ref*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-## Checking results ##
-Error rate:  0.0000%
-Tests passed!
-xl-Conv1            :      1 calls;  0.210 secs total time
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
-
-C:\Work\CS577_Group13_Project\bnn-fpga\BNN_6\solution1\sim\verilog>set PATH= 
-
-C:\Work\CS577_Group13_Project\bnn-fpga\BNN_6\solution1\sim\verilog>call D:/Softwares/VLSI/Vivado/2019.1/bin/xelab xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s top  
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Softwares/VLSI/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s top 
-Multi-threading is on. Using 6 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/glbl.v" into library work
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_o_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_o_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_kh_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_kh_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_wt_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_wt_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_outhbi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_conv_outhbi_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_conv_outhbi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_parcud.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_conv_parcud_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_conv_parcud
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_budEe.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_budEe_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_budEe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_teeOg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_teeOg_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_teeOg
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_lb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_lb_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_lb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_old_wordg8j.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_old_wordg8j_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_old_wordg8j
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_word_buffYi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_dense.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_dense
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module process_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_dmem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_dmem_V_ram
-INFO: [VRFC 10-311] analyzing module top_dmem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_kh_mem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kh_mem_V_ram
-INFO: [VRFC 10-311] analyzing module top_kh_mem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_ibs.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs_DSP48_0
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_wt_mem_V_ram
-INFO: [VRFC 10-311] analyzing module top_wt_mem_V
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.top_dmem_V_ram
-Compiling module xil_defaultlib.top_dmem_V(DataWidth=64,AddressR...
-Compiling module xil_defaultlib.top_wt_mem_V_ram
-Compiling module xil_defaultlib.top_wt_mem_V(DataWidth=64,Addres...
-Compiling module xil_defaultlib.top_kh_mem_V_ram
-Compiling module xil_defaultlib.top_kh_mem_V(DataWidth=64,Addres...
-Compiling module xil_defaultlib.bin_conv_line_bufbkb_ram
-Compiling module xil_defaultlib.bin_conv_line_bufbkb(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_conv_parcud_ram
-Compiling module xil_defaultlib.bin_conv_conv_parcud(DataWidth=1...
-Compiling module xil_defaultlib.bin_conv_fixed_budEe_ram
-Compiling module xil_defaultlib.bin_conv_fixed_budEe(DataWidth=1...
-Compiling module xil_defaultlib.bin_conv_fixed_teeOg_ram
-Compiling module xil_defaultlib.bin_conv_fixed_teeOg(DataWidth=1...
-Compiling module xil_defaultlib.bin_conv_word_buffYi_ram
-Compiling module xil_defaultlib.bin_conv_word_buffYi(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_old_wordg8j_ram
-Compiling module xil_defaultlib.bin_conv_old_wordg8j(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_conv_outhbi_ram
-Compiling module xil_defaultlib.bin_conv_conv_outhbi(DataWidth=5...
-Compiling module xil_defaultlib.bin_conv_lb_ram
-Compiling module xil_defaultlib.bin_conv_lb(DataWidth=1,AddressR...
-Compiling module xil_defaultlib.conv_word
-Compiling module xil_defaultlib.process_word
-Compiling module xil_defaultlib.top_mul_mul_15ns_ibs_DSP48_0
-Compiling module xil_defaultlib.top_mul_mul_15ns_ibs(ID=1,NUM_ST...
-Compiling module xil_defaultlib.bin_conv
-Compiling module xil_defaultlib.bin_dense
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.AESL_automem_wt_i_V
-Compiling module xil_defaultlib.AESL_automem_kh_i_V
-Compiling module xil_defaultlib.AESL_automem_dmem_i_V
-Compiling module xil_defaultlib.AESL_automem_dmem_o_V
-Compiling module xil_defaultlib.apatb_top_top
-Compiling module work.glbl
-Built simulation snapshot top
-
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Mar 28 12:18:19 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 91.367 ; gain = 0.000
-INFO: [Common 17-206] Exiting Webtalk at Sun Mar 28 12:18:19 2021...
-
-****** xsim v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source xsim.dir/top/xsim_script.tcl
-# xsim {top} -autoloadwcfg -tclbatch {top.tcl}
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source top.tcl
-## run all
-////////////////////////////////////////////////////////////////////////////////////
-// Inter-Transaction Progress: Completed Transaction / Total Transaction
-// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
-//
-// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
-////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "126000"
-// RTL Simulation : 1 / 1 [100.00%] @ "3989070000"
-////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 3989118 ns : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 688
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 221.770 ; gain = 0.000
-## quit
-INFO: [Common 17-206] Exiting xsim at Sun Mar 28 12:18:55 2021...
-INFO: [COSIM 212-316] Starting C post checking ...
-#### Testing convolution with 64 inputs, width 8 ####
->> (Wt, KH) batch: (512 256)
->> Final batch: 1
-*bin out*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-*bin ref*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-## Checking results ##
-Error rate:  0.0000%
-Tests passed!
-xl-Conv1            :      1 calls;  0.003 secs total time
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Accel.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelPrint.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelSchedule.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelTest.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Common.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Dense.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/InputConv.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Timer.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 176.438 ; gain = 85.105
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 176.438 ; gain = 85.105
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:02:24 . Memory (MB): peak = 471.715 ; gain = 380.383
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'conv_word' into 'process_word' (cpp/accel/Accel.cpp:145) automatically.
+INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:832) automatically.
+WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:682: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:02:26 . Memory (MB): peak = 603.504 ; gain = 512.172
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:869) in function 'top'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:868) in function 'top' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' automatically.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:868) in function 'top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cpp/accel/Accel.cpp:639) in function 'bin_dense' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cpp/accel/Accel.cpp:660) in function 'bin_dense' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:241) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:252) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (cpp/accel/Accel.cpp:392) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (cpp/accel/Accel.cpp:405) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'sum_m.V' (cpp/accel/Accel.cpp:620) automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'conv3x3b' into 'conv_word' (cpp/accel/Accel.cpp:89) automatically.
+INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:832) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:861:5) to (cpp/accel/Accel.cpp:885:1) in function 'top'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:828:38) in function 'top'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:132:42) to (cpp/accel/Accel.cpp:130:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:126:49) to (cpp/accel/Accel.cpp:128:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:134:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:165:32) to (cpp/accel/Accel.cpp:163:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:159:39) to (cpp/accel/Accel.cpp:161:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:167:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:37) to (cpp/accel/Accel.cpp:149:48) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (cpp/accel/Accel.cpp:710:7) in function 'bin_dense'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:337:41) to (cpp/accel/Accel.cpp:332:44) in function 'bin_conv'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:380:11) to (cpp/accel/Accel.cpp:277:47) in function 'bin_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'bin_dense' (cpp/accel/Accel.cpp:606)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:02:29 . Memory (MB): peak = 781.824 ; gain = 690.492
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:02:34 . Memory (MB): peak = 838.977 ; gain = 747.645
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bin_dense' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 154.331 seconds; current allocated memory: 758.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 760.007 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.412 seconds; current allocated memory: 760.232 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.225 seconds; current allocated memory: 760.495 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 761.190 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.424 seconds; current allocated memory: 761.966 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.055 seconds; current allocated memory: 764.716 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.482 seconds; current allocated memory: 767.905 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_DMEM_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WT_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_KH_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.5 seconds; current allocated memory: 768.539 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.523 seconds; current allocated memory: 769.204 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bin_dense' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_dense'.
+INFO: [HLS 200-111]  Elapsed time: 0.718 seconds; current allocated memory: 772.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_word'.
+INFO: [HLS 200-111]  Elapsed time: 0.886 seconds; current allocated memory: 772.721 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_word'.
+INFO: [HLS 200-111]  Elapsed time: 0.481 seconds; current allocated memory: 774.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'bin_conv_line_buffer' to 'bin_conv_line_bufbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_conv_params_V' to 'bin_conv_conv_parcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_fixed_buffer_V' to 'bin_conv_fixed_budEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_fixed_temp_V' to 'bin_conv_fixed_teeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_word_buffer_V' to 'bin_conv_word_buffYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_old_word_buffer_V' to 'bin_conv_old_wordg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_conv_out_buffer_V' to 'bin_conv_conv_outhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_mul_mul_15ns_5ns_16_1_1' to 'top_mul_mul_15ns_ibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_mul_mul_15ns_ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_conv'.
+INFO: [HLS 200-111]  Elapsed time: 1.533 seconds; current allocated memory: 780.401 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/wt_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/kh_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_o_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_inputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_outputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/input_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/layer_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/width_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/norm_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Port 'top/n_inputs_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 3.361 seconds; current allocated memory: 782.837 MB.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_line_bufbkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_conv_parcud_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_fixed_budEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_fixed_teeOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_word_buffYi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_old_wordg8j_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_conv_outhbi_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_lb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_dmem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_wt_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_kh_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:31 ; elapsed = 00:02:50 . Memory (MB): peak = 898.711 ; gain = 807.379
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 170.407 seconds; peak allocated memory: 782.837 MB.

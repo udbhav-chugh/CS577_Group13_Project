@@ -5,7 +5,7 @@ set ID 41
 set hasByteEnable 0
 set MemName top_dmem_V
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 2 }
 set DataWd 64
 set AddrRange 4096
 set AddrWd 12
@@ -91,7 +91,7 @@ set ID 42
 set hasByteEnable 0
 set MemName top_wt_mem_V
 set CoreName ap_simcore_mem
-set PortList { 2 3 }
+set PortList { 2 1 }
 set DataWd 64
 set AddrRange 4682
 set AddrWd 13

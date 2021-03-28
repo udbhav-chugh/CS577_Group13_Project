@@ -596,10 +596,10 @@
     "Metrics": {
       "bin_dense": {
         "Latency": {
-          "LatencyBest": "13",
-          "LatencyAvg": "13",
-          "LatencyWorst": "13",
-          "PipelineII": "13",
+          "LatencyBest": "5",
+          "LatencyAvg": "5",
+          "LatencyWorst": "5",
+          "PipelineII": "5",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -608,25 +608,9 @@
           "Uncertainty": "1.50",
           "Estimate": "10.489"
         },
-        "Loops": [
-          {
-            "Name": "Loop 1",
-            "TripCount": "2",
-            "Latency": "6",
-            "PipelineII": "",
-            "PipelineDepth": "3"
-          },
-          {
-            "Name": "Loop 2",
-            "TripCount": "2",
-            "Latency": "2",
-            "PipelineII": "",
-            "PipelineDepth": "1"
-          }
-        ],
         "Area": {
-          "FF": "210",
-          "LUT": "949",
+          "FF": "170",
+          "LUT": "1301",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -938,7 +922,7 @@
       "top": {
         "Latency": {
           "LatencyBest": "4819",
-          "LatencyAvg": "114722",
+          "LatencyAvg": "114720",
           "LatencyWorst": "349259",
           "PipelineIIMin": "4820",
           "PipelineIIMax": "349260",
@@ -977,8 +961,8 @@
         "Area": {
           "BRAM_18K": "57",
           "DSP48E": "1",
-          "FF": "2062",
-          "LUT": "9182",
+          "FF": "2022",
+          "LUT": "9561",
           "URAM": "0"
         }
       }
@@ -994,7 +978,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-03-28 12:14:39 +0530",
+    "Time": "2021-03-28 14:40:37 +0530",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

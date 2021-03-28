@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'conv_word'
 ================================================================
-* Date:           Sun Mar 28 12:14:23 2021
+* Date:           Sun Mar 28 14:40:22 2021
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BNN_6
@@ -114,7 +114,7 @@ ST_2 : Operation 26 [1/1] (0.00ns)   --->   "ret void" [cpp/accel/Accel.cpp:92] 
 State 3 <SV = 2> <Delay = 1.35>
 ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%p_084_0 = phi i4 [ %cc_V, %conv3x3b.exit ], [ 0, %.preheader.preheader ]"   --->   Operation 27 'phi' 'p_084_0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 28 [1/1] (1.08ns)   --->   "%icmp_ln87 = icmp eq i4 %p_084_0, -8" [cpp/accel/Accel.cpp:87]   --->   Operation 28 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 1.08> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.64> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 29 'speclooptripcount' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 29 'speclooptripcount' 'empty_39' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (1.32ns)   --->   "%cc_V = add i4 %p_084_0, 1" [cpp/accel/Accel.cpp:87]   --->   Operation 30 'add' 'cc_V' <Predicate = true> <Delay = 1.32> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.33> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 31 [1/1] (0.00ns)   --->   "br i1 %icmp_ln87, label %.loopexit7.loopexit, label %1" [cpp/accel/Accel.cpp:87]   --->   Operation 31 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln215 = zext i4 %p_084_0 to i6" [cpp/accel/Accel.cpp:89]   --->   Operation 32 'zext' 'zext_ln215' <Predicate = (!icmp_ln87)> <Delay = 0.00>
@@ -130,7 +130,7 @@ ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%agg_result_V_0_i = phi i5 [ 0, %1 
 ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%agg_result_V_load1_i = phi i5 [ 0, %1 ], [ %agg_result_V_load_i, %.loopexit.loopexit ]" [cpp/accel/Accel.cpp:72->cpp/accel/Accel.cpp:89]   --->   Operation 40 'phi' 'agg_result_V_load1_i' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%p_097_0_i = phi i2 [ 0, %1 ], [ %kr_V, %.loopexit.loopexit ]"   --->   Operation 41 'phi' 'p_097_0_i' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 42 [1/1] (0.64ns)   --->   "%icmp_ln887 = icmp eq i2 %p_097_0_i, -1" [cpp/accel/Accel.cpp:66->cpp/accel/Accel.cpp:89]   --->   Operation 42 'icmp' 'icmp_ln887' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.64> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 43 'speclooptripcount' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 43 'speclooptripcount' 'empty_40' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 44 [1/1] (1.00ns)   --->   "%kr_V = add i2 %p_097_0_i, 1" [cpp/accel/Accel.cpp:66->cpp/accel/Accel.cpp:89]   --->   Operation 44 'add' 'kr_V' <Predicate = true> <Delay = 1.00> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.33> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887, label %conv3x3b.exit, label %.preheader.preheader.i" [cpp/accel/Accel.cpp:66->cpp/accel/Accel.cpp:89]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln544 = zext i2 %p_097_0_i to i64" [cpp/accel/Accel.cpp:69->cpp/accel/Accel.cpp:89]   --->   Operation 46 'zext' 'zext_ln544' <Predicate = (!icmp_ln887)> <Delay = 0.00>
@@ -156,7 +156,7 @@ ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%agg_result_V_1_i = phi i5 [ %agg_r
 ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%agg_result_V_load_i = phi i5 [ %agg_result_V_load1_i, %.preheader.preheader.i ], [ %sum_V, %2 ]"   --->   Operation 64 'phi' 'agg_result_V_load_i' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%p_087_0_i = phi i2 [ 0, %.preheader.preheader.i ], [ %kc_V, %2 ]"   --->   Operation 65 'phi' 'p_087_0_i' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 66 [1/1] (0.64ns)   --->   "%icmp_ln887_3 = icmp eq i2 %p_087_0_i, -1" [cpp/accel/Accel.cpp:67->cpp/accel/Accel.cpp:89]   --->   Operation 66 'icmp' 'icmp_ln887_3' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.64> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 67 'speclooptripcount' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 67 'speclooptripcount' 'empty_41' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 68 [1/1] (1.00ns)   --->   "%kc_V = add i2 %p_087_0_i, 1" [cpp/accel/Accel.cpp:67->cpp/accel/Accel.cpp:89]   --->   Operation 68 'add' 'kc_V' <Predicate = true> <Delay = 1.00> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.33> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 69 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_3, label %.loopexit.loopexit, label %2" [cpp/accel/Accel.cpp:67->cpp/accel/Accel.cpp:89]   --->   Operation 69 'br' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%zext_ln215_1 = zext i2 %p_087_0_i to i4" [cpp/accel/Accel.cpp:69->cpp/accel/Accel.cpp:89]   --->   Operation 70 'zext' 'zext_ln215_1' <Predicate = (!icmp_ln887_3)> <Delay = 0.00>
@@ -231,7 +231,7 @@ br_ln87               (br               ) [ 0011111]
 ret_ln92              (ret              ) [ 0000000]
 p_084_0               (phi              ) [ 0001011]
 icmp_ln87             (icmp             ) [ 0011111]
-empty_37              (speclooptripcount) [ 0000000]
+empty_39              (speclooptripcount) [ 0000000]
 cc_V                  (add              ) [ 0011111]
 br_ln87               (br               ) [ 0000000]
 zext_ln215            (zext             ) [ 0000000]
@@ -245,7 +245,7 @@ agg_result_V_0_i      (phi              ) [ 0000111]
 agg_result_V_load1_i  (phi              ) [ 0000111]
 p_097_0_i             (phi              ) [ 0000100]
 icmp_ln887            (icmp             ) [ 0011111]
-empty_38              (speclooptripcount) [ 0000000]
+empty_40              (speclooptripcount) [ 0000000]
 kr_V                  (add              ) [ 0011111]
 br_ln66               (br               ) [ 0000000]
 zext_ln544            (zext             ) [ 0000000]
@@ -269,7 +269,7 @@ agg_result_V_1_i      (phi              ) [ 0011110]
 agg_result_V_load_i   (phi              ) [ 0011111]
 p_087_0_i             (phi              ) [ 0000010]
 icmp_ln887_3          (icmp             ) [ 0011111]
-empty_39              (speclooptripcount) [ 0000000]
+empty_41              (speclooptripcount) [ 0000000]
 kc_V                  (add              ) [ 0011111]
 br_ln67               (br               ) [ 0000000]
 zext_ln215_1          (zext             ) [ 0000000]

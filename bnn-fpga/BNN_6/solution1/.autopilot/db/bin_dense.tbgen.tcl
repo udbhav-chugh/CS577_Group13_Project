@@ -14,9 +14,9 @@ set isEnableWaveformDebug 1
 set C_modelName {bin_dense}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ wt_mem_V_2 int 64 regular {array 4682 { 1 3 } 1 1 }  }
+	{ wt_mem_V_2 int 64 regular {array 4682 { 1 1 } 1 1 }  }
 	{ kh_mem_V_2 int 64 regular {array 64 { 1 3 } 1 1 }  }
-	{ dmem_V_2 int 64 regular {array 4096 { 2 3 } 1 1 }  }
+	{ dmem_V_2 int 64 regular {array 4096 { 2 2 } 1 1 }  }
 	{ layer_type_V int 2 regular  }
 	{ d_i_idx_V int 1 regular  }
 	{ d_o_idx_V int 1 regular  }
@@ -31,7 +31,7 @@ set C_modelArgMapList {[
  	{ "Name" : "d_o_idx_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "o_index_V_2", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
-set portNum 21
+set portNum 29
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -42,6 +42,9 @@ set portList {
 	{ wt_mem_V_2_address0 sc_out sc_lv 13 signal 0 } 
 	{ wt_mem_V_2_ce0 sc_out sc_logic 1 signal 0 } 
 	{ wt_mem_V_2_q0 sc_in sc_lv 64 signal 0 } 
+	{ wt_mem_V_2_address1 sc_out sc_lv 13 signal 0 } 
+	{ wt_mem_V_2_ce1 sc_out sc_logic 1 signal 0 } 
+	{ wt_mem_V_2_q1 sc_in sc_lv 64 signal 0 } 
 	{ kh_mem_V_2_address0 sc_out sc_lv 6 signal 1 } 
 	{ kh_mem_V_2_ce0 sc_out sc_logic 1 signal 1 } 
 	{ kh_mem_V_2_q0 sc_in sc_lv 64 signal 1 } 
@@ -50,6 +53,11 @@ set portList {
 	{ dmem_V_2_we0 sc_out sc_logic 1 signal 2 } 
 	{ dmem_V_2_d0 sc_out sc_lv 64 signal 2 } 
 	{ dmem_V_2_q0 sc_in sc_lv 64 signal 2 } 
+	{ dmem_V_2_address1 sc_out sc_lv 12 signal 2 } 
+	{ dmem_V_2_ce1 sc_out sc_logic 1 signal 2 } 
+	{ dmem_V_2_we1 sc_out sc_logic 1 signal 2 } 
+	{ dmem_V_2_d1 sc_out sc_lv 64 signal 2 } 
+	{ dmem_V_2_q1 sc_in sc_lv 64 signal 2 } 
 	{ layer_type_V sc_in sc_lv 2 signal 3 } 
 	{ d_i_idx_V sc_in sc_lv 1 signal 4 } 
 	{ d_o_idx_V sc_in sc_lv 1 signal 5 } 
@@ -65,6 +73,9 @@ set NewPortList {[
  	{ "name": "wt_mem_V_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "address0" }} , 
  	{ "name": "wt_mem_V_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "ce0" }} , 
  	{ "name": "wt_mem_V_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "q0" }} , 
+ 	{ "name": "wt_mem_V_2_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "address1" }} , 
+ 	{ "name": "wt_mem_V_2_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "ce1" }} , 
+ 	{ "name": "wt_mem_V_2_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "wt_mem_V_2", "role": "q1" }} , 
  	{ "name": "kh_mem_V_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "kh_mem_V_2", "role": "address0" }} , 
  	{ "name": "kh_mem_V_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "kh_mem_V_2", "role": "ce0" }} , 
  	{ "name": "kh_mem_V_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "kh_mem_V_2", "role": "q0" }} , 
@@ -73,6 +84,11 @@ set NewPortList {[
  	{ "name": "dmem_V_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "we0" }} , 
  	{ "name": "dmem_V_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "d0" }} , 
  	{ "name": "dmem_V_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "q0" }} , 
+ 	{ "name": "dmem_V_2_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "address1" }} , 
+ 	{ "name": "dmem_V_2_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "ce1" }} , 
+ 	{ "name": "dmem_V_2_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "we1" }} , 
+ 	{ "name": "dmem_V_2_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "d1" }} , 
+ 	{ "name": "dmem_V_2_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_2", "role": "q1" }} , 
  	{ "name": "layer_type_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "layer_type_V", "role": "default" }} , 
  	{ "name": "d_i_idx_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "d_i_idx_V", "role": "default" }} , 
  	{ "name": "d_o_idx_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "d_o_idx_V", "role": "default" }} , 
@@ -85,7 +101,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "13", "EstimateLatencyMax" : "13",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -107,7 +123,7 @@ set ArgLastReadFirstWriteLatency {
 		wt_mem_V_2 {Type I LastRead 2 FirstWrite -1}
 		kh_mem_V_2 {Type I LastRead 3 FirstWrite -1}
 		dmem_V_2 {Type IO LastRead 2 FirstWrite 4}
-		layer_type_V {Type I LastRead 1 FirstWrite -1}
+		layer_type_V {Type I LastRead 4 FirstWrite -1}
 		d_i_idx_V {Type I LastRead 1 FirstWrite -1}
 		d_o_idx_V {Type I LastRead 0 FirstWrite -1}
 		o_index_V_2 {Type I LastRead 0 FirstWrite -1}}}
@@ -115,17 +131,17 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "13", "Max" : "13"}
-	, {"Name" : "Interval", "Min" : "13", "Max" : "13"}
+	{"Name" : "Latency", "Min" : "5", "Max" : "5"}
+	, {"Name" : "Interval", "Min" : "5", "Max" : "5"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	wt_mem_V_2 { ap_memory {  { wt_mem_V_2_address0 mem_address 1 13 }  { wt_mem_V_2_ce0 mem_ce 1 1 }  { wt_mem_V_2_q0 mem_dout 0 64 } } }
+	wt_mem_V_2 { ap_memory {  { wt_mem_V_2_address0 mem_address 1 13 }  { wt_mem_V_2_ce0 mem_ce 1 1 }  { wt_mem_V_2_q0 mem_dout 0 64 }  { wt_mem_V_2_address1 MemPortADDR2 1 13 }  { wt_mem_V_2_ce1 MemPortCE2 1 1 }  { wt_mem_V_2_q1 MemPortDOUT2 0 64 } } }
 	kh_mem_V_2 { ap_memory {  { kh_mem_V_2_address0 mem_address 1 6 }  { kh_mem_V_2_ce0 mem_ce 1 1 }  { kh_mem_V_2_q0 mem_dout 0 64 } } }
-	dmem_V_2 { ap_memory {  { dmem_V_2_address0 mem_address 1 12 }  { dmem_V_2_ce0 mem_ce 1 1 }  { dmem_V_2_we0 mem_we 1 1 }  { dmem_V_2_d0 mem_din 1 64 }  { dmem_V_2_q0 mem_dout 0 64 } } }
+	dmem_V_2 { ap_memory {  { dmem_V_2_address0 mem_address 1 12 }  { dmem_V_2_ce0 mem_ce 1 1 }  { dmem_V_2_we0 mem_we 1 1 }  { dmem_V_2_d0 mem_din 1 64 }  { dmem_V_2_q0 mem_dout 0 64 }  { dmem_V_2_address1 MemPortADDR2 1 12 }  { dmem_V_2_ce1 MemPortCE2 1 1 }  { dmem_V_2_we1 MemPortWE2 1 1 }  { dmem_V_2_d1 MemPortDIN2 1 64 }  { dmem_V_2_q1 MemPortDOUT2 0 64 } } }
 	layer_type_V { ap_none {  { layer_type_V in_data 0 2 } } }
 	d_i_idx_V { ap_none {  { d_i_idx_V in_data 0 1 } } }
 	d_o_idx_V { ap_none {  { d_o_idx_V in_data 0 1 } } }

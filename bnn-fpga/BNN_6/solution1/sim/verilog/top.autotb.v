@@ -54,7 +54,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 349259;
+parameter LATENCY_ESTIMATION = 353938;
 parameter LENGTH_wt_i_V = 4682;
 parameter LENGTH_kh_i_V = 64;
 parameter LENGTH_dmem_i_V = 2048;

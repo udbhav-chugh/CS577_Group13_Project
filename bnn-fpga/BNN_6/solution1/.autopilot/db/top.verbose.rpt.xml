@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'top'" level="0">
-<item name = "Date">Sun Mar 28 12:14:36 2021
+<item name = "Date">Sun Mar 28 14:40:34 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
 <column name="grp_bin_conv_fu_407">bin_conv, 310790, 344439, 310790, 344439, none</column>
-<column name="grp_bin_dense_fu_423">bin_dense, 13, 13, 13, 13, none</column>
+<column name="grp_bin_dense_fu_423">bin_dense, 5, 5, 5, 5, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -54,12 +54,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 467, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">7, 1, 1828, 8345, 0</column>
+<column name="Instance">7, 1, 1788, 8697, 0</column>
 <column name="Memory">50, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, -, 370, -</column>
+<column name="Multiplexer">-, -, -, 397, -</column>
 <column name="Register">-, -, 234, -, -</column>
 <specialColumn name="Available">270, 240, 82000, 41000, 0</specialColumn>
-<specialColumn name="Utilization (%)">21, ~0, 2, 22, 0</specialColumn>
+<specialColumn name="Utilization (%)">21, ~0, 2, 23, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -67,7 +67,7 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="grp_bin_conv_fu_407">bin_conv, 7, 1, 1618, 7396, 0</column>
-<column name="grp_bin_dense_fu_423">bin_dense, 0, 0, 210, 949, 0</column>
+<column name="grp_bin_dense_fu_423">bin_dense, 0, 0, 170, 1301, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -98,7 +98,7 @@
 <column name="img_idx_V_fu_643_p2">+, 0, 0, 23, 16, 1</column>
 <column name="img_off_V_fu_632_p2">+, 0, 0, 17, 10, 1</column>
 <column name="ap_block_state13_on_subcall_done">and, 0, 0, 6, 1, 1</column>
-<column name="ap_condition_796">and, 0, 0, 6, 1, 1</column>
+<column name="ap_condition_812">and, 0, 0, 6, 1, 1</column>
 <column name="ap_predicate_op171_call_state13">and, 0, 0, 6, 1, 1</column>
 <column name="t_V_fu_469_p2">and, 0, 0, 6, 1, 1</column>
 <column name="icmp_ln879_1_fu_525_p2">icmp, 0, 0, 8, 2, 1</column>
@@ -111,8 +111,8 @@
 <column name="nc_V_fu_816_p3">select, 0, 0, 16, 1, 16</column>
 <column name="select_ln180_fu_730_p3">select, 0, 0, 12, 1, 12</column>
 <column name="select_ln700_fu_824_p3">select, 0, 0, 2, 1, 2</column>
-<column name="select_ln784_1_fu_657_p3">select, 0, 0, 10, 1, 1</column>
-<column name="select_ln784_fu_649_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln786_1_fu_657_p3">select, 0, 0, 10, 1, 1</column>
+<column name="select_ln786_fu_649_p3">select, 0, 0, 16, 1, 16</column>
 <column name="select_ln879_fu_808_p3">select, 0, 0, 16, 1, 16</column>
 <column name="t_V_1_fu_479_p3">select, 0, 0, 16, 1, 1</column>
 <column name="r_V_fu_589_p2">shl, 0, 0, 35, 16, 16</column>
@@ -136,8 +136,10 @@
 <column name="ap_enable_reg_pp2_iter1">15, 3, 1, 3</column>
 <column name="dmem_V_address0">38, 7, 12, 84</column>
 <column name="dmem_V_ce0">21, 4, 1, 4</column>
+<column name="dmem_V_ce1">9, 2, 1, 2</column>
 <column name="dmem_V_d0">21, 4, 64, 256</column>
 <column name="dmem_V_we0">21, 4, 1, 4</column>
+<column name="dmem_V_we1">9, 2, 1, 2</column>
 <column name="dmem_i_V_address0">21, 4, 11, 44</column>
 <column name="kh_index_V_new_1_reg_383">15, 3, 16, 48</column>
 <column name="kh_mem_V_address0">21, 4, 6, 24</column>
@@ -150,6 +152,7 @@
 <column name="p_0868_0_reg_339">9, 2, 10, 20</column>
 <column name="wt_mem_V_address0">21, 4, 13, 52</column>
 <column name="wt_mem_V_ce0">21, 4, 1, 4</column>
+<column name="wt_mem_V_ce1">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -189,8 +192,8 @@
 <column name="trunc_ln700_reg_901">1, 0, 1, 0</column>
 <column name="trunc_ln792_reg_896">1, 0, 1, 0</column>
 <column name="zext_ln544_4_reg_1032">7, 0, 64, 57</column>
-<column name="zext_ln758_reg_912">1, 0, 16, 15</column>
-<column name="zext_ln769_reg_932">2, 0, 16, 14</column>
+<column name="zext_ln760_reg_912">1, 0, 16, 15</column>
+<column name="zext_ln771_reg_932">2, 0, 16, 14</column>
 <column name="zext_ln879_reg_941">5, 0, 10, 5</column>
 </table>
 </item>

@@ -1,13 +1,5 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../cpp/accel/accel_test_random.cpp in debug mode
-   Compiling ../../../../cpp/accel/Timer.cpp in debug mode
-   Compiling ../../../../cpp/accel/InputConv.cpp in debug mode
-   Compiling ../../../../cpp/accel/Dense.cpp in debug mode
-   Compiling ../../../../cpp/accel/Common.cpp in debug mode
-   Compiling ../../../../cpp/accel/AccelTest.cpp in debug mode
-   Compiling ../../../../cpp/accel/AccelSchedule.cpp in debug mode
-   Compiling ../../../../cpp/accel/AccelPrint.cpp in debug mode
    Compiling ../../../../cpp/accel/Accel.cpp in debug mode
    Generating csim.exe
 #### Testing convolution with 64 inputs, width 8 ####
@@ -36,6 +28,6 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
 ## Checking results ##
 Error rate:  0.0000%
 Tests passed!
-xl-Conv1            :      1 calls;  0.116 secs total time
+xl-Conv1            :      1 calls;  0.102 secs total time
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

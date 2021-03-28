@@ -24,7 +24,7 @@
 ## Checking results ##
 Error rate:  0.0000%
 Tests passed!
-xl-Conv1            :      1 calls;  0.210 secs total time
+xl-Conv1            :      1 calls;  0.192 secs total time
 
 C:\Work\CS577_Group13_Project\bnn-fpga\BNN_6\solution1\sim\verilog>set PATH= 
 
@@ -72,8 +72,6 @@ INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_dense.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_dense
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv_word
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module process_word
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
@@ -119,7 +117,6 @@ Compiling module xil_defaultlib.bin_conv_conv_outhbi_ram
 Compiling module xil_defaultlib.bin_conv_conv_outhbi(DataWidth=5...
 Compiling module xil_defaultlib.bin_conv_lb_ram
 Compiling module xil_defaultlib.bin_conv_lb(DataWidth=1,AddressR...
-Compiling module xil_defaultlib.conv_word
 Compiling module xil_defaultlib.process_word
 Compiling module xil_defaultlib.top_mul_mul_15ns_ibs_DSP48_0
 Compiling module xil_defaultlib.top_mul_mul_15ns_ibs(ID=1,NUM_ST...
@@ -140,9 +137,9 @@ Built simulation snapshot top
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Mar 28 12:18:19 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 91.367 ; gain = 0.000
-INFO: [Common 17-206] Exiting Webtalk at Sun Mar 28 12:18:19 2021...
+INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Mar 28 14:23:15 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 109.230 ; gain = 17.898
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 28 14:23:15 2021...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
@@ -162,12 +159,12 @@ source top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "126000"
-// RTL Simulation : 1 / 1 [100.00%] @ "3989070000"
+// RTL Simulation : 1 / 1 [100.00%] @ "4045218000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 3989118 ns : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 688
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 221.770 ; gain = 0.000
+$finish called at time : 4045266 ns : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 688
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 221.574 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Mar 28 12:18:55 2021...
+INFO: [Common 17-206] Exiting xsim at Sun Mar 28 14:23:39 2021...
 #### Testing convolution with 64 inputs, width 8 ####
 >> (Wt, KH) batch: (512 256)
 >> Final batch: 1
@@ -194,4 +191,4 @@ INFO: [Common 17-206] Exiting xsim at Sun Mar 28 12:18:55 2021...
 ## Checking results ##
 Error rate:  0.0000%
 Tests passed!
-xl-Conv1            :      1 calls;  0.003 secs total time
+xl-Conv1            :      1 calls;  0.004 secs total time
