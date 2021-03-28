@@ -14,6 +14,7 @@ const static Word h01("0x0101010101010101", 16);
 // -----------------------------------------------------------------------
 template<typename T>
 void print_ap_bits(const T& in, const unsigned W) {
+  #pragma HLS INLINE
   printf ("   ");
   for (unsigned i = 0; i < W; ++i)
     // #pragma HLS PIPELINE II=1
@@ -23,6 +24,7 @@ void print_ap_bits(const T& in, const unsigned W) {
 
 template<typename T>
 void print_params(T params[CONVOLVERS][K][K]) {
+  #pragma HLS INLINE
   for (unsigned m = 0; m < CONVOLVERS; ++m) {
     for (unsigned wr = 0; wr < K; ++wr) {
       for (unsigned wc = 0; wc < K; ++wc) {
@@ -37,6 +39,7 @@ void print_params(T params[CONVOLVERS][K][K]) {
 
 template<typename T>
 void print_line_buffer_m(T lbuf[CONV_BANKS]) {
+  #pragma HLS INLINE
   for (unsigned wr = 0; wr < CONV_ROWS; ++wr) {
   for (unsigned bank = 0; bank < CONV_BANKS; ++bank) {
     for (unsigned wc = 0; wc < CONV_COLS; ++wc) {
@@ -50,6 +53,7 @@ void print_line_buffer_m(T lbuf[CONV_BANKS]) {
 }
 
 TwoBit encode_bit(const Bit& b) {
+  #pragma HLS INLINE
   return (b == 0) ? TwoBit(1) : TwoBit(-1);
 }
 
@@ -62,6 +66,7 @@ ConvOut conv3x3b(
     const ap_uint<4> bank,
     const IdxType cc
 ) {
+  #pragma HLS INLINE
   ConvOut sum = 0;
   for (ap_uint<2> kr = 0; kr < K; ++kr) {
     for (ap_uint<2> kc = 0; kc < K; ++kc) {
@@ -83,6 +88,7 @@ void conv_word(
     const Bit conv_params_m[K][K],
     ConvOut conv_out_buffer_m[WORD_SIZE]
 ) {
+  #pragma HLS INLINE
   for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
     for (ap_uint<4> cc = 0; cc < BANK_WIDTH; ++cc) {
       // #pragma HLS PIPELINE II=1
@@ -637,7 +643,6 @@ void bin_dense(
       const Address wt_addr = (o*n_inputs+i) / WORD_SIZE;
 
       for (IdxType j = 0; j < 2; ++j) {
-        #pragma HLS unroll
         // in_wrd addr = [(i/WORD_SIZE+j) % CONVOLVERS][(i/WORD_SIZE+j) / CONVOLVERS]
         // wt_wrd addr = [wt_addr % CONVOLVERS][wt_addr / CONVOLVERS]
         const Word in_wrd = dmem[d_i_idx][j][i/WORD_SIZE/CONVOLVERS];
@@ -658,7 +663,6 @@ void bin_dense(
       }
 
       for (IdxType j = 0; j < 2; ++j)
-        #pragma HLS unroll
         sum += sum_m[j];
     } // n_inputs
 
@@ -772,7 +776,7 @@ void top(
   Address img_idx = 0;  // i / words_per_image;
   IdxType img_off = 0;  // i % words_per_image;
   LOOP_DMEM_I: for (Address i = 0; i < 64; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     if (layer_type == LAYER_CONV) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
@@ -792,14 +796,14 @@ void top(
   // Weight input, we must copy every 64-bit Word from the interface
   // into the accelerator
   LOOP_WT_I: for (Address i = 0; i < C_WT_WORDS*CONVOLVERS; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     wt_mem[i%CONVOLVERS][i/CONVOLVERS] = wt_i[i];
   }
   //printf ("\nAccel Weights:\n");
   //print_params3d(wt_mem[0], 0, n_inputs*n_outputs);
 
   LOOP_KH_I: for (ap_uint<16> i = 0; i < KH_WORDS; ++i){
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     kh_mem[i] = kh_i[i];
   }
 
@@ -866,7 +870,7 @@ void top(
   img_idx = 0;
   img_off = 0;
   LOOP_DMEM_O: for (Address i = 0; i < 1; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     // exclude conv6 (width==8, norm_mode==2) here because it writes
     // the output fmaps linearly
     if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {

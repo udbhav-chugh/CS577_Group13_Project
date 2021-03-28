@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1 opened at Sun Mar 28 14:37:47 +0530 2021
+INFO-FLOW: Workspace C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1 opened at Sun Mar 28 14:48:32 +0530 2021
 Execute     config_clock -quiet -name default -period 12 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
 Execute     config_clock -quiet -name default -uncertainty 1.5 -unit % 
@@ -46,8 +46,8 @@ Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.135 sec.
-Command     ap_source done; 0.136 sec.
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6 
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
@@ -62,7 +62,7 @@ Execute     source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/kint
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7k70t-fbv676-1 
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data single -quiet 
-Command       ap_part_info done; 0.466 sec.
+Command       ap_part_info done; 0.465 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 Execute       add_library xilinx/kintex7/kintex7:xc7k70t:-fbv676:-1 
 Execute         get_default_platform 
@@ -80,7 +80,7 @@ Execute         get_default_platform
 INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.567 sec.
+Command     set_part done; 0.569 sec.
 Execute     ap_part_info -data single -name xc7k70t-fbv676-1 
 Execute     ap_part_info -name xc7k70t-fbv676-1 -data resources 
 Execute     ap_part_info -name xc7k70t-fbv676-1 -data info 
@@ -108,7 +108,7 @@ Execute       get_config_export -vivado_impl_strategy
 Execute       get_config_export -vivado_phys_opt 
 Execute     config_export -vivado_phys_opt=place 
 Execute     config_export -vivado_report_level=0 
-Command   open_solution done; 0.778 sec.
+Command   open_solution done; 0.789 sec.
 Execute   set_part xc7k70t-fbv676-1 
 Execute     ap_part_info -name xc7k70t-fbv676-1 -data single -quiet 
 Execute     ap_part_info -name xc7k70t-fbv676-1 -data info 
@@ -174,47 +174,47 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/Accel.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/Accel.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp
-Command       clang done; 1.329 sec.
+Command       clang done; 1.39 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.568 sec.
+Command       tidy_31 done; 2.784 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 4.134 sec.
-INFO-FLOW: Done: GCC PP time: 8 seconds per iteration
+Command       clang done; 4.182 sec.
+INFO-FLOW: Done: GCC PP time: 8.4 seconds per iteration
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.319 sec.
+Command       tidy_31 done; 2.446 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.317 sec.
+Command       tidy_31 done; 2.304 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Accel.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Accel.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Accel.pp.0.cpp.err.log 
-Command       ap_eval done; 1.435 sec.
+Command       ap_eval done; 1.427 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Accel.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Accel.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Accel.pp.0.cpp.err.log 
-Command         ap_eval done; 4.098 sec.
+Command         ap_eval done; 4.212 sec.
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Accel.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Accel.pp.0.cpp.err.log 
-Command         ap_eval done; 1.449 sec.
-Command       tidy_31 done; 5.637 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 9.4 seconds per iteration
+Command         ap_eval done; 1.477 sec.
+Command       tidy_31 done; 5.782 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 9.5 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.8 sec.
+Command       tidy_31 done; 3.119 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.bc
-Command       clang done; 4.622 sec.
+Command       clang done; 4.742 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelPrint.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -226,42 +226,42 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/AccelPrint.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/AccelPrint.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp
-Command       clang done; 1.27 sec.
+Command       clang done; 1.33 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.383 sec.
+Command       tidy_31 done; 1.455 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.752 sec.
-INFO-FLOW: Done: GCC PP time: 6.4 seconds per iteration
+Command       clang done; 3.832 sec.
+INFO-FLOW: Done: GCC PP time: 6.6 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.299 sec.
+Command       tidy_31 done; 1.301 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.293 sec.
+Command       tidy_31 done; 1.283 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelPrint.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelPrint.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelPrint.pp.0.cpp.err.log 
-Command       ap_eval done; 0.801 sec.
+Command       ap_eval done; 0.807 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelPrint.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelPrint.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelPrint.pp.0.cpp.err.log 
-Command         ap_eval done; 1.561 sec.
+Command         ap_eval done; 1.574 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelPrint.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelPrint.pp.0.cpp.err.log 
-Command         ap_eval done; 0.825 sec.
+Command         ap_eval done; 0.813 sec.
 Command       tidy_31 done; 2.398 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.5 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.529 sec.
+Command       tidy_31 done; 1.537 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.bc
-Command       clang done; 3.989 sec.
+Command       clang done; 3.959 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelSchedule.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -273,42 +273,42 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/AccelSchedule.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/AccelSchedule.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp
-Command       clang done; 1.277 sec.
+Command       clang done; 1.315 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 Command       tidy_31 done; 1.438 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.874 sec.
+Command       clang done; 3.891 sec.
 INFO-FLOW: Done: GCC PP time: 6.6 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.338 sec.
+Command       tidy_31 done; 1.323 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.301 sec.
+Command       tidy_31 done; 1.314 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelSchedule.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelSchedule.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelSchedule.pp.0.cpp.err.log 
-Command       ap_eval done; 0.832 sec.
+Command       ap_eval done; 0.835 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelSchedule.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelSchedule.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelSchedule.pp.0.cpp.err.log 
-Command         ap_eval done; 1.614 sec.
+Command         ap_eval done; 1.632 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelSchedule.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelSchedule.pp.0.cpp.err.log 
-Command         ap_eval done; 0.826 sec.
-Command       tidy_31 done; 2.45 sec.
+Command         ap_eval done; 0.851 sec.
+Command       tidy_31 done; 2.496 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.6 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.576 sec.
+Command       tidy_31 done; 1.601 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.bc
-Command       clang done; 4.504 sec.
+Command       clang done; 4.537 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelTest.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -323,39 +323,39 @@ INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno
 Command       clang done; 1.285 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.543 sec.
+Command       tidy_31 done; 1.66 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.835 sec.
-INFO-FLOW: Done: GCC PP time: 6.7 seconds per iteration
+Command       clang done; 3.881 sec.
+INFO-FLOW: Done: GCC PP time: 6.8 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.451 sec.
+Command       tidy_31 done; 1.436 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.444 sec.
+Command       tidy_31 done; 1.441 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelTest.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelTest.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.AccelTest.pp.0.cpp.err.log 
-Command       ap_eval done; 0.897 sec.
+Command       ap_eval done; 0.879 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelTest.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelTest.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.AccelTest.pp.0.cpp.err.log 
-Command         ap_eval done; 1.846 sec.
+Command         ap_eval done; 1.962 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelTest.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.AccelTest.pp.0.cpp.err.log 
-Command         ap_eval done; 0.967 sec.
-Command       tidy_31 done; 2.825 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 5.2 seconds per iteration
+Command         ap_eval done; 1.253 sec.
+Command       tidy_31 done; 3.228 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 5.6 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.755 sec.
+Command       tidy_31 done; 2.317 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.bc
-Command       clang done; 4.086 sec.
+Command       clang done; 5.529 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Common.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -367,42 +367,42 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/Common.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/Common.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp
-Command       clang done; 1.2 sec.
+Command       clang done; 1.507 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.598 sec.
+Command       tidy_31 done; 0.842 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 1.473 sec.
-INFO-FLOW: Done: GCC PP time: 3.3 seconds per iteration
+Command       clang done; 1.88 sec.
+INFO-FLOW: Done: GCC PP time: 4.2 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.575 sec.
+Command       tidy_31 done; 0.772 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.561 sec.
+Command       tidy_31 done; 0.808 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Common.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Common.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Common.pp.0.cpp.err.log 
-Command       ap_eval done; 0.359 sec.
+Command       ap_eval done; 0.5 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Common.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Common.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Common.pp.0.cpp.err.log 
-Command         ap_eval done; 0.672 sec.
+Command         ap_eval done; 0.816 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Common.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Common.pp.0.cpp.err.log 
-Command         ap_eval done; 0.351 sec.
-Command       tidy_31 done; 1.034 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2 seconds per iteration
+Command         ap_eval done; 0.369 sec.
+Command       tidy_31 done; 1.197 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.5 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.661 sec.
+Command       tidy_31 done; 0.684 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.bc
-Command       clang done; 1.487 sec.
+Command       clang done; 1.614 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Dense.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -414,42 +414,42 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/Dense.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/Dense.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp
-Command       clang done; 1.246 sec.
+Command       clang done; 1.295 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.18 sec.
+Command       tidy_31 done; 1.198 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.632 sec.
-INFO-FLOW: Done: GCC PP time: 6.1 seconds per iteration
+Command       clang done; 3.762 sec.
+INFO-FLOW: Done: GCC PP time: 6.3 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.118 sec.
+Command       tidy_31 done; 1.22 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.096 sec.
+Command       tidy_31 done; 1.22 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Dense.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Dense.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.Dense.pp.0.cpp.err.log 
-Command       ap_eval done; 0.673 sec.
+Command       ap_eval done; 0.74 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Dense.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Dense.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Dense.pp.0.cpp.err.log 
-Command         ap_eval done; 1.32 sec.
+Command         ap_eval done; 1.525 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Dense.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Dense.pp.0.cpp.err.log 
-Command         ap_eval done; 0.696 sec.
-Command       tidy_31 done; 2.027 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3.8 seconds per iteration
+Command         ap_eval done; 0.841 sec.
+Command       tidy_31 done; 2.378 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.3 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.366 sec.
+Command       tidy_31 done; 1.373 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.bc
-Command       clang done; 3.856 sec.
+Command       clang done; 4.07 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/InputConv.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -461,42 +461,42 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/InputConv.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/InputConv.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp
-Command       clang done; 1.282 sec.
+Command       clang done; 1.375 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.387 sec.
+Command       tidy_31 done; 1.686 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 3.793 sec.
-INFO-FLOW: Done: GCC PP time: 6.5 seconds per iteration
+Command       clang done; 3.85 sec.
+INFO-FLOW: Done: GCC PP time: 6.9 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.284 sec.
+Command       tidy_31 done; 1.316 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.288 sec.
+Command       tidy_31 done; 1.408 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.InputConv.pp.0.cpp.diag.yml C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.InputConv.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-dataflow-lawyer.InputConv.pp.0.cpp.err.log 
-Command       ap_eval done; 0.802 sec.
+Command       ap_eval done; 0.892 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.InputConv.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.InputConv.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.InputConv.pp.0.cpp.err.log 
-Command         ap_eval done; 1.555 sec.
+Command         ap_eval done; 1.673 sec.
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.InputConv.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.InputConv.pp.0.cpp.err.log 
-Command         ap_eval done; 0.821 sec.
-Command       tidy_31 done; 2.387 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.5 seconds per iteration
+Command         ap_eval done; 0.844 sec.
+Command       tidy_31 done; 2.529 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.8 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.563 sec.
+Command       tidy_31 done; 1.897 sec.
 Execute       ap_part_info -name xc7k70t-fbv676-1 -data info 
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.bc
-Command       clang done; 3.962 sec.
+Command       clang done; 4.681 sec.
 INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Timer.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       is_m_axi_addr64 
@@ -508,14 +508,14 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "cpp/accel/Timer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E cpp/accel/Timer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp
-Command       clang done; 1.157 sec.
+Command       clang done; 1.174 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Softwares/VLSI/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp"  -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/useless.bc
-Command       clang done; 1.147 sec.
-INFO-FLOW: Done: GCC PP time: 2.4 seconds per iteration
+Command       clang done; 1.235 sec.
+INFO-FLOW: Done: GCC PP time: 2.5 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp std=gnu++98 -directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
@@ -527,7 +527,7 @@ Execute       ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/t
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Timer.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Timer.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/tidy-3.1.Timer.pp.0.cpp.err.log 
 Execute         ap_eval exec -ignorestderr D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Timer.pp.0.cpp.out.log 2> C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/xilinx-legacy-rewriter.Timer.pp.0.cpp.err.log 
-Command       tidy_31 done; 0.14 sec.
+Command       tidy_31 done; 0.141 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.3 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pragma.1.cpp std=gnu++98 
@@ -536,89 +536,88 @@ Execute       ap_part_info -name xc7k70t-fbv676-1 -data info
 INFO-FLOW: Processing labels
 Execute       clang -src C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot" -I "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.bc" 
 INFO-FLOW: exec D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Softwares/VLSI/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot -I D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.bc
-Command       clang done; 1.143 sec.
+Command       clang done; 1.236 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Accel.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelPrint.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelSchedule.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/AccelTest.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Common.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Dense.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/InputConv.g.bc C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/Timer.g.bc -hls-opt -except-internalize top -LD:/Softwares/VLSI/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 3.941 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 176.438 ; gain = 85.105
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 176.438 ; gain = 85.105
+Command       llvm-ld done; 4.342 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:02:28 . Memory (MB): peak = 175.867 ; gain = 84.535
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:02:28 . Memory (MB): peak = 175.867 ; gain = 84.535
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute         transform -promote-dbg-pointer C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.pp.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 1.138 sec.
+Command         transform done; 1.356 sec.
 Execute         llvm-ld C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Softwares/VLSI/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 2.923 sec.
+Command         llvm-ld done; 3.013 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.0.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 1.718 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:02:24 . Memory (MB): peak = 471.715 ; gain = 380.383
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:346).
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:344).
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:341).
+INFO: [XFORM 203-603] Inlining function 'conv3x3b' into 'conv_word' (cpp/accel/Accel.cpp:95).
+INFO: [XFORM 203-603] Inlining function 'conv_word' into 'process_word' (cpp/accel/Accel.cpp:151).
+Command         transform done; 1.686 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:02:34 . Memory (MB): peak = 471.480 ; gain = 380.148
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.1.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-INFO: [XFORM 203-602] Inlining function 'conv_word' into 'process_word' (cpp/accel/Accel.cpp:145) automatically.
-INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
-INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:832) automatically.
-Command         transform done; 1.239 sec.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:836) automatically.
+Command         transform done; 1.22 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:682: variable-indexed range selection may cause suboptimal QoR.
+WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:686: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-Command         transform done; 0.266 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:02:26 . Memory (MB): peak = 603.504 ; gain = 512.172
+Command         transform done; 0.265 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:02:36 . Memory (MB): peak = 603.359 ; gain = 512.027
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.g.1.bc to C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.1.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:869) in function 'top'.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:868) in function 'top' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' automatically.
-INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' automatically.
-INFO: [HLS 200-489] Unrolling loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:868) in function 'top' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (cpp/accel/Accel.cpp:639) in function 'bin_dense' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (cpp/accel/Accel.cpp:660) in function 'bin_dense' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:241) in function 'bin_conv' completely with a factor of 8.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:252) in function 'bin_conv' completely with a factor of 64.
-INFO: [HLS 200-489] Unrolling loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-4' (cpp/accel/Accel.cpp:392) in function 'bin_conv' completely with a factor of 64.
-INFO: [HLS 200-489] Unrolling loop 'Loop-6' (cpp/accel/Accel.cpp:405) in function 'bin_conv' completely with a factor of 64.
-INFO: [HLS 200-489] Unrolling loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' completely with a factor of 1.
-INFO: [XFORM 203-102] Partitioning array 'sum_m.V' (cpp/accel/Accel.cpp:620) automatically.
-INFO: [XFORM 203-102] Automatically partitioning small array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) completely based on array size.
-INFO: [XFORM 203-101] Partitioning array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) in dimension 1 completely.
-INFO: [XFORM 203-602] Inlining function 'conv3x3b' into 'conv_word' (cpp/accel/Accel.cpp:89) automatically.
-INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
-INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:832) automatically.
-Command         transform done; 2.224 sec.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:872) in function 'top' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:634) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:642) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:270) in function 'bin_conv' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:431) in function 'bin_conv' automatically.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:872) in function 'top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:634) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:642) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:247) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:258) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:270) in function 'bin_conv' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (cpp/accel/Accel.cpp:398) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (cpp/accel/Accel.cpp:411) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:431) in function 'bin_conv' completely with a factor of 1.
+INFO: [XFORM 203-102] Automatically partitioning small array 'sum_m.V' (cpp/accel/Accel.cpp:626) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:286) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'sum_m.V' (cpp/accel/Accel.cpp:626) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:286) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:836) automatically.
+Command         transform done; 2.196 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:861:5) to (cpp/accel/Accel.cpp:885:1) in function 'top'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:828:38) in function 'top'... converting 6 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:132:42) to (cpp/accel/Accel.cpp:130:49) in function 'process_word'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:126:49) to (cpp/accel/Accel.cpp:128:5) in function 'process_word'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:134:21) in function 'process_word'... converting 9 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:165:32) to (cpp/accel/Accel.cpp:163:49) in function 'process_word'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:159:39) to (cpp/accel/Accel.cpp:161:5) in function 'process_word'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:167:21) in function 'process_word'... converting 9 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:37) to (cpp/accel/Accel.cpp:149:48) in function 'process_word'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (cpp/accel/Accel.cpp:710:7) in function 'bin_dense'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:337:41) to (cpp/accel/Accel.cpp:332:44) in function 'bin_conv'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:380:11) to (cpp/accel/Accel.cpp:277:47) in function 'bin_conv'... converting 3 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'bin_dense' (cpp/accel/Accel.cpp:606)...6 expression(s) balanced.
-Command         transform done; 0.722 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:02:29 . Memory (MB): peak = 781.824 ; gain = 690.492
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:865:5) to (cpp/accel/Accel.cpp:889:1) in function 'top'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:832:38) in function 'top'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:138:42) to (cpp/accel/Accel.cpp:136:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:132:49) to (cpp/accel/Accel.cpp:134:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:140:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:171:32) to (cpp/accel/Accel.cpp:169:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:165:39) to (cpp/accel/Accel.cpp:167:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:173:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:184:37) to (cpp/accel/Accel.cpp:155:48) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:667:5) to (cpp/accel/Accel.cpp:714:7) in function 'bin_dense'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:343:41) to (cpp/accel/Accel.cpp:338:44) in function 'bin_conv'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:386:11) to (cpp/accel/Accel.cpp:283:47) in function 'bin_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'bin_dense' (cpp/accel/Accel.cpp:612)...3 expression(s) balanced.
+Command         transform done; 0.696 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:02:39 . Memory (MB): peak = 783.191 ; gain = 691.859
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.2.bc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 5.134 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:02:34 . Memory (MB): peak = 838.977 ; gain = 747.645
+Command         transform done; 5.111 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:02:44 . Memory (MB): peak = 828.910 ; gain = 737.578
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 15.402 sec.
-Command     elaborate done; 152.63 sec.
+Command       opt_and_import_c done; 15.581 sec.
+Command     elaborate done; 162.271 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -628,16 +627,12 @@ Execute       get_model_list top -filter all-wo-channel -topdown
 Execute       preproc_iomode -model top 
 Execute       preproc_iomode -model bin_conv 
 Execute       preproc_iomode -model process_word 
-Execute       preproc_iomode -model conv_word 
 Execute       preproc_iomode -model bin_dense 
 Execute       get_model_list top -filter all-wo-channel 
-INFO-FLOW: Model list for configure: bin_dense conv_word process_word bin_conv top
+INFO-FLOW: Model list for configure: bin_dense process_word bin_conv top
 INFO-FLOW: Configuring Module : bin_dense ...
 Execute       set_default_model bin_dense 
 Execute       apply_spec_resource_limit bin_dense 
-INFO-FLOW: Configuring Module : conv_word ...
-Execute       set_default_model conv_word 
-Execute       apply_spec_resource_limit conv_word 
 INFO-FLOW: Configuring Module : process_word ...
 Execute       set_default_model process_word 
 Execute       apply_spec_resource_limit process_word 
@@ -647,15 +642,11 @@ Execute       apply_spec_resource_limit bin_conv
 INFO-FLOW: Configuring Module : top ...
 Execute       set_default_model top 
 Execute       apply_spec_resource_limit top 
-INFO-FLOW: Model list for preprocess: bin_dense conv_word process_word bin_conv top
+INFO-FLOW: Model list for preprocess: bin_dense process_word bin_conv top
 INFO-FLOW: Preprocessing Module: bin_dense ...
 Execute       set_default_model bin_dense 
 Execute       cdfg_preprocess -model bin_dense 
 Execute       rtl_gen_preprocess bin_dense 
-INFO-FLOW: Preprocessing Module: conv_word ...
-Execute       set_default_model conv_word 
-Execute       cdfg_preprocess -model conv_word 
-Execute       rtl_gen_preprocess conv_word 
 INFO-FLOW: Preprocessing Module: process_word ...
 Execute       set_default_model process_word 
 Execute       cdfg_preprocess -model process_word 
@@ -668,7 +659,7 @@ INFO-FLOW: Preprocessing Module: top ...
 Execute       set_default_model top 
 Execute       cdfg_preprocess -model top 
 Execute       rtl_gen_preprocess top 
-INFO-FLOW: Model list for synthesis: bin_dense conv_word process_word bin_conv top
+INFO-FLOW: Model list for synthesis: bin_dense process_word bin_conv top
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'bin_dense' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -676,10 +667,10 @@ Execute       set_default_model bin_dense
 Execute       schedule -model bin_dense 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 154.331 seconds; current allocated memory: 758.746 MB.
+INFO: [HLS 200-111]  Elapsed time: 163.941 seconds; current allocated memory: 748.098 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.sched.adb -f 
-Command       db_write done; 0.102 sec.
 INFO-FLOW: Finish scheduling bin_dense.
 Execute       set_default_model bin_dense 
 Execute       bind -model bin_dense 
@@ -689,36 +680,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 760.007 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 748.881 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.verbose.bind.rpt 
-Command       syn_report done; 0.13 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.bind.adb -f 
-Command       db_write done; 0.111 sec.
 INFO-FLOW: Finish binding bin_dense.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv_word' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model conv_word 
-Execute       schedule -model conv_word 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.412 seconds; current allocated memory: 760.232 MB.
-Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.verbose.sched.rpt 
-INFO: [HLS 200-434] Only 0 loops out of a total 4 loops have been pipelined in this design.
-Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.sched.adb -f 
-INFO-FLOW: Finish scheduling conv_word.
-Execute       set_default_model conv_word 
-Execute       bind -model conv_word 
-BIND OPTION: model=conv_word
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.225 seconds; current allocated memory: 760.495 MB.
-Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.verbose.bind.rpt 
-Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.bind.adb -f 
-INFO-FLOW: Finish binding conv_word.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'process_word' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -726,12 +691,12 @@ Execute       set_default_model process_word
 Execute       schedule -model process_word 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.119 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 761.190 MB.
+Command       schedule done; 0.15 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.446 seconds; current allocated memory: 749.750 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.verbose.sched.rpt 
-Command       syn_report done; 0.129 sec.
+Command       syn_report done; 0.179 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.sched.adb -f 
-Command       db_write done; 0.101 sec.
+Command       db_write done; 0.144 sec.
 INFO-FLOW: Finish scheduling process_word.
 Execute       set_default_model process_word 
 Execute       bind -model process_word 
@@ -741,11 +706,11 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.424 seconds; current allocated memory: 761.966 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.559 seconds; current allocated memory: 750.761 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.verbose.bind.rpt 
-Command       syn_report done; 0.222 sec.
+Command       syn_report done; 0.289 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.bind.adb -f 
-Command       db_write done; 0.105 sec.
+Command       db_write done; 0.164 sec.
 INFO-FLOW: Finish binding process_word.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'bin_conv' 
@@ -754,12 +719,12 @@ Execute       set_default_model bin_conv
 Execute       schedule -model bin_conv 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.587 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.055 seconds; current allocated memory: 764.716 MB.
+Command       schedule done; 0.694 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.305 seconds; current allocated memory: 753.496 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.verbose.sched.rpt 
-Command       syn_report done; 0.66 sec.
+Command       syn_report done; 0.86 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.sched.adb -f 
-Command       db_write done; 0.414 sec.
+Command       db_write done; 0.478 sec.
 INFO-FLOW: Finish scheduling bin_conv.
 Execute       set_default_model bin_conv 
 Execute       bind -model bin_conv 
@@ -769,12 +734,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.275 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.482 seconds; current allocated memory: 767.905 MB.
+Command       bind done; 0.355 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.874 seconds; current allocated memory: 756.664 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.verbose.bind.rpt 
-Command       syn_report done; 0.818 sec.
+Command       syn_report done; 1.128 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.bind.adb -f 
-Command       db_write done; 0.443 sec.
+Command       db_write done; 0.524 sec.
 INFO-FLOW: Finish binding bin_conv.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'top' 
@@ -782,14 +747,8 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model top 
 Execute       schedule -model top 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'LOOP_DMEM_I'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-61] Pipelining loop 'LOOP_WT_I'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-61] Pipelining loop 'LOOP_KH_I'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.5 seconds; current allocated memory: 768.539 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.902 seconds; current allocated memory: 757.247 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.verbose.sched.rpt 
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.sched.adb -f 
 INFO-FLOW: Finish scheduling top.
@@ -801,20 +760,19 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.242 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.523 seconds; current allocated memory: 769.204 MB.
+Command       bind done; 0.269 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.579 seconds; current allocated memory: 757.889 MB.
 Execute       syn_report -verbosereport -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.verbose.bind.rpt 
-Command       syn_report done; 0.383 sec.
+Command       syn_report done; 0.575 sec.
 Execute       db_write -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.bind.adb -f 
 INFO-FLOW: Finish binding top.
 Execute       get_model_list top -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
 Execute       rtl_gen_preprocess bin_dense 
-Execute       rtl_gen_preprocess conv_word 
 Execute       rtl_gen_preprocess process_word 
 Execute       rtl_gen_preprocess bin_conv 
 Execute       rtl_gen_preprocess top 
-INFO-FLOW: Model list for RTL generation: bin_dense conv_word process_word bin_conv top
+INFO-FLOW: Model list for RTL generation: bin_dense process_word bin_conv top
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'bin_dense' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -822,36 +780,18 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model bin_dense -vendor xilinx -mg_file C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_dense'.
-Command       create_rtl_model done; 0.114 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.718 seconds; current allocated memory: 772.336 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.924 seconds; current allocated memory: 759.828 MB.
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl bin_dense -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/bin_dense -synmodules bin_dense conv_word process_word bin_conv top 
+Execute       gen_rtl bin_dense -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/bin_dense -synmodules bin_dense process_word bin_conv top 
 Execute       gen_rtl bin_dense -style xilinx -f -lang vhdl -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/vhdl/bin_dense 
 Execute       gen_rtl bin_dense -style xilinx -f -lang vlog -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/verilog/bin_dense 
 Execute       syn_report -csynth -model bin_dense -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/bin_dense_csynth.rpt 
 Execute       syn_report -rtlxml -model bin_dense -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/bin_dense_csynth.xml 
 Execute       syn_report -verbosereport -model bin_dense -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.verbose.rpt 
-Command       syn_report done; 0.142 sec.
+Command       syn_report done; 0.127 sec.
 Execute       db_write -model bin_dense -f -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.adb 
-Command       db_write done; 0.161 sec.
+Command       db_write done; 0.143 sec.
 Execute       gen_tb_info bin_dense -p C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv_word' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -module_prefix 
-Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model conv_word -vendor xilinx -mg_file C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_word'.
-INFO: [HLS 200-111]  Elapsed time: 0.886 seconds; current allocated memory: 772.721 MB.
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl conv_word -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/conv_word -synmodules bin_dense conv_word process_word bin_conv top 
-Execute       gen_rtl conv_word -style xilinx -f -lang vhdl -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/vhdl/conv_word 
-Execute       gen_rtl conv_word -style xilinx -f -lang vlog -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/verilog/conv_word 
-Execute       syn_report -csynth -model conv_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/conv_word_csynth.rpt 
-Execute       syn_report -rtlxml -model conv_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/conv_word_csynth.xml 
-Execute       syn_report -verbosereport -model conv_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.verbose.rpt 
-Execute       db_write -model conv_word -f -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.adb 
-Execute       gen_tb_info conv_word -p C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'process_word' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -859,17 +799,18 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model process_word -vendor xilinx -mg_file C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'process_word'.
-INFO: [HLS 200-111]  Elapsed time: 0.481 seconds; current allocated memory: 774.159 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.905 seconds; current allocated memory: 761.545 MB.
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl process_word -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/process_word -synmodules bin_dense conv_word process_word bin_conv top 
+Execute       gen_rtl process_word -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/process_word -synmodules bin_dense process_word bin_conv top 
 Execute       gen_rtl process_word -style xilinx -f -lang vhdl -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/vhdl/process_word 
 Execute       gen_rtl process_word -style xilinx -f -lang vlog -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/verilog/process_word 
 Execute       syn_report -csynth -model process_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/process_word_csynth.rpt 
+Command       syn_report done; 0.107 sec.
 Execute       syn_report -rtlxml -model process_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/process_word_csynth.xml 
 Execute       syn_report -verbosereport -model process_word -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.verbose.rpt 
-Command       syn_report done; 0.253 sec.
+Command       syn_report done; 0.357 sec.
 Execute       db_write -model process_word -f -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.adb 
-Command       db_write done; 0.192 sec.
+Command       db_write done; 0.277 sec.
 Execute       gen_tb_info process_word -p C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'bin_conv' 
@@ -888,19 +829,20 @@ INFO: [SYN 201-210] Renamed object name 'bin_conv_conv_out_buffer_V' to 'bin_con
 INFO: [SYN 201-210] Renamed object name 'top_mul_mul_15ns_5ns_16_1_1' to 'top_mul_mul_15ns_ibs' due to the length limit 20
 INFO: [RTGEN 206-100] Generating core module 'top_mul_mul_15ns_ibs': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_conv'.
-Command       create_rtl_model done; 0.528 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.533 seconds; current allocated memory: 780.401 MB.
+Command       create_rtl_model done; 0.71 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.228 seconds; current allocated memory: 767.866 MB.
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl bin_conv -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/bin_conv -synmodules bin_dense conv_word process_word bin_conv top 
+Execute       gen_rtl bin_conv -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/bin_conv -synmodules bin_dense process_word bin_conv top 
 Execute       gen_rtl bin_conv -style xilinx -f -lang vhdl -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/vhdl/bin_conv 
 Execute       gen_rtl bin_conv -style xilinx -f -lang vlog -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/verilog/bin_conv 
 Execute       syn_report -csynth -model bin_conv -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/bin_conv_csynth.rpt 
-Command       syn_report done; 0.154 sec.
+Command       syn_report done; 0.226 sec.
 Execute       syn_report -rtlxml -model bin_conv -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/bin_conv_csynth.xml 
+Command       syn_report done; 0.121 sec.
 Execute       syn_report -verbosereport -model bin_conv -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.verbose.rpt 
-Command       syn_report done; 0.892 sec.
+Command       syn_report done; 1.391 sec.
 Execute       db_write -model bin_conv -f -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.adb 
-Command       db_write done; 0.649 sec.
+Command       db_write done; 0.865 sec.
 Execute       gen_tb_info bin_conv -p C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'top' 
@@ -930,22 +872,22 @@ WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is 
 WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
-Command       create_rtl_model done; 0.116 sec.
-INFO: [HLS 200-111]  Elapsed time: 3.361 seconds; current allocated memory: 782.837 MB.
+Command       create_rtl_model done; 0.137 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.718 seconds; current allocated memory: 770.081 MB.
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/top -synmodules bin_dense conv_word process_word bin_conv top 
+Execute       gen_rtl top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/systemc/top -synmodules bin_dense process_word bin_conv top 
 Execute       gen_rtl top -istop -style xilinx -f -lang vhdl -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/vhdl/top 
 Execute       gen_rtl top -istop -style xilinx -f -lang vlog -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/verilog/top 
 Execute       syn_report -csynth -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/top_csynth.rpt 
 Execute       syn_report -rtlxml -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/syn/report/top_csynth.xml 
 Execute       syn_report -verbosereport -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.verbose.rpt 
-Command       syn_report done; 0.41 sec.
+Command       syn_report done; 0.476 sec.
 Execute       db_write -model top -f -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.adb 
-Command       db_write done; 0.174 sec.
+Command       db_write done; 0.164 sec.
 Execute       gen_tb_info top -p C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top 
 Execute       export_constraint_db -f -tool general -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.constraint.tcl 
 Execute       syn_report -designview -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.design.xml 
-Command       syn_report done; 0.281 sec.
+Command       syn_report done; 0.328 sec.
 Execute       get_config_rtl -disable_wave_debug 
 Execute       syn_report -wcfg -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top_dataflow_ana.wcfg 
 Execute       syn_report -protoinst -model top -o C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.protoinst 
@@ -953,11 +895,9 @@ Execute       get_config_debug -directory
 Execute       sc_get_clocks top 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain top 
-INFO-FLOW: Model list for RTL component generation: bin_dense conv_word process_word bin_conv top
+INFO-FLOW: Model list for RTL component generation: bin_dense process_word bin_conv top
 INFO-FLOW: Handling components in module [bin_dense] ... 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
-INFO-FLOW: Handling components in module [conv_word] ... 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
 INFO-FLOW: Handling components in module [process_word] ... 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 INFO-FLOW: Handling components in module [bin_conv] ... 
@@ -989,12 +929,11 @@ INFO-FLOW: Append model top_wt_mem_V
 INFO-FLOW: Found component top_kh_mem_V.
 INFO-FLOW: Append model top_kh_mem_V
 INFO-FLOW: Append model bin_dense
-INFO-FLOW: Append model conv_word
 INFO-FLOW: Append model process_word
 INFO-FLOW: Append model bin_conv
 INFO-FLOW: Append model top
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: top_mul_mul_15ns_ibs bin_conv_line_bufbkb bin_conv_conv_parcud bin_conv_fixed_budEe bin_conv_fixed_teeOg bin_conv_word_buffYi bin_conv_old_wordg8j bin_conv_conv_outhbi bin_conv_lb top_dmem_V top_wt_mem_V top_kh_mem_V bin_dense conv_word process_word bin_conv top
+INFO-FLOW: All models in this session: top_mul_mul_15ns_ibs bin_conv_line_bufbkb bin_conv_conv_parcud bin_conv_fixed_budEe bin_conv_fixed_teeOg bin_conv_word_buffYi bin_conv_old_wordg8j bin_conv_conv_outhbi bin_conv_lb top_dmem_V top_wt_mem_V top_kh_mem_V bin_dense process_word bin_conv top
 INFO-FLOW: To file: write model top_mul_mul_15ns_ibs
 INFO-FLOW: To file: write model bin_conv_line_bufbkb
 INFO-FLOW: To file: write model bin_conv_conv_parcud
@@ -1008,7 +947,6 @@ INFO-FLOW: To file: write model top_dmem_V
 INFO-FLOW: To file: write model top_wt_mem_V
 INFO-FLOW: To file: write model top_kh_mem_V
 INFO-FLOW: To file: write model bin_dense
-INFO-FLOW: To file: write model conv_word
 INFO-FLOW: To file: write model process_word
 INFO-FLOW: To file: write model bin_conv
 INFO-FLOW: To file: write model top
@@ -1043,8 +981,8 @@ Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilin
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.119 sec.
-Command       ap_source done; 0.12 sec.
+Command         ap_source done; 0.145 sec.
+Command       ap_source done; 0.145 sec.
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=12.000 (was NA)
@@ -1055,7 +993,6 @@ Execute       ap_part_info -name xc7k70t-fbv676-1 -data info -quiet
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.compgen.tcl 
 Execute         ap_part_info -name xc7k70t-fbv676-1 -data names -quiet 
@@ -1084,7 +1021,7 @@ Execute         ap_part_info -name xc7k70t-fbv676-1 -data info -quiet
 INFO: [RTMG 210-278] Implementing memory 'bin_conv_lb_ram (RAM)' using block RAMs.
 Execute         ap_part_info -name xc7k70t-fbv676-1 -data names -quiet 
 Execute         ap_part_info -name xc7k70t-fbv676-1 -data info -quiet 
-Command       ap_source done; 0.206 sec.
+Command       ap_source done; 0.242 sec.
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.compgen.tcl 
 INFO: [RTMG 210-278] Implementing memory 'top_dmem_V_ram (RAM)' using block RAMs with power-on initialization.
 Execute         ap_part_info -name xc7k70t-fbv676-1 -data names -quiet 
@@ -1119,8 +1056,8 @@ Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilin
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute           source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.12 sec.
-Command       ap_source done; 0.12 sec.
+Command         ap_source done; 0.135 sec.
+Command       ap_source done; 0.135 sec.
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
 Execute         source D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=top xml_exists=0
@@ -1133,14 +1070,12 @@ INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.compgen.tcl 
@@ -1177,7 +1112,6 @@ Execute       ap_part_info -name xc7k70t-fbv676-1 -data info -quiet
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.compgen.tcl 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.compgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.compgen.tcl 
@@ -1192,7 +1126,7 @@ Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.aut
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=20
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=12
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=17 #gSsdmPorts=20
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=16 #gSsdmPorts=20
 Execute       source D:/Softwares/VLSI/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
@@ -1214,7 +1148,6 @@ Execute       ap_part_info -name xc7k70t-fbv676-1 -data info -quiet
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_debug -directory 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_dense.tbgen.tcl 
-Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/conv_word.tbgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/process_word.tbgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/bin_conv.tbgen.tcl 
 Execute       source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/top.tbgen.tcl 
@@ -1225,10 +1158,10 @@ Execute       get_config_rtl -stall_sig_gen
 Execute       get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:31 ; elapsed = 00:02:50 . Memory (MB): peak = 898.711 ; gain = 807.379
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:32 ; elapsed = 00:03:03 . Memory (MB): peak = 883.625 ; gain = 792.293
 INFO: [VHDL 208-304] Generating VHDL RTL for top.
 INFO: [VLOG 209-307] Generating Verilog RTL for top.
-Command     autosyn done; 16.169 sec.
-Command   csynth_design done; 168.814 sec.
-Command ap_source done; 169.792 sec.
+Command     autosyn done; 18.876 sec.
+Command   csynth_design done; 181.159 sec.
+Command ap_source done; 182.148 sec.
 Execute cleanup_all 

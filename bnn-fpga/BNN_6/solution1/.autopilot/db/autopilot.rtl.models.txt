@@ -11,7 +11,6 @@ top_dmem_V
 top_wt_mem_V
 top_kh_mem_V
 bin_dense
-conv_word
 process_word
 bin_conv
 top

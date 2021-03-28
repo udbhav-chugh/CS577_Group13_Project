@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'process_word'" level="0">
-<item name = "Date">Sun Mar 28 14:40:23 2021
+<item name = "Date">Sun Mar 28 14:51:17 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -24,14 +24,13 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2140, 2140, 2140, 2140, none</column>
+<column name="">2139, 2139, 2139, 2139, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_conv_word_fu_525">conv_word, 1681, 1681, 1681, 1681, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -39,10 +38,14 @@
 <column name="- Loop 1">160, 160, 20, -, -, 8, no</column>
 <column name=" + Loop 1.1">16, 16, 2, -, -, 8, no</column>
 <column name=" + Loop 1.2">16, 16, 2, -, -, 8, no</column>
-<column name="- Loop 2">296, 296, 37, -, -, 8, no</column>
-<column name=" + Loop 2.1">16, 16, 2, -, -, 8, no</column>
-<column name=" + Loop 2.2">16, 16, 2, -, -, 8, no</column>
-<column name=" + Loop 2.3">16, 16, 2, -, -, 8, no</column>
+<column name="- Loop 2">1680, 1680, 210, -, -, 8, no</column>
+<column name=" + Loop 2.1">208, 208, 26, -, -, 8, no</column>
+<column name="  ++ Loop 2.1.1">24, 24, 8, -, -, 3, no</column>
+<column name="   +++ Loop 2.1.1.1">6, 6, 2, -, -, 3, no</column>
+<column name="- Loop 3">296, 296, 37, -, -, 8, no</column>
+<column name=" + Loop 3.1">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 3.2">16, 16, 2, -, -, 8, no</column>
+<column name=" + Loop 3.3">16, 16, 2, -, -, 8, no</column>
 </table>
 </item>
 </section>

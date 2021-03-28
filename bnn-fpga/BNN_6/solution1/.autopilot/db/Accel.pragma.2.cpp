@@ -15567,8 +15567,7 @@ namespace std {
   static ios_base::Init __ioinit;
 
 }
-# 1 "cpp/accel/Accel.cpp" 2
-
+# 2 "cpp/accel/Accel.cpp" 2
 # 1 "D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin\\..\\lib\\clang\\3.1/../../../include/c++/4.5.2\\iomanip" 1 3
 # 38 "D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin\\..\\lib\\clang\\3.1/../../../include/c++/4.5.2\\iomanip" 3
 # 38 "D:/Softwares/VLSI/Vivado/2019.1/win64/tools/clang/bin\\..\\lib\\clang\\3.1/../../../include/c++/4.5.2\\iomanip" 3
@@ -15753,8 +15752,7 @@ namespace std {
 
 
 }
-# 2 "cpp/accel/Accel.cpp" 2
-
+# 3 "cpp/accel/Accel.cpp" 2
 # 1 "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot\\hls_stream.h" 1
 # 66 "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot\\hls_stream.h"
 # 1 "D:/Softwares/VLSI/Vivado/2019.1/common/technology/autopilot/etc/autopilot_enum.h" 1
@@ -15952,8 +15950,7 @@ class stream
 
 
 }
-# 3 "cpp/accel/Accel.cpp" 2
-
+# 4 "cpp/accel/Accel.cpp" 2
 # 1 "cpp/accel/Accel.h" 1
 
 
@@ -50207,8 +50204,7 @@ void top(
     const ap_uint<2> width_mode,
     const ap_uint<2> norm_mode
 );
-# 4 "cpp/accel/Accel.cpp" 2
-
+# 5 "cpp/accel/Accel.cpp" 2
 # 1 "cpp/accel/AccelPrint.h" 1
 
 
@@ -76355,8 +76351,7 @@ void print_bits3d(T in[], unsigned M, unsigned num, unsigned S, unsigned R, unsi
 void print_params3d(Word in[], unsigned M, unsigned num);
 void print_wt_word(const Word& in);
 void print_wt(const WtType& in);
-# 5 "cpp/accel/Accel.cpp" 2
-
+# 6 "cpp/accel/Accel.cpp" 2
 
 const static Word m1("0x5555555555555555", 16);
 const static Word m2("0x3333333333333333", 16);
@@ -76368,7 +76363,8 @@ const static Word h01("0x0101010101010101", 16);
 
 template<typename T>
 void print_ap_bits(const T& in, const unsigned W) {
-  printf ("   ");
+_ssdm_InlineSelf(0, "");
+ printf ("   ");
   for (unsigned i = 0; i < W; ++i)
 
     printf ("%3d", in[i] ? -1 : 0);
@@ -76377,7 +76373,8 @@ void print_ap_bits(const T& in, const unsigned W) {
 
 template<typename T>
 void print_params(T params[CONVOLVERS][K][K]) {_ssdm_SpecArrayDimSize(params, 2);
-  for (unsigned m = 0; m < CONVOLVERS; ++m) {
+_ssdm_InlineSelf(0, "");
+ for (unsigned m = 0; m < CONVOLVERS; ++m) {
     for (unsigned wr = 0; wr < K; ++wr) {
       for (unsigned wc = 0; wc < K; ++wc) {
 
@@ -76391,7 +76388,8 @@ void print_params(T params[CONVOLVERS][K][K]) {_ssdm_SpecArrayDimSize(params, 2)
 
 template<typename T>
 void print_line_buffer_m(T lbuf[CONV_BANKS]) {_ssdm_SpecArrayDimSize(lbuf, 8);
-  for (unsigned wr = 0; wr < CONV_ROWS; ++wr) {
+_ssdm_InlineSelf(0, "");
+ for (unsigned wr = 0; wr < CONV_ROWS; ++wr) {
   for (unsigned bank = 0; bank < CONV_BANKS; ++bank) {
     for (unsigned wc = 0; wc < CONV_COLS; ++wc) {
 
@@ -76404,7 +76402,8 @@ void print_line_buffer_m(T lbuf[CONV_BANKS]) {_ssdm_SpecArrayDimSize(lbuf, 8);
 }
 
 TwoBit encode_bit(const Bit& b) {
-  return (b == 0) ? TwoBit(1) : TwoBit(-1);
+_ssdm_InlineSelf(0, "");
+ return (b == 0) ? TwoBit(1) : TwoBit(-1);
 }
 
 
@@ -76416,7 +76415,8 @@ ConvOut conv3x3b(
     const ap_uint<4> bank,
     const IdxType cc
 ) {_ssdm_SpecArrayDimSize(line_buffer_m, 8);_ssdm_SpecArrayDimSize(conv_params_m, 3);
-  ConvOut sum = 0;
+_ssdm_InlineSelf(0, "");
+ ConvOut sum = 0;
   for (ap_uint<2> kr = 0; kr < K; ++kr) {
     for (ap_uint<2> kc = 0; kc < K; ++kc) {
 
@@ -76437,7 +76437,8 @@ void conv_word(
     const Bit conv_params_m[K][K],
     ConvOut conv_out_buffer_m[WORD_SIZE]
 ) {_ssdm_SpecArrayDimSize(line_buffer_m, 8);_ssdm_SpecArrayDimSize(conv_params_m, 3);_ssdm_SpecArrayDimSize(conv_out_buffer_m, 64);
-  for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
+_ssdm_InlineSelf(0, "");
+ for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
     for (ap_uint<4> cc = 0; cc < BANK_WIDTH; ++cc) {
 
       conv_out_buffer_m[bank*BANK_WIDTH+cc] = conv3x3b( line_buffer_m, conv_params_m, bank, cc );
@@ -76562,9 +76563,9 @@ void bin_conv(
   const unsigned images_per_phase = PIX_PER_PHASE >> (2*log_width);
   const unsigned WORDS_PER_PHASE = PIX_PER_PHASE / WORD_SIZE;
 
-  (void) ((!!(n_phases % images_per_phase == 0)) || (_assert("n_phases % images_per_phase == 0","cpp/accel/Accel.cpp",211),0));
-  (void) ((!!(n_inputs % images_per_phase == 0)) || (_assert("n_inputs % images_per_phase == 0","cpp/accel/Accel.cpp",212),0));
-  (void) ((!!(images_per_phase*words_per_image == WORDS_PER_PHASE)) || (_assert("images_per_phase*words_per_image == WORDS_PER_PHASE","cpp/accel/Accel.cpp",213),0));
+  (void) ((!!(n_phases % images_per_phase == 0)) || (_assert("n_phases % images_per_phase == 0","cpp/accel/Accel.cpp",217),0));
+  (void) ((!!(n_inputs % images_per_phase == 0)) || (_assert("n_inputs % images_per_phase == 0","cpp/accel/Accel.cpp",218),0));
+  (void) ((!!(images_per_phase*words_per_image == WORDS_PER_PHASE)) || (_assert("images_per_phase*words_per_image == WORDS_PER_PHASE","cpp/accel/Accel.cpp",219),0));
 
 
 
@@ -76589,7 +76590,7 @@ void bin_conv(
 
   const ap_uint<4> log_slice = log_width - LOG_BANK_WIDTH;
   const ap_uint<4> w_div_8 = (1 << log_width) >> 3;
-  (void) ((!!(w_div_8 > 0)) || (_assert("w_div_8 > 0","cpp/accel/Accel.cpp",238),0));
+  (void) ((!!(w_div_8 > 0)) || (_assert("w_div_8 > 0","cpp/accel/Accel.cpp",244),0));
   ap_uint<4> mask = ~ap_uint<4>(0);
   mask = mask >> (4-log_slice);
   for (ap_uint<4> bank = 0; bank < 64/8; ++bank) {
@@ -76968,8 +76969,8 @@ void bin_dense(
     const unsigned n_outputs
 ) {_ssdm_SpecArrayDimSize(wt_mem, 2);_ssdm_SpecArrayDimSize(kh_mem, 64);_ssdm_SpecArrayDimSize(dmem, 2);
 
-  (void) ((!!(layer_type == LAYER_DENSE || n_outputs == 10)) || (_assert("layer_type == LAYER_DENSE || n_outputs == 10","cpp/accel/Accel.cpp",617),0));
-  (void) ((!!(n_inputs/WORD_SIZE % CONVOLVERS == 0)) || (_assert("n_inputs/WORD_SIZE % CONVOLVERS == 0","cpp/accel/Accel.cpp",618),0));
+  (void) ((!!(layer_type == LAYER_DENSE || n_outputs == 10)) || (_assert("layer_type == LAYER_DENSE || n_outputs == 10","cpp/accel/Accel.cpp",623),0));
+  (void) ((!!(n_inputs/WORD_SIZE % CONVOLVERS == 0)) || (_assert("n_inputs/WORD_SIZE % CONVOLVERS == 0","cpp/accel/Accel.cpp",624),0));
 
   DenseSum sum_m[CONVOLVERS];
 
@@ -76991,10 +76992,9 @@ void bin_dense(
       const Address wt_addr = (o*n_inputs+i) / WORD_SIZE;
 
       for (IdxType j = 0; j < 2; ++j) {
-_ssdm_Unroll(0,0,0, "");
 
 
- const Word in_wrd = dmem[d_i_idx][j][i/WORD_SIZE/CONVOLVERS];
+        const Word in_wrd = dmem[d_i_idx][j][i/WORD_SIZE/CONVOLVERS];
         const Word wt_wrd = wt_mem[j][wt_addr / CONVOLVERS];
 
         Word x = wt_wrd ^ in_wrd;
@@ -77012,8 +77012,7 @@ _ssdm_Unroll(0,0,0, "");
       }
 
       for (IdxType j = 0; j < 2; ++j)
-_ssdm_Unroll(0,0,0, "");
- sum += sum_m[j];
+        sum += sum_m[j];
     }
 
 
@@ -77097,12 +77096,12 @@ void top(
   if (1 <= 0) printf ("  layer_mode = %d %d\n", layer_mode[0]==0 ? 0 : 1, layer_type.to_int());
   if (1 <= 0) printf ("  dmem_mode = %d\n", dmem_mode.to_int());
 
-  (void) ((!!(width <= MAX_WIDTH)) || (_assert("width <= MAX_WIDTH","cpp/accel/Accel.cpp",746),0));
-  (void) ((!!(n_inputs != 0)) || (_assert("n_inputs != 0","cpp/accel/Accel.cpp",747),0));
+  (void) ((!!(width <= MAX_WIDTH)) || (_assert("width <= MAX_WIDTH","cpp/accel/Accel.cpp",750),0));
+  (void) ((!!(n_inputs != 0)) || (_assert("n_inputs != 0","cpp/accel/Accel.cpp",751),0));
   if (layer_type <= LAYER_CONV) {
-    (void) ((!!(input_words % CONVOLVERS == 0)) || (_assert("input_words % CONVOLVERS == 0","cpp/accel/Accel.cpp",749),0));
-    (void) ((!!(n_inputs*width*width <= DMEM_WORDS*WORD_SIZE)) || (_assert("n_inputs*width*width <= DMEM_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",750),0));
-    (void) ((!!(n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE)) || (_assert("n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",751),0));
+    (void) ((!!(input_words % CONVOLVERS == 0)) || (_assert("input_words % CONVOLVERS == 0","cpp/accel/Accel.cpp",753),0));
+    (void) ((!!(n_inputs*width*width <= DMEM_WORDS*WORD_SIZE)) || (_assert("n_inputs*width*width <= DMEM_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",754),0));
+    (void) ((!!(n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE)) || (_assert("n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",755),0));
   }
 
   static Word dmem[2][CONVOLVERS][C_DMEM_WORDS];
@@ -77126,8 +77125,8 @@ void top(
   Address img_idx = 0;
   IdxType img_off = 0;
   LOOP_DMEM_I: for (Address i = 0; i < 64; ++i) {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- if (layer_type == LAYER_CONV) {
+
+    if (layer_type == LAYER_CONV) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
       dmem[d_i_idx][bank_idx][(bank_off<<(2*width_mode)) + img_off] = dmem_i[i];
@@ -77146,26 +77145,26 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
 
   LOOP_WT_I: for (Address i = 0; i < C_WT_WORDS*CONVOLVERS; ++i) {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- wt_mem[i%CONVOLVERS][i/CONVOLVERS] = wt_i[i];
+
+    wt_mem[i%CONVOLVERS][i/CONVOLVERS] = wt_i[i];
   }
 
 
 
   LOOP_KH_I: for (ap_uint<16> i = 0; i < KH_WORDS; ++i){
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
- kh_mem[i] = kh_i[i];
+
+    kh_mem[i] = kh_i[i];
   }
 
   if (layer_type == LAYER_CONV1) {
-    (void) ((!!(n_inputs == 3)) || (_assert("n_inputs == 3","cpp/accel/Accel.cpp",807),0));
-# 820 "cpp/accel/Accel.cpp"
+    (void) ((!!(n_inputs == 3)) || (_assert("n_inputs == 3","cpp/accel/Accel.cpp",811),0));
+# 824 "cpp/accel/Accel.cpp"
     kh_index += n_outputs;
     o_index += n_outputs;
   }
   else if (layer_type == LAYER_CONV) {
-    (void) ((!!(norm_mode != 2 || n_outputs % 4 == 0)) || (_assert("norm_mode != 2 || n_outputs % 4 == 0","cpp/accel/Accel.cpp",824),0));
-    (void) ((!!(n_inputs % CONVOLVERS == 0)) || (_assert("n_inputs % CONVOLVERS == 0","cpp/accel/Accel.cpp",825),0));
+    (void) ((!!(norm_mode != 2 || n_outputs % 4 == 0)) || (_assert("norm_mode != 2 || n_outputs % 4 == 0","cpp/accel/Accel.cpp",828),0));
+    (void) ((!!(n_inputs % CONVOLVERS == 0)) || (_assert("n_inputs % CONVOLVERS == 0","cpp/accel/Accel.cpp",829),0));
 
     LOOP_IMG_BATCH:
     for (IdxType i = 0; i < 1; ++i) {
@@ -77209,10 +77208,10 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
   img_idx = 0;
   img_off = 0;
   LOOP_DMEM_O: for (Address i = 0; i < 1; ++i) {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
 
- if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {
+
+    if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
       dmem_o[i] = dmem[d_o_idx][bank_idx][bank_off*words_per_out + img_off];

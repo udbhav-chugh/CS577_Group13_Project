@@ -79,13 +79,13 @@ set NewPortList {[
  	{ "name": "norm_mode_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "norm_mode_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "12"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
 		"CDFG" : "bin_conv",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "310790", "EstimateLatencyMax" : "344439",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "310662", "EstimateLatencyMax" : "344311",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -113,58 +113,32 @@ set RtlHierarchyInfo {[
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.conv_out_buffer_V_U", "Parent" : "0"},
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.lb_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.rb_U", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_process_word_fu_2613", "Parent" : "0", "Child" : ["11"],
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_process_word_fu_2613", "Parent" : "0",
 		"CDFG" : "process_word",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2140", "EstimateLatencyMax" : "2140",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2139", "EstimateLatencyMax" : "2139",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
-		"WaitState" : [
-			{"State" : "ap_ST_fsm_state10", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_conv_word_fu_525"}],
 		"Port" : [
 			{"Name" : "word_buffer_m_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "word_buffer_m_V_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "old_word_buffer_m_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "lb", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "rb", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "line_buffer_m_V", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_conv_word_fu_525", "Port" : "line_buffer_m_V"}]},
-			{"Name" : "conv_params_m_V", "Type" : "Memory", "Direction" : "I",
-				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_conv_word_fu_525", "Port" : "conv_params_m_V"}]},
-			{"Name" : "conv_out_buffer_m_V", "Type" : "Memory", "Direction" : "O",
-				"SubConnect" : [
-					{"ID" : "11", "SubInstance" : "grp_conv_word_fu_525", "Port" : "conv_out_buffer_m_V"}]},
+			{"Name" : "line_buffer_m_V", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "conv_params_m_V", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "conv_out_buffer_m_V", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "log_width_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "words_per_image_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wrd_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_process_word_fu_2613.grp_conv_word_fu_525", "Parent" : "10",
-		"CDFG" : "conv_word",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1681", "EstimateLatencyMax" : "1681",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "line_buffer_m_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "line_buffer_m_V_offset", "Type" : "None", "Direction" : "I"},
-			{"Name" : "conv_params_m_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "conv_out_buffer_m_V", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.top_mul_mul_15ns_ibs_U23", "Parent" : "0"}]}
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.top_mul_mul_15ns_ibs_U19", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -184,23 +158,18 @@ set ArgLastReadFirstWriteLatency {
 		old_word_buffer_m_V {Type I LastRead 5 FirstWrite -1}
 		lb {Type I LastRead 6 FirstWrite -1}
 		rb {Type I LastRead 6 FirstWrite -1}
-		line_buffer_m_V {Type IO LastRead 4 FirstWrite -1}
-		conv_params_m_V {Type I LastRead 4 FirstWrite -1}
-		conv_out_buffer_m_V {Type O LastRead -1 FirstWrite 3}
+		line_buffer_m_V {Type IO LastRead 5 FirstWrite 3}
+		conv_params_m_V {Type I LastRead 5 FirstWrite -1}
+		conv_out_buffer_m_V {Type O LastRead -1 FirstWrite 4}
 		log_width_V {Type I LastRead 0 FirstWrite -1}
 		words_per_image_V {Type I LastRead 0 FirstWrite -1}
-		wrd_V {Type I LastRead 0 FirstWrite -1}}
-	conv_word {
-		line_buffer_m_V {Type I LastRead 4 FirstWrite -1}
-		line_buffer_m_V_offset {Type I LastRead 0 FirstWrite -1}
-		conv_params_m_V {Type I LastRead 4 FirstWrite -1}
-		conv_out_buffer_m_V {Type O LastRead -1 FirstWrite 3}}}
+		wrd_V {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "310790", "Max" : "344439"}
-	, {"Name" : "Interval", "Min" : "310790", "Max" : "344439"}
+	{"Name" : "Latency", "Min" : "310662", "Max" : "344311"}
+	, {"Name" : "Interval", "Min" : "310662", "Max" : "344311"}
 ]}
 
 set PipelineEnableSignalInfo {[

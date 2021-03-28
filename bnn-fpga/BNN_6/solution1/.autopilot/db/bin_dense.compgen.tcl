@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename wt_mem_V_2 \
     op interface \
-    ports { wt_mem_V_2_address0 { O 13 vector } wt_mem_V_2_ce0 { O 1 bit } wt_mem_V_2_q0 { I 64 vector } wt_mem_V_2_address1 { O 13 vector } wt_mem_V_2_ce1 { O 1 bit } wt_mem_V_2_q1 { I 64 vector } } \
+    ports { wt_mem_V_2_address0 { O 13 vector } wt_mem_V_2_ce0 { O 1 bit } wt_mem_V_2_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wt_mem_V_2'"
@@ -56,7 +56,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir IO \
     corename dmem_V_2 \
     op interface \
-    ports { dmem_V_2_address0 { O 12 vector } dmem_V_2_ce0 { O 1 bit } dmem_V_2_we0 { O 1 bit } dmem_V_2_d0 { O 64 vector } dmem_V_2_q0 { I 64 vector } dmem_V_2_address1 { O 12 vector } dmem_V_2_ce1 { O 1 bit } dmem_V_2_we1 { O 1 bit } dmem_V_2_d1 { O 64 vector } dmem_V_2_q1 { I 64 vector } } \
+    ports { dmem_V_2_address0 { O 12 vector } dmem_V_2_ce0 { O 1 bit } dmem_V_2_we0 { O 1 bit } dmem_V_2_d0 { O 64 vector } dmem_V_2_q0 { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dmem_V_2'"

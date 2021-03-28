@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bin_conv'" level="0">
-<item name = "Date">Sun Mar 28 14:40:25 2021
+<item name = "Date">Sun Mar 28 14:51:20 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">310790, 344439, 310790, 344439, none</column>
+<column name="">310662, 344311, 310662, 344311, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_process_word_fu_2613">process_word, 2140, 2140, 2140, 2140, none</column>
+<column name="grp_process_word_fu_2613">process_word, 2139, 2139, 2139, 2139, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">1024, 1024, 32, -, -, 32, no</column>
-<column name="- LOOP_WORDS_IN_PHASE">305536, 339136, 4774 ~ 5299, -, -, 64, no</column>
+<column name="- LOOP_WORDS_IN_PHASE">305408, 339008, 4772 ~ 5297, -, -, 64, no</column>
 <column name=" + LOOP_WT_WORDS">4, 4, 2, -, -, 2, no</column>
 <column name=" + LOOP_LOAD_WTS">34, 34, 17, -, -, 2, no</column>
 <column name="  ++ LOOP_LOAD_WTS.1">15, 15, 5, -, -, 3, no</column>
@@ -45,7 +45,7 @@
 <column name=" + LOOP_CONVOLVER_LOAD">166, 166, 83, -, -, 2, no</column>
 <column name="  ++ LOOP_CONVOLVER_LOAD.1">80, 80, 10, -, -, 8, no</column>
 <column name="   +++ LOOP_CONVOLVER_LOAD.1.1">8, 8, 1, -, -, 8, no</column>
-<column name=" + LOOP_CONVOLVERS">4284, 4284, 2142, -, -, 2, no</column>
+<column name=" + LOOP_CONVOLVERS">4282, 4282, 2141, -, -, 2, no</column>
 <column name=" + LOOP_WORDS_IN_PHASE.5">356, 356, 178, -, -, 2, no</column>
 <column name="  ++ LOOP_WORDS_IN_PHASE.5.1">176, 176, 22, -, -, 8, no</column>
 <column name="   +++ LOOP_WORDS_IN_PHASE.5.1.1">20, 20, 2, -, -, 10, no</column>

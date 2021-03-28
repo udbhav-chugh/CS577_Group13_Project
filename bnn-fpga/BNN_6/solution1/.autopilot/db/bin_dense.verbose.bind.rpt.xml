@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bin_dense'" level="0">
-<item name = "Date">Sun Mar 28 14:40:21 2021
+<item name = "Date">Sun Mar 28 14:51:16 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">5, 5, 5, 5, none</column>
+<column name="">13, 13, 13, 13, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,6 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">6, 6, 3, -, -, 2, no</column>
+<column name="- Loop 2">2, 2, 1, -, -, 2, no</column>
 </table>
 </item>
 </section>

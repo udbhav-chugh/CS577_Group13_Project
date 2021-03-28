@@ -21,11 +21,11 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>310790</Best-caseLatency>
-<Average-caseLatency>329695</Average-caseLatency>
-<Worst-caseLatency>344439</Worst-caseLatency>
-<Interval-min>310790</Interval-min>
-<Interval-max>344439</Interval-max>
+<Best-caseLatency>310662</Best-caseLatency>
+<Average-caseLatency>329567</Average-caseLatency>
+<Worst-caseLatency>344311</Worst-caseLatency>
+<Interval-min>310662</Interval-min>
+<Interval-max>344311</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -37,14 +37,14 @@
 <TripCount>64</TripCount>
 <Latency>
 <range>
-<min>305536</min>
-<max>339136</max>
+<min>305408</min>
+<max>339008</max>
 </range>
 </Latency>
 <IterationLatency>
 <range>
-<min>4774</min>
-<max>5299</max>
+<min>4772</min>
+<max>5297</max>
 </range>
 </IterationLatency>
 <LOOP_WT_WORDS>
@@ -84,8 +84,8 @@
 </LOOP_CONVOLVER_LOAD>
 <LOOP_CONVOLVERS>
 <TripCount>2</TripCount>
-<Latency>4284</Latency>
-<IterationLatency>2142</IterationLatency>
+<Latency>4282</Latency>
+<IterationLatency>2141</IterationLatency>
 </LOOP_CONVOLVERS>
 <LOOP_WORDS_IN_PHASE.5>
 <TripCount>2</TripCount>
@@ -155,8 +155,8 @@
 <Resources>
 <BRAM_18K>7</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>1618</FF>
-<LUT>7396</LUT>
+<FF>1607</FF>
+<LUT>7356</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
