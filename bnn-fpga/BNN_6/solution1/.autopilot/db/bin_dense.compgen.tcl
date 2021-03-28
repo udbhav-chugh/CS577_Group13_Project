@@ -12,16 +12,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 1 \
-    name wt_mem_V_4 \
+    name wt_mem_V_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename wt_mem_V_4 \
+    corename wt_mem_V_2 \
     op interface \
-    ports { wt_mem_V_4_address0 { O 13 vector } wt_mem_V_4_ce0 { O 1 bit } wt_mem_V_4_q0 { I 64 vector } } \
+    ports { wt_mem_V_2_address0 { O 13 vector } wt_mem_V_2_ce0 { O 1 bit } wt_mem_V_2_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wt_mem_V_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'wt_mem_V_2'"
 }
 }
 
@@ -31,16 +31,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 2 \
-    name kh_mem_V_4 \
+    name kh_mem_V_2 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename kh_mem_V_4 \
+    corename kh_mem_V_2 \
     op interface \
-    ports { kh_mem_V_4_address0 { O 6 vector } kh_mem_V_4_ce0 { O 1 bit } kh_mem_V_4_q0 { I 64 vector } } \
+    ports { kh_mem_V_2_address0 { O 6 vector } kh_mem_V_2_ce0 { O 1 bit } kh_mem_V_2_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'kh_mem_V_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'kh_mem_V_2'"
 }
 }
 
@@ -50,16 +50,16 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     id 3 \
-    name dmem_V_4 \
+    name dmem_V_2 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename dmem_V_4 \
+    corename dmem_V_2 \
     op interface \
-    ports { dmem_V_4_address0 { O 12 vector } dmem_V_4_ce0 { O 1 bit } dmem_V_4_we0 { O 1 bit } dmem_V_4_d0 { O 64 vector } dmem_V_4_q0 { I 64 vector } } \
+    ports { dmem_V_2_address0 { O 12 vector } dmem_V_2_ce0 { O 1 bit } dmem_V_2_we0 { O 1 bit } dmem_V_2_d0 { O 64 vector } dmem_V_2_q0 { I 64 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dmem_V_4'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'dmem_V_2'"
 }
 }
 
@@ -113,14 +113,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 7 \
-    name o_index_V_4 \
+    name o_index_V_2 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_o_index_V_4 \
+    corename dc_o_index_V_2 \
     op interface \
-    ports { o_index_V_4 { I 16 vector } } \
+    ports { o_index_V_2 { I 16 vector } } \
 } "
 }
 

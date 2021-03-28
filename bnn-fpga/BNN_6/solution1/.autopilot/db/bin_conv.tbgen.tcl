@@ -14,22 +14,22 @@ set isEnableWaveformDebug 1
 set C_modelName {bin_conv}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ wt_mem_V_6 int 64 regular {array 4682 { 1 3 } 1 1 }  }
+	{ wt_mem_V_4 int 64 regular {array 4682 { 1 3 } 1 1 }  }
 	{ nc_V int 16 regular  }
-	{ dmem_V_6 int 64 regular {array 4096 { 2 3 } 1 1 }  }
+	{ dmem_V_4 int 64 regular {array 4096 { 2 3 } 1 1 }  }
 	{ d_i_idx_V int 1 regular  }
 	{ d_o_idx_V int 1 regular  }
-	{ o_index_V_6 int 16 regular  }
+	{ o_index_V_4 int 16 regular  }
 	{ width_mode_V int 2 regular  }
 	{ norm_mode_V int 2 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "wt_mem_V_6", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
+	{ "Name" : "wt_mem_V_4", "interface" : "memory", "bitwidth" : 64, "direction" : "READONLY"} , 
  	{ "Name" : "nc_V", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "dmem_V_6", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
+ 	{ "Name" : "dmem_V_4", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
  	{ "Name" : "d_i_idx_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "d_o_idx_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "o_index_V_6", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
+ 	{ "Name" : "o_index_V_4", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "width_mode_V", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "norm_mode_V", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
@@ -41,18 +41,18 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ wt_mem_V_6_address0 sc_out sc_lv 13 signal 0 } 
-	{ wt_mem_V_6_ce0 sc_out sc_logic 1 signal 0 } 
-	{ wt_mem_V_6_q0 sc_in sc_lv 64 signal 0 } 
+	{ wt_mem_V_4_address0 sc_out sc_lv 13 signal 0 } 
+	{ wt_mem_V_4_ce0 sc_out sc_logic 1 signal 0 } 
+	{ wt_mem_V_4_q0 sc_in sc_lv 64 signal 0 } 
 	{ nc_V sc_in sc_lv 16 signal 1 } 
-	{ dmem_V_6_address0 sc_out sc_lv 12 signal 2 } 
-	{ dmem_V_6_ce0 sc_out sc_logic 1 signal 2 } 
-	{ dmem_V_6_we0 sc_out sc_logic 1 signal 2 } 
-	{ dmem_V_6_d0 sc_out sc_lv 64 signal 2 } 
-	{ dmem_V_6_q0 sc_in sc_lv 64 signal 2 } 
+	{ dmem_V_4_address0 sc_out sc_lv 12 signal 2 } 
+	{ dmem_V_4_ce0 sc_out sc_logic 1 signal 2 } 
+	{ dmem_V_4_we0 sc_out sc_logic 1 signal 2 } 
+	{ dmem_V_4_d0 sc_out sc_lv 64 signal 2 } 
+	{ dmem_V_4_q0 sc_in sc_lv 64 signal 2 } 
 	{ d_i_idx_V sc_in sc_lv 1 signal 3 } 
 	{ d_o_idx_V sc_in sc_lv 1 signal 4 } 
-	{ o_index_V_6 sc_in sc_lv 16 signal 5 } 
+	{ o_index_V_4 sc_in sc_lv 16 signal 5 } 
 	{ width_mode_V sc_in sc_lv 2 signal 6 } 
 	{ norm_mode_V sc_in sc_lv 2 signal 7 } 
 }
@@ -63,18 +63,18 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "wt_mem_V_6_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "wt_mem_V_6", "role": "address0" }} , 
- 	{ "name": "wt_mem_V_6_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "wt_mem_V_6", "role": "ce0" }} , 
- 	{ "name": "wt_mem_V_6_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "wt_mem_V_6", "role": "q0" }} , 
+ 	{ "name": "wt_mem_V_4_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":13, "type": "signal", "bundle":{"name": "wt_mem_V_4", "role": "address0" }} , 
+ 	{ "name": "wt_mem_V_4_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "wt_mem_V_4", "role": "ce0" }} , 
+ 	{ "name": "wt_mem_V_4_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "wt_mem_V_4", "role": "q0" }} , 
  	{ "name": "nc_V", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "nc_V", "role": "default" }} , 
- 	{ "name": "dmem_V_6_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "dmem_V_6", "role": "address0" }} , 
- 	{ "name": "dmem_V_6_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_6", "role": "ce0" }} , 
- 	{ "name": "dmem_V_6_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_6", "role": "we0" }} , 
- 	{ "name": "dmem_V_6_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_6", "role": "d0" }} , 
- 	{ "name": "dmem_V_6_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_6", "role": "q0" }} , 
+ 	{ "name": "dmem_V_4_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "dmem_V_4", "role": "address0" }} , 
+ 	{ "name": "dmem_V_4_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_4", "role": "ce0" }} , 
+ 	{ "name": "dmem_V_4_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "dmem_V_4", "role": "we0" }} , 
+ 	{ "name": "dmem_V_4_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_4", "role": "d0" }} , 
+ 	{ "name": "dmem_V_4_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "dmem_V_4", "role": "q0" }} , 
  	{ "name": "d_i_idx_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "d_i_idx_V", "role": "default" }} , 
  	{ "name": "d_o_idx_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "d_o_idx_V", "role": "default" }} , 
- 	{ "name": "o_index_V_6", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "o_index_V_6", "role": "default" }} , 
+ 	{ "name": "o_index_V_4", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "o_index_V_4", "role": "default" }} , 
  	{ "name": "width_mode_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "width_mode_V", "role": "default" }} , 
  	{ "name": "norm_mode_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "norm_mode_V", "role": "default" }}  ]}
 
@@ -95,12 +95,12 @@ set RtlHierarchyInfo {[
 		"WaitState" : [
 			{"State" : "ap_ST_fsm_state48", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_process_word_fu_2613"}],
 		"Port" : [
-			{"Name" : "wt_mem_V_6", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "wt_mem_V_4", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "nc_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "dmem_V_6", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "dmem_V_4", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "d_i_idx_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "d_o_idx_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "o_index_V_6", "Type" : "None", "Direction" : "I"},
+			{"Name" : "o_index_V_4", "Type" : "None", "Direction" : "I"},
 			{"Name" : "width_mode_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "norm_mode_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "outword_V", "Type" : "OVld", "Direction" : "IO"}]},
@@ -169,12 +169,12 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	bin_conv {
-		wt_mem_V_6 {Type I LastRead 6 FirstWrite -1}
+		wt_mem_V_4 {Type I LastRead 6 FirstWrite -1}
 		nc_V {Type I LastRead 3 FirstWrite -1}
-		dmem_V_6 {Type IO LastRead 8 FirstWrite 73}
+		dmem_V_4 {Type IO LastRead 8 FirstWrite 73}
 		d_i_idx_V {Type I LastRead 3 FirstWrite -1}
 		d_o_idx_V {Type I LastRead 3 FirstWrite -1}
-		o_index_V_6 {Type I LastRead 3 FirstWrite -1}
+		o_index_V_4 {Type I LastRead 3 FirstWrite -1}
 		width_mode_V {Type I LastRead 0 FirstWrite -1}
 		norm_mode_V {Type I LastRead 3 FirstWrite -1}
 		outword_V {Type IO LastRead -1 FirstWrite -1}}
@@ -207,12 +207,12 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	wt_mem_V_6 { ap_memory {  { wt_mem_V_6_address0 mem_address 1 13 }  { wt_mem_V_6_ce0 mem_ce 1 1 }  { wt_mem_V_6_q0 mem_dout 0 64 } } }
+	wt_mem_V_4 { ap_memory {  { wt_mem_V_4_address0 mem_address 1 13 }  { wt_mem_V_4_ce0 mem_ce 1 1 }  { wt_mem_V_4_q0 mem_dout 0 64 } } }
 	nc_V { ap_none {  { nc_V in_data 0 16 } } }
-	dmem_V_6 { ap_memory {  { dmem_V_6_address0 mem_address 1 12 }  { dmem_V_6_ce0 mem_ce 1 1 }  { dmem_V_6_we0 mem_we 1 1 }  { dmem_V_6_d0 mem_din 1 64 }  { dmem_V_6_q0 mem_dout 0 64 } } }
+	dmem_V_4 { ap_memory {  { dmem_V_4_address0 mem_address 1 12 }  { dmem_V_4_ce0 mem_ce 1 1 }  { dmem_V_4_we0 mem_we 1 1 }  { dmem_V_4_d0 mem_din 1 64 }  { dmem_V_4_q0 mem_dout 0 64 } } }
 	d_i_idx_V { ap_none {  { d_i_idx_V in_data 0 1 } } }
 	d_o_idx_V { ap_none {  { d_o_idx_V in_data 0 1 } } }
-	o_index_V_6 { ap_none {  { o_index_V_6 in_data 0 16 } } }
+	o_index_V_4 { ap_none {  { o_index_V_4 in_data 0 16 } } }
 	width_mode_V { ap_none {  { width_mode_V in_data 0 2 } } }
 	norm_mode_V { ap_none {  { norm_mode_V in_data 0 2 } } }
 }

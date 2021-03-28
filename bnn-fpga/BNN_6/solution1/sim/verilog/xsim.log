@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Mar 26 22:51:21 2021
-# Process ID: 5460
+# Start of session at: Sun Mar 28 11:54:52 2021
+# Process ID: 4148
 # Current directory: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/top/xsim_script.tcl}
 # Log file: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.log
@@ -25,6 +25,6 @@ source top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "3989070000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 3989118 ns : File "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 688
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 221.742 ; gain = 0.000
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:34 . Memory (MB): peak = 233.953 ; gain = 0.000
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Mar 26 22:52:04 2021...
+INFO: [Common 17-206] Exiting xsim at Sun Mar 28 11:55:41 2021...

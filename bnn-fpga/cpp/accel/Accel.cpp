@@ -804,16 +804,16 @@ void top(
   if (layer_type == LAYER_CONV1) {
     assert(n_inputs == 3);
 
-    fp_conv(
-        wt_mem,
-        kh_mem,
-        dmem,
-        d_i_idx,
-        d_o_idx,
-        kh_index,
-        o_index,
-        n_outputs
-    );
+    // fp_conv(
+    //     wt_mem,
+    //     kh_mem,
+    //     dmem,
+    //     d_i_idx,
+    //     d_o_idx,
+    //     kh_index,
+    //     o_index,
+    //     n_outputs
+    // );
 
     kh_index += n_outputs;
     o_index += n_outputs;

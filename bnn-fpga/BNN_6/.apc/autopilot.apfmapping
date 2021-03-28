@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="Typedefs.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Typedefs.h"/>
-    <originFiles name="Timer.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Timer.h"/>
-    <originFiles name="Timer.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Timer.cpp"/>
-    <originFiles name="SArray.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\SArray.h"/>
-    <originFiles name="InputConv.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\InputConv.h"/>
-    <originFiles name="InputConv.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\InputConv.cpp"/>
-    <originFiles name="Dense.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Dense.h"/>
-    <originFiles name="Dense.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Dense.cpp"/>
-    <originFiles name="Debug.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Debug.h"/>
-    <originFiles name="Common.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Common.h"/>
-    <originFiles name="Common.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Common.cpp"/>
-    <originFiles name="AccelTest.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelTest.h"/>
-    <originFiles name="AccelTest.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelTest.cpp"/>
-    <originFiles name="AccelSchedule.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelSchedule.h"/>
-    <originFiles name="AccelSchedule.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelSchedule.cpp"/>
-    <originFiles name="AccelPrint.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelPrint.h"/>
-    <originFiles name="AccelPrint.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelPrint.cpp"/>
-    <originFiles name="Accel.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Accel.h"/>
     <originFiles name="Accel.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Accel.cpp"/>
+    <originFiles name="Accel.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Accel.h"/>
+    <originFiles name="AccelPrint.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelPrint.cpp"/>
+    <originFiles name="AccelPrint.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelPrint.h"/>
+    <originFiles name="AccelSchedule.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelSchedule.cpp"/>
+    <originFiles name="AccelSchedule.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelSchedule.h"/>
+    <originFiles name="AccelTest.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelTest.cpp"/>
+    <originFiles name="AccelTest.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\AccelTest.h"/>
+    <originFiles name="Common.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Common.cpp"/>
+    <originFiles name="Common.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Common.h"/>
+    <originFiles name="Debug.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Debug.h"/>
+    <originFiles name="Dense.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Dense.cpp"/>
+    <originFiles name="Dense.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Dense.h"/>
+    <originFiles name="InputConv.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\InputConv.cpp"/>
+    <originFiles name="InputConv.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\InputConv.h"/>
+    <originFiles name="SArray.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\SArray.h"/>
+    <originFiles name="Timer.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Timer.cpp"/>
+    <originFiles name="Timer.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Timer.h"/>
+    <originFiles name="Typedefs.h" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\Typedefs.h"/>
   </source>
   <testbench>
     <originFiles name="accel_test_random.cpp" path="D:\Mayank\Git_Repos\CS577_Group13_Project\bnn-fpga\cpp\accel\accel_test_random.cpp"/>

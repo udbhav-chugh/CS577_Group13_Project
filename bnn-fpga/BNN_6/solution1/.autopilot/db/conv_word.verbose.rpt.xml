@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_word'" level="0">
-<item name = "Date">Fri Mar 26 22:47:19 2021
+<item name = "Date">Sun Mar 28 11:48:52 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -91,17 +91,17 @@
 <column name="cc_V_fu_279_p2">+, 0, 0, 13, 4, 1</column>
 <column name="kc_V_fu_400_p2">+, 0, 0, 10, 2, 1</column>
 <column name="kr_V_fu_312_p2">+, 0, 0, 10, 2, 1</column>
-<column name="ret_V_19_fu_289_p2">+, 0, 0, 15, 6, 6</column>
-<column name="ret_V_20_fu_410_p2">+, 0, 0, 13, 4, 4</column>
+<column name="ret_V_11_fu_289_p2">+, 0, 0, 15, 6, 6</column>
+<column name="ret_V_12_fu_410_p2">+, 0, 0, 13, 4, 4</column>
 <column name="sum_V_fu_492_p2">+, 0, 0, 15, 5, 5</column>
-<column name="ret_V_21_fu_434_p2">-, 0, 0, 12, 2, 3</column>
-<column name="ret_V_22_fu_361_p2">-, 0, 0, 12, 2, 3</column>
+<column name="ret_V_13_fu_434_p2">-, 0, 0, 12, 2, 3</column>
+<column name="ret_V_14_fu_361_p2">-, 0, 0, 12, 2, 3</column>
 <column name="sub_ln215_fu_388_p2">-, 0, 0, 15, 6, 6</column>
 <column name="sub_ln69_fu_267_p2">-, 0, 0, 71, 64, 64</column>
-<column name="ret_V_24_fu_458_p2">and, 0, 0, 6, 1, 1</column>
+<column name="ret_V_16_fu_458_p2">and, 0, 0, 6, 1, 1</column>
 <column name="icmp_ln86_fu_218_p2">icmp, 0, 0, 11, 4, 5</column>
 <column name="icmp_ln87_fu_273_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln887_16_fu_394_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="icmp_ln887_3_fu_394_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="icmp_ln887_fu_306_p2">icmp, 0, 0, 8, 2, 2</column>
 <column name="select_ln215_fu_210_p3">select, 0, 0, 2, 1, 2</column>
 <column name="xor_ln841_fu_472_p2">xor, 0, 0, 6, 1, 1</column>

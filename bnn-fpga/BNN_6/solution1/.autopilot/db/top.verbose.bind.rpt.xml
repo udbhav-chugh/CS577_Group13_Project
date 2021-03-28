@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'top'" level="0">
-<item name = "Date">Fri Mar 26 22:47:17 2021
+<item name = "Date">Sun Mar 28 11:48:49 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -24,16 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4821, 11438876931, 4821, 11438876931, none</column>
+<column name="">4819, 349259, 4819, 349259, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_bin_conv_fu_409">bin_conv, 310790, 344439, 310790, 344439, none</column>
-<column name="grp_fp_conv_fu_425">fp_conv, 1, 11438872111, 1, 11438872111, none</column>
-<column name="grp_bin_dense_fu_440">bin_dense, 13, 13, 13, 13, none</column>
+<column name="grp_bin_conv_fu_407">bin_conv, 310790, 344439, 310790, 344439, none</column>
+<column name="grp_bin_dense_fu_423">bin_dense, 13, 13, 13, 13, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

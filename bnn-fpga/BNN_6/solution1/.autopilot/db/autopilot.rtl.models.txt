@@ -7,10 +7,6 @@ bin_conv_word_buffYi
 bin_conv_old_wordg8j
 bin_conv_conv_outhbi
 bin_conv_lb
-top_mux_32_9_1_1
-fp_conv_win_V
-fp_conv_lbuf_V
-fp_conv_outwords_V
 top_dmem_V
 top_wt_mem_V
 top_kh_mem_V
@@ -18,5 +14,4 @@ bin_dense
 conv_word
 process_word
 bin_conv
-fp_conv
 top

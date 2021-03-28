@@ -43,17 +43,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Gro
 INFO: [VRFC 10-311] analyzing module bin_dense
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/fp_conv.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fp_conv
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/fp_conv_lbuf_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fp_conv_lbuf_V_ram
-INFO: [VRFC 10-311] analyzing module fp_conv_lbuf_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/fp_conv_outwords_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fp_conv_outwords_V_ram
-INFO: [VRFC 10-311] analyzing module fp_conv_outwords_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/fp_conv_win_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fp_conv_win_V_ram
-INFO: [VRFC 10-311] analyzing module fp_conv_win_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module process_word
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
@@ -69,8 +58,6 @@ INFO: [VRFC 10-311] analyzing module top_kh_mem_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_ibs.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs_DSP48_0
 INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mux_32_9_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_mux_32_9_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_wt_mem_V_ram
 INFO: [VRFC 10-311] analyzing module top_wt_mem_V
@@ -106,14 +93,6 @@ Compiling module xil_defaultlib.process_word
 Compiling module xil_defaultlib.top_mul_mul_15ns_ibs_DSP48_0
 Compiling module xil_defaultlib.top_mul_mul_15ns_ibs(ID=1,NUM_ST...
 Compiling module xil_defaultlib.bin_conv
-Compiling module xil_defaultlib.fp_conv_win_V_ram
-Compiling module xil_defaultlib.fp_conv_win_V(DataWidth=20,Addre...
-Compiling module xil_defaultlib.fp_conv_lbuf_V_ram
-Compiling module xil_defaultlib.fp_conv_lbuf_V(DataWidth=20,Addr...
-Compiling module xil_defaultlib.fp_conv_outwords_V_ram_default
-Compiling module xil_defaultlib.fp_conv_outwords_V(DataWidth=64,...
-Compiling module xil_defaultlib.top_mux_32_9_1_1(ID=1,din0_WIDTH...
-Compiling module xil_defaultlib.fp_conv
 Compiling module xil_defaultlib.bin_dense
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.AESL_automem_wt_i_V

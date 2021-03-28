@@ -12,20 +12,20 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:26.178+0530" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:26.162+0530" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'top/n_inputs_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:26.159+0530" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:26.143+0530" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:26.090+0530" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:20.909+0530" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:867) in function 'top'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:47:01.009+0530" type="Warning"/>
-        <logs message="WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:522: variable-indexed range selection may cause suboptimal QoR." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:46:59.520+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:44:15.801+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:44:15.115+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:49:04.526+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:49:04.492+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'top/n_inputs_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:49:04.475+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:49:04.475+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:49:04.342+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:48:55.621+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:867) in function 'top'." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:48:14.401+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:680: variable-indexed range selection may cause suboptimal QoR." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:48:11.100+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:42:05.547+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:42:03.960+0530" type="Warning"/>
       </synLog>
       <simLog>
-        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:48:19.881+0530" type="Warning"/>
-        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-26T22:48:18.995+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:50:03.685+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'." projectName="BNN_6" solutionName="solution1" date="2021-03-28T11:50:02.720+0530" type="Warning"/>
       </simLog>
       <mgLog/>
       <packageLog/>

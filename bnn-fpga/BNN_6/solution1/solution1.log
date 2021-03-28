@@ -2832,3 +2832,311 @@ INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Timer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/InputConv.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Dense.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Common.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelTest.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelSchedule.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelPrint.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Accel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:05:50 . Memory (MB): peak = 175.672 ; gain = 84.766
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:05:50 . Memory (MB): peak = 175.672 ; gain = 84.766
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:06:03 . Memory (MB): peak = 472.816 ; gain = 381.910
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'conv_word' into 'process_word' (cpp/accel/Accel.cpp:145) automatically.
+INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:830) automatically.
+WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:680: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:24 ; elapsed = 00:06:09 . Memory (MB): peak = 697.641 ; gain = 606.734
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:867) in function 'top'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:866) in function 'top' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' automatically.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:866) in function 'top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_O' (cpp/accel/Accel.cpp:628) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DENSE_I' (cpp/accel/Accel.cpp:636) in function 'bin_dense' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:241) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:252) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:264) in function 'bin_conv' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (cpp/accel/Accel.cpp:392) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (cpp/accel/Accel.cpp:405) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:425) in function 'bin_conv' completely with a factor of 1.
+INFO: [XFORM 203-102] Automatically partitioning small array 'sum_m.V' (cpp/accel/Accel.cpp:620) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'sum_m.V' (cpp/accel/Accel.cpp:620) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:280) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'conv3x3b' into 'conv_word' (cpp/accel/Accel.cpp:89) automatically.
+INFO: [XFORM 203-602] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:335) automatically.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:830) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:859:5) to (cpp/accel/Accel.cpp:883:1) in function 'top'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:826:38) in function 'top'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:132:42) to (cpp/accel/Accel.cpp:130:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:126:49) to (cpp/accel/Accel.cpp:128:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:134:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:165:32) to (cpp/accel/Accel.cpp:163:49) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:159:39) to (cpp/accel/Accel.cpp:161:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:167:21) in function 'process_word'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:37) to (cpp/accel/Accel.cpp:149:48) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:661:5) to (cpp/accel/Accel.cpp:708:7) in function 'bin_dense'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:337:41) to (cpp/accel/Accel.cpp:332:44) in function 'bin_conv'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:380:11) to (cpp/accel/Accel.cpp:277:47) in function 'bin_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'bin_dense' (cpp/accel/Accel.cpp:606)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:06:16 . Memory (MB): peak = 940.988 ; gain = 850.082
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:43 ; elapsed = 00:06:29 . Memory (MB): peak = 1066.574 ; gain = 975.668
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bin_dense' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 389.781 seconds; current allocated memory: 979.646 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.164 seconds; current allocated memory: 980.429 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.886 seconds; current allocated memory: 980.672 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.577 seconds; current allocated memory: 980.971 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 981.624 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.083 seconds; current allocated memory: 982.401 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.732 seconds; current allocated memory: 985.207 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.884 seconds; current allocated memory: 988.396 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_DMEM_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WT_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_KH_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.894 seconds; current allocated memory: 989.034 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.33 seconds; current allocated memory: 989.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bin_dense' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_dense'.
+INFO: [HLS 200-111]  Elapsed time: 1.897 seconds; current allocated memory: 991.623 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_word'.
+INFO: [HLS 200-111]  Elapsed time: 1.495 seconds; current allocated memory: 992.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_word'.
+INFO: [HLS 200-111]  Elapsed time: 1.086 seconds; current allocated memory: 993.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'bin_conv_line_buffer' to 'bin_conv_line_bufbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_conv_params_V' to 'bin_conv_conv_parcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_fixed_buffer_V' to 'bin_conv_fixed_budEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_fixed_temp_V' to 'bin_conv_fixed_teeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_word_buffer_V' to 'bin_conv_word_buffYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_old_word_buffer_V' to 'bin_conv_old_wordg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_conv_out_buffer_V' to 'bin_conv_conv_outhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_mul_mul_15ns_5ns_16_1_1' to 'top_mul_mul_15ns_ibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_mul_mul_15ns_ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_conv'.
+INFO: [HLS 200-111]  Elapsed time: 3.565 seconds; current allocated memory: 999.792 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/wt_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/kh_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_o_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_inputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_outputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/input_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/layer_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/width_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/norm_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Port 'top/n_inputs_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 7.744 seconds; current allocated memory: 1002.211 MB.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_line_bufbkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_conv_parcud_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_fixed_budEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_fixed_teeOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_word_buffYi_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_old_wordg8j_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_conv_outhbi_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_lb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_dmem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_wt_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_kh_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:12 ; elapsed = 00:07:09 . Memory (MB): peak = 1122.984 ; gain = 1032.078
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 429.718 seconds; peak allocated memory: 1002.211 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+WARNING: [HLS 200-40] Cannot find library 'D:/Installations/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

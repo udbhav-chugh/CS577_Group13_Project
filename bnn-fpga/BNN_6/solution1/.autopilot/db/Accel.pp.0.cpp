@@ -77157,18 +77157,7 @@ void top(
 
   if (layer_type == LAYER_CONV1) {
     (void) ((!!(n_inputs == 3)) || (_assert("n_inputs == 3","cpp/accel/Accel.cpp",805),0));
-
-    fp_conv(
-        wt_mem,
-        kh_mem,
-        dmem,
-        d_i_idx,
-        d_o_idx,
-        kh_index,
-        o_index,
-        n_outputs
-    );
-
+# 818 "cpp/accel/Accel.cpp"
     kh_index += n_outputs;
     o_index += n_outputs;
   }
