@@ -770,7 +770,7 @@ void top(
   Address img_idx = 0;  // i / words_per_image;
   IdxType img_off = 0;  // i % words_per_image;
   LOOP_DMEM_I: for (Address i = 0; i < 64; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     if (layer_type == LAYER_CONV) {
       Address bank_idx = img_idx % CONVOLVERS;
       Address bank_off = img_idx / CONVOLVERS;
@@ -790,14 +790,14 @@ void top(
   // Weight input, we must copy every 64-bit Word from the interface
   // into the accelerator
   LOOP_WT_I: for (Address i = 0; i < C_WT_WORDS*CONVOLVERS; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     wt_mem[i%CONVOLVERS][i/CONVOLVERS] = wt_i[i];
   }
   //printf ("\nAccel Weights:\n");
   //print_params3d(wt_mem[0], 0, n_inputs*n_outputs);
 
   LOOP_KH_I: for (ap_uint<16> i = 0; i < KH_WORDS; ++i){
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     kh_mem[i] = kh_i[i];
   }
 
@@ -864,7 +864,7 @@ void top(
   img_idx = 0;
   img_off = 0;
   LOOP_DMEM_O: for (Address i = 0; i < 1; ++i) {
-    #pragma HLS PIPELINE II=1
+    // #pragma HLS PIPELINE II=1
     // exclude conv6 (width==8, norm_mode==2) here because it writes
     // the output fmaps linearly
     if (layer_type <= LAYER_CONV && !(width_mode == 0 && norm_mode == 2)) {

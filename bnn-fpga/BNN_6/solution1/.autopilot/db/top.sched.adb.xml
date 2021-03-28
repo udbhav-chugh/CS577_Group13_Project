@@ -1332,7 +1332,7 @@ LOOP_DMEM_I_begin:4  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]*
 
 <Node id="70" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_DMEM_I_begin:5  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_DMEM_I_begin:5  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln773"/></StgValue>
@@ -1923,7 +1923,7 @@ LOOP_WT_I:12  %wt_i_V_load = load i64* %wt_i_V_addr, align 8
 
 <Node id="131" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45159) nounwind
+LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln792"/></StgValue>
@@ -1939,7 +1939,7 @@ LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45159) nou
 
 <Node id="132" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45159)
+LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -1955,7 +1955,7 @@ LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_st
 
 <Node id="133" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_WT_I:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_WT_I:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln793"/></StgValue>
@@ -2035,7 +2035,7 @@ LOOP_WT_I:13  store i64 %wt_i_V_load, i64* %wt_mem_V_addr, align 8
 
 <Node id="144" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_WT_I:14  %empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45159, i32 %tmp_1)
+LOOP_WT_I:14  %empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45, i32 %tmp_1)
 
 ]]></Node>
 <StgValue><ssdm name="empty_28"/></StgValue>
@@ -2246,7 +2246,7 @@ LOOP_KH_I:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_st
 
 <Node id="157" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_KH_I:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_KH_I:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln800"/></StgValue>

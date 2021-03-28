@@ -2,35 +2,35 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
+# 1 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
+# 1 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
 
 
 
-# 1 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 1
+# 1 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 1
 
 
 
 
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 1 3
-# 9 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 1 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 1 3
-# 12 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 1 3
-# 88 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 1 3
+# 9 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 1 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 1 3
+# 12 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 1 3
+# 88 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 3
              
-# 97 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 3
+# 97 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h" 3
              
-# 13 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 1 3
-# 44 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 3
+# 13 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 1 3
+# 44 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 3
 
-# 44 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 3
+# 44 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h" 3
 extern "C++" {
 template <bool __test, typename __dsttype>
   struct __if_array;
@@ -39,17 +39,17 @@ template <typename __dsttype>
     typedef __dsttype __type;
 };
 }
-# 14 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
-# 275 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 1 3
-# 9 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 1 3
-# 565 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h" 1 3
-# 566 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h" 1 3
-# 567 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 2 3
+# 14 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
+# 275 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 1 3
+# 9 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 1 3
+# 565 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h" 1 3
+# 566 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h" 1 3
+# 567 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 2 3
 
 
 
@@ -72,14 +72,14 @@ extern "C" {
 
 
   typedef __gnuc_va_list va_list;
-# 99 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 3
+# 99 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h" 3
 }
 
 
 
 #pragma pack(pop)
-# 276 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
-# 534 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
+# 276 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 2 3
+# 534 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h" 3
 extern "C" {
 
 
@@ -98,15 +98,15 @@ const char *__mingw_get_crt_info (void);
 
 
 }
-# 11 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 2 3
+# 11 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 2 3
 
 
 
 
 #pragma pack(push,_CRT_PACKING)
-# 35 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 35 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 __extension__ typedef unsigned long long size_t;
-# 45 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 45 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 __extension__ typedef long long ssize_t;
 
 
@@ -115,13 +115,13 @@ __extension__ typedef long long ssize_t;
 
 
 typedef size_t rsize_t;
-# 62 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 62 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 __extension__ typedef long long intptr_t;
-# 75 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 75 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 __extension__ typedef unsigned long long uintptr_t;
-# 88 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 88 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 __extension__ typedef long long ptrdiff_t;
-# 106 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 106 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 typedef unsigned short wint_t;
 typedef unsigned short wctype_t;
 
@@ -140,9 +140,9 @@ typedef long __time32_t;
 
 
 __extension__ typedef long long __time64_t;
-# 138 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 138 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 typedef __time64_t time_t;
-# 422 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
+# 422 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 3
 struct threadlocaleinfostruct;
 struct threadmbcinfostruct;
 typedef struct threadlocaleinfostruct *pthreadlocinfo;
@@ -198,15 +198,15 @@ typedef struct threadlocaleinfostruct {
 
 
 #pragma pack(pop)
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
-# 24 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+# 24 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
 #pragma pack(push,_CRT_PACKING)
 
 
 extern "C" {
-# 60 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 60 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
   typedef long clock_t;
-# 97 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 97 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
   struct tm {
     int tm_sec;
     int tm_min;
@@ -288,9 +288,9 @@ extern "C" {
 
 
   wchar_t *__attribute__((__cdecl__)) _wctime(const time_t *) ;
-# 189 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 189 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
   errno_t __attribute__((__cdecl__)) _wctime_s(wchar_t *, size_t, const time_t *);
-# 203 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 203 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
 double __attribute__((__cdecl__)) difftime(time_t _Time1,time_t _Time2);
 char *__attribute__((__cdecl__)) ctime(const time_t *_Time) ;
 struct tm *__attribute__((__cdecl__)) gmtime(const time_t *_Time) ;
@@ -299,7 +299,7 @@ struct tm *__attribute__((__cdecl__)) localtime(const time_t *_Time) ;
 time_t __attribute__((__cdecl__)) mktime(struct tm *_Tm);
 time_t __attribute__((__cdecl__)) _mkgmtime(struct tm *_Tm);
 time_t __attribute__((__cdecl__)) time(time_t *_Time);
-# 240 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 240 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
 inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) localtime_s(struct tm *_Tm,const time_t *_Time) { return _localtime64_s(_Tm,_Time); }
 inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) gmtime_s(struct tm *_Tm, const time_t *_Time) { return _gmtime64_s(_Tm, _Time); }
 inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) ctime_s(char *_Buf,size_t _SizeInBytes,const time_t *_Time) { return _ctime64_s(_Buf,_SizeInBytes,_Time); }
@@ -315,14 +315,14 @@ inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) cti
   void __attribute__((__cdecl__)) tzset(void) ;
 
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 1 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 1 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 3
 struct timeval
 {
  long tv_sec;
  long tv_usec;
 };
-# 256 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+# 256 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
 
 
 
@@ -339,14 +339,14 @@ struct timezone {
 
 
 #pragma pack(pop)
-# 293 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
-# 15 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+# 293 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
+# 15 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
 #pragma pack(push,_CRT_PACKING)
 
 
 extern "C" {
-# 53 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+# 53 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
   struct __timeb32 {
     __time32_t time;
     unsigned short millitm;
@@ -397,16 +397,16 @@ struct itimerspec {
 
 
   void __attribute__((__cdecl__)) ftime (struct timeb *);
-# 119 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+# 119 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
 }
 
 
 #pragma pack(pop)
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 1 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
-# 11 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 2 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 1 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
+# 11 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 2 3
 
 
 extern "C" {
@@ -424,8 +424,8 @@ extern "C" {
 
 
 }
-# 125 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 2 3
-# 294 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+# 125 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 2 3
+# 294 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
 
 
 
@@ -433,10 +433,10 @@ extern "C" {
 
 
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 1 3
-# 49 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 1 3
+# 49 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
 typedef int clockid_t;
-# 74 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
+# 74 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
 extern "C" {
 
 
@@ -458,23 +458,23 @@ int __attribute__((__cdecl__)) clock_settime(clockid_t clock_id, const struct ti
 
 
 }
-# 302 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
-# 7 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 1 3
-# 13 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 3
+# 302 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+# 7 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 1 3
+# 13 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 3
 extern "C" {
-# 42 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 3
+# 42 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sys/time.h" 3
 int __attribute__((__cdecl__)) gettimeofday(struct timeval *__restrict__,
                          void *__restrict__ );
 
 
 
 }
-# 8 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 1 3
-# 21 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 3
+# 8 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 1 3
+# 21 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 3
 extern "C" {
-# 45 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 3
+# 45 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 3
   __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _memccpy(void *_Dst,const void *_Src,int _Val,size_t _MaxCount);
   void *__attribute__((__cdecl__)) memchr(const void *_Buf ,int _Val,size_t _MaxCount);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _memicmp(const void *_Buf1,const void *_Buf2,size_t _Size);
@@ -620,11 +620,11 @@ extern "C" {
 }
 
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 1 3
-# 9 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 1 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 2 3
-# 23 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 1 3
+# 9 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 1 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 2 3
+# 23 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h" 3
 extern "C" {
 
 
@@ -685,18 +685,18 @@ extern "C" {
 
 
 }
-# 191 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 2 3
-# 9 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
-# 11 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h" 1 3
-# 12 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
+# 191 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/string.h" 2 3
+# 9 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
+# 11 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h" 1 3
+# 12 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
 
 #pragma pack(push,_CRT_PACKING)
 
 
 extern "C" {
-# 26 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 26 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   struct _iobuf {
     char *_ptr;
     int _cnt;
@@ -708,8 +708,8 @@ extern "C" {
     char *_tmpfname;
   };
   typedef struct _iobuf FILE;
-# 80 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h" 1 3
+# 80 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h" 1 3
 
 
 
@@ -725,16 +725,16 @@ extern "C" {
   __extension__ typedef long long _off64_t;
 
   __extension__ typedef long long off64_t;
-# 26 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h" 3
+# 26 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h" 3
 typedef off32_t off_t;
-# 81 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
+# 81 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
 
 
 
   __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) __iob_func(void);
-# 103 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 103 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __extension__ typedef long long fpos_t;
-# 139 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 139 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 extern
   __attribute__((__format__ (gnu_scanf, 2, 3))) __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __mingw_sscanf(const char * __restrict__ _Src,const char * __restrict__ _Format,...);
@@ -785,7 +785,7 @@ extern
 extern
   __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__((nonnull (1,2)))
   int __attribute__((__cdecl__)) __mingw_vasprintf(char ** __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
-# 386 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 386 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __attribute__((__format__ (ms_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
   __attribute__((__format__ (ms_printf, 1, 2))) __attribute__ ((__nonnull__ (1)))
@@ -894,12 +894,12 @@ extern
 
   int fseeko64(FILE* stream, _off64_t offset, int whence);
   int fseeko(FILE* stream, _off_t offset, int whence);
-# 502 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 502 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   long __attribute__((__cdecl__)) ftell(FILE *_File);
 
   _off_t ftello(FILE * stream);
   _off64_t ftello64(FILE * stream);
-# 514 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 514 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __extension__ int __attribute__((__cdecl__)) _fseeki64(FILE *_File,long long _Offset,int _Origin);
   __extension__ long long __attribute__((__cdecl__)) _ftelli64(FILE *_File);
   size_t __attribute__((__cdecl__)) fwrite(const void * __restrict__ _Str,size_t _Size,size_t _Count,FILE * __restrict__ _File);
@@ -1032,7 +1032,7 @@ int snprintf (char * __restrict__ __stream, size_t __n, const char * __restrict_
   int __attribute__((__cdecl__)) __mingw_swprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ , ...);
                                                       __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __mingw_vswprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ ,va_list);
-# 768 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 768 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   int __attribute__((__cdecl__)) fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...) ;
   int __attribute__((__cdecl__)) swscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,...) ;
   int __attribute__((__cdecl__)) wscanf(const wchar_t * __restrict__ _Format,...) ;
@@ -1067,7 +1067,7 @@ int snprintf (char * __restrict__ __stream, size_t __n, const char * __restrict_
   int __attribute__((__cdecl__)) wprintf(const wchar_t * __restrict__ _Format,...);
   int __attribute__((__cdecl__)) vfwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
   int __attribute__((__cdecl__)) vwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
-# 811 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 811 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfsopen(const wchar_t *_Filename,const wchar_t *_Mode,int _ShFlag);
 
 
@@ -1124,8 +1124,8 @@ int snprintf (char * __restrict__ __stream, size_t __n, const char * __restrict_
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vswprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,va_list _Args);
 
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl" 1 3
-# 21 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl" 1 3
+# 21 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl" 3
 static __attribute__ ((__unused__)) __inline__ __attribute__((__cdecl__))
                                                       __attribute__ ((__nonnull__ (3)))
 int vswprintf (wchar_t *__stream, size_t __count, const wchar_t *__format, __builtin_va_list __local_argv)
@@ -1175,8 +1175,8 @@ int swprintf (wchar_t *__stream, const wchar_t *__format, ...)
 }
 
 }
-# 868 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-# 877 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 868 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
+# 877 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wtempnam(const wchar_t *_Directory,const wchar_t *_FilePrefix);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vscwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _snwscanf(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
@@ -1198,7 +1198,7 @@ int swprintf (wchar_t *__stream, const wchar_t *__format, ...)
   __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fgetwc_nolock(FILE *_File);
   __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fputwc_nolock(wchar_t _Ch,FILE *_File);
   __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _ungetwc_nolock(wint_t _Ch,FILE *_File);
-# 927 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 927 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _lock_file(FILE *_File);
   __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _unlock_file(FILE *_File);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fclose_nolock(FILE *_File);
@@ -1225,11 +1225,11 @@ int swprintf (wchar_t *__stream, const wchar_t *__format, ...)
   int __attribute__((__cdecl__)) getw(FILE *_File) ;
   int __attribute__((__cdecl__)) putw(int _Ch,FILE *_File) ;
   int __attribute__((__cdecl__)) rmtmp(void) ;
-# 969 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 969 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 int __attribute__((__cdecl__)) __mingw_str_wide_utf8 (const wchar_t * const wptr, char **mbptr, size_t * buflen);
-# 983 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 983 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 int __attribute__((__cdecl__)) __mingw_str_utf8_wide (const char *const mbptr, wchar_t ** wptr, size_t * buflen);
-# 992 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 992 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
 
 
@@ -1244,7 +1244,7 @@ void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnve(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvp(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvpe(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
-# 1022 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
+# 1022 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnv(int _Mode,const char *_Filename,const char *const *_ArgList);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnve(int _Mode,const char *_Filename,const char *const *_ArgList,const char *const *_Env);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnvp(int _Mode,const char *_Filename,const char *const *_ArgList);
@@ -1257,11 +1257,11 @@ void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
 
 #pragma pack(pop)
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 1 3
-# 9 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 3
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
-# 10 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 2 3
-# 23 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 1 3
+# 9 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 3
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
+# 10 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 2 3
+# 23 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h" 3
 extern "C" {
 
 
@@ -1430,14 +1430,14 @@ extern "C" {
 
 
 }
-# 1035 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
+# 1035 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
 
-# 1 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
-# 1037 "D:/Installations/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-# 10 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
-# 22 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h"
+# 1 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
+# 1037 "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
+# 10 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h" 2
+# 22 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h"
 
-# 22 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h"
+# 22 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.h"
 class Timer {
 
 
@@ -1462,7 +1462,7 @@ class Timer {
 
       float get_time();
 };
-# 5 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 2
+# 5 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 2
 
 
 
@@ -1473,9 +1473,9 @@ Timer::Timer(const char* Name, bool On) {
   if (On) {
 
     gettimeofday(&ts_start, 
-# 14 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
+# 14 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
                            0LL
-# 14 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
+# 14 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
                                );
     nCalls = 1;
   }
@@ -1503,9 +1503,9 @@ Timer::~Timer() {
 void Timer::start() {
 
   gettimeofday(&ts_start, 
-# 40 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
+# 40 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
                          0LL
-# 40 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
+# 40 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
                              );
   nCalls++;
 }
@@ -1514,9 +1514,9 @@ void Timer::stop() {
 
   timeval ts_curr;
   gettimeofday(&ts_curr, 
-# 47 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
+# 47 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp" 3
                         0LL
-# 47 "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
+# 47 "C:/Work/CS577_Group13_Project/bnn-fpga/cpp/accel/Timer.cpp"
                             );
   totalTime += float(ts_curr.tv_sec - ts_start.tv_sec) +
                float(ts_curr.tv_usec)*1e-6 - float(ts_start.tv_usec)*1e-6;

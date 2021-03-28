@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'top'
 ================================================================
-* Date:           Sun Mar 28 11:49:05 2021
+* Date:           Sun Mar 28 12:14:36 2021
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BNN_6
@@ -400,7 +400,7 @@ ST_2 : Operation 88 [1/1] (0.45ns)   --->   "%select_ln784_1 = select i1 %icmp_l
 State 3 <SV = 2> <Delay = 5.32>
 ST_3 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str44) nounwind" [cpp/accel/Accel.cpp:772]   --->   Operation 89 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str44)" [cpp/accel/Accel.cpp:772]   --->   Operation 90 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind" [cpp/accel/Accel.cpp:773]   --->   Operation 91 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [cpp/accel/Accel.cpp:773]   --->   Operation 91 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 92 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879, label %_ZNK11ap_int_baseILi16ELb0EElsILi34EEE7ap_uintILi16EERKS_IXT_ELb1EE.exit, label %1" [cpp/accel/Accel.cpp:774]   --->   Operation 92 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%ret_V_4 = zext i6 %ret_V_6 to i7" [cpp/accel/Accel.cpp:782]   --->   Operation 93 'zext' 'ret_V_4' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
 ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_5 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i3.i7(i1 %dmem_mode_V_read, i1 %ret_V_5, i3 0, i7 %ret_V_4)" [cpp/accel/Accel.cpp:782]   --->   Operation 94 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
@@ -442,14 +442,14 @@ ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%wt_i_V_addr = getelementptr [4682
 ST_5 : Operation 126 [2/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:794]   --->   Operation 126 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 6 <SV = 4> <Delay = 5.32>
-ST_6 : Operation 127 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45159) nounwind" [cpp/accel/Accel.cpp:792]   --->   Operation 127 'specloopname' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45159)" [cpp/accel/Accel.cpp:792]   --->   Operation 128 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 129 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind" [cpp/accel/Accel.cpp:793]   --->   Operation 129 'specpipeline' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 127 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45) nounwind" [cpp/accel/Accel.cpp:792]   --->   Operation 127 'specloopname' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45)" [cpp/accel/Accel.cpp:792]   --->   Operation 128 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 129 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [cpp/accel/Accel.cpp:793]   --->   Operation 129 'specpipeline' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 ST_6 : Operation 130 [1/1] (0.00ns)   --->   "%zext_ln180_6 = zext i13 %add_ln180_1 to i64" [cpp/accel/Accel.cpp:794]   --->   Operation 130 'zext' 'zext_ln180_6' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 ST_6 : Operation 131 [1/1] (0.00ns)   --->   "%wt_mem_V_addr = getelementptr [4682 x i64]* @wt_mem_V, i64 0, i64 %zext_ln180_6" [cpp/accel/Accel.cpp:794]   --->   Operation 131 'getelementptr' 'wt_mem_V_addr' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 ST_6 : Operation 132 [1/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:794]   --->   Operation 132 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 ST_6 : Operation 133 [1/1] (2.66ns)   --->   "store i64 %wt_i_V_load, i64* %wt_mem_V_addr, align 8" [cpp/accel/Accel.cpp:794]   --->   Operation 133 'store' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_6 : Operation 134 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45159, i32 %tmp_1)" [cpp/accel/Accel.cpp:795]   --->   Operation 134 'specregionend' 'empty_28' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 134 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45, i32 %tmp_1)" [cpp/accel/Accel.cpp:795]   --->   Operation 134 'specregionend' 'empty_28' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 ST_6 : Operation 135 [1/1] (0.00ns)   --->   "br label %.preheader1441" [cpp/accel/Accel.cpp:792]   --->   Operation 135 'br' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 
 State 7 <SV = 4> <Delay = 1.06>
@@ -468,7 +468,7 @@ ST_8 : Operation 144 [2/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_a
 State 9 <SV = 6> <Delay = 5.32>
 ST_9 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str46) nounwind" [cpp/accel/Accel.cpp:799]   --->   Operation 145 'specloopname' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
 ST_9 : Operation 146 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str46)" [cpp/accel/Accel.cpp:799]   --->   Operation 146 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 147 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind" [cpp/accel/Accel.cpp:800]   --->   Operation 147 'specpipeline' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 147 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind" [cpp/accel/Accel.cpp:800]   --->   Operation 147 'specpipeline' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
 ST_9 : Operation 148 [1/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_addr, align 8" [cpp/accel/Accel.cpp:801]   --->   Operation 148 'load' 'kh_i_V_load' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 ST_9 : Operation 149 [1/1] (0.00ns)   --->   "%kh_mem_V_addr = getelementptr [64 x i64]* @kh_mem_V, i64 0, i64 %zext_ln544_4" [cpp/accel/Accel.cpp:801]   --->   Operation 149 'getelementptr' 'kh_mem_V_addr' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
 ST_9 : Operation 150 [1/1] (2.66ns)   --->   "store i64 %kh_i_V_load, i64* %kh_mem_V_addr, align 8" [cpp/accel/Accel.cpp:801]   --->   Operation 150 'store' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
@@ -1220,7 +1220,7 @@ ret_ln883          (ret              ) [ 0000000000000000]
 <pin id="109" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str15146"/></StgValue>
+<StgValue><ssdm name="p_str15"/></StgValue>
 </bind>
 </comp>
 
@@ -1337,7 +1337,7 @@ ret_ln883          (ret              ) [ 0000000000000000]
 <pin id="135" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str45159"/></StgValue>
+<StgValue><ssdm name="p_str45"/></StgValue>
 </bind>
 </comp>
 

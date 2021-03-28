@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'bin_dense'
 ================================================================
-* Date:           Sun Mar 28 11:48:33 2021
+* Date:           Sun Mar 28 12:14:23 2021
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BNN_6
@@ -110,7 +110,7 @@ ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%dmem_V_1_addr_2 = getelementptr [4
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_1 = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %d_i_idx_V_read, i1 false)" [cpp/accel/Accel.cpp:642]   --->   Operation 26 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln209 = zext i2 %tmp_1 to i3" [cpp/accel/Accel.cpp:629]   --->   Operation 27 'zext' 'zext_ln209' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/2] (2.66ns)   --->   "%dmem_V_1_load = load i64* %dmem_V_1_addr, align 8" [cpp/accel/Accel.cpp:631]   --->   Operation 28 'load' 'dmem_V_1_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 4096> <RAM>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str38158)" [cpp/accel/Accel.cpp:636]   --->   Operation 29 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str38)" [cpp/accel/Accel.cpp:636]   --->   Operation 29 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 30 [1/1] (1.06ns)   --->   "br label %0" [cpp/accel/Accel.cpp:639]   --->   Operation 30 'br' <Predicate = true> <Delay = 1.06>
 
 State 3 <SV = 2> <Delay = 3.66>
@@ -273,7 +273,7 @@ ST_6 : Operation 180 [2/2] (2.66ns)   --->   "%kh_mem_V_2_load = load i64* %kh_m
 ST_6 : Operation 181 [1/1] (0.64ns)   --->   "%icmp_ln879_3 = icmp eq i2 %layer_type_V_read, -1" [cpp/accel/Accel.cpp:708]   --->   Operation 181 'icmp' 'icmp_ln879_3' <Predicate = (icmp_ln887_4)> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.49> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 4> <Delay = 7.60>
-ST_7 : Operation 182 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str38158, i32 %tmp)" [cpp/accel/Accel.cpp:661]   --->   Operation 182 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 182 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str38, i32 %tmp)" [cpp/accel/Accel.cpp:661]   --->   Operation 182 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
 ST_7 : Operation 183 [1/2] (2.66ns)   --->   "%kh_mem_V_2_load = load i64* %kh_mem_V_2_addr, align 8" [cpp/accel/Accel.cpp:667]   --->   Operation 183 'load' 'kh_mem_V_2_load' <Predicate = (icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 4096> <RAM>
 ST_7 : Operation 184 [1/1] (0.00ns)   --->   "%trunc_ln647 = trunc i64 %kh_mem_V_2_load to i16" [cpp/accel/Accel.cpp:672]   --->   Operation 184 'trunc' 'trunc_ln647' <Predicate = (icmp_ln879)> <Delay = 0.00>
 ST_7 : Operation 185 [1/1] (0.00ns)   --->   "%zext_ln555 = zext i6 %o_offset_V to i32" [cpp/accel/Accel.cpp:680]   --->   Operation 185 'zext' 'zext_ln555' <Predicate = (icmp_ln879)> <Delay = 0.00>
@@ -716,7 +716,7 @@ ret_ln714         (ret              ) [ 000000000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str38158"/></StgValue>
+<StgValue><ssdm name="p_str38"/></StgValue>
 </bind>
 </comp>
 

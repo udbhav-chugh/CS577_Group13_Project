@@ -1332,7 +1332,7 @@ LOOP_DMEM_I_begin:4  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]*
 
 <Node id="70" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_DMEM_I_begin:5  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_DMEM_I_begin:5  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln773"/></StgValue>
@@ -1923,7 +1923,7 @@ LOOP_WT_I:12  %wt_i_V_load = load i64* %wt_i_V_addr, align 8
 
 <Node id="131" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45159) nounwind
+LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln792"/></StgValue>
@@ -1939,7 +1939,7 @@ LOOP_WT_I:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str45159) nou
 
 <Node id="132" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45159)
+LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str45)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -1955,7 +1955,7 @@ LOOP_WT_I:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_st
 
 <Node id="133" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_WT_I:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_WT_I:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln793"/></StgValue>
@@ -2035,7 +2035,7 @@ LOOP_WT_I:13  store i64 %wt_i_V_load, i64* %wt_mem_V_addr, align 8
 
 <Node id="144" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_WT_I:14  %empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45159, i32 %tmp_1)
+LOOP_WT_I:14  %empty_28 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str45, i32 %tmp_1)
 
 ]]></Node>
 <StgValue><ssdm name="empty_28"/></StgValue>
@@ -2246,7 +2246,7 @@ LOOP_KH_I:1  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_st
 
 <Node id="157" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-LOOP_KH_I:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15146) nounwind
+LOOP_KH_I:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str15) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln800"/></StgValue>
@@ -3266,7 +3266,7 @@ LOOP_KH_I:9  br label %.preheader
 </dataflow>
 <dataflow id="434" from="StgValue_433" to="specpipeline_ln773" fromId="433" toId="91">
 </dataflow>
-<dataflow id="436" from="p_str15146" to="specpipeline_ln773" fromId="435" toId="91">
+<dataflow id="436" from="p_str15" to="specpipeline_ln773" fromId="435" toId="91">
 </dataflow>
 <dataflow id="437" from="icmp_ln879" to="br_ln774" fromId="49" toId="92">
 </dataflow>
@@ -3407,11 +3407,11 @@ LOOP_KH_I:9  br label %.preheader
 </dataflow>
 <dataflow id="513" from="_ssdm_op_SpecLoopName" to="specloopname_ln792" fromId="421" toId="127">
 </dataflow>
-<dataflow id="515" from="p_str45159" to="specloopname_ln792" fromId="514" toId="127">
+<dataflow id="515" from="p_str45" to="specloopname_ln792" fromId="514" toId="127">
 </dataflow>
 <dataflow id="516" from="_ssdm_op_SpecRegionBegin" to="tmp_1" fromId="425" toId="128">
 </dataflow>
-<dataflow id="517" from="p_str45159" to="tmp_1" fromId="514" toId="128">
+<dataflow id="517" from="p_str45" to="tmp_1" fromId="514" toId="128">
 </dataflow>
 <dataflow id="518" from="_ssdm_op_SpecPipeline" to="specpipeline_ln793" fromId="428" toId="129">
 </dataflow>
@@ -3423,7 +3423,7 @@ LOOP_KH_I:9  br label %.preheader
 </dataflow>
 <dataflow id="522" from="StgValue_433" to="specpipeline_ln793" fromId="433" toId="129">
 </dataflow>
-<dataflow id="523" from="p_str15146" to="specpipeline_ln793" fromId="435" toId="129">
+<dataflow id="523" from="p_str15" to="specpipeline_ln793" fromId="435" toId="129">
 </dataflow>
 <dataflow id="524" from="add_ln180_1" to="zext_ln180_6" fromId="123" toId="130">
 </dataflow>
@@ -3441,7 +3441,7 @@ LOOP_KH_I:9  br label %.preheader
 </dataflow>
 <dataflow id="531" from="_ssdm_op_SpecRegionEnd" to="empty_28" fromId="473" toId="134">
 </dataflow>
-<dataflow id="532" from="p_str45159" to="empty_28" fromId="514" toId="134">
+<dataflow id="532" from="p_str45" to="empty_28" fromId="514" toId="134">
 </dataflow>
 <dataflow id="533" from="tmp_1" to="empty_28" fromId="128" toId="134">
 </dataflow>
@@ -3508,7 +3508,7 @@ LOOP_KH_I:9  br label %.preheader
 </dataflow>
 <dataflow id="561" from="StgValue_433" to="specpipeline_ln800" fromId="433" toId="147">
 </dataflow>
-<dataflow id="562" from="p_str15146" to="specpipeline_ln800" fromId="435" toId="147">
+<dataflow id="562" from="p_str15" to="specpipeline_ln800" fromId="435" toId="147">
 </dataflow>
 <dataflow id="563" from="kh_i_V_addr" to="kh_i_V_load" fromId="143" toId="148">
 </dataflow>

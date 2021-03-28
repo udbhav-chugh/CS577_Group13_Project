@@ -1,64 +1,64 @@
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Installations/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Installations/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Installations/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s top 
+Running: D:/Softwares/VLSI/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s top 
 Multi-threading is on. Using 6 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_i_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_i_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_o_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_o_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_o_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_kh_i_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_kh_i_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_kh_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_wt_i_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_wt_i_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_automem_wt_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_outhbi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_outhbi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_conv_outhbi_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_conv_outhbi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_parcud.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_conv_parcud.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_conv_parcud_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_conv_parcud
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_budEe.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_budEe.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_fixed_budEe_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_fixed_budEe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_teeOg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_teeOg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_fixed_teeOg_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_fixed_teeOg
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_lb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_lb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_lb_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_lb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufbkb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_old_wordg8j.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_old_wordg8j.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_old_wordg8j_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_old_wordg8j
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_word_buffYi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_word_buffYi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi_ram
 INFO: [VRFC 10-311] analyzing module bin_conv_word_buffYi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_dense.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_dense.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_dense
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module process_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_dmem_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_dmem_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_dmem_V_ram
 INFO: [VRFC 10-311] analyzing module top_dmem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_kh_mem_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_kh_mem_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kh_mem_V_ram
 INFO: [VRFC 10-311] analyzing module top_kh_mem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_ibs.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs_DSP48_0
 INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_ibs
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_wt_mem_V_ram
 INFO: [VRFC 10-311] analyzing module top_wt_mem_V
 Starting static elaboration

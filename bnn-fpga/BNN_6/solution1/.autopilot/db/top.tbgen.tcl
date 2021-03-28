@@ -134,12 +134,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "o_index_V", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "dmem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "dmem_V_4"},
-					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "dmem_V_2"}]},
+					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "dmem_V_2"},
+					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "dmem_V_4"}]},
 			{"Name" : "wt_mem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "wt_mem_V_4"},
-					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "wt_mem_V_2"}]},
+					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "wt_mem_V_2"},
+					{"ID" : "4", "SubInstance" : "grp_bin_conv_fu_407", "Port" : "wt_mem_V_4"}]},
 			{"Name" : "kh_mem_V", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "17", "SubInstance" : "grp_bin_dense_fu_423", "Port" : "kh_mem_V_2"}]},

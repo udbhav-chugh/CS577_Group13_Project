@@ -3713,7 +3713,7 @@ LOOP_PHASES_begin:6  %zext_ln264 = zext i2 %tmp_s to i3
 
 <Node id="443" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_PHASES_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17148)
+LOOP_PHASES_begin:7  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -7713,7 +7713,7 @@ LOOP_PHASES_begin:10  br label %0
 
 <Node id="456" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18149) nounwind
+LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln277"/></StgValue>
@@ -7729,7 +7729,7 @@ LOOP_WORDS_IN_PHASE_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* 
 
 <Node id="457" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_begin:1  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18149)
+LOOP_WORDS_IN_PHASE_begin:1  %tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_4"/></StgValue>
@@ -8241,7 +8241,7 @@ LOOP_ACC_PHASES_begin:6  %fixed_buffer_V_load_2 = load i12* %fixed_buffer_V_addr
 
 <Node id="476" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19150) nounwind
+:3  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln288"/></StgValue>
@@ -8510,7 +8510,7 @@ LOOP_LOAD_WTS_begin:1  %wt_word_buffer_1_V_3_54 = load i64* %wt_word_buffer_1_V_
 
 <Node id="509" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20151) nounwind
+LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln311"/></StgValue>
@@ -8527,7 +8527,7 @@ LOOP_LOAD_WTS_begin:2  call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str
 
 <Node id="510" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_LOAD_WTS_begin:3  %tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20151)
+LOOP_LOAD_WTS_begin:3  %tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_7"/></StgValue>
@@ -9005,7 +9005,7 @@ LOOP_LOAD_WTS_begin:11  br label %.loopexit
 
 <Node id="555" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_LOAD_WTS_end:0  %empty_52 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20151, i32 %tmp_7)
+LOOP_LOAD_WTS_end:0  %empty_52 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20, i32 %tmp_7)
 
 ]]></Node>
 <StgValue><ssdm name="empty_52"/></StgValue>
@@ -9512,7 +9512,7 @@ LOOP_CONVOLVER_LOAD_begin:9  %dmem_V_3_load = load i64* %dmem_V_3_addr, align 8
 
 <Node id="573" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21152) nounwind
+LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln330"/></StgValue>
@@ -9527,7 +9527,7 @@ LOOP_CONVOLVER_LOAD_begin:0  call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* 
 
 <Node id="574" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_begin:1  %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21152)
+LOOP_CONVOLVER_LOAD_begin:1  %tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_8"/></StgValue>
@@ -9905,7 +9905,7 @@ LOOP_CONVOLVER_LOAD_begin:10  br label %7
 
 <Node id="641" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_CONVOLVER_LOAD_end:0  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21152, i32 %tmp_8)
+LOOP_CONVOLVER_LOAD_end:0  %empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21, i32 %tmp_8)
 
 ]]></Node>
 <StgValue><ssdm name="empty_57"/></StgValue>
@@ -10559,7 +10559,7 @@ _ifconv:16  br label %7
 
 <Node id="654" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22153) nounwind
+:0  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln347"/></StgValue>
@@ -11500,7 +11500,7 @@ LOOP_WORDS_IN_PHASE_end:3  %select_ln883_1 = select i1 %icmp_ln883_1, i8 %t_V_2_
 
 <Node id="752" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_WORDS_IN_PHASE_end:4  %empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18149, i32 %tmp_4)
+LOOP_WORDS_IN_PHASE_end:4  %empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18, i32 %tmp_4)
 
 ]]></Node>
 <StgValue><ssdm name="empty_44"/></StgValue>
@@ -15713,7 +15713,7 @@ LOOP_ACC_PHASES_begin:192  %fixed_buffer_V_load_63 = load i12* %fixed_buffer_V_a
 
 <Node id="755" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_ACC_PHASES_begin:0  %empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17148, i32 %tmp)
+LOOP_ACC_PHASES_begin:0  %empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17, i32 %tmp)
 
 ]]></Node>
 <StgValue><ssdm name="empty_42"/></StgValue>
@@ -15728,7 +15728,7 @@ LOOP_ACC_PHASES_begin:0  %empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12
 
 <Node id="756" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23154) nounwind
+LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln391"/></StgValue>
@@ -15743,7 +15743,7 @@ LOOP_ACC_PHASES_begin:1  call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_s
 
 <Node id="757" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_begin:2  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23154)
+LOOP_ACC_PHASES_begin:2  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_3"/></StgValue>
@@ -15927,7 +15927,7 @@ LOOP_ACC_PHASES_begin:195  br label %.preheader3428
 
 <Node id="957" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_I_begin:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25156) nounwind
+LOOP_ACC_PHASES_I_begin:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln399"/></StgValue>
@@ -15943,7 +15943,7 @@ LOOP_ACC_PHASES_I_begin:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p
 
 <Node id="958" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_ACC_PHASES_I_begin:1  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25156)
+LOOP_ACC_PHASES_I_begin:1  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_6"/></StgValue>
@@ -16261,7 +16261,7 @@ LOOP_BATCH_NORM_begin:140  %icmp_ln883 = icmp eq i2 %width_mode_V_read, 0
 
 <Node id="981" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_ACC_PHASES_I_end:0  %empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25156, i32 %tmp_6)
+LOOP_ACC_PHASES_I_end:0  %empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25, i32 %tmp_6)
 
 ]]></Node>
 <StgValue><ssdm name="empty_63"/></StgValue>
@@ -19332,7 +19332,7 @@ LOOP_BATCH_NORM_begin:127  store i12 %fixed_temp_V_load_63, i12* %fixed_buffer_V
 
 <Node id="1113" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_BATCH_NORM_begin:128  %empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23154, i32 %tmp_3)
+LOOP_BATCH_NORM_begin:128  %empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23, i32 %tmp_3)
 
 ]]></Node>
 <StgValue><ssdm name="empty_64"/></StgValue>

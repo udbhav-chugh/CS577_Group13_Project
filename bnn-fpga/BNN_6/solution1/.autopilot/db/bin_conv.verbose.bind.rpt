@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'bin_conv'
 ================================================================
-* Date:           Sun Mar 28 11:48:43 2021
+* Date:           Sun Mar 28 12:14:27 2021
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BNN_6
@@ -419,7 +419,7 @@ ST_5 : Operation 305 [1/1] (0.00ns)   --->   "%wt_offset_V_0 = alloca i3"   --->
 ST_5 : Operation 306 [1/1] (0.00ns)   --->   "%zext_ln209 = zext i5 %words_per_image_V to i8" [cpp/accel/Accel.cpp:351]   --->   Operation 306 'zext' 'zext_ln209' <Predicate = (icmp_ln887)> <Delay = 0.00>
 ST_5 : Operation 307 [1/1] (0.00ns)   --->   "%tmp_s = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %d_i_idx_V_read, i1 false)" [cpp/accel/Accel.cpp:331]   --->   Operation 307 'bitconcatenate' 'tmp_s' <Predicate = (icmp_ln887)> <Delay = 0.00>
 ST_5 : Operation 308 [1/1] (0.00ns)   --->   "%zext_ln264 = zext i2 %tmp_s to i3" [cpp/accel/Accel.cpp:264]   --->   Operation 308 'zext' 'zext_ln264' <Predicate = (icmp_ln887)> <Delay = 0.00>
-ST_5 : Operation 309 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17148)" [cpp/accel/Accel.cpp:264]   --->   Operation 309 'specregionbegin' 'tmp' <Predicate = (icmp_ln887)> <Delay = 0.00>
+ST_5 : Operation 309 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str17)" [cpp/accel/Accel.cpp:264]   --->   Operation 309 'specregionbegin' 'tmp' <Predicate = (icmp_ln887)> <Delay = 0.00>
 ST_5 : Operation 310 [1/1] (1.06ns)   --->   "store i3 0, i3* %wt_offset_V_0" [cpp/accel/Accel.cpp:277]   --->   Operation 310 'store' <Predicate = (icmp_ln887)> <Delay = 1.06>
 ST_5 : Operation 311 [1/1] (1.06ns)   --->   "store i16 0, i16* %wt_addr_V_0" [cpp/accel/Accel.cpp:277]   --->   Operation 311 'store' <Predicate = (icmp_ln887)> <Delay = 1.06>
 ST_5 : Operation 312 [1/1] (1.06ns)   --->   "br label %0" [cpp/accel/Accel.cpp:277]   --->   Operation 312 'br' <Predicate = (icmp_ln887)> <Delay = 1.06>
@@ -743,8 +743,8 @@ ST_37 : Operation 565 [1/1] (1.18ns)   --->   "%icmp_ln887_5 = icmp eq i7 %p_052
 ST_37 : Operation 566 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 566 'speclooptripcount' 'empty_43' <Predicate = true> <Delay = 0.00>
 ST_37 : Operation 567 [1/1] (1.37ns)   --->   "%add_ln700_18 = add i7 %p_0523_0_0, 1" [cpp/accel/Accel.cpp:277]   --->   Operation 567 'add' 'add_ln700_18' <Predicate = true> <Delay = 1.37> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_37 : Operation 568 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_5, label %LOOP_ACC_PHASES_begin, label %LOOP_WORDS_IN_PHASE_begin" [cpp/accel/Accel.cpp:277]   --->   Operation 568 'br' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 569 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18149) nounwind" [cpp/accel/Accel.cpp:277]   --->   Operation 569 'specloopname' <Predicate = (!icmp_ln887_5)> <Delay = 0.00>
-ST_37 : Operation 570 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18149)" [cpp/accel/Accel.cpp:277]   --->   Operation 570 'specregionbegin' 'tmp_4' <Predicate = (!icmp_ln887_5)> <Delay = 0.00>
+ST_37 : Operation 569 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str18) nounwind" [cpp/accel/Accel.cpp:277]   --->   Operation 569 'specloopname' <Predicate = (!icmp_ln887_5)> <Delay = 0.00>
+ST_37 : Operation 570 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str18)" [cpp/accel/Accel.cpp:277]   --->   Operation 570 'specregionbegin' 'tmp_4' <Predicate = (!icmp_ln887_5)> <Delay = 0.00>
 ST_37 : Operation 571 [1/1] (1.22ns)   --->   "%icmp_ln879_16 = icmp eq i8 %t_V_0, 0" [cpp/accel/Accel.cpp:279]   --->   Operation 571 'icmp' 'icmp_ln879_16' <Predicate = (!icmp_ln887_5)> <Delay = 1.22> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_37 : Operation 572 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879_16, label %.preheader3439.0.preheader, label %.loopexit3438.0" [cpp/accel/Accel.cpp:279]   --->   Operation 572 'br' <Predicate = (!icmp_ln887_5)> <Delay = 0.00>
 ST_37 : Operation 573 [1/1] (0.00ns)   --->   "%wt_addr_V_0_load_1 = load i16* %wt_addr_V_0" [cpp/accel/Accel.cpp:288]   --->   Operation 573 'load' 'wt_addr_V_0_load_1' <Predicate = (!icmp_ln887_5 & icmp_ln879_16)> <Delay = 0.00>
@@ -780,7 +780,7 @@ State 39 <SV = 7> <Delay = 6.47>
 ST_39 : Operation 599 [1/1] (0.00ns)   --->   "%wt_word_buffer_1_V_s = load i64* %wt_word_buffer_1_V" [cpp/accel/Accel.cpp:295]   --->   Operation 599 'load' 'wt_word_buffer_1_V_s' <Predicate = (trunc_ln180)> <Delay = 0.00>
 ST_39 : Operation 600 [1/1] (0.00ns)   --->   "%wt_word_buffer_1_V_1 = load i64* %wt_word_buffer_1_V_3" [cpp/accel/Accel.cpp:295]   --->   Operation 600 'load' 'wt_word_buffer_1_V_1' <Predicate = (!trunc_ln180)> <Delay = 0.00>
 ST_39 : Operation 601 [1/1] (0.00ns)   --->   "%wt_offset_V_0_load_1 = load i3* %wt_offset_V_0" [cpp/accel/Accel.cpp:295]   --->   Operation 601 'load' 'wt_offset_V_0_load_1' <Predicate = true> <Delay = 0.00>
-ST_39 : Operation 602 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19150) nounwind" [cpp/accel/Accel.cpp:288]   --->   Operation 602 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 602 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str19) nounwind" [cpp/accel/Accel.cpp:288]   --->   Operation 602 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 603 [1/1] (0.00ns)   --->   "%mul_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %wt_offset_V_0_load_1, i3 %wt_offset_V_0_load_1)" [cpp/accel/Accel.cpp:295]   --->   Operation 603 'bitconcatenate' 'mul_ln' <Predicate = true> <Delay = 0.00>
 ST_39 : Operation 604 [1/2] (2.66ns)   --->   "%wt_mem_V_3_load = load i64* %wt_mem_V_3_addr, align 8" [cpp/accel/Accel.cpp:295]   --->   Operation 604 'load' 'wt_mem_V_3_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 ST_39 : Operation 605 [1/1] (0.00ns)   --->   "%zext_ln808 = zext i6 %mul_ln to i64" [cpp/accel/Accel.cpp:295]   --->   Operation 605 'zext' 'zext_ln808' <Predicate = true> <Delay = 0.00>
@@ -799,8 +799,8 @@ ST_40 : Operation 615 [1/1] (1.00ns)   --->   "%add_ln700_19 = add i2 %p_0570_0_
 ST_40 : Operation 616 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_8, label %.loopexit3438.0.loopexit, label %LOOP_LOAD_WTS_begin" [cpp/accel/Accel.cpp:311]   --->   Operation 616 'br' <Predicate = (icmp_ln879_16)> <Delay = 0.00>
 ST_40 : Operation 617 [1/1] (0.00ns)   --->   "%wt_word_buffer_1_V_2 = load i64* %wt_word_buffer_1_V" [cpp/accel/Accel.cpp:315]   --->   Operation 617 'load' 'wt_word_buffer_1_V_2' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
 ST_40 : Operation 618 [1/1] (0.00ns)   --->   "%wt_word_buffer_1_V_3_54 = load i64* %wt_word_buffer_1_V_3" [cpp/accel/Accel.cpp:315]   --->   Operation 618 'load' 'wt_word_buffer_1_V_3_54' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
-ST_40 : Operation 619 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20151) nounwind" [cpp/accel/Accel.cpp:311]   --->   Operation 619 'specloopname' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
-ST_40 : Operation 620 [1/1] (0.00ns)   --->   "%tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20151)" [cpp/accel/Accel.cpp:311]   --->   Operation 620 'specregionbegin' 'tmp_7' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
+ST_40 : Operation 619 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str20) nounwind" [cpp/accel/Accel.cpp:311]   --->   Operation 619 'specloopname' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
+ST_40 : Operation 620 [1/1] (0.00ns)   --->   "%tmp_7 = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str20)" [cpp/accel/Accel.cpp:311]   --->   Operation 620 'specregionbegin' 'tmp_7' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
 ST_40 : Operation 621 [1/1] (0.00ns)   --->   "%zext_ln180_36 = zext i2 %p_0570_0_0 to i5" [cpp/accel/Accel.cpp:315]   --->   Operation 621 'zext' 'zext_ln180_36' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
 ST_40 : Operation 622 [1/1] (0.00ns)   --->   "%tmp_147 = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %p_0570_0_0, i2 0)" [cpp/accel/Accel.cpp:315]   --->   Operation 622 'bitconcatenate' 'tmp_147' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
 ST_40 : Operation 623 [1/1] (0.00ns)   --->   "%zext_ln180_37 = zext i4 %tmp_147 to i5" [cpp/accel/Accel.cpp:315]   --->   Operation 623 'zext' 'zext_ln180_37' <Predicate = (icmp_ln879_16 & !icmp_ln887_8)> <Delay = 0.00>
@@ -831,7 +831,7 @@ ST_41 : Operation 645 [1/1] (0.00ns)   --->   "%shl_ln555_1 = call i4 @_ssdm_op_
 ST_41 : Operation 646 [1/1] (0.00ns)   --->   "%zext_ln555_3 = zext i4 %shl_ln555_1 to i5" [cpp/accel/Accel.cpp:315]   --->   Operation 646 'zext' 'zext_ln555_3' <Predicate = (!icmp_ln887_10)> <Delay = 0.00>
 ST_41 : Operation 647 [1/1] (1.32ns)   --->   "%sub_ln555 = sub i5 %zext_ln555_3, %zext_ln555_2" [cpp/accel/Accel.cpp:315]   --->   Operation 647 'sub' 'sub_ln555' <Predicate = (!icmp_ln887_10)> <Delay = 1.32> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_41 : Operation 648 [1/1] (1.06ns)   --->   "br label %.preheader3437.0" [cpp/accel/Accel.cpp:313]   --->   Operation 648 'br' <Predicate = (!icmp_ln887_10)> <Delay = 1.06>
-ST_41 : Operation 649 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20151, i32 %tmp_7)" [cpp/accel/Accel.cpp:318]   --->   Operation 649 'specregionend' 'empty_52' <Predicate = (icmp_ln887_10)> <Delay = 0.00>
+ST_41 : Operation 649 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str20, i32 %tmp_7)" [cpp/accel/Accel.cpp:318]   --->   Operation 649 'specregionend' 'empty_52' <Predicate = (icmp_ln887_10)> <Delay = 0.00>
 ST_41 : Operation 650 [1/1] (0.00ns)   --->   "br label %3" [cpp/accel/Accel.cpp:311]   --->   Operation 650 'br' <Predicate = (icmp_ln887_10)> <Delay = 0.00>
 
 State 42 <SV = 9> <Delay = 2.78>
@@ -868,8 +868,8 @@ ST_43 : Operation 678 [1/1] (0.00ns)   --->   "br label %.loopexit.0"   --->   O
 ST_43 : Operation 679 [1/1] (1.06ns)   --->   "br label %2" [cpp/accel/Accel.cpp:347]   --->   Operation 679 'br' <Predicate = (icmp_ln887_11) | (icmp_ln883_1)> <Delay = 1.06>
 
 State 44 <SV = 9> <Delay = 2.66>
-ST_44 : Operation 680 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21152) nounwind" [cpp/accel/Accel.cpp:330]   --->   Operation 680 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_44 : Operation 681 [1/1] (0.00ns)   --->   "%tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21152)" [cpp/accel/Accel.cpp:330]   --->   Operation 681 'specregionbegin' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 680 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([20 x i8]* @p_str21) nounwind" [cpp/accel/Accel.cpp:330]   --->   Operation 680 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 681 [1/1] (0.00ns)   --->   "%tmp_8 = call i32 (...)* @_ssdm_op_SpecRegionBegin([20 x i8]* @p_str21)" [cpp/accel/Accel.cpp:330]   --->   Operation 681 'specregionbegin' 'tmp_8' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 682 [1/1] (0.00ns)   --->   "%tmp_150 = call i5 @_ssdm_op_BitConcatenate.i5.i2.i3(i2 %p_0783_0_0, i3 0)" [cpp/accel/Accel.cpp:338]   --->   Operation 682 'bitconcatenate' 'tmp_150' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 683 [1/1] (0.00ns)   --->   "%zext_ln331_2 = zext i5 %tmp_150 to i6" [cpp/accel/Accel.cpp:331]   --->   Operation 683 'zext' 'zext_ln331_2' <Predicate = true> <Delay = 0.00>
 ST_44 : Operation 684 [1/2] (2.66ns)   --->   "%dmem_V_3_load = load i64* %dmem_V_3_addr, align 8" [cpp/accel/Accel.cpp:331]   --->   Operation 684 'load' 'dmem_V_3_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
@@ -895,7 +895,7 @@ ST_45 : Operation 701 [1/1] (0.00ns)   --->   "%word_buffer_V_addr_3 = getelemen
 ST_45 : Operation 702 [1/1] (0.00ns)   --->   "%trunc_ln209 = trunc i4 %p_0728_0_0 to i3" [cpp/accel/Accel.cpp:335]   --->   Operation 702 'trunc' 'trunc_ln209' <Predicate = (!icmp_ln887_14)> <Delay = 0.00>
 ST_45 : Operation 703 [1/1] (0.00ns)   --->   "%shl_ln2 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln209, i3 0)" [cpp/accel/Accel.cpp:335]   --->   Operation 703 'bitconcatenate' 'shl_ln2' <Predicate = (!icmp_ln887_14)> <Delay = 0.00>
 ST_45 : Operation 704 [1/1] (1.06ns)   --->   "br label %.preheader3435.0" [cpp/accel/Accel.cpp:333]   --->   Operation 704 'br' <Predicate = (!icmp_ln887_14)> <Delay = 1.06>
-ST_45 : Operation 705 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21152, i32 %tmp_8)" [cpp/accel/Accel.cpp:342]   --->   Operation 705 'specregionend' 'empty_57' <Predicate = (icmp_ln887_14)> <Delay = 0.00>
+ST_45 : Operation 705 [1/1] (0.00ns)   --->   "%empty_57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str21, i32 %tmp_8)" [cpp/accel/Accel.cpp:342]   --->   Operation 705 'specregionend' 'empty_57' <Predicate = (icmp_ln887_14)> <Delay = 0.00>
 ST_45 : Operation 706 [1/1] (0.00ns)   --->   "br label %.preheader3436.0" [cpp/accel/Accel.cpp:330]   --->   Operation 706 'br' <Predicate = (icmp_ln887_14)> <Delay = 0.00>
 
 State 46 <SV = 11> <Delay = 4.19>
@@ -942,7 +942,7 @@ ST_47 : Operation 744 [2/2] (2.83ns)   --->   "call fastcc void @process_word([1
 ST_47 : Operation 745 [1/1] (1.06ns)   --->   "br label %.preheader3434.0" [cpp/accel/Accel.cpp:354]   --->   Operation 745 'br' <Predicate = (icmp_ln887_13)> <Delay = 1.06>
 
 State 48 <SV = 10> <Delay = 0.00>
-ST_48 : Operation 746 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22153) nounwind" [cpp/accel/Accel.cpp:347]   --->   Operation 746 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_48 : Operation 746 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str22) nounwind" [cpp/accel/Accel.cpp:347]   --->   Operation 746 'specloopname' <Predicate = true> <Delay = 0.00>
 ST_48 : Operation 747 [1/2] (0.00ns)   --->   "call fastcc void @process_word([160 x i2]* %word_buffer_V, i2 %p_01092_0_0, [160 x i2]* %old_word_buffer_V, [8 x i1]* %lb, [8 x i1]* %rb, [480 x i2]* %line_buffer, [18 x i1]* %conv_params_V, [128 x i5]* %conv_out_buffer_V, i3 %log_width_V, i5 %words_per_image_V, i8 %t_V_0)" [cpp/accel/Accel.cpp:351]   --->   Operation 747 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_48 : Operation 748 [1/1] (0.00ns)   --->   "br label %2" [cpp/accel/Accel.cpp:347]   --->   Operation 748 'br' <Predicate = true> <Delay = 0.00>
 
@@ -1011,7 +1011,7 @@ ST_53 : Operation 801 [1/1] (1.39ns)   --->   "%add_ln700_29 = add i8 %t_V_0, 1"
 ST_53 : Operation 802 [1/1] (1.39ns)   --->   "%add_ln700_30 = add i8 %t_V_2_0, 1" [cpp/accel/Accel.cpp:382]   --->   Operation 802 'add' 'add_ln700_30' <Predicate = (!icmp_ln883_1 & icmp_ln887_17)> <Delay = 1.39> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_53 : Operation 803 [1/1] (0.74ns)   --->   "%select_ln883 = select i1 %icmp_ln883_1, i8 0, i8 %add_ln700_29" [cpp/accel/Accel.cpp:328]   --->   Operation 803 'select' 'select_ln883' <Predicate = (icmp_ln887_17)> <Delay = 0.74> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_53 : Operation 804 [1/1] (0.74ns)   --->   "%select_ln883_1 = select i1 %icmp_ln883_1, i8 %t_V_2_0, i8 %add_ln700_30" [cpp/accel/Accel.cpp:328]   --->   Operation 804 'select' 'select_ln883_1' <Predicate = (icmp_ln887_17)> <Delay = 0.74> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_53 : Operation 805 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18149, i32 %tmp_4)" [cpp/accel/Accel.cpp:386]   --->   Operation 805 'specregionend' 'empty_44' <Predicate = (icmp_ln887_17)> <Delay = 0.00>
+ST_53 : Operation 805 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecRegionEnd([20 x i8]* @p_str18, i32 %tmp_4)" [cpp/accel/Accel.cpp:386]   --->   Operation 805 'specregionend' 'empty_44' <Predicate = (icmp_ln887_17)> <Delay = 0.00>
 ST_53 : Operation 806 [1/1] (0.00ns)   --->   "br label %0" [cpp/accel/Accel.cpp:277]   --->   Operation 806 'br' <Predicate = (icmp_ln887_17)> <Delay = 0.00>
 
 State 54 <SV = 12> <Delay = 2.86>
@@ -1354,9 +1354,9 @@ ST_87 : Operation 1076 [2/2] (2.66ns)   --->   "%fixed_buffer_V_load_62 = load i
 ST_87 : Operation 1077 [2/2] (2.66ns)   --->   "%fixed_buffer_V_load_63 = load i12* %fixed_buffer_V_addr_128, align 2" [cpp/accel/Accel.cpp:395]   --->   Operation 1077 'load' 'fixed_buffer_V_load_63' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 
 State 88 <SV = 37> <Delay = 4.08>
-ST_88 : Operation 1078 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17148, i32 %tmp)" [cpp/accel/Accel.cpp:388]   --->   Operation 1078 'specregionend' 'empty_42' <Predicate = true> <Delay = 0.00>
-ST_88 : Operation 1079 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23154) nounwind" [cpp/accel/Accel.cpp:391]   --->   Operation 1079 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_88 : Operation 1080 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23154)" [cpp/accel/Accel.cpp:391]   --->   Operation 1080 'specregionbegin' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_88 : Operation 1078 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str17, i32 %tmp)" [cpp/accel/Accel.cpp:388]   --->   Operation 1078 'specregionend' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_88 : Operation 1079 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([16 x i8]* @p_str23) nounwind" [cpp/accel/Accel.cpp:391]   --->   Operation 1079 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_88 : Operation 1080 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([16 x i8]* @p_str23)" [cpp/accel/Accel.cpp:391]   --->   Operation 1080 'specregionbegin' 'tmp_3' <Predicate = true> <Delay = 0.00>
 ST_88 : Operation 1081 [1/2] (2.66ns)   --->   "%fixed_buffer_V_load_62 = load i12* %fixed_buffer_V_addr_127, align 2" [cpp/accel/Accel.cpp:395]   --->   Operation 1081 'load' 'fixed_buffer_V_load_62' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 ST_88 : Operation 1082 [1/1] (0.00ns)   --->   "%fixed_temp_V_addr_62 = getelementptr [64 x i12]* %fixed_temp_V, i64 0, i64 62" [cpp/accel/Accel.cpp:395]   --->   Operation 1082 'getelementptr' 'fixed_temp_V_addr_62' <Predicate = true> <Delay = 0.00>
 ST_88 : Operation 1083 [1/1] (1.42ns)   --->   "store i12 %fixed_buffer_V_load_62, i12* %fixed_temp_V_addr_62, align 2" [cpp/accel/Accel.cpp:395]   --->   Operation 1083 'store' <Predicate = true> <Delay = 1.42> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
@@ -1370,8 +1370,8 @@ ST_89 : Operation 1088 [1/1] (0.00ns)   --->   "%p_01321_0 = phi i6 [ %i_V_3, %L
 ST_89 : Operation 1089 [1/1] (1.15ns)   --->   "%icmp_ln399 = icmp eq i6 %p_01321_0, -32" [cpp/accel/Accel.cpp:399]   --->   Operation 1089 'icmp' 'icmp_ln399' <Predicate = true> <Delay = 1.15> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_89 : Operation 1090 [1/1] (0.00ns)   --->   "%empty_61 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 31, i64 31, i64 31)"   --->   Operation 1090 'speclooptripcount' 'empty_61' <Predicate = true> <Delay = 0.00>
 ST_89 : Operation 1091 [1/1] (0.00ns)   --->   "br i1 %icmp_ln399, label %LOOP_BATCH_NORM_begin, label %LOOP_ACC_PHASES_I_begin" [cpp/accel/Accel.cpp:399]   --->   Operation 1091 'br' <Predicate = true> <Delay = 0.00>
-ST_89 : Operation 1092 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25156) nounwind" [cpp/accel/Accel.cpp:399]   --->   Operation 1092 'specloopname' <Predicate = (!icmp_ln399)> <Delay = 0.00>
-ST_89 : Operation 1093 [1/1] (0.00ns)   --->   "%tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25156)" [cpp/accel/Accel.cpp:399]   --->   Operation 1093 'specregionbegin' 'tmp_6' <Predicate = (!icmp_ln399)> <Delay = 0.00>
+ST_89 : Operation 1092 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str25) nounwind" [cpp/accel/Accel.cpp:399]   --->   Operation 1092 'specloopname' <Predicate = (!icmp_ln399)> <Delay = 0.00>
+ST_89 : Operation 1093 [1/1] (0.00ns)   --->   "%tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str25)" [cpp/accel/Accel.cpp:399]   --->   Operation 1093 'specregionbegin' 'tmp_6' <Predicate = (!icmp_ln399)> <Delay = 0.00>
 ST_89 : Operation 1094 [1/1] (0.00ns)   --->   "%tmp_145 = call i12 @_ssdm_op_BitConcatenate.i12.i6.i6(i6 %p_01321_0, i6 0)" [cpp/accel/Accel.cpp:402]   --->   Operation 1094 'bitconcatenate' 'tmp_145' <Predicate = (!icmp_ln399)> <Delay = 0.00>
 ST_89 : Operation 1095 [1/1] (0.00ns)   --->   "%zext_ln400 = zext i12 %tmp_145 to i13" [cpp/accel/Accel.cpp:400]   --->   Operation 1095 'zext' 'zext_ln400' <Predicate = (!icmp_ln399)> <Delay = 0.00>
 ST_89 : Operation 1096 [1/1] (1.06ns)   --->   "br label %13" [cpp/accel/Accel.cpp:400]   --->   Operation 1096 'br' <Predicate = (!icmp_ln399)> <Delay = 1.06>
@@ -1393,7 +1393,7 @@ ST_90 : Operation 1109 [1/1] (0.00ns)   --->   "%fixed_buffer_V_addr_3 = getelem
 ST_90 : Operation 1110 [2/2] (2.66ns)   --->   "%fixed_buffer_V_load_1 = load i12* %fixed_buffer_V_addr_3, align 2" [cpp/accel/Accel.cpp:402]   --->   Operation 1110 'load' 'fixed_buffer_V_load_1' <Predicate = (!icmp_ln887_7)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 ST_90 : Operation 1111 [1/1] (0.00ns)   --->   "%fixed_temp_V_addr_2 = getelementptr [64 x i12]* %fixed_temp_V, i64 0, i64 %zext_ln544_6" [cpp/accel/Accel.cpp:402]   --->   Operation 1111 'getelementptr' 'fixed_temp_V_addr_2' <Predicate = (!icmp_ln887_7)> <Delay = 0.00>
 ST_90 : Operation 1112 [2/2] (1.42ns)   --->   "%fixed_temp_V_load_1 = load i12* %fixed_temp_V_addr_2, align 2" [cpp/accel/Accel.cpp:402]   --->   Operation 1112 'load' 'fixed_temp_V_load_1' <Predicate = (!icmp_ln887_7)> <Delay = 1.42> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
-ST_90 : Operation 1113 [1/1] (0.00ns)   --->   "%empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25156, i32 %tmp_6)" [cpp/accel/Accel.cpp:403]   --->   Operation 1113 'specregionend' 'empty_63' <Predicate = (icmp_ln887_7)> <Delay = 0.00>
+ST_90 : Operation 1113 [1/1] (0.00ns)   --->   "%empty_63 = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str25, i32 %tmp_6)" [cpp/accel/Accel.cpp:403]   --->   Operation 1113 'specregionend' 'empty_63' <Predicate = (icmp_ln887_7)> <Delay = 0.00>
 ST_90 : Operation 1114 [1/1] (1.35ns)   --->   "%i_V_3 = add i6 %p_01321_0, 1" [cpp/accel/Accel.cpp:399]   --->   Operation 1114 'add' 'i_V_3' <Predicate = (icmp_ln887_7)> <Delay = 1.35> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.46> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_90 : Operation 1115 [1/1] (0.00ns)   --->   "br label %.preheader3428" [cpp/accel/Accel.cpp:399]   --->   Operation 1115 'br' <Predicate = (icmp_ln887_7)> <Delay = 0.00>
 
@@ -1657,7 +1657,7 @@ ST_123 : Operation 1307 [1/2] (1.42ns)   --->   "%fixed_temp_V_load_62 = load i1
 ST_123 : Operation 1308 [1/1] (2.66ns)   --->   "store i12 %fixed_temp_V_load_62, i12* %fixed_buffer_V_addr_127, align 2" [cpp/accel/Accel.cpp:408]   --->   Operation 1308 'store' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 ST_123 : Operation 1309 [1/2] (1.42ns)   --->   "%fixed_temp_V_load_63 = load i12* %fixed_temp_V_addr_63, align 2" [cpp/accel/Accel.cpp:408]   --->   Operation 1309 'load' 'fixed_temp_V_load_63' <Predicate = true> <Delay = 1.42> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
 ST_123 : Operation 1310 [1/1] (2.66ns)   --->   "store i12 %fixed_temp_V_load_63, i12* %fixed_buffer_V_addr_128, align 2" [cpp/accel/Accel.cpp:408]   --->   Operation 1310 'store' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.42> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 8> <RAM>
-ST_123 : Operation 1311 [1/1] (0.00ns)   --->   "%empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23154, i32 %tmp_3)" [cpp/accel/Accel.cpp:410]   --->   Operation 1311 'specregionend' 'empty_64' <Predicate = true> <Delay = 0.00>
+ST_123 : Operation 1311 [1/1] (0.00ns)   --->   "%empty_64 = call i32 (...)* @_ssdm_op_SpecRegionEnd([16 x i8]* @p_str23, i32 %tmp_3)" [cpp/accel/Accel.cpp:410]   --->   Operation 1311 'specregionend' 'empty_64' <Predicate = true> <Delay = 0.00>
 ST_123 : Operation 1312 [1/1] (0.00ns)   --->   "%ret_V = trunc i16 %o_index_V_4_read to i1" [cpp/accel/Accel.cpp:412]   --->   Operation 1312 'trunc' 'ret_V' <Predicate = true> <Delay = 0.00>
 ST_123 : Operation 1313 [1/1] (0.00ns)   --->   "%ret_V_s = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %o_index_V_4_read, i32 1, i32 15)" [cpp/accel/Accel.cpp:413]   --->   Operation 1313 'partselect' 'ret_V_s' <Predicate = true> <Delay = 0.00>
 ST_123 : Operation 1314 [1/1] (0.00ns)   --->   "%ret_V_17 = zext i15 %ret_V_s to i16" [cpp/accel/Accel.cpp:413]   --->   Operation 1314 'zext' 'ret_V_17' <Predicate = true> <Delay = 0.00>
@@ -3955,7 +3955,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="221" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str17148"/></StgValue>
+<StgValue><ssdm name="p_str17"/></StgValue>
 </bind>
 </comp>
 
@@ -4576,7 +4576,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="359" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str18149"/></StgValue>
+<StgValue><ssdm name="p_str18"/></StgValue>
 </bind>
 </comp>
 
@@ -4630,7 +4630,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="371" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str19150"/></StgValue>
+<StgValue><ssdm name="p_str19"/></StgValue>
 </bind>
 </comp>
 
@@ -4648,7 +4648,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="375" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str20151"/></StgValue>
+<StgValue><ssdm name="p_str20"/></StgValue>
 </bind>
 </comp>
 
@@ -4711,7 +4711,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="389" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str21152"/></StgValue>
+<StgValue><ssdm name="p_str21"/></StgValue>
 </bind>
 </comp>
 
@@ -4819,7 +4819,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="413" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str22153"/></StgValue>
+<StgValue><ssdm name="p_str22"/></StgValue>
 </bind>
 </comp>
 
@@ -4873,7 +4873,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="425" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str23154"/></StgValue>
+<StgValue><ssdm name="p_str23"/></StgValue>
 </bind>
 </comp>
 
@@ -4882,7 +4882,7 @@ ret_ln473               (ret              ) [ 0000000000000000000000000000000000
 <pin id="427" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str25156"/></StgValue>
+<StgValue><ssdm name="p_str25"/></StgValue>
 </bind>
 </comp>
 

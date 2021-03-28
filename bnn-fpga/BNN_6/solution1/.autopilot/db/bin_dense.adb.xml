@@ -380,7 +380,7 @@ LOOP_DENSE_I_begin:18  %dmem_V_1_load = load i64* %dmem_V_1_addr, align 8
 
 <Node id="27" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-LOOP_DENSE_I_begin:19  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str38158)
+LOOP_DENSE_I_begin:19  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str38)
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -2708,7 +2708,7 @@ LOOP_DENSE_I_end:9  %icmp_ln879_3 = icmp eq i2 %layer_type_V_read, -1
 
 <Node id="182" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-LOOP_DENSE_I_end:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str38158, i32 %tmp)
+LOOP_DENSE_I_end:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str38, i32 %tmp)
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -3025,7 +3025,7 @@ LOOP_DENSE_I_end:10  br i1 %icmp_ln879_3, label %2, label %._crit_edge1979
 </dataflow>
 <dataflow id="273" from="_ssdm_op_SpecRegionBegin" to="tmp" fromId="272" toId="29">
 </dataflow>
-<dataflow id="275" from="p_str38158" to="tmp" fromId="274" toId="29">
+<dataflow id="275" from="p_str38" to="tmp" fromId="274" toId="29">
 </dataflow>
 <dataflow id="277" from="StgValue_276" to="sum_m_V_1_09" fromId="276" toId="31">
 <condition id="-1">
@@ -4315,7 +4315,7 @@ LOOP_DENSE_I_end:10  br i1 %icmp_ln879_3, label %2, label %._crit_edge1979
 </dataflow>
 <dataflow id="983" from="_ssdm_op_SpecRegionEnd" to="empty" fromId="982" toId="182">
 </dataflow>
-<dataflow id="984" from="p_str38158" to="empty" fromId="274" toId="182">
+<dataflow id="984" from="p_str38" to="empty" fromId="274" toId="182">
 </dataflow>
 <dataflow id="985" from="tmp" to="empty" fromId="29" toId="182">
 </dataflow>

@@ -161,14 +161,14 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/cpp\/accel\/Timer.cpp",
-      "..\/..\/cpp\/accel\/InputConv.cpp",
-      "..\/..\/cpp\/accel\/Dense.cpp",
-      "..\/..\/cpp\/accel\/Common.cpp",
-      "..\/..\/cpp\/accel\/AccelTest.cpp",
-      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
+      "..\/..\/cpp\/accel\/Accel.cpp",
       "..\/..\/cpp\/accel\/AccelPrint.cpp",
-      "..\/..\/cpp\/accel\/Accel.cpp"
+      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
+      "..\/..\/cpp\/accel\/AccelTest.cpp",
+      "..\/..\/cpp\/accel\/Common.cpp",
+      "..\/..\/cpp\/accel\/Dense.cpp",
+      "..\/..\/cpp\/accel\/InputConv.cpp",
+      "..\/..\/cpp\/accel\/Timer.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/bin_conv.vhd",
@@ -212,9 +212,9 @@
       "impl\/verilog\/top.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "D:\/Mayank\/Git_Repos\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.autopilot\/db\/top.design.xml",
-    "DebugDir": "D:\/Mayank\/Git_Repos\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.debug",
-    "ProtoInst": ["D:\/Mayank\/Git_Repos\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.debug\/top.protoinst"]
+    "DesignXml": "C:\/Work\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.autopilot\/db\/top.design.xml",
+    "DebugDir": "C:\/Work\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.debug",
+    "ProtoInst": ["C:\/Work\/CS577_Group13_Project\/bnn-fpga\/BNN_6\/solution1\/.debug\/top.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -994,7 +994,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-03-28 11:49:11 +0530",
+    "Time": "2021-03-28 12:14:39 +0530",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }
