@@ -1,0 +1,246 @@
+
+
+================================================================
+== Vivado HLS Report for 'conv3x3b'
+================================================================
+* Date:           Fri Apr  2 19:21:51 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        BNN_6
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k70t-fbv676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  12.00|     6.614|        1.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    5|    5|    5|    5| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
++-----------------+---------+-------+-------+-------+-----+
+|DSP              |        -|      -|      -|      -|    -|
+|Expression       |        -|      -|      0|    491|    -|
+|FIFO             |        -|      -|      -|      -|    -|
+|Instance         |        -|      -|      -|      -|    -|
+|Memory           |        -|      -|      -|      -|    -|
+|Multiplexer      |        -|      -|      -|    111|    -|
+|Register         |        -|      -|    107|      -|    -|
++-----------------+---------+-------+-------+-------+-----+
+|Total            |        0|      0|    107|    602|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Available        |      270|    240|  82000|  41000|    0|
++-----------------+---------+-------+-------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0  |      1|    0|
++-----------------+---------+-------+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |add_ln1353_14_fu_488_p2      |     +    |      0|  0|  13|           2|           4|
+    |add_ln1353_fu_360_p2         |     +    |      0|  0|  13|           1|           4|
+    |add_ln700_3_fu_644_p2        |     +    |      0|  0|  12|           3|           3|
+    |add_ln700_4_fu_654_p2        |     +    |      0|  0|  13|           4|           4|
+    |add_ln700_5_fu_758_p2        |     +    |      0|  0|  12|           3|           3|
+    |add_ln700_6_fu_905_p2        |     +    |      0|  0|  12|           3|           3|
+    |add_ln700_7_fu_915_p2        |     +    |      0|  0|  13|           4|           4|
+    |add_ln700_8_fu_925_p2        |     +    |      0|  0|  14|           5|           5|
+    |add_ln700_fu_507_p2          |     +    |      0|  0|  12|           3|           3|
+    |add_ln74_10_fu_537_p2        |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_11_fu_546_p2        |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_1_fu_381_p2         |     +    |      0|  0|  17|           4|          10|
+    |add_ln74_2_fu_513_p2         |     +    |      0|  0|  17|           5|          10|
+    |add_ln74_3_fu_349_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_4_fu_386_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_5_fu_518_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_6_fu_370_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_7_fu_523_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_8_fu_532_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_9_fu_497_p2         |     +    |      0|  0|  17|          10|          10|
+    |add_ln74_fu_313_p2           |     +    |      0|  0|  15|           5|           5|
+    |ap_return                    |     +    |      0|  0|  14|           5|           5|
+    |sub_ln74_fu_339_p2           |     -    |      0|  0|  17|          10|          10|
+    |and_ln1355_1_fu_454_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_2_fu_562_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_3_fu_607_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_4_fu_679_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_5_fu_724_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_6_fu_779_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_7_fu_820_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_8_fu_865_p2       |    and   |      0|  0|   6|           1|           1|
+    |and_ln1355_fu_408_p2         |    and   |      0|  0|   6|           1|           1|
+    |ap_block_pp0_stage0_11001    |    and   |      0|  0|   6|           1|           1|
+    |ap_block_pp0_stage0_subdone  |    or    |      0|  0|   6|           1|           1|
+    |select_ln215_1_fu_446_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_2_fu_555_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_3_fu_600_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_4_fu_672_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_5_fu_717_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_6_fu_772_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_7_fu_813_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_8_fu_860_p3     |  select  |      0|  0|   2|           1|           1|
+    |select_ln215_fu_400_p3       |  select  |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                |    xor   |      0|  0|   6|           1|           2|
+    |xor_ln841_1_fu_468_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_2_fu_576_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_3_fu_621_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_4_fu_693_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_5_fu_738_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_6_fu_793_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_7_fu_834_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_8_fu_879_p2        |    xor   |      0|  0|   6|           1|           1|
+    |xor_ln841_fu_422_p2          |    xor   |      0|  0|   6|           1|           1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Total                        |          |      0|  0| 491|         177|         194|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |  33|          6|    1|          6|
+    |ap_enable_reg_pp0_iter0   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1   |   9|          2|    1|          2|
+    |line_buffer_m_V_address0  |  33|          6|    9|         54|
+    |line_buffer_m_V_address1  |  27|          5|    9|         45|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     | 111|         21|   21|        109|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |add_ln700_4_reg_1034                |   4|   0|    4|          0|
+    |add_ln700_5_reg_1049                |   3|   0|    3|          0|
+    |add_ln700_reg_1004                  |   3|   0|    3|          0|
+    |add_ln74_11_reg_1029                |  10|   0|   10|          0|
+    |add_ln74_1_reg_982                  |   9|   0|   10|          1|
+    |add_ln74_5_reg_1009                 |  10|   0|   10|          0|
+    |add_ln74_8_reg_1019                 |  10|   0|   10|          0|
+    |ap_CS_fsm                           |   5|   0|    5|          0|
+    |ap_enable_reg_pp0_iter0_reg         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1             |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_0_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_0_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_1_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_1_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_2_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_0_2_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_0_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_0_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_1_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_1_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_2_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_1_2_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_0_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_0_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_1_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_1_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_2_10    |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_2_2_s     |   1|   0|    1|          0|
+    |ap_port_reg_conv_params_m_V_offset  |   1|   0|    1|          0|
+    |cc_V_read_reg_937                   |   4|   0|    4|          0|
+    |conv_params_m_0_0_11_reg_1054       |   1|   0|    1|          0|
+    |conv_params_m_0_0_12_reg_1059       |   1|   0|    1|          0|
+    |conv_params_m_V_offs_reg_971        |   1|   0|    1|          0|
+    |sub_ln74_reg_942                    |   9|   0|   10|          1|
+    |tmp_68_reg_1069                     |   2|   0|    2|          0|
+    |tmp_70_reg_1074                     |   2|   0|    2|          0|
+    |zext_ln74_10_reg_993                |   4|   0|   10|          6|
+    |zext_ln74_2_reg_949                 |   4|   0|   10|          6|
+    |zext_ln74_6_reg_960                 |   4|   0|   10|          6|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               | 107|   0|  127|         20|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++--------------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk                    |  in |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_rst                    |  in |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_start                  |  in |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_done                   | out |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_idle                   | out |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_ready                  | out |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_ce                     |  in |    1| ap_ctrl_hs |        conv3x3b        | return value |
+|ap_return                 | out |    5| ap_ctrl_hs |        conv3x3b        | return value |
+|line_buffer_m_V_address0  | out |    9|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_ce0       | out |    1|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_q0        |  in |    2|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_address1  | out |    9|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_ce1       | out |    1|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_q1        |  in |    2|  ap_memory |     line_buffer_m_V    |     array    |
+|line_buffer_m_V_offset    |  in |    1|   ap_none  | line_buffer_m_V_offset |    scalar    |
+|conv_params_m_0_0_s       |  in |    1|   ap_none  |   conv_params_m_0_0_s  |    scalar    |
+|conv_params_m_0_0_10      |  in |    1|   ap_none  |  conv_params_m_0_0_10  |    scalar    |
+|conv_params_m_0_1_s       |  in |    1|   ap_none  |   conv_params_m_0_1_s  |    scalar    |
+|conv_params_m_0_1_10      |  in |    1|   ap_none  |  conv_params_m_0_1_10  |    scalar    |
+|conv_params_m_0_2_s       |  in |    1|   ap_none  |   conv_params_m_0_2_s  |    scalar    |
+|conv_params_m_0_2_10      |  in |    1|   ap_none  |  conv_params_m_0_2_10  |    scalar    |
+|conv_params_m_1_0_s       |  in |    1|   ap_none  |   conv_params_m_1_0_s  |    scalar    |
+|conv_params_m_1_0_10      |  in |    1|   ap_none  |  conv_params_m_1_0_10  |    scalar    |
+|conv_params_m_1_1_s       |  in |    1|   ap_none  |   conv_params_m_1_1_s  |    scalar    |
+|conv_params_m_1_1_10      |  in |    1|   ap_none  |  conv_params_m_1_1_10  |    scalar    |
+|conv_params_m_1_2_s       |  in |    1|   ap_none  |   conv_params_m_1_2_s  |    scalar    |
+|conv_params_m_1_2_10      |  in |    1|   ap_none  |  conv_params_m_1_2_10  |    scalar    |
+|conv_params_m_2_0_s       |  in |    1|   ap_none  |   conv_params_m_2_0_s  |    scalar    |
+|conv_params_m_2_0_10      |  in |    1|   ap_none  |  conv_params_m_2_0_10  |    scalar    |
+|conv_params_m_2_1_s       |  in |    1|   ap_none  |   conv_params_m_2_1_s  |    scalar    |
+|conv_params_m_2_1_10      |  in |    1|   ap_none  |  conv_params_m_2_1_10  |    scalar    |
+|conv_params_m_2_2_s       |  in |    1|   ap_none  |   conv_params_m_2_2_s  |    scalar    |
+|conv_params_m_2_2_10      |  in |    1|   ap_none  |  conv_params_m_2_2_10  |    scalar    |
+|conv_params_m_V_offset    |  in |    1|   ap_none  | conv_params_m_V_offset |    scalar    |
+|bank_V                    |  in |    4|   ap_none  |         bank_V         |    scalar    |
+|cc_V                      |  in |    4|   ap_none  |          cc_V          |    scalar    |
++--------------------------+-----+-----+------------+------------------------+--------------+
+

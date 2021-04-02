@@ -40,8 +40,6 @@ using namespace sc_dt;
 // wrapc file define: "dmem_o_V"
 #define AUTOTB_TVOUT_dmem_o_V  "../tv/cdatafile/c.top.autotvout_dmem_o_V.dat"
 #define AUTOTB_TVIN_dmem_o_V  "../tv/cdatafile/c.top.autotvin_dmem_o_V.dat"
-// wrapc file define: "n_outputs_V"
-#define AUTOTB_TVIN_n_outputs_V  "../tv/cdatafile/c.top.autotvin_n_outputs_V.dat"
 // wrapc file define: "layer_mode_V"
 #define AUTOTB_TVIN_layer_mode_V  "../tv/cdatafile/c.top.autotvin_layer_mode_V.dat"
 // wrapc file define: "dmem_mode_V"
@@ -64,7 +62,6 @@ class INTER_TCL_FILE {
 			kh_i_V_depth = 0;
 			dmem_i_V_depth = 0;
 			dmem_o_V_depth = 0;
-			n_outputs_V_depth = 0;
 			layer_mode_V_depth = 0;
 			dmem_mode_V_depth = 0;
 			width_mode_V_depth = 0;
@@ -92,7 +89,6 @@ class INTER_TCL_FILE {
 			total_list << "{kh_i_V " << kh_i_V_depth << "}\n";
 			total_list << "{dmem_i_V " << dmem_i_V_depth << "}\n";
 			total_list << "{dmem_o_V " << dmem_o_V_depth << "}\n";
-			total_list << "{n_outputs_V " << n_outputs_V_depth << "}\n";
 			total_list << "{layer_mode_V " << layer_mode_V_depth << "}\n";
 			total_list << "{dmem_mode_V " << dmem_mode_V_depth << "}\n";
 			total_list << "{width_mode_V " << width_mode_V_depth << "}\n";
@@ -108,7 +104,6 @@ class INTER_TCL_FILE {
 		int kh_i_V_depth;
 		int dmem_i_V_depth;
 		int dmem_o_V_depth;
-		int n_outputs_V_depth;
 		int layer_mode_V_depth;
 		int dmem_mode_V_depth;
 		int width_mode_V_depth;
@@ -323,10 +318,6 @@ const ap_uint<2> norm_mode)
 		char* tvout_dmem_o_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVOUT_dmem_o_V);
 
-		// "n_outputs_V"
-		char* tvin_n_outputs_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_n_outputs_V);
-
 		// "layer_mode_V"
 		char* tvin_layer_mode_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_layer_mode_V);
@@ -538,48 +529,6 @@ const ap_uint<2> norm_mode)
 
 		// release memory allocation
 		delete [] dmem_o_V_tvin_wrapc_buffer;
-
-		// [[transaction]]
-		sprintf(tvin_n_outputs_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_n_outputs_V, tvin_n_outputs_V);
-
-		sc_bv<16> n_outputs_V_tvin_wrapc_buffer;
-
-		// RTL Name: n_outputs_V
-		{
-			// bitslice(15, 0)
-			{
-				// celement: n_outputs.V(15, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : n_outputs
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : n_outputs
-						// regulate_c_name       : n_outputs_V
-						// input_type_conversion : (n_outputs).to_string(2).c_str()
-						if (&(n_outputs) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<16> n_outputs_V_tmp_mem;
-							n_outputs_V_tmp_mem = (n_outputs).to_string(2).c_str();
-							n_outputs_V_tvin_wrapc_buffer.range(15, 0) = n_outputs_V_tmp_mem.range(15, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_n_outputs_V, "%s\n", (n_outputs_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_n_outputs_V, tvin_n_outputs_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.n_outputs_V_depth);
-		sprintf(tvin_n_outputs_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_n_outputs_V, tvin_n_outputs_V);
 
 		// [[transaction]]
 		sprintf(tvin_layer_mode_V, "[[transaction]] %d\n", AESL_transaction);
@@ -814,8 +763,6 @@ const ap_uint<2> norm_mode)
 		// release memory allocation: "dmem_o_V"
 		delete [] tvout_dmem_o_V;
 		delete [] tvin_dmem_o_V;
-		// release memory allocation: "n_outputs_V"
-		delete [] tvin_n_outputs_V;
 		// release memory allocation: "layer_mode_V"
 		delete [] tvin_layer_mode_V;
 		// release memory allocation: "dmem_mode_V"

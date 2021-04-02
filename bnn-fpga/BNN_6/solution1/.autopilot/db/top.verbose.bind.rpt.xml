@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'top'" level="0">
-<item name = "Date">Sun Mar 28 14:51:22 2021
+<item name = "Date">Fri Apr  2 19:21:49 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">12.00, 10.489, 1.50</column>
+<column name="ap_clk">12.00, 9.806, 1.50</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">9626, 353938, 9626, 353938, none</column>
+<column name="">75255, 80247, 75255, 80247, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_bin_conv_fu_399">bin_conv, 310662, 344311, 310662, 344311, none</column>
-<column name="grp_bin_dense_fu_415">bin_dense, 13, 13, 13, 13, none</column>
+<column name="grp_bin_conv_fu_373">bin_conv, 70435, 75427, 70435, 75427, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- LOOP_DMEM_I">128, 128, 2, -, -, 64, no</column>
-<column name="- LOOP_WT_I">9364, 9364, 2, -, -, 4682, no</column>
-<column name="- LOOP_KH_I">128, 128, 2, -, -, 64, no</column>
+<column name="- LOOP_DMEM_I">64, 64, 2, 1, 1, 64, yes</column>
+<column name="- LOOP_WT_I">4682, 4682, 2, 1, 1, 4682, yes</column>
+<column name="- LOOP_KH_I">64, 64, 2, 1, 1, 64, yes</column>
 </table>
 </item>
 </section>

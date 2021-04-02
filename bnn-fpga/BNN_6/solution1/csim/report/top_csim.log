@@ -28,6 +28,6 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
 ## Checking results ##
 Error rate:  0.0000%
 Tests passed!
-xl-Conv1            :      1 calls;  0.091 secs total time
+xl-Conv1            :      1 calls;  0.081 secs total time
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************
