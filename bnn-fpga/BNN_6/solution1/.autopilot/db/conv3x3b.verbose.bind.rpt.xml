@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv3x3b'" level="0">
-<item name = "Date">Fri Apr  2 19:21:09 2021
+<item name = "Date">Tue Apr  6 18:10:19 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">12.00, 6.614, 1.50</column>
+<column name="ap_clk">25.00, 7.652, 3.12</column>
 </table>
 </item>
 </section>

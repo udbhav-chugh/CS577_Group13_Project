@@ -1,216 +1,474 @@
 INFO: [HLS 200-10] Running 'D:/Softwares/VLSI/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'SDTheSlayer' on host 'omen' (Windows NT_amd64 version 6.2) on Fri Apr 02 19:36:50 +0530 2021
+INFO: [HLS 200-10] For user 'SDTheSlayer' on host 'omen' (Windows NT_amd64 version 6.2) on Tue Apr 06 18:07:04 +0530 2021
 INFO: [HLS 200-10] In directory 'C:/Work/CS577_Group13_Project/bnn-fpga'
-Sourcing Tcl script 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/cosim.tcl'
+Sourcing Tcl script 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6'.
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Accel.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Accel.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelPrint.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelPrint.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelSchedule.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelSchedule.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelTest.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/AccelTest.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Common.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Common.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Debug.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Dense.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Dense.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/InputConv.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/InputConv.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/SArray.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Timer.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Timer.h' to the project
+INFO: [HLS 200-10] Adding design file 'cpp/accel/Typedefs.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'cpp/accel/accel_test_random.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 12ns.
-INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 25ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 3.125ns.
 WARNING: [HLS 200-40] Cannot find library 'D:/Softwares/VLSI/Vivado/2019.1/common/technology/xilinx/Kintex-7/Kintex-7.lib'.
 WARNING: [HLS 200-40] Cannot find library 'xilinx/Kintex-7/Kintex-7'.
 INFO: [HLS 200-10] Setting target device to 'xc7k70t-fbv676-1'
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-   Build using "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/bin/g++"
-   Compiling AccelSchedule.cpp_pre.cpp.tb.cpp
-   Compiling Common.cpp_pre.cpp.tb.cpp
-   Compiling Dense.cpp_pre.cpp.tb.cpp
-   Compiling InputConv.cpp_pre.cpp.tb.cpp
-   Compiling apatb_top.cpp
-   Compiling Accel.cpp_pre.cpp.tb.cpp
-   Compiling accel_test_random.cpp_pre.cpp.tb.cpp
-   Compiling AccelPrint.cpp_pre.cpp.tb.cpp
-   Compiling AccelTest.cpp_pre.cpp.tb.cpp
-   Compiling Timer.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe
-INFO: [COSIM 212-302] Starting C TB testing ... 
-#### Testing convolution with 64 inputs, width 8 ####
->> (Wt, KH) batch: (512 256)
->> Final batch: 1
-*bin out*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-*bin ref*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-## Checking results ##
-Error rate:  0.0000%
-Tests passed!
-xl-Conv1            :      1 calls;  0.147 secs total time
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
-INFO: [COSIM 212-15] Starting XSIM ...
-
-C:\Work\CS577_Group13_Project\bnn-fpga\BNN_6\solution1\sim\verilog>set PATH= 
-
-C:\Work\CS577_Group13_Project\bnn-fpga\BNN_6\solution1\sim\verilog>call D:/Softwares/VLSI/Vivado/2019.1/bin/xelab xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s top  
-INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Softwares/VLSI/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_top_top glbl -prj top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Softwares/VLSI/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s top 
-Multi-threading is on. Using 6 slave threads.
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/glbl.v" into library work
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_dmem_o_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_dmem_o_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_kh_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_kh_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/AESL_automem_wt_i_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_automem_wt_i_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_bucud.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_bucud_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_bucud
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_old_wordbfk.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_old_wordbfk_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_old_wordbfk
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_word_bufbek.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_word_bufbek_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_word_bufbek
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv3x3b.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv3x3b
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/encode_bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module encode_bit
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module process_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module apatb_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_dmem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_dmem_V_ram
-INFO: [VRFC 10-311] analyzing module top_dmem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_kh_mem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_kh_mem_V_ram
-INFO: [VRFC 10-311] analyzing module top_kh_mem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_bpm.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_bpm_DSP48_0
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_bpm
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_wt_mem_V_ram
-INFO: [VRFC 10-311] analyzing module top_wt_mem_V
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.top_dmem_V_ram
-Compiling module xil_defaultlib.top_dmem_V(DataWidth=64,AddressR...
-Compiling module xil_defaultlib.top_wt_mem_V_ram
-Compiling module xil_defaultlib.top_wt_mem_V(DataWidth=64,Addres...
-Compiling module xil_defaultlib.top_kh_mem_V_ram
-Compiling module xil_defaultlib.top_kh_mem_V(DataWidth=64,Addres...
-Compiling module xil_defaultlib.bin_conv_line_bufbkb_ram
-Compiling module xil_defaultlib.bin_conv_line_bufbkb(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_fixed_bucud_ram
-Compiling module xil_defaultlib.bin_conv_fixed_bucud(DataWidth=1...
-Compiling module xil_defaultlib.bin_conv_word_bufbek_ram
-Compiling module xil_defaultlib.bin_conv_word_bufbek(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_old_wordbfk_ram
-Compiling module xil_defaultlib.bin_conv_old_wordbfk(DataWidth=2...
-Compiling module xil_defaultlib.conv3x3b
-Compiling module xil_defaultlib.conv_word
-Compiling module xil_defaultlib.process_word
-Compiling module xil_defaultlib.encode_bit
-Compiling module xil_defaultlib.top_mul_mul_15ns_bpm_DSP48_0
-Compiling module xil_defaultlib.top_mul_mul_15ns_bpm(ID=1,NUM_ST...
-Compiling module xil_defaultlib.bin_conv
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.AESL_automem_wt_i_V
-Compiling module xil_defaultlib.AESL_automem_kh_i_V
-Compiling module xil_defaultlib.AESL_automem_dmem_i_V
-Compiling module xil_defaultlib.AESL_automem_dmem_o_V
-Compiling module xil_defaultlib.apatb_top_top
-Compiling module work.glbl
-Built simulation snapshot top
-
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr  2 19:39:43 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 109.332 ; gain = 17.891
-INFO: [Common 17-206] Exiting Webtalk at Fri Apr  2 19:39:43 2021...
-
-****** xsim v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source xsim.dir/top/xsim_script.tcl
-# xsim {top} -autoloadwcfg -tclbatch {top.tcl}
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source top.tcl
-## run all
-////////////////////////////////////////////////////////////////////////////////////
-// Inter-Transaction Progress: Completed Transaction / Total Transaction
-// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
-//
-// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
-////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "126000"
-// RTL Simulation : 1 / 1 [100.00%] @ "933162000"
-////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 933210 ns : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 635
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 221.457 ; gain = 0.000
-## quit
-INFO: [Common 17-206] Exiting xsim at Fri Apr  2 19:40:08 2021...
-INFO: [COSIM 212-316] Starting C post checking ...
-#### Testing convolution with 64 inputs, width 8 ####
->> (Wt, KH) batch: (512 256)
->> Final batch: 1
-*bin out*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-*bin ref*:
- 0  0 -1 -1 -1 -1 -1 -1 
--1  0  0  0 -1 -1 -1 -1 
--1  0 -1  0  0 -1 -1 -1 
--1 -1  0 -1 -1 -1 -1 -1 
- 0  0 -1 -1  0 -1 -1  0 
--1 -1  0  0 -1  0  0 -1 
- 0 -1 -1 -1 -1 -1 -1  0 
- 0  0 -1 -1 -1 -1 -1 -1 
---1--
-## Checking results ##
-Error rate:  0.0000%
-Tests passed!
-xl-Conv1            :      1 calls;  0.003 secs total time
-INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Timer.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/InputConv.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Dense.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Common.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelTest.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelSchedule.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/AccelPrint.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cpp/accel/Accel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 175.602 ; gain = 84.258
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:02:19 . Memory (MB): peak = 175.602 ; gain = 84.258
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:379).
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:377).
+INFO: [XFORM 203-603] Inlining function 'encode_bit' into 'bin_conv' (cpp/accel/Accel.cpp:374).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:10 ; elapsed = 00:02:25 . Memory (MB): peak = 469.148 ; gain = 377.805
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:875) automatically.
+WARNING: [SYNCHK 200-23] cpp/accel/Accel.cpp:354: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:12 ; elapsed = 00:02:27 . Memory (MB): peak = 660.273 ; gain = 568.930
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:912) in function 'top'.
+WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (cpp/accel/Accel.cpp:465) in function 'bin_conv'.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:911) in function 'top' automatically.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:302) in function 'bin_conv' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WORDS_IN_PHASE' (cpp/accel/Accel.cpp:315) in function 'bin_conv' for pipelining.
+INFO: [XFORM 203-502] Unrolling small iteration loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:464) in function 'bin_conv' automatically.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'process_word' (cpp/accel/Accel.cpp:111).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'conv_word' (cpp/accel/Accel.cpp:92).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'conv3x3b' (cpp/accel/Accel.cpp:68).
+INFO: [HLS 200-489] Unrolling loop 'LOOP_DMEM_O' (cpp/accel/Accel.cpp:911) in function 'top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:281) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:291) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_PHASES' (cpp/accel/Accel.cpp:302) in function 'bin_conv' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_WT_WORDS' (cpp/accel/Accel.cpp:327) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_LOAD_WTS' (cpp/accel/Accel.cpp:350) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2.1' (cpp/accel/Accel.cpp:351) in function 'bin_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2.1.1' (cpp/accel/Accel.cpp:352) in function 'bin_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_CONVOLVER_LOAD' (cpp/accel/Accel.cpp:369) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.3.1' (cpp/accel/Accel.cpp:371) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.3.1.1' (cpp/accel/Accel.cpp:372) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_CONVOLVERS' (cpp/accel/Accel.cpp:386) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.5' (cpp/accel/Accel.cpp:393) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.5.1' (cpp/accel/Accel.cpp:394) in function 'bin_conv' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.5.1.1' (cpp/accel/Accel.cpp:395) in function 'bin_conv' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6' (cpp/accel/Accel.cpp:404) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.6.1' (cpp/accel/Accel.cpp:408) in function 'bin_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (cpp/accel/Accel.cpp:431) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1' (cpp/accel/Accel.cpp:439) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6' (cpp/accel/Accel.cpp:444) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'LOOP_BATCH_NORM' (cpp/accel/Accel.cpp:464) in function 'bin_conv' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (cpp/accel/Accel.cpp:471) in function 'bin_conv' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.2' (cpp/accel/Accel.cpp:482) in function 'bin_conv' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.3' (cpp/accel/Accel.cpp:488) in function 'bin_conv' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:131) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (cpp/accel/Accel.cpp:135) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (cpp/accel/Accel.cpp:143) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (cpp/accel/Accel.cpp:162) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (cpp/accel/Accel.cpp:168) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (cpp/accel/Accel.cpp:176) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3' (cpp/accel/Accel.cpp:186) in function 'process_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:98) in function 'conv_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (cpp/accel/Accel.cpp:99) in function 'conv_word' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cpp/accel/Accel.cpp:76) in function 'conv3x3b' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (cpp/accel/Accel.cpp:77) in function 'conv3x3b' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'lb' (cpp/accel/Accel.cpp:246) automatically.
+INFO: [XFORM 203-102] Partitioning array 'rb' (cpp/accel/Accel.cpp:247) automatically.
+INFO: [XFORM 203-102] Partitioning array 'wt_word_buffer.V' (cpp/accel/Accel.cpp:319) automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.0' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params_m.V.2' in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params.V' (cpp/accel/Accel.cpp:238) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_out_buffer.V' (cpp/accel/Accel.cpp:244) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params.V.0' (cpp/accel/Accel.cpp:238) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params.V.1' (cpp/accel/Accel.cpp:238) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'conv_params.V.2' (cpp/accel/Accel.cpp:238) in dimension 2 automatically.
+INFO: [XFORM 203-602] Inlining function 'load_kh<ap_int<16> >' into 'top' (cpp/accel/Accel.cpp:875) automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[0][0].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[0][1].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[0][2].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[1][0].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[1][1].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[1][2].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[2][0].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[2][1].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_params[2][2].V' (cpp/accel/Accel.cpp:238) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[0].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[1].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[2].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[3].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[4].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[5].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[6].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[7].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[8].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[9].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[10].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[11].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[12].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[13].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[14].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[15].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[16].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[17].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[18].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[19].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[20].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[21].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[22].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[23].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[24].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[25].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[26].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[27].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[28].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[29].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[30].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[31].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[32].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[33].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[34].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[35].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[36].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[37].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[38].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[39].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[40].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[41].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[42].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[43].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[44].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[45].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[46].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[47].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[48].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[49].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[50].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[51].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[52].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[53].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[54].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[55].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[56].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[57].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[58].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[59].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[60].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[61].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[62].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'conv_out_buffer[63].V' (cpp/accel/Accel.cpp:244) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[0][0].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[0][1].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[0][2].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[1][0].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[1][1].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[1][2].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[2][0].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[2][1].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_params[2][2].V' (cpp/accel/Accel.cpp:238) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[0].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[1].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[2].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[3].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[4].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[5].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[6].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[7].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[8].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[9].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[10].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[11].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[12].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[13].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[14].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[15].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[16].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[17].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[18].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[19].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[20].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[21].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[22].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[23].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[24].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[25].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[26].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[27].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[28].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[29].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[30].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[31].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[32].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[33].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[34].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[35].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[36].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[37].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[38].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[39].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[40].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[41].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[42].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[43].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[44].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[45].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[46].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[47].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[48].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[49].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[50].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[51].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[52].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[53].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[54].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[55].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[56].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[57].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[58].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[59].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[60].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[61].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[62].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'conv_out_buffer[63].V' (cpp/accel/Accel.cpp:244) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:871:38) to (cpp/accel/Accel.cpp:928:1) in function 'top'... converting 10 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:137:66) to (cpp/accel/Accel.cpp:141:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:145:87) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:166:9) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:170:52) to (cpp/accel/Accel.cpp:174:5) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:188:50) to (cpp/accel/Accel.cpp:199:1) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:178:82) in function 'process_word'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (cpp/accel/Accel.cpp:85:3) in function 'conv3x3b'... converting 28 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (cpp/accel/Accel.cpp:419:11) to (cpp/accel/Accel.cpp:315:47) in function 'bin_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'conv3x3b' (cpp/accel/Accel.cpp:68)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:26 ; elapsed = 00:02:42 . Memory (MB): peak = 896.895 ; gain = 805.551
+INFO: [XFORM 203-151] Mapping array 'line_buffer' with offset 0, array 'word_buffer.V' (cpp/accel/Accel.cpp:242) with offset 480 and array 'old_word_buffer.V' (cpp/accel/Accel.cpp:243) with offset 640 into array 'tryVertical1' horizontally.
+INFO: [XFORM 203-151] Mapping array 'fixed_buffer.V' (cpp/accel/Accel.cpp:239) with offset 0 and array 'fixed_temp.V' (cpp/accel/Accel.cpp:240) with offset 2048 into array 'tryVertical2' horizontally.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:57 ; elapsed = 00:03:13 . Memory (MB): peak = 1235.398 ; gain = 1144.055
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv3x3b' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'conv3x3b'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('line_buffer_m_V_load_2', cpp/accel/Accel.cpp:79) on array 'line_buffer_m_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buffer_m_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 5, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 194.416 seconds; current allocated memory: 1.128 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.497 seconds; current allocated memory: 1.128 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'conv_word'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_1_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_1_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_1_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 8, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_1_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 132, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_22_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 194, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_32_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_37_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 241, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_40_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 249, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_41_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 253, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_42_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 255, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_42_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+WARNING: [SCHED 204-68] The II Violation in module 'conv_word' (Function: conv_word): Unable to enforce a carried dependence constraint (II = 256, distance = 1, offset = 1)
+   between 'call' operation ('conv_out_buffer_m_42_5', cpp/accel/Accel.cpp:101) to 'conv3x3b' and 'call' operation ('conv_out_buffer_m_0_5', cpp/accel/Accel.cpp:101) to 'conv3x3b'.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive: Unable to pipeline the region.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.306 seconds; current allocated memory: 1.130 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.311 seconds; current allocated memory: 1.136 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'conv_word' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 9.342 seconds; current allocated memory: 1.147 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 11.528 seconds; current allocated memory: 1.163 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'process_word' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.037 seconds; current allocated memory: 1.173 GB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.424 seconds; current allocated memory: 1.189 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_DMEM_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WT_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_KH_I'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.917 seconds; current allocated memory: 1.191 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.106 seconds; current allocated memory: 1.192 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv3x3b' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3x3b'.
+INFO: [HLS 200-111]  Elapsed time: 2.206 seconds; current allocated memory: 1.194 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_word'.
+INFO: [HLS 200-111]  Elapsed time: 3.045 seconds; current allocated memory: 1.239 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_word' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_word'.
+INFO: [HLS 200-111]  Elapsed time: 12.399 seconds; current allocated memory: 1.272 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'bin_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'outword_V' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'bin_conv_tryVertical2' to 'bin_conv_tryVertibkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'bin_conv_tryVertical1' to 'bin_conv_tryVerticud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_mul_mul_15ns_5ns_16_1_1' to 'top_mul_mul_15ns_dEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_mul_mul_15ns_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'bin_conv'.
+INFO: [HLS 200-111]  Elapsed time: 18.42 seconds; current allocated memory: 1.322 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/wt_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/kh_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_i_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_o_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_inputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/n_outputs_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/input_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_words_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/layer_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dmem_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/width_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/norm_mode_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'kh_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'o_index_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Port 'top/n_inputs_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/n_outputs_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/input_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/output_words_V' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 14.174 seconds; current allocated memory: 1.327 GB.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_tryVertibkb_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'bin_conv_tryVerticud_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_dmem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_wt_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_kh_mem_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:32 ; elapsed = 00:05:03 . Memory (MB): peak = 1728.012 ; gain = 1636.668
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 303.871 seconds; peak allocated memory: 1.327 GB.

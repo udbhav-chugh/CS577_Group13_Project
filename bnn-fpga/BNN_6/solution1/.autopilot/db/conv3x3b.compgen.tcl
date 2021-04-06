@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2 \
+    id 1 \
     name line_buffer_m_V \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename line_buffer_m_V \
     op interface \
-    ports { line_buffer_m_V_address0 { O 9 vector } line_buffer_m_V_ce0 { O 1 bit } line_buffer_m_V_q0 { I 2 vector } line_buffer_m_V_address1 { O 9 vector } line_buffer_m_V_ce1 { O 1 bit } line_buffer_m_V_q1 { I 2 vector } } \
+    ports { line_buffer_m_V_address0 { O 10 vector } line_buffer_m_V_ce0 { O 1 bit } line_buffer_m_V_q0 { I 2 vector } line_buffer_m_V_address1 { O 10 vector } line_buffer_m_V_ce1 { O 1 bit } line_buffer_m_V_q1 { I 2 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'line_buffer_m_V'"
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 3 \
+    id 2 \
     name line_buffer_m_V_offset \
     type other \
     dir I \
@@ -44,7 +44,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4 \
+    id 3 \
     name conv_params_m_0_0_s \
     type other \
     dir I \
@@ -59,7 +59,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 5 \
+    id 4 \
     name conv_params_m_0_0_10 \
     type other \
     dir I \
@@ -74,7 +74,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 6 \
+    id 5 \
     name conv_params_m_0_1_s \
     type other \
     dir I \
@@ -89,7 +89,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 6 \
     name conv_params_m_0_1_10 \
     type other \
     dir I \
@@ -104,7 +104,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 7 \
     name conv_params_m_0_2_s \
     type other \
     dir I \
@@ -119,7 +119,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 8 \
     name conv_params_m_0_2_10 \
     type other \
     dir I \
@@ -134,7 +134,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 9 \
     name conv_params_m_1_0_s \
     type other \
     dir I \
@@ -149,7 +149,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 10 \
     name conv_params_m_1_0_10 \
     type other \
     dir I \
@@ -164,7 +164,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 11 \
     name conv_params_m_1_1_s \
     type other \
     dir I \
@@ -179,7 +179,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 12 \
     name conv_params_m_1_1_10 \
     type other \
     dir I \
@@ -194,7 +194,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 13 \
     name conv_params_m_1_2_s \
     type other \
     dir I \
@@ -209,7 +209,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 14 \
     name conv_params_m_1_2_10 \
     type other \
     dir I \
@@ -224,7 +224,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 15 \
     name conv_params_m_2_0_s \
     type other \
     dir I \
@@ -239,7 +239,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 16 \
     name conv_params_m_2_0_10 \
     type other \
     dir I \
@@ -254,7 +254,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 17 \
     name conv_params_m_2_1_s \
     type other \
     dir I \
@@ -269,7 +269,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 19 \
+    id 18 \
     name conv_params_m_2_1_10 \
     type other \
     dir I \
@@ -284,7 +284,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 20 \
+    id 19 \
     name conv_params_m_2_2_s \
     type other \
     dir I \
@@ -299,7 +299,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 21 \
+    id 20 \
     name conv_params_m_2_2_10 \
     type other \
     dir I \
@@ -314,7 +314,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 22 \
+    id 21 \
     name conv_params_m_V_offset \
     type other \
     dir I \
@@ -329,7 +329,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 23 \
+    id 22 \
     name bank_V \
     type other \
     dir I \
@@ -344,7 +344,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 24 \
+    id 23 \
     name cc_V \
     type other \
     dir I \

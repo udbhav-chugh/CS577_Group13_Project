@@ -6,8 +6,8 @@
 module bin_conv_line_bufbkb_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 2;
-parameter AWIDTH = 9;
-parameter MEM_SIZE = 480;
+parameter AWIDTH = 6;
+parameter MEM_SIZE = 40;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -70,8 +70,8 @@ module bin_conv_line_bufbkb(
     q1);
 
 parameter DataWidth = 32'd2;
-parameter AddressRange = 32'd480;
-parameter AddressWidth = 32'd9;
+parameter AddressRange = 32'd40;
+parameter AddressWidth = 32'd6;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

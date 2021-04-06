@@ -141,13 +141,13 @@
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "12",
+    "ClockPeriod": "25",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "75255",
-    "Uncertainty": "1.5"
+    "Latency": "107958",
+    "Uncertainty": "3.125"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 12.000 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 25.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -161,46 +161,40 @@
   },
   "Files": {
     "CSource": [
-      "..\/..\/cpp\/accel\/Accel.cpp",
-      "..\/..\/cpp\/accel\/AccelPrint.cpp",
-      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
-      "..\/..\/cpp\/accel\/AccelTest.cpp",
-      "..\/..\/cpp\/accel\/Common.cpp",
-      "..\/..\/cpp\/accel\/Dense.cpp",
+      "..\/..\/cpp\/accel\/Timer.cpp",
       "..\/..\/cpp\/accel\/InputConv.cpp",
-      "..\/..\/cpp\/accel\/Timer.cpp"
+      "..\/..\/cpp\/accel\/Dense.cpp",
+      "..\/..\/cpp\/accel\/Common.cpp",
+      "..\/..\/cpp\/accel\/AccelTest.cpp",
+      "..\/..\/cpp\/accel\/AccelSchedule.cpp",
+      "..\/..\/cpp\/accel\/AccelPrint.cpp",
+      "..\/..\/cpp\/accel\/Accel.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/bin_conv.vhd",
-      "impl\/vhdl\/bin_conv_fixed_bucud.vhd",
-      "impl\/vhdl\/bin_conv_line_bufbkb.vhd",
-      "impl\/vhdl\/bin_conv_old_wordbfk.vhd",
-      "impl\/vhdl\/bin_conv_word_bufbek.vhd",
+      "impl\/vhdl\/bin_conv_tryVertibkb.vhd",
+      "impl\/vhdl\/bin_conv_tryVerticud.vhd",
       "impl\/vhdl\/conv3x3b.vhd",
       "impl\/vhdl\/conv_word.vhd",
-      "impl\/vhdl\/encode_bit.vhd",
       "impl\/vhdl\/process_word.vhd",
       "impl\/vhdl\/top_dmem_V.vhd",
       "impl\/vhdl\/top_kh_mem_V.vhd",
-      "impl\/vhdl\/top_mul_mul_15ns_bpm.vhd",
+      "impl\/vhdl\/top_mul_mul_15ns_dEe.vhd",
       "impl\/vhdl\/top_wt_mem_V.vhd",
       "impl\/vhdl\/top.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/bin_conv.v",
-      "impl\/verilog\/bin_conv_fixed_bucud.v",
-      "impl\/verilog\/bin_conv_line_bufbkb.v",
-      "impl\/verilog\/bin_conv_old_wordbfk.v",
-      "impl\/verilog\/bin_conv_word_bufbek.v",
+      "impl\/verilog\/bin_conv_tryVertibkb.v",
+      "impl\/verilog\/bin_conv_tryVerticud.v",
       "impl\/verilog\/conv3x3b.v",
       "impl\/verilog\/conv_word.v",
-      "impl\/verilog\/encode_bit.v",
       "impl\/verilog\/process_word.v",
       "impl\/verilog\/top_dmem_V.v",
       "impl\/verilog\/top_dmem_V_ram.dat",
       "impl\/verilog\/top_kh_mem_V.v",
       "impl\/verilog\/top_kh_mem_V_ram.dat",
-      "impl\/verilog\/top_mul_mul_15ns_bpm.v",
+      "impl\/verilog\/top_mul_mul_15ns_dEe.v",
       "impl\/verilog\/top_wt_mem_V.v",
       "impl\/verilog\/top_wt_mem_V_ram.dat",
       "impl\/verilog\/top.v"
@@ -534,38 +528,21 @@
       "Instances": [{
           "ModuleName": "bin_conv",
           "InstanceName": "grp_bin_conv_fu_373",
-          "Instances": [
-            {
+          "Instances": [{
               "ModuleName": "process_word",
-              "InstanceName": "grp_process_word_fu_7340",
+              "InstanceName": "grp_process_word_fu_7895",
               "Instances": [{
                   "ModuleName": "conv_word",
-                  "InstanceName": "grp_conv_word_fu_7290",
+                  "InstanceName": "grp_conv_word_fu_7250",
                   "Instances": [{
                       "ModuleName": "conv3x3b",
                       "InstanceName": "grp_conv3x3b_fu_1226"
                     }]
                 }]
-            },
-            {
-              "ModuleName": "encode_bit",
-              "InstanceName": "grp_encode_bit_fu_7536"
-            },
-            {
-              "ModuleName": "encode_bit",
-              "InstanceName": "grp_encode_bit_fu_7542"
-            }
-          ]
+            }]
         }]
     },
     "Info": {
-      "encode_bit": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "1",
-        "isOneStateSeq": "0"
-      },
       "conv3x3b": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
@@ -603,28 +580,6 @@
       }
     },
     "Metrics": {
-      "encode_bit": {
-        "Latency": {
-          "LatencyBest": "0",
-          "LatencyAvg": "0",
-          "LatencyWorst": "0",
-          "PipelineII": "1",
-          "PipelineDepth": "1",
-          "PipelineType": "function"
-        },
-        "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "0.620"
-        },
-        "Area": {
-          "FF": "0",
-          "LUT": "2",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
-        }
-      },
       "conv3x3b": {
         "Latency": {
           "LatencyBest": "5",
@@ -635,13 +590,13 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "6.614"
+          "Target": "25.00",
+          "Uncertainty": "3.12",
+          "Estimate": "7.652"
         },
         "Area": {
-          "FF": "107",
-          "LUT": "602",
+          "FF": "112",
+          "LUT": "614",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -657,13 +612,13 @@
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "7.409"
+          "Target": "25.00",
+          "Uncertainty": "3.12",
+          "Estimate": "8.447"
         },
         "Area": {
-          "FF": "1447",
-          "LUT": "4194",
+          "FF": "1452",
+          "LUT": "4206",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -671,21 +626,23 @@
       },
       "process_word": {
         "Latency": {
-          "LatencyBest": "505",
-          "LatencyAvg": "505",
-          "LatencyWorst": "505",
-          "PipelineII": "505",
+          "LatencyBest": "682",
+          "LatencyAvg": "826",
+          "LatencyWorst": "858",
+          "PipelineIIMin": "682",
+          "PipelineIIMax": "858",
+          "PipelineII": "682 ~ 858",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "9.806"
+          "Target": "25.00",
+          "Uncertainty": "3.12",
+          "Estimate": "11.015"
         },
         "Area": {
-          "FF": "4568",
-          "LUT": "19284",
+          "FF": "6537",
+          "LUT": "25531",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -693,70 +650,70 @@
       },
       "bin_conv": {
         "Latency": {
-          "LatencyBest": "70435",
-          "LatencyAvg": "72931",
-          "LatencyWorst": "75427",
-          "PipelineIIMin": "70435",
-          "PipelineIIMax": "75427",
-          "PipelineII": "70435 ~ 75427",
+          "LatencyBest": "103138",
+          "LatencyAvg": "126050",
+          "LatencyWorst": "134626",
+          "PipelineIIMin": "103138",
+          "PipelineIIMax": "134626",
+          "PipelineII": "103138 ~ 134626",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "9.806"
+          "Target": "25.00",
+          "Uncertainty": "3.12",
+          "Estimate": "11.015"
         },
         "Loops": [
           {
             "Name": "Loop 1",
             "TripCount": "32",
-            "Latency": "32",
+            "Latency": "1024",
             "PipelineII": "",
-            "PipelineDepth": "1"
+            "PipelineDepth": "32"
           },
           {
             "Name": "LOOP_WORDS_IN_PHASE",
             "TripCount": "64",
-            "LatencyMin": "70336",
-            "LatencyMax": "75328",
-            "Latency": "70336 ~ 75328",
+            "LatencyMin": "98048",
+            "LatencyMax": "129536",
+            "Latency": "98048 ~ 129536",
             "PipelineII": "",
-            "PipelineDepthMin": "1099",
-            "PipelineDepthMax": "1177",
-            "PipelineDepth": "1099 ~ 1177"
+            "PipelineDepthMin": "1532",
+            "PipelineDepthMax": "2024",
+            "PipelineDepth": "1532 ~ 2024"
           },
           {
             "Name": "LOOP_ACC_PHASES_I",
             "TripCount": "31",
-            "Latency": "62",
+            "Latency": "3968",
             "PipelineII": "",
-            "PipelineDepth": "2"
+            "PipelineDepth": "128"
           }
         ],
         "Area": {
-          "BRAM_18K": "2",
+          "BRAM_18K": "4",
           "DSP48E": "1",
-          "FF": "9475",
-          "LUT": "36101",
+          "FF": "13396",
+          "LUT": "45362",
           "URAM": "0"
         }
       },
       "top": {
         "Latency": {
-          "LatencyBest": "75255",
-          "LatencyAvg": "77751",
-          "LatencyWorst": "80247",
-          "PipelineIIMin": "75256",
-          "PipelineIIMax": "80248",
-          "PipelineII": "75256 ~ 80248",
+          "LatencyBest": "107958",
+          "LatencyAvg": "130870",
+          "LatencyWorst": "139446",
+          "PipelineIIMin": "107959",
+          "PipelineIIMax": "139447",
+          "PipelineII": "107959 ~ 139447",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "12.00",
-          "Uncertainty": "1.50",
-          "Estimate": "9.806"
+          "Target": "25.00",
+          "Uncertainty": "3.12",
+          "Estimate": "11.015"
         },
         "Loops": [
           {
@@ -782,10 +739,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "52",
+          "BRAM_18K": "54",
           "DSP48E": "1",
-          "FF": "9658",
-          "LUT": "36830",
+          "FF": "13579",
+          "LUT": "46091",
           "URAM": "0"
         }
       }
@@ -801,7 +758,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-04-02 19:22:38 +0530",
+    "Time": "2021-04-06 18:12:08 +0530",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

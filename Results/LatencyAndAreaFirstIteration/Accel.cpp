@@ -241,7 +241,18 @@ void bin_conv(
   bool rb[CONV_BANKS];
 
   
-  // #pragma HLS ARRAY_RESHAPE variable=wt_mem cyclic factor=4 dim=2
+  #pragma HLS ARRAY_PARTITION variable=line_buffer cyclic factor=2 dim=0
+  #pragma HLS ARRAY_PARTITION variable=conv_params complete
+  #pragma HLS ARRAY_PARTITION variable=fixed_buffer cyclic factor=4 dim=2
+  #pragma HLS ARRAY_PARTITION variable=fixed_temp cyclic factor=4 dim=1
+
+  #pragma HLS ARRAY_PARTITION variable=word_buffer cyclic factor=2 dim=0
+  #pragma HLS ARRAY_PARTITION variable=old_word_buffer cyclic factor=2 dim=0
+  #pragma HLS ARRAY_PARTITION variable=conv_out_buffer cyclic factor=4 dim=2
+
+
+
+
   // #pragma HLS ARRAY_RESHAPE variable=dmem cyclic factor=4 dim=3
 
   static Address wt_addr = 0;           // address of weight word

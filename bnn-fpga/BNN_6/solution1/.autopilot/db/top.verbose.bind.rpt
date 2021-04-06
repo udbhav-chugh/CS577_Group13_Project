@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'top'
 ================================================================
-* Date:           Fri Apr  2 19:21:49 2021
+* Date:           Tue Apr  6 18:11:12 2021
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        BNN_6
@@ -20,26 +20,26 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  12.00|     9.806|        1.50|
+    |ap_clk  |  25.00|    11.015|        3.12|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +-------+-------+-------+-------+---------+
-    |    Latency    |    Interval   | Pipeline|
-    |  min  |  max  |  min  |  max  |   Type  |
-    +-------+-------+-------+-------+---------+
-    |  75255|  80247|  75255|  80247|   none  |
-    +-------+-------+-------+-------+---------+
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  107958|  139446|  107958|  139446|   none  |
+    +--------+--------+--------+--------+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------+----------+-------+-------+-------+-------+---------+
-        |                     |          |    Latency    |    Interval   | Pipeline|
-        |       Instance      |  Module  |  min  |  max  |  min  |  max  |   Type  |
-        +---------------------+----------+-------+-------+-------+-------+---------+
-        |grp_bin_conv_fu_373  |bin_conv  |  70435|  75427|  70435|  75427|   none  |
-        +---------------------+----------+-------+-------+-------+-------+---------+
+        +---------------------+----------+--------+--------+--------+--------+---------+
+        |                     |          |     Latency     |     Interval    | Pipeline|
+        |       Instance      |  Module  |   min  |   max  |   min  |   max  |   Type  |
+        +---------------------+----------+--------+--------+--------+--------+---------+
+        |grp_bin_conv_fu_373  |bin_conv  |  103138|  134626|  103138|  134626|   none  |
+        +---------------------+----------+--------+--------+--------+--------+---------+
 
         * Loop: 
         +---------------+------+------+----------+-----------+-----------+------+----------+
@@ -120,178 +120,178 @@ ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBits
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %dmem_mode_V), !map !924"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2 %width_mode_V), !map !928"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2 %norm_mode_V), !map !932"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%norm_mode_V_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %norm_mode_V)" [cpp/accel/Accel.cpp:745]   --->   Operation 27 'read' 'norm_mode_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%width_mode_V_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %width_mode_V)" [cpp/accel/Accel.cpp:745]   --->   Operation 28 'read' 'width_mode_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%dmem_mode_V_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %dmem_mode_V)" [cpp/accel/Accel.cpp:745]   --->   Operation 29 'read' 'dmem_mode_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer_mode_V_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %layer_mode_V)" [cpp/accel/Accel.cpp:745]   --->   Operation 30 'read' 'layer_mode_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%dmem_o_V_addr = getelementptr [128 x i64]* %dmem_o_V, i64 0, i64 0" [cpp/accel/Accel.cpp:745]   --->   Operation 31 'getelementptr' 'dmem_o_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%norm_mode_V_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %norm_mode_V)" [cpp/accel/Accel.cpp:768]   --->   Operation 27 'read' 'norm_mode_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%width_mode_V_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %width_mode_V)" [cpp/accel/Accel.cpp:768]   --->   Operation 28 'read' 'width_mode_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%dmem_mode_V_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %dmem_mode_V)" [cpp/accel/Accel.cpp:768]   --->   Operation 29 'read' 'dmem_mode_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer_mode_V_read = call i3 @_ssdm_op_Read.ap_auto.i3(i3 %layer_mode_V)" [cpp/accel/Accel.cpp:768]   --->   Operation 30 'read' 'layer_mode_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%dmem_o_V_addr = getelementptr [128 x i64]* %dmem_o_V, i64 0, i64 0" [cpp/accel/Accel.cpp:768]   --->   Operation 31 'getelementptr' 'dmem_o_V_addr' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @top_str) nounwind"   --->   Operation 32 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer_type_V = call i2 @_ssdm_op_PartSelect.i2.i3.i32.i32(i3 %layer_mode_V_read, i32 1, i32 2)" [cpp/accel/Accel.cpp:756]   --->   Operation 33 'partselect' 'layer_type_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln792 = trunc i3 %layer_mode_V_read to i1" [cpp/accel/Accel.cpp:780]   --->   Operation 34 'trunc' 'trunc_ln792' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node t_V)   --->   "%p_Result_s = xor i1 %trunc_ln792, true" [cpp/accel/Accel.cpp:780]   --->   Operation 35 'xor' 'p_Result_s' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%kh_index_V_load = load i2* @kh_index_V, align 1" [cpp/accel/Accel.cpp:784]   --->   Operation 36 'load' 'kh_index_V_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln859 = trunc i2 %kh_index_V_load to i1" [cpp/accel/Accel.cpp:859]   --->   Operation 37 'trunc' 'trunc_ln859' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%o_index_V_load = load i16* @o_index_V, align 2" [cpp/accel/Accel.cpp:859]   --->   Operation 38 'load' 'o_index_V_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.61ns) (out node of the LUT)   --->   "%t_V = and i1 %trunc_ln859, %p_Result_s" [cpp/accel/Accel.cpp:780]   --->   Operation 39 'and' 't_V' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 40 [1/1] (0.54ns)   --->   "%t_V_1 = select i1 %trunc_ln792, i16 0, i16 %o_index_V_load" [cpp/accel/Accel.cpp:780]   --->   Operation 40 'select' 't_V_1' <Predicate = true> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 41 [1/1] (0.61ns)   --->   "%r_V_2 = xor i1 %dmem_mode_V_read, true" [cpp/accel/Accel.cpp:788]   --->   Operation 41 'xor' 'r_V_2' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%shl_ln = call i3 @_ssdm_op_BitConcatenate.i3.i2.i1(i2 %width_mode_V_read, i1 false)" [cpp/accel/Accel.cpp:791]   --->   Operation 42 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln791 = zext i3 %shl_ln to i16" [cpp/accel/Accel.cpp:791]   --->   Operation 43 'zext' 'zext_ln791' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln791_1 = zext i3 %shl_ln to i5" [cpp/accel/Accel.cpp:791]   --->   Operation 44 'zext' 'zext_ln791_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (1.50ns)   --->   "%words_per_image_V = shl i5 1, %zext_ln791_1" [cpp/accel/Accel.cpp:791]   --->   Operation 45 'shl' 'words_per_image_V' <Predicate = true> <Delay = 1.50> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 46 [1/1] (0.64ns)   --->   "%icmp_ln879 = icmp eq i2 %layer_type_V, 1" [cpp/accel/Accel.cpp:796]   --->   Operation 46 'icmp' 'icmp_ln879' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln879 = zext i5 %words_per_image_V to i10" [cpp/accel/Accel.cpp:801]   --->   Operation 47 'zext' 'zext_ln879' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.64ns)   --->   "%icmp_ln879_1 = icmp eq i2 %layer_type_V, 0" [cpp/accel/Accel.cpp:801]   --->   Operation 48 'icmp' 'icmp_ln879_1' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 49 [1/1] (1.06ns)   --->   "br label %0" [cpp/accel/Accel.cpp:794]   --->   Operation 49 'br' <Predicate = true> <Delay = 1.06>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer_type_V = call i2 @_ssdm_op_PartSelect.i2.i3.i32.i32(i3 %layer_mode_V_read, i32 1, i32 2)" [cpp/accel/Accel.cpp:779]   --->   Operation 33 'partselect' 'layer_type_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln792 = trunc i3 %layer_mode_V_read to i1" [cpp/accel/Accel.cpp:803]   --->   Operation 34 'trunc' 'trunc_ln792' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node t_V)   --->   "%p_Result_s = xor i1 %trunc_ln792, true" [cpp/accel/Accel.cpp:803]   --->   Operation 35 'xor' 'p_Result_s' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%kh_index_V_load = load i2* @kh_index_V, align 1" [cpp/accel/Accel.cpp:807]   --->   Operation 36 'load' 'kh_index_V_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln882 = trunc i2 %kh_index_V_load to i1" [cpp/accel/Accel.cpp:882]   --->   Operation 37 'trunc' 'trunc_ln882' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%o_index_V_load = load i16* @o_index_V, align 2" [cpp/accel/Accel.cpp:882]   --->   Operation 38 'load' 'o_index_V_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.61ns) (out node of the LUT)   --->   "%t_V = and i1 %trunc_ln882, %p_Result_s" [cpp/accel/Accel.cpp:803]   --->   Operation 39 'and' 't_V' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.54ns)   --->   "%t_V_1 = select i1 %trunc_ln792, i16 0, i16 %o_index_V_load" [cpp/accel/Accel.cpp:803]   --->   Operation 40 'select' 't_V_1' <Predicate = true> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.61ns)   --->   "%r_V_2 = xor i1 %dmem_mode_V_read, true" [cpp/accel/Accel.cpp:811]   --->   Operation 41 'xor' 'r_V_2' <Predicate = true> <Delay = 0.61> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%shl_ln = call i3 @_ssdm_op_BitConcatenate.i3.i2.i1(i2 %width_mode_V_read, i1 false)" [cpp/accel/Accel.cpp:814]   --->   Operation 42 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln814 = zext i3 %shl_ln to i16" [cpp/accel/Accel.cpp:814]   --->   Operation 43 'zext' 'zext_ln814' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln814_1 = zext i3 %shl_ln to i5" [cpp/accel/Accel.cpp:814]   --->   Operation 44 'zext' 'zext_ln814_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (1.50ns)   --->   "%words_per_image_V = shl i5 1, %zext_ln814_1" [cpp/accel/Accel.cpp:814]   --->   Operation 45 'shl' 'words_per_image_V' <Predicate = true> <Delay = 1.50> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.64ns)   --->   "%icmp_ln879 = icmp eq i2 %layer_type_V, 1" [cpp/accel/Accel.cpp:819]   --->   Operation 46 'icmp' 'icmp_ln879' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln879 = zext i5 %words_per_image_V to i10" [cpp/accel/Accel.cpp:824]   --->   Operation 47 'zext' 'zext_ln879' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.64ns)   --->   "%icmp_ln879_1 = icmp eq i2 %layer_type_V, 0" [cpp/accel/Accel.cpp:824]   --->   Operation 48 'icmp' 'icmp_ln879_1' <Predicate = true> <Delay = 0.64> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (1.06ns)   --->   "br label %0" [cpp/accel/Accel.cpp:817]   --->   Operation 49 'br' <Predicate = true> <Delay = 1.06>
 
 State 2 <SV = 1> <Delay = 5.05>
-ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%p_0730_0 = phi i16 [ 0, %._crit_edge ], [ %select_ln806, %LOOP_DMEM_I_end ]" [cpp/accel/Accel.cpp:806]   --->   Operation 50 'phi' 'p_0730_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%p_0886_0 = phi i10 [ 0, %._crit_edge ], [ %select_ln806_1, %LOOP_DMEM_I_end ]" [cpp/accel/Accel.cpp:806]   --->   Operation 51 'phi' 'p_0886_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%p_0730_0 = phi i16 [ 0, %._crit_edge ], [ %select_ln829, %LOOP_DMEM_I_end ]" [cpp/accel/Accel.cpp:829]   --->   Operation 50 'phi' 'p_0730_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%p_0886_0 = phi i10 [ 0, %._crit_edge ], [ %select_ln829_1, %LOOP_DMEM_I_end ]" [cpp/accel/Accel.cpp:829]   --->   Operation 51 'phi' 'p_0886_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%p_0214_0 = phi i7 [ 0, %._crit_edge ], [ %i_V_2, %LOOP_DMEM_I_end ]"   --->   Operation 52 'phi' 'p_0214_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 53 [1/1] (1.18ns)   --->   "%icmp_ln887 = icmp eq i7 %p_0214_0, -64" [cpp/accel/Accel.cpp:794]   --->   Operation 53 'icmp' 'icmp_ln887' <Predicate = true> <Delay = 1.18> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 53 [1/1] (1.18ns)   --->   "%icmp_ln887 = icmp eq i7 %p_0214_0, -64" [cpp/accel/Accel.cpp:817]   --->   Operation 53 'icmp' 'icmp_ln887' <Predicate = true> <Delay = 1.18> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 54 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 55 [1/1] (1.37ns)   --->   "%i_V_2 = add i7 %p_0214_0, 1" [cpp/accel/Accel.cpp:794]   --->   Operation 55 'add' 'i_V_2' <Predicate = true> <Delay = 1.37> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887, label %.preheader1400.preheader, label %LOOP_DMEM_I_begin" [cpp/accel/Accel.cpp:794]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%ret_V_7 = trunc i16 %p_0730_0 to i1" [cpp/accel/Accel.cpp:794]   --->   Operation 57 'trunc' 'ret_V_7' <Predicate = (!icmp_ln887)> <Delay = 0.00>
-ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%ret_V_5 = trunc i7 %p_0214_0 to i1" [cpp/accel/Accel.cpp:794]   --->   Operation 58 'trunc' 'ret_V_5' <Predicate = (!icmp_ln887)> <Delay = 0.00>
-ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%ret_V_3 = trunc i7 %p_0214_0 to i6" [cpp/accel/Accel.cpp:794]   --->   Operation 59 'trunc' 'ret_V_3' <Predicate = (!icmp_ln887)> <Delay = 0.00>
-ST_2 : Operation 60 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879, label %_ZNK11ap_int_baseILi16ELb0EElsILi34EEE7ap_uintILi16EERKS_IXT_ELb1EE.exit, label %1" [cpp/accel/Accel.cpp:796]   --->   Operation 60 'br' <Predicate = (!icmp_ln887)> <Delay = 0.00>
-ST_2 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879_1, label %2, label %3" [cpp/accel/Accel.cpp:801]   --->   Operation 61 'br' <Predicate = (!icmp_ln887 & !icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%ret_V_6 = call i6 @_ssdm_op_PartSelect.i6.i7.i32.i32(i7 %p_0214_0, i32 1, i32 6)" [cpp/accel/Accel.cpp:804]   --->   Operation 62 'partselect' 'ret_V_6' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln544_3 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:804]   --->   Operation 63 'zext' 'zext_ln544_3' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%dmem_i_V_addr_2 = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544_3" [cpp/accel/Accel.cpp:804]   --->   Operation 64 'getelementptr' 'dmem_i_V_addr_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_2 : Operation 65 [2/2] (2.66ns)   --->   "%dmem_i_V_load_2 = load i64* %dmem_i_V_addr_2, align 8" [cpp/accel/Accel.cpp:804]   --->   Operation 65 'load' 'dmem_i_V_load_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln544_2 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:802]   --->   Operation 66 'zext' 'zext_ln544_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%dmem_i_V_addr_1 = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544_2" [cpp/accel/Accel.cpp:802]   --->   Operation 67 'getelementptr' 'dmem_i_V_addr_1' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_2 : Operation 68 [2/2] (2.66ns)   --->   "%dmem_i_V_load_1 = load i64* %dmem_i_V_addr_1, align 8" [cpp/accel/Accel.cpp:802]   --->   Operation 68 'load' 'dmem_i_V_load_1' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_2 : Operation 55 [1/1] (1.37ns)   --->   "%i_V_2 = add i7 %p_0214_0, 1" [cpp/accel/Accel.cpp:817]   --->   Operation 55 'add' 'i_V_2' <Predicate = true> <Delay = 1.37> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887, label %.preheader1400.preheader, label %LOOP_DMEM_I_begin" [cpp/accel/Accel.cpp:817]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%ret_V_7 = trunc i16 %p_0730_0 to i1" [cpp/accel/Accel.cpp:817]   --->   Operation 57 'trunc' 'ret_V_7' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%ret_V_5 = trunc i7 %p_0214_0 to i1" [cpp/accel/Accel.cpp:817]   --->   Operation 58 'trunc' 'ret_V_5' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%ret_V_3 = trunc i7 %p_0214_0 to i6" [cpp/accel/Accel.cpp:817]   --->   Operation 59 'trunc' 'ret_V_3' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879, label %_ZNK11ap_int_baseILi16ELb0EElsILi34EEE7ap_uintILi16EERKS_IXT_ELb1EE.exit, label %1" [cpp/accel/Accel.cpp:819]   --->   Operation 60 'br' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln879_1, label %2, label %3" [cpp/accel/Accel.cpp:824]   --->   Operation 61 'br' <Predicate = (!icmp_ln887 & !icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%ret_V_6 = call i6 @_ssdm_op_PartSelect.i6.i7.i32.i32(i7 %p_0214_0, i32 1, i32 6)" [cpp/accel/Accel.cpp:827]   --->   Operation 62 'partselect' 'ret_V_6' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln544_3 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:827]   --->   Operation 63 'zext' 'zext_ln544_3' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%dmem_i_V_addr_2 = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544_3" [cpp/accel/Accel.cpp:827]   --->   Operation 64 'getelementptr' 'dmem_i_V_addr_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_2 : Operation 65 [2/2] (2.66ns)   --->   "%dmem_i_V_load_2 = load i64* %dmem_i_V_addr_2, align 8" [cpp/accel/Accel.cpp:827]   --->   Operation 65 'load' 'dmem_i_V_load_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln544_2 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:825]   --->   Operation 66 'zext' 'zext_ln544_2' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%dmem_i_V_addr_1 = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544_2" [cpp/accel/Accel.cpp:825]   --->   Operation 67 'getelementptr' 'dmem_i_V_addr_1' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_2 : Operation 68 [2/2] (2.66ns)   --->   "%dmem_i_V_load_1 = load i64* %dmem_i_V_addr_1, align 8" [cpp/accel/Accel.cpp:825]   --->   Operation 68 'load' 'dmem_i_V_load_1' <Predicate = (!icmp_ln887 & !icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 ST_2 : Operation 69 [1/1] (0.00ns)   --->   "br label %LOOP_DMEM_I_end"   --->   Operation 69 'br' <Predicate = (!icmp_ln887 & !icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%ret_V_9 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %p_0730_0, i32 1, i32 15)" [cpp/accel/Accel.cpp:798]   --->   Operation 70 'partselect' 'ret_V_9' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%ret_V_8 = zext i15 %ret_V_9 to i16" [cpp/accel/Accel.cpp:798]   --->   Operation 71 'zext' 'ret_V_8' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 72 [1/1] (2.54ns)   --->   "%r_V = shl i16 %ret_V_8, %zext_ln791" [cpp/accel/Accel.cpp:799]   --->   Operation 72 'shl' 'r_V' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.54> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln180 = trunc i16 %r_V to i14" [cpp/accel/Accel.cpp:799]   --->   Operation 73 'trunc' 'trunc_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i10 %p_0886_0 to i14" [cpp/accel/Accel.cpp:799]   --->   Operation 74 'zext' 'zext_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln180_2 = add i14 %trunc_ln180, %zext_ln180" [cpp/accel/Accel.cpp:799]   --->   Operation 75 'add' 'add_ln180_2' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.25> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_3 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i10(i1 %dmem_mode_V_read, i1 %ret_V_7, i10 0)" [cpp/accel/Accel.cpp:799]   --->   Operation 76 'bitconcatenate' 'tmp_3' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln180_4 = zext i12 %tmp_3 to i14" [cpp/accel/Accel.cpp:799]   --->   Operation 77 'zext' 'zext_ln180_4' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 78 [1/1] (2.51ns) (root node of TernaryAdder)   --->   "%add_ln180 = add i14 %add_ln180_2, %zext_ln180_4" [cpp/accel/Accel.cpp:799]   --->   Operation 78 'add' 'add_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.51> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.25> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln544 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:799]   --->   Operation 79 'zext' 'zext_ln544' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%dmem_i_V_addr = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544" [cpp/accel/Accel.cpp:799]   --->   Operation 80 'getelementptr' 'dmem_i_V_addr' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
-ST_2 : Operation 81 [2/2] (2.66ns)   --->   "%dmem_i_V_load = load i64* %dmem_i_V_addr, align 8" [cpp/accel/Accel.cpp:799]   --->   Operation 81 'load' 'dmem_i_V_load' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_2 : Operation 82 [1/1] (1.41ns)   --->   "%img_off_V = add i10 %p_0886_0, 1" [cpp/accel/Accel.cpp:806]   --->   Operation 82 'add' 'img_off_V' <Predicate = (!icmp_ln887)> <Delay = 1.41> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 83 [1/1] (1.29ns)   --->   "%icmp_ln879_2 = icmp eq i10 %img_off_V, %zext_ln879" [cpp/accel/Accel.cpp:806]   --->   Operation 83 'icmp' 'icmp_ln879_2' <Predicate = (!icmp_ln887)> <Delay = 1.29> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 84 [1/1] (1.48ns)   --->   "%img_idx_V = add i16 %p_0730_0, 1" [cpp/accel/Accel.cpp:808]   --->   Operation 84 'add' 'img_idx_V' <Predicate = (!icmp_ln887)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 85 [1/1] (0.54ns)   --->   "%select_ln806 = select i1 %icmp_ln879_2, i16 %img_idx_V, i16 %p_0730_0" [cpp/accel/Accel.cpp:806]   --->   Operation 85 'select' 'select_ln806' <Predicate = (!icmp_ln887)> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 86 [1/1] (0.45ns)   --->   "%select_ln806_1 = select i1 %icmp_ln879_2, i10 0, i10 %img_off_V" [cpp/accel/Accel.cpp:806]   --->   Operation 86 'select' 'select_ln806_1' <Predicate = (!icmp_ln887)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%ret_V_9 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %p_0730_0, i32 1, i32 15)" [cpp/accel/Accel.cpp:821]   --->   Operation 70 'partselect' 'ret_V_9' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%ret_V_8 = zext i15 %ret_V_9 to i16" [cpp/accel/Accel.cpp:821]   --->   Operation 71 'zext' 'ret_V_8' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (2.54ns)   --->   "%r_V = shl i16 %ret_V_8, %zext_ln814" [cpp/accel/Accel.cpp:822]   --->   Operation 72 'shl' 'r_V' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.54> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.54> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%trunc_ln180 = trunc i16 %r_V to i14" [cpp/accel/Accel.cpp:822]   --->   Operation 73 'trunc' 'trunc_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i10 %p_0886_0 to i14" [cpp/accel/Accel.cpp:822]   --->   Operation 74 'zext' 'zext_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln180_2 = add i14 %trunc_ln180, %zext_ln180" [cpp/accel/Accel.cpp:822]   --->   Operation 75 'add' 'add_ln180_2' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.25> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_3 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i10(i1 %dmem_mode_V_read, i1 %ret_V_7, i10 0)" [cpp/accel/Accel.cpp:822]   --->   Operation 76 'bitconcatenate' 'tmp_3' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln180_4 = zext i12 %tmp_3 to i14" [cpp/accel/Accel.cpp:822]   --->   Operation 77 'zext' 'zext_ln180_4' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (2.51ns) (root node of TernaryAdder)   --->   "%add_ln180 = add i14 %add_ln180_2, %zext_ln180_4" [cpp/accel/Accel.cpp:822]   --->   Operation 78 'add' 'add_ln180' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.51> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.25> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln544 = zext i7 %p_0214_0 to i64" [cpp/accel/Accel.cpp:822]   --->   Operation 79 'zext' 'zext_ln544' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%dmem_i_V_addr = getelementptr [2048 x i64]* %dmem_i_V, i64 0, i64 %zext_ln544" [cpp/accel/Accel.cpp:822]   --->   Operation 80 'getelementptr' 'dmem_i_V_addr' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_2 : Operation 81 [2/2] (2.66ns)   --->   "%dmem_i_V_load = load i64* %dmem_i_V_addr, align 8" [cpp/accel/Accel.cpp:822]   --->   Operation 81 'load' 'dmem_i_V_load' <Predicate = (!icmp_ln887 & icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_2 : Operation 82 [1/1] (1.41ns)   --->   "%img_off_V = add i10 %p_0886_0, 1" [cpp/accel/Accel.cpp:829]   --->   Operation 82 'add' 'img_off_V' <Predicate = (!icmp_ln887)> <Delay = 1.41> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (1.29ns)   --->   "%icmp_ln879_2 = icmp eq i10 %img_off_V, %zext_ln879" [cpp/accel/Accel.cpp:829]   --->   Operation 83 'icmp' 'icmp_ln879_2' <Predicate = (!icmp_ln887)> <Delay = 1.29> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (1.48ns)   --->   "%img_idx_V = add i16 %p_0730_0, 1" [cpp/accel/Accel.cpp:831]   --->   Operation 84 'add' 'img_idx_V' <Predicate = (!icmp_ln887)> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 85 [1/1] (0.54ns)   --->   "%select_ln829 = select i1 %icmp_ln879_2, i16 %img_idx_V, i16 %p_0730_0" [cpp/accel/Accel.cpp:829]   --->   Operation 85 'select' 'select_ln829' <Predicate = (!icmp_ln887)> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.45ns)   --->   "%select_ln829_1 = select i1 %icmp_ln879_2, i10 0, i10 %img_off_V" [cpp/accel/Accel.cpp:829]   --->   Operation 86 'select' 'select_ln829_1' <Predicate = (!icmp_ln887)> <Delay = 0.45> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 5.32>
-ST_3 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str50) nounwind" [cpp/accel/Accel.cpp:794]   --->   Operation 87 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str50)" [cpp/accel/Accel.cpp:794]   --->   Operation 88 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9) nounwind" [cpp/accel/Accel.cpp:795]   --->   Operation 89 'specpipeline' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%ret_V_4 = zext i6 %ret_V_6 to i7" [cpp/accel/Accel.cpp:804]   --->   Operation 90 'zext' 'ret_V_4' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_5 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i3.i7(i1 %dmem_mode_V_read, i1 %ret_V_5, i3 0, i7 %ret_V_4)" [cpp/accel/Accel.cpp:804]   --->   Operation 91 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln180_2 = zext i12 %tmp_5 to i64" [cpp/accel/Accel.cpp:804]   --->   Operation 92 'zext' 'zext_ln180_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%dmem_V_addr_2 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_2" [cpp/accel/Accel.cpp:804]   --->   Operation 93 'getelementptr' 'dmem_V_addr_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 94 [1/2] (2.66ns)   --->   "%dmem_i_V_load_2 = load i64* %dmem_i_V_addr_2, align 8" [cpp/accel/Accel.cpp:804]   --->   Operation 94 'load' 'dmem_i_V_load_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_3 : Operation 95 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load_2, i64* %dmem_V_addr_2, align 8" [cpp/accel/Accel.cpp:804]   --->   Operation 95 'store' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str53) nounwind" [cpp/accel/Accel.cpp:817]   --->   Operation 87 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str53)" [cpp/accel/Accel.cpp:817]   --->   Operation 88 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9140) nounwind" [cpp/accel/Accel.cpp:818]   --->   Operation 89 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%ret_V_4 = zext i6 %ret_V_6 to i7" [cpp/accel/Accel.cpp:827]   --->   Operation 90 'zext' 'ret_V_4' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_5 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i1.i3.i7(i1 %dmem_mode_V_read, i1 %ret_V_5, i3 0, i7 %ret_V_4)" [cpp/accel/Accel.cpp:827]   --->   Operation 91 'bitconcatenate' 'tmp_5' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln180_2 = zext i12 %tmp_5 to i64" [cpp/accel/Accel.cpp:827]   --->   Operation 92 'zext' 'zext_ln180_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%dmem_V_addr_2 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_2" [cpp/accel/Accel.cpp:827]   --->   Operation 93 'getelementptr' 'dmem_V_addr_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 94 [1/2] (2.66ns)   --->   "%dmem_i_V_load_2 = load i64* %dmem_i_V_addr_2, align 8" [cpp/accel/Accel.cpp:827]   --->   Operation 94 'load' 'dmem_i_V_load_2' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 95 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load_2, i64* %dmem_V_addr_2, align 8" [cpp/accel/Accel.cpp:827]   --->   Operation 95 'store' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 ST_3 : Operation 96 [1/1] (0.00ns)   --->   "br label %4"   --->   Operation 96 'br' <Predicate = (!icmp_ln879 & !icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_4 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i5.i6(i1 %dmem_mode_V_read, i5 0, i6 %ret_V_3)" [cpp/accel/Accel.cpp:802]   --->   Operation 97 'bitconcatenate' 'tmp_4' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%zext_ln180_1 = zext i12 %tmp_4 to i64" [cpp/accel/Accel.cpp:802]   --->   Operation 98 'zext' 'zext_ln180_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%dmem_V_addr_1 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_1" [cpp/accel/Accel.cpp:802]   --->   Operation 99 'getelementptr' 'dmem_V_addr_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 100 [1/2] (2.66ns)   --->   "%dmem_i_V_load_1 = load i64* %dmem_i_V_addr_1, align 8" [cpp/accel/Accel.cpp:802]   --->   Operation 100 'load' 'dmem_i_V_load_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_3 : Operation 101 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load_1, i64* %dmem_V_addr_1, align 8" [cpp/accel/Accel.cpp:802]   --->   Operation 101 'store' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_3 : Operation 102 [1/1] (0.00ns)   --->   "br label %4" [cpp/accel/Accel.cpp:802]   --->   Operation 102 'br' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
-ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%zext_ln180_5 = zext i14 %add_ln180 to i64" [cpp/accel/Accel.cpp:799]   --->   Operation 103 'zext' 'zext_ln180_5' <Predicate = (icmp_ln879)> <Delay = 0.00>
-ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%dmem_V_addr = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_5" [cpp/accel/Accel.cpp:799]   --->   Operation 104 'getelementptr' 'dmem_V_addr' <Predicate = (icmp_ln879)> <Delay = 0.00>
-ST_3 : Operation 105 [1/2] (2.66ns)   --->   "%dmem_i_V_load = load i64* %dmem_i_V_addr, align 8" [cpp/accel/Accel.cpp:799]   --->   Operation 105 'load' 'dmem_i_V_load' <Predicate = (icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_3 : Operation 106 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load, i64* %dmem_V_addr, align 8" [cpp/accel/Accel.cpp:799]   --->   Operation 106 'store' <Predicate = (icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_3 : Operation 107 [1/1] (0.00ns)   --->   "br label %LOOP_DMEM_I_end" [cpp/accel/Accel.cpp:800]   --->   Operation 107 'br' <Predicate = (icmp_ln879)> <Delay = 0.00>
-ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str50, i32 %tmp)" [cpp/accel/Accel.cpp:810]   --->   Operation 108 'specregionend' 'empty_22' <Predicate = (!icmp_ln887)> <Delay = 0.00>
-ST_3 : Operation 109 [1/1] (0.00ns)   --->   "br label %0" [cpp/accel/Accel.cpp:794]   --->   Operation 109 'br' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_4 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i5.i6(i1 %dmem_mode_V_read, i5 0, i6 %ret_V_3)" [cpp/accel/Accel.cpp:825]   --->   Operation 97 'bitconcatenate' 'tmp_4' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%zext_ln180_1 = zext i12 %tmp_4 to i64" [cpp/accel/Accel.cpp:825]   --->   Operation 98 'zext' 'zext_ln180_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%dmem_V_addr_1 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_1" [cpp/accel/Accel.cpp:825]   --->   Operation 99 'getelementptr' 'dmem_V_addr_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 100 [1/2] (2.66ns)   --->   "%dmem_i_V_load_1 = load i64* %dmem_i_V_addr_1, align 8" [cpp/accel/Accel.cpp:825]   --->   Operation 100 'load' 'dmem_i_V_load_1' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 101 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load_1, i64* %dmem_V_addr_1, align 8" [cpp/accel/Accel.cpp:825]   --->   Operation 101 'store' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "br label %4" [cpp/accel/Accel.cpp:825]   --->   Operation 102 'br' <Predicate = (!icmp_ln879 & icmp_ln879_1)> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%zext_ln180_5 = zext i14 %add_ln180 to i64" [cpp/accel/Accel.cpp:822]   --->   Operation 103 'zext' 'zext_ln180_5' <Predicate = (icmp_ln879)> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%dmem_V_addr = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_5" [cpp/accel/Accel.cpp:822]   --->   Operation 104 'getelementptr' 'dmem_V_addr' <Predicate = (icmp_ln879)> <Delay = 0.00>
+ST_3 : Operation 105 [1/2] (2.66ns)   --->   "%dmem_i_V_load = load i64* %dmem_i_V_addr, align 8" [cpp/accel/Accel.cpp:822]   --->   Operation 105 'load' 'dmem_i_V_load' <Predicate = (icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 106 [1/1] (2.66ns)   --->   "store i64 %dmem_i_V_load, i64* %dmem_V_addr, align 8" [cpp/accel/Accel.cpp:822]   --->   Operation 106 'store' <Predicate = (icmp_ln879)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "br label %LOOP_DMEM_I_end" [cpp/accel/Accel.cpp:823]   --->   Operation 107 'br' <Predicate = (icmp_ln879)> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str53, i32 %tmp)" [cpp/accel/Accel.cpp:833]   --->   Operation 108 'specregionend' 'empty_22' <Predicate = (!icmp_ln887)> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "br label %0" [cpp/accel/Accel.cpp:817]   --->   Operation 109 'br' <Predicate = (!icmp_ln887)> <Delay = 0.00>
 
 State 4 <SV = 2> <Delay = 1.06>
-ST_4 : Operation 110 [1/1] (1.06ns)   --->   "br label %.preheader1400" [cpp/accel/Accel.cpp:814]   --->   Operation 110 'br' <Predicate = true> <Delay = 1.06>
+ST_4 : Operation 110 [1/1] (1.06ns)   --->   "br label %.preheader1400" [cpp/accel/Accel.cpp:837]   --->   Operation 110 'br' <Predicate = true> <Delay = 1.06>
 
 State 5 <SV = 3> <Delay = 2.66>
 ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%p_0474_0 = phi i13 [ %i_V, %LOOP_WT_I ], [ 0, %.preheader1400.preheader ]"   --->   Operation 111 'phi' 'p_0474_0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 112 [1/1] (1.39ns)   --->   "%icmp_ln887_1 = icmp eq i13 %p_0474_0, -3510" [cpp/accel/Accel.cpp:814]   --->   Operation 112 'icmp' 'icmp_ln887_1' <Predicate = true> <Delay = 1.39> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 112 [1/1] (1.39ns)   --->   "%icmp_ln887_1 = icmp eq i13 %p_0474_0, -3510" [cpp/accel/Accel.cpp:837]   --->   Operation 112 'icmp' 'icmp_ln887_1' <Predicate = true> <Delay = 1.39> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%empty_23 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4682, i64 4682, i64 4682)"   --->   Operation 113 'speclooptripcount' 'empty_23' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 114 [1/1] (1.45ns)   --->   "%i_V = add i13 %p_0474_0, 1" [cpp/accel/Accel.cpp:814]   --->   Operation 114 'add' 'i_V' <Predicate = true> <Delay = 1.45> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 115 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_1, label %.preheader.preheader, label %LOOP_WT_I" [cpp/accel/Accel.cpp:814]   --->   Operation 115 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%ret_V = trunc i13 %p_0474_0 to i1" [cpp/accel/Accel.cpp:814]   --->   Operation 116 'trunc' 'ret_V' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_5 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%tmp_7 = call i12 @_ssdm_op_PartSelect.i12.i13.i32.i32(i13 %p_0474_0, i32 1, i32 12)" [cpp/accel/Accel.cpp:816]   --->   Operation 117 'partselect' 'tmp_7' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_5 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%zext_ln1372 = zext i12 %tmp_7 to i13" [cpp/accel/Accel.cpp:816]   --->   Operation 118 'zext' 'zext_ln1372' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_5 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%select_ln180 = select i1 %ret_V, i13 2341, i13 0" [cpp/accel/Accel.cpp:816]   --->   Operation 119 'select' 'select_ln180' <Predicate = (!icmp_ln887_1)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 120 [1/1] (1.45ns) (out node of the LUT)   --->   "%add_ln180_1 = add i13 %select_ln180, %zext_ln1372" [cpp/accel/Accel.cpp:816]   --->   Operation 120 'add' 'add_ln180_1' <Predicate = (!icmp_ln887_1)> <Delay = 1.45> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%zext_ln544_1 = zext i13 %p_0474_0 to i64" [cpp/accel/Accel.cpp:816]   --->   Operation 121 'zext' 'zext_ln544_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%wt_i_V_addr = getelementptr [4682 x i64]* %wt_i_V, i64 0, i64 %zext_ln544_1" [cpp/accel/Accel.cpp:816]   --->   Operation 122 'getelementptr' 'wt_i_V_addr' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_5 : Operation 123 [2/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:816]   --->   Operation 123 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_5 : Operation 114 [1/1] (1.45ns)   --->   "%i_V = add i13 %p_0474_0, 1" [cpp/accel/Accel.cpp:837]   --->   Operation 114 'add' 'i_V' <Predicate = true> <Delay = 1.45> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_1, label %.preheader.preheader, label %LOOP_WT_I" [cpp/accel/Accel.cpp:837]   --->   Operation 115 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%ret_V = trunc i13 %p_0474_0 to i1" [cpp/accel/Accel.cpp:837]   --->   Operation 116 'trunc' 'ret_V' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_5 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%tmp_7 = call i12 @_ssdm_op_PartSelect.i12.i13.i32.i32(i13 %p_0474_0, i32 1, i32 12)" [cpp/accel/Accel.cpp:839]   --->   Operation 117 'partselect' 'tmp_7' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_5 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%zext_ln1372 = zext i12 %tmp_7 to i13" [cpp/accel/Accel.cpp:839]   --->   Operation 118 'zext' 'zext_ln1372' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_5 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node add_ln180_1)   --->   "%select_ln180 = select i1 %ret_V, i13 2341, i13 0" [cpp/accel/Accel.cpp:839]   --->   Operation 119 'select' 'select_ln180' <Predicate = (!icmp_ln887_1)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 120 [1/1] (1.45ns) (out node of the LUT)   --->   "%add_ln180_1 = add i13 %select_ln180, %zext_ln1372" [cpp/accel/Accel.cpp:839]   --->   Operation 120 'add' 'add_ln180_1' <Predicate = (!icmp_ln887_1)> <Delay = 1.45> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%zext_ln544_1 = zext i13 %p_0474_0 to i64" [cpp/accel/Accel.cpp:839]   --->   Operation 121 'zext' 'zext_ln544_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%wt_i_V_addr = getelementptr [4682 x i64]* %wt_i_V, i64 0, i64 %zext_ln544_1" [cpp/accel/Accel.cpp:839]   --->   Operation 122 'getelementptr' 'wt_i_V_addr' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_5 : Operation 123 [2/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:839]   --->   Operation 123 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 6 <SV = 4> <Delay = 5.32>
-ST_6 : Operation 124 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str51) nounwind" [cpp/accel/Accel.cpp:814]   --->   Operation 124 'specloopname' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str51)" [cpp/accel/Accel.cpp:814]   --->   Operation 125 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 126 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9) nounwind" [cpp/accel/Accel.cpp:815]   --->   Operation 126 'specpipeline' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln180_6 = zext i13 %add_ln180_1 to i64" [cpp/accel/Accel.cpp:816]   --->   Operation 127 'zext' 'zext_ln180_6' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 128 [1/1] (0.00ns)   --->   "%wt_mem_V_addr = getelementptr [4682 x i64]* @wt_mem_V, i64 0, i64 %zext_ln180_6" [cpp/accel/Accel.cpp:816]   --->   Operation 128 'getelementptr' 'wt_mem_V_addr' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 129 [1/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:816]   --->   Operation 129 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_6 : Operation 130 [1/1] (2.66ns)   --->   "store i64 %wt_i_V_load, i64* %wt_mem_V_addr, align 8" [cpp/accel/Accel.cpp:816]   --->   Operation 130 'store' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_6 : Operation 131 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str51, i32 %tmp_1)" [cpp/accel/Accel.cpp:817]   --->   Operation 131 'specregionend' 'empty_24' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
-ST_6 : Operation 132 [1/1] (0.00ns)   --->   "br label %.preheader1400" [cpp/accel/Accel.cpp:814]   --->   Operation 132 'br' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 124 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str54) nounwind" [cpp/accel/Accel.cpp:837]   --->   Operation 124 'specloopname' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str54)" [cpp/accel/Accel.cpp:837]   --->   Operation 125 'specregionbegin' 'tmp_1' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 126 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9140) nounwind" [cpp/accel/Accel.cpp:838]   --->   Operation 126 'specpipeline' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln180_6 = zext i13 %add_ln180_1 to i64" [cpp/accel/Accel.cpp:839]   --->   Operation 127 'zext' 'zext_ln180_6' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 128 [1/1] (0.00ns)   --->   "%wt_mem_V_addr = getelementptr [4682 x i64]* @wt_mem_V, i64 0, i64 %zext_ln180_6" [cpp/accel/Accel.cpp:839]   --->   Operation 128 'getelementptr' 'wt_mem_V_addr' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 129 [1/2] (2.66ns)   --->   "%wt_i_V_load = load i64* %wt_i_V_addr, align 8" [cpp/accel/Accel.cpp:839]   --->   Operation 129 'load' 'wt_i_V_load' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_6 : Operation 130 [1/1] (2.66ns)   --->   "store i64 %wt_i_V_load, i64* %wt_mem_V_addr, align 8" [cpp/accel/Accel.cpp:839]   --->   Operation 130 'store' <Predicate = (!icmp_ln887_1)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_6 : Operation 131 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str54, i32 %tmp_1)" [cpp/accel/Accel.cpp:840]   --->   Operation 131 'specregionend' 'empty_24' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
+ST_6 : Operation 132 [1/1] (0.00ns)   --->   "br label %.preheader1400" [cpp/accel/Accel.cpp:837]   --->   Operation 132 'br' <Predicate = (!icmp_ln887_1)> <Delay = 0.00>
 
 State 7 <SV = 4> <Delay = 1.06>
-ST_7 : Operation 133 [1/1] (1.06ns)   --->   "br label %.preheader" [cpp/accel/Accel.cpp:821]   --->   Operation 133 'br' <Predicate = true> <Delay = 1.06>
+ST_7 : Operation 133 [1/1] (1.06ns)   --->   "br label %.preheader" [cpp/accel/Accel.cpp:844]   --->   Operation 133 'br' <Predicate = true> <Delay = 1.06>
 
 State 8 <SV = 5> <Delay = 2.66>
 ST_8 : Operation 134 [1/1] (0.00ns)   --->   "%p_0582_0 = phi i7 [ %i_V_1, %LOOP_KH_I ], [ 0, %.preheader.preheader ]"   --->   Operation 134 'phi' 'p_0582_0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 135 [1/1] (1.18ns)   --->   "%icmp_ln887_2 = icmp eq i7 %p_0582_0, -64" [cpp/accel/Accel.cpp:821]   --->   Operation 135 'icmp' 'icmp_ln887_2' <Predicate = true> <Delay = 1.18> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 135 [1/1] (1.18ns)   --->   "%icmp_ln887_2 = icmp eq i7 %p_0582_0, -64" [cpp/accel/Accel.cpp:844]   --->   Operation 135 'icmp' 'icmp_ln887_2' <Predicate = true> <Delay = 1.18> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_8 : Operation 136 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 136 'speclooptripcount' 'empty_25' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 137 [1/1] (1.37ns)   --->   "%i_V_1 = add i7 %p_0582_0, 1" [cpp/accel/Accel.cpp:821]   --->   Operation 137 'add' 'i_V_1' <Predicate = true> <Delay = 1.37> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 138 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_2, label %._crit_edge1418_ifconv, label %LOOP_KH_I" [cpp/accel/Accel.cpp:821]   --->   Operation 138 'br' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 139 [1/1] (0.00ns)   --->   "%zext_ln544_4 = zext i7 %p_0582_0 to i64" [cpp/accel/Accel.cpp:823]   --->   Operation 139 'zext' 'zext_ln544_4' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_8 : Operation 140 [1/1] (0.00ns)   --->   "%kh_i_V_addr = getelementptr [64 x i64]* %kh_i_V, i64 0, i64 %zext_ln544_4" [cpp/accel/Accel.cpp:823]   --->   Operation 140 'getelementptr' 'kh_i_V_addr' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_8 : Operation 141 [2/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_addr, align 8" [cpp/accel/Accel.cpp:823]   --->   Operation 141 'load' 'kh_i_V_load' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_8 : Operation 137 [1/1] (1.37ns)   --->   "%i_V_1 = add i7 %p_0582_0, 1" [cpp/accel/Accel.cpp:844]   --->   Operation 137 'add' 'i_V_1' <Predicate = true> <Delay = 1.37> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 138 [1/1] (0.00ns)   --->   "br i1 %icmp_ln887_2, label %._crit_edge1418_ifconv, label %LOOP_KH_I" [cpp/accel/Accel.cpp:844]   --->   Operation 138 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 139 [1/1] (0.00ns)   --->   "%zext_ln544_4 = zext i7 %p_0582_0 to i64" [cpp/accel/Accel.cpp:846]   --->   Operation 139 'zext' 'zext_ln544_4' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_8 : Operation 140 [1/1] (0.00ns)   --->   "%kh_i_V_addr = getelementptr [64 x i64]* %kh_i_V, i64 0, i64 %zext_ln544_4" [cpp/accel/Accel.cpp:846]   --->   Operation 140 'getelementptr' 'kh_i_V_addr' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_8 : Operation 141 [2/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_addr, align 8" [cpp/accel/Accel.cpp:846]   --->   Operation 141 'load' 'kh_i_V_load' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 9 <SV = 6> <Delay = 5.32>
-ST_9 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str52) nounwind" [cpp/accel/Accel.cpp:821]   --->   Operation 142 'specloopname' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str52)" [cpp/accel/Accel.cpp:821]   --->   Operation 143 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9) nounwind" [cpp/accel/Accel.cpp:822]   --->   Operation 144 'specpipeline' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 145 [1/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_addr, align 8" [cpp/accel/Accel.cpp:823]   --->   Operation 145 'load' 'kh_i_V_load' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_9 : Operation 146 [1/1] (0.00ns)   --->   "%kh_mem_V_addr = getelementptr [64 x i64]* @kh_mem_V, i64 0, i64 %zext_ln544_4" [cpp/accel/Accel.cpp:823]   --->   Operation 146 'getelementptr' 'kh_mem_V_addr' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 147 [1/1] (2.66ns)   --->   "store i64 %kh_i_V_load, i64* %kh_mem_V_addr, align 8" [cpp/accel/Accel.cpp:823]   --->   Operation 147 'store' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_9 : Operation 148 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str52, i32 %tmp_2)" [cpp/accel/Accel.cpp:824]   --->   Operation 148 'specregionend' 'empty_26' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
-ST_9 : Operation 149 [1/1] (0.00ns)   --->   "br label %.preheader" [cpp/accel/Accel.cpp:821]   --->   Operation 149 'br' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str55) nounwind" [cpp/accel/Accel.cpp:844]   --->   Operation 142 'specloopname' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str55)" [cpp/accel/Accel.cpp:844]   --->   Operation 143 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str9140) nounwind" [cpp/accel/Accel.cpp:845]   --->   Operation 144 'specpipeline' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 145 [1/2] (2.66ns)   --->   "%kh_i_V_load = load i64* %kh_i_V_addr, align 8" [cpp/accel/Accel.cpp:846]   --->   Operation 145 'load' 'kh_i_V_load' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_9 : Operation 146 [1/1] (0.00ns)   --->   "%kh_mem_V_addr = getelementptr [64 x i64]* @kh_mem_V, i64 0, i64 %zext_ln544_4" [cpp/accel/Accel.cpp:846]   --->   Operation 146 'getelementptr' 'kh_mem_V_addr' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 147 [1/1] (2.66ns)   --->   "store i64 %kh_i_V_load, i64* %kh_mem_V_addr, align 8" [cpp/accel/Accel.cpp:846]   --->   Operation 147 'store' <Predicate = (!icmp_ln887_2)> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_9 : Operation 148 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str55, i32 %tmp_2)" [cpp/accel/Accel.cpp:847]   --->   Operation 148 'specregionend' 'empty_26' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
+ST_9 : Operation 149 [1/1] (0.00ns)   --->   "br label %.preheader" [cpp/accel/Accel.cpp:844]   --->   Operation 149 'br' <Predicate = (!icmp_ln887_2)> <Delay = 0.00>
 
 State 10 <SV = 6> <Delay = 2.66>
-ST_10 : Operation 150 [2/2] (2.66ns)   --->   "%kh_word_V = load i64* getelementptr inbounds ([64 x i64]* @kh_mem_V, i64 0, i64 0), align 16" [cpp/accel/Accel.h:79->cpp/accel/Accel.cpp:852]   --->   Operation 150 'load' 'kh_word_V' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_10 : Operation 150 [2/2] (2.66ns)   --->   "%kh_word_V = load i64* getelementptr inbounds ([64 x i64]* @kh_mem_V, i64 0, i64 0), align 16" [cpp/accel/Accel.h:79->cpp/accel/Accel.cpp:875]   --->   Operation 150 'load' 'kh_word_V' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 11 <SV = 7> <Delay = 8.19>
-ST_11 : Operation 151 [1/2] (2.66ns)   --->   "%kh_word_V = load i64* getelementptr inbounds ([64 x i64]* @kh_mem_V, i64 0, i64 0), align 16" [cpp/accel/Accel.h:79->cpp/accel/Accel.cpp:852]   --->   Operation 151 'load' 'kh_word_V' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_11 : Operation 152 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%xor_ln879 = xor i1 %trunc_ln859, true" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:852]   --->   Operation 152 'xor' 'xor_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 153 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%or_ln879 = or i1 %trunc_ln792, %xor_ln879" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:852]   --->   Operation 153 'or' 'or_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V = trunc i64 %kh_word_V to i16" [cpp/accel/Accel.h:82->cpp/accel/Accel.cpp:852]   --->   Operation 154 'trunc' 'tmp_V' <Predicate = (!t_V)> <Delay = 0.00>
-ST_11 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V_1 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %kh_word_V, i32 16, i32 31)" [cpp/accel/Accel.h:84->cpp/accel/Accel.cpp:852]   --->   Operation 155 'partselect' 'tmp_V_1' <Predicate = (t_V)> <Delay = 0.00>
-ST_11 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V_2 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %kh_word_V, i32 48, i32 63)" [cpp/accel/Accel.h:88->cpp/accel/Accel.cpp:852]   --->   Operation 156 'partselect' 'tmp_V_2' <Predicate = (!t_V)> <Delay = 0.00>
-ST_11 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%select_ln879 = select i1 %or_ln879, i16 %tmp_V, i16 %tmp_V_2" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:852]   --->   Operation 157 'select' 'select_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 158 [1/1] (0.61ns) (out node of the LUT)   --->   "%nc_V = select i1 %t_V, i16 %tmp_V_1, i16 %select_ln879" [cpp/accel/Accel.h:83->cpp/accel/Accel.cpp:852]   --->   Operation 158 'select' 'nc_V' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 159 [2/2] (4.91ns)   --->   "call fastcc void @bin_conv([4682 x i64]* @wt_mem_V, i16 %nc_V, [4096 x i64]* @dmem_V, i1 %dmem_mode_V_read, i1 %r_V_2, i16 %t_V_1, i2 %width_mode_V_read, i2 %norm_mode_V_read)" [cpp/accel/Accel.cpp:861]   --->   Operation 159 'call' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_11 : Operation 160 [1/1] (0.62ns)   --->   "%select_ln700 = select i1 %t_V, i2 -2, i2 1" [cpp/accel/Accel.cpp:866]   --->   Operation 160 'select' 'select_ln700' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_11 : Operation 161 [1/1] (1.48ns)   --->   "%add_ln700 = add i16 1, %t_V_1" [cpp/accel/Accel.cpp:867]   --->   Operation 161 'add' 'add_ln700' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_11 : Operation 162 [1/1] (0.00ns)   --->   "store i16 %add_ln700, i16* @o_index_V, align 2" [cpp/accel/Accel.cpp:782]   --->   Operation 162 'store' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 163 [1/1] (0.00ns)   --->   "store i2 %select_ln700, i2* @kh_index_V, align 1" [cpp/accel/Accel.cpp:781]   --->   Operation 163 'store' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 151 [1/2] (2.66ns)   --->   "%kh_word_V = load i64* getelementptr inbounds ([64 x i64]* @kh_mem_V, i64 0, i64 0), align 16" [cpp/accel/Accel.h:79->cpp/accel/Accel.cpp:875]   --->   Operation 151 'load' 'kh_word_V' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_11 : Operation 152 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%xor_ln879 = xor i1 %trunc_ln882, true" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:875]   --->   Operation 152 'xor' 'xor_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 153 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%or_ln879 = or i1 %trunc_ln792, %xor_ln879" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:875]   --->   Operation 153 'or' 'or_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.61> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V = trunc i64 %kh_word_V to i16" [cpp/accel/Accel.h:82->cpp/accel/Accel.cpp:875]   --->   Operation 154 'trunc' 'tmp_V' <Predicate = (!t_V)> <Delay = 0.00>
+ST_11 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V_1 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %kh_word_V, i32 16, i32 31)" [cpp/accel/Accel.h:84->cpp/accel/Accel.cpp:875]   --->   Operation 155 'partselect' 'tmp_V_1' <Predicate = (t_V)> <Delay = 0.00>
+ST_11 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%tmp_V_2 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %kh_word_V, i32 48, i32 63)" [cpp/accel/Accel.h:88->cpp/accel/Accel.cpp:875]   --->   Operation 156 'partselect' 'tmp_V_2' <Predicate = (!t_V)> <Delay = 0.00>
+ST_11 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node nc_V)   --->   "%select_ln879 = select i1 %or_ln879, i16 %tmp_V, i16 %tmp_V_2" [cpp/accel/Accel.h:81->cpp/accel/Accel.cpp:875]   --->   Operation 157 'select' 'select_ln879' <Predicate = (!t_V)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 158 [1/1] (0.61ns) (out node of the LUT)   --->   "%nc_V = select i1 %t_V, i16 %tmp_V_1, i16 %select_ln879" [cpp/accel/Accel.h:83->cpp/accel/Accel.cpp:875]   --->   Operation 158 'select' 'nc_V' <Predicate = true> <Delay = 0.61> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 159 [2/2] (4.91ns)   --->   "call fastcc void @bin_conv([4682 x i64]* @wt_mem_V, i16 %nc_V, [4096 x i64]* @dmem_V, i1 %dmem_mode_V_read, i1 %r_V_2, i16 %t_V_1, i2 %width_mode_V_read, i2 %norm_mode_V_read)" [cpp/accel/Accel.cpp:884]   --->   Operation 159 'call' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 160 [1/1] (0.62ns)   --->   "%select_ln700 = select i1 %t_V, i2 -2, i2 1" [cpp/accel/Accel.cpp:889]   --->   Operation 160 'select' 'select_ln700' <Predicate = true> <Delay = 0.62> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.62> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 161 [1/1] (1.48ns)   --->   "%add_ln700 = add i16 1, %t_V_1" [cpp/accel/Accel.cpp:890]   --->   Operation 161 'add' 'add_ln700' <Predicate = true> <Delay = 1.48> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 162 [1/1] (0.00ns)   --->   "store i16 %add_ln700, i16* @o_index_V, align 2" [cpp/accel/Accel.cpp:805]   --->   Operation 162 'store' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 163 [1/1] (0.00ns)   --->   "store i2 %select_ln700, i2* @kh_index_V, align 1" [cpp/accel/Accel.cpp:804]   --->   Operation 163 'store' <Predicate = true> <Delay = 0.00>
 
 State 12 <SV = 8> <Delay = 0.00>
-ST_12 : Operation 164 [1/2] (0.00ns)   --->   "call fastcc void @bin_conv([4682 x i64]* @wt_mem_V, i16 %nc_V, [4096 x i64]* @dmem_V, i1 %dmem_mode_V_read, i1 %r_V_2, i16 %t_V_1, i2 %width_mode_V_read, i2 %norm_mode_V_read)" [cpp/accel/Accel.cpp:861]   --->   Operation 164 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 164 [1/2] (0.00ns)   --->   "call fastcc void @bin_conv([4682 x i64]* @wt_mem_V, i16 %nc_V, [4096 x i64]* @dmem_V, i1 %dmem_mode_V_read, i1 %r_V_2, i16 %t_V_1, i2 %width_mode_V_read, i2 %norm_mode_V_read)" [cpp/accel/Accel.cpp:884]   --->   Operation 164 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 13 <SV = 9> <Delay = 2.66>
-ST_13 : Operation 165 [1/1] (0.00ns)   --->   "%tmp_6 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i11(i1 %r_V_2, i11 0)" [cpp/accel/Accel.cpp:898]   --->   Operation 165 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 166 [1/1] (0.00ns)   --->   "%zext_ln180_3 = zext i12 %tmp_6 to i64" [cpp/accel/Accel.cpp:898]   --->   Operation 166 'zext' 'zext_ln180_3' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 167 [1/1] (0.00ns)   --->   "%dmem_V_addr_3 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_3" [cpp/accel/Accel.cpp:898]   --->   Operation 167 'getelementptr' 'dmem_V_addr_3' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 168 [2/2] (2.66ns)   --->   "%dmem_V_load = load i64* %dmem_V_addr_3, align 16" [cpp/accel/Accel.cpp:898]   --->   Operation 168 'load' 'dmem_V_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_13 : Operation 165 [1/1] (0.00ns)   --->   "%tmp_6 = call i12 @_ssdm_op_BitConcatenate.i12.i1.i11(i1 %r_V_2, i11 0)" [cpp/accel/Accel.cpp:921]   --->   Operation 165 'bitconcatenate' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 166 [1/1] (0.00ns)   --->   "%zext_ln180_3 = zext i12 %tmp_6 to i64" [cpp/accel/Accel.cpp:921]   --->   Operation 166 'zext' 'zext_ln180_3' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 167 [1/1] (0.00ns)   --->   "%dmem_V_addr_3 = getelementptr [4096 x i64]* @dmem_V, i64 0, i64 %zext_ln180_3" [cpp/accel/Accel.cpp:921]   --->   Operation 167 'getelementptr' 'dmem_V_addr_3' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 168 [2/2] (2.66ns)   --->   "%dmem_V_load = load i64* %dmem_V_addr_3, align 16" [cpp/accel/Accel.cpp:921]   --->   Operation 168 'load' 'dmem_V_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
 
 State 14 <SV = 10> <Delay = 5.32>
-ST_14 : Operation 169 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str55) nounwind" [cpp/accel/Accel.cpp:848]   --->   Operation 169 'specloopname' <Predicate = true> <Delay = 0.00>
-ST_14 : Operation 170 [1/2] (2.66ns)   --->   "%dmem_V_load = load i64* %dmem_V_addr_3, align 16" [cpp/accel/Accel.cpp:898]   --->   Operation 170 'load' 'dmem_V_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_14 : Operation 171 [1/1] (2.66ns)   --->   "store i64 %dmem_V_load, i64* %dmem_o_V_addr, align 8" [cpp/accel/Accel.cpp:895]   --->   Operation 171 'store' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
-ST_14 : Operation 172 [1/1] (0.00ns)   --->   "ret void" [cpp/accel/Accel.cpp:905]   --->   Operation 172 'ret' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 169 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str58) nounwind" [cpp/accel/Accel.cpp:871]   --->   Operation 169 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 170 [1/2] (2.66ns)   --->   "%dmem_V_load = load i64* %dmem_V_addr_3, align 16" [cpp/accel/Accel.cpp:921]   --->   Operation 170 'load' 'dmem_V_load' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_14 : Operation 171 [1/1] (2.66ns)   --->   "store i64 %dmem_V_load, i64* %dmem_o_V_addr, align 8" [cpp/accel/Accel.cpp:918]   --->   Operation 171 'store' <Predicate = true> <Delay = 2.66> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 64> <RAM>
+ST_14 : Operation 172 [1/1] (0.00ns)   --->   "ret void" [cpp/accel/Accel.cpp:928]   --->   Operation 172 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -351,31 +351,31 @@ layer_type_V       (partselect       ) [ 000000000000000]
 trunc_ln792        (trunc            ) [ 001111111111000]
 p_Result_s         (xor              ) [ 000000000000000]
 kh_index_V_load    (load             ) [ 000000000000000]
-trunc_ln859        (trunc            ) [ 001111111111000]
+trunc_ln882        (trunc            ) [ 001111111111000]
 o_index_V_load     (load             ) [ 000000000000000]
 t_V                (and              ) [ 001111111111000]
 t_V_1              (select           ) [ 001111111111100]
 r_V_2              (xor              ) [ 001111111111110]
 shl_ln             (bitconcatenate   ) [ 000000000000000]
-zext_ln791         (zext             ) [ 001100000000000]
-zext_ln791_1       (zext             ) [ 000000000000000]
+zext_ln814         (zext             ) [ 001100000000000]
+zext_ln814_1       (zext             ) [ 000000000000000]
 words_per_image_V  (shl              ) [ 000000000000000]
 icmp_ln879         (icmp             ) [ 001100000000000]
 zext_ln879         (zext             ) [ 001100000000000]
 icmp_ln879_1       (icmp             ) [ 001100000000000]
-br_ln794           (br               ) [ 011100000000000]
+br_ln817           (br               ) [ 011100000000000]
 p_0730_0           (phi              ) [ 001000000000000]
 p_0886_0           (phi              ) [ 001000000000000]
 p_0214_0           (phi              ) [ 001000000000000]
 icmp_ln887         (icmp             ) [ 001100000000000]
 empty              (speclooptripcount) [ 000000000000000]
 i_V_2              (add              ) [ 011100000000000]
-br_ln794           (br               ) [ 000000000000000]
+br_ln817           (br               ) [ 000000000000000]
 ret_V_7            (trunc            ) [ 000000000000000]
 ret_V_5            (trunc            ) [ 001100000000000]
 ret_V_3            (trunc            ) [ 001100000000000]
-br_ln796           (br               ) [ 000000000000000]
-br_ln801           (br               ) [ 000000000000000]
+br_ln819           (br               ) [ 000000000000000]
+br_ln824           (br               ) [ 000000000000000]
 ret_V_6            (partselect       ) [ 001100000000000]
 zext_ln544_3       (zext             ) [ 000000000000000]
 dmem_i_V_addr_2    (getelementptr    ) [ 001100000000000]
@@ -396,37 +396,37 @@ dmem_i_V_addr      (getelementptr    ) [ 001100000000000]
 img_off_V          (add              ) [ 000000000000000]
 icmp_ln879_2       (icmp             ) [ 000000000000000]
 img_idx_V          (add              ) [ 000000000000000]
-select_ln806       (select           ) [ 011100000000000]
-select_ln806_1     (select           ) [ 011100000000000]
-specloopname_ln794 (specloopname     ) [ 000000000000000]
+select_ln829       (select           ) [ 011100000000000]
+select_ln829_1     (select           ) [ 011100000000000]
+specloopname_ln817 (specloopname     ) [ 000000000000000]
 tmp                (specregionbegin  ) [ 000000000000000]
-specpipeline_ln795 (specpipeline     ) [ 000000000000000]
+specpipeline_ln818 (specpipeline     ) [ 000000000000000]
 ret_V_4            (zext             ) [ 000000000000000]
 tmp_5              (bitconcatenate   ) [ 000000000000000]
 zext_ln180_2       (zext             ) [ 000000000000000]
 dmem_V_addr_2      (getelementptr    ) [ 000000000000000]
 dmem_i_V_load_2    (load             ) [ 000000000000000]
-store_ln804        (store            ) [ 000000000000000]
+store_ln827        (store            ) [ 000000000000000]
 br_ln0             (br               ) [ 000000000000000]
 tmp_4              (bitconcatenate   ) [ 000000000000000]
 zext_ln180_1       (zext             ) [ 000000000000000]
 dmem_V_addr_1      (getelementptr    ) [ 000000000000000]
 dmem_i_V_load_1    (load             ) [ 000000000000000]
-store_ln802        (store            ) [ 000000000000000]
-br_ln802           (br               ) [ 000000000000000]
+store_ln825        (store            ) [ 000000000000000]
+br_ln825           (br               ) [ 000000000000000]
 zext_ln180_5       (zext             ) [ 000000000000000]
 dmem_V_addr        (getelementptr    ) [ 000000000000000]
 dmem_i_V_load      (load             ) [ 000000000000000]
-store_ln799        (store            ) [ 000000000000000]
-br_ln800           (br               ) [ 000000000000000]
+store_ln822        (store            ) [ 000000000000000]
+br_ln823           (br               ) [ 000000000000000]
 empty_22           (specregionend    ) [ 000000000000000]
-br_ln794           (br               ) [ 011100000000000]
-br_ln814           (br               ) [ 000011100000000]
+br_ln817           (br               ) [ 011100000000000]
+br_ln837           (br               ) [ 000011100000000]
 p_0474_0           (phi              ) [ 000001000000000]
 icmp_ln887_1       (icmp             ) [ 000001100000000]
 empty_23           (speclooptripcount) [ 000000000000000]
 i_V                (add              ) [ 000011100000000]
-br_ln814           (br               ) [ 000000000000000]
+br_ln837           (br               ) [ 000000000000000]
 ret_V              (trunc            ) [ 000000000000000]
 tmp_7              (partselect       ) [ 000000000000000]
 zext_ln1372        (zext             ) [ 000000000000000]
@@ -434,31 +434,31 @@ select_ln180       (select           ) [ 000000000000000]
 add_ln180_1        (add              ) [ 000001100000000]
 zext_ln544_1       (zext             ) [ 000000000000000]
 wt_i_V_addr        (getelementptr    ) [ 000001100000000]
-specloopname_ln814 (specloopname     ) [ 000000000000000]
+specloopname_ln837 (specloopname     ) [ 000000000000000]
 tmp_1              (specregionbegin  ) [ 000000000000000]
-specpipeline_ln815 (specpipeline     ) [ 000000000000000]
+specpipeline_ln838 (specpipeline     ) [ 000000000000000]
 zext_ln180_6       (zext             ) [ 000000000000000]
 wt_mem_V_addr      (getelementptr    ) [ 000000000000000]
 wt_i_V_load        (load             ) [ 000000000000000]
-store_ln816        (store            ) [ 000000000000000]
+store_ln839        (store            ) [ 000000000000000]
 empty_24           (specregionend    ) [ 000000000000000]
-br_ln814           (br               ) [ 000011100000000]
-br_ln821           (br               ) [ 000000011100000]
+br_ln837           (br               ) [ 000011100000000]
+br_ln844           (br               ) [ 000000011100000]
 p_0582_0           (phi              ) [ 000000001000000]
 icmp_ln887_2       (icmp             ) [ 000000001100000]
 empty_25           (speclooptripcount) [ 000000000000000]
 i_V_1              (add              ) [ 000000011100000]
-br_ln821           (br               ) [ 000000000000000]
+br_ln844           (br               ) [ 000000000000000]
 zext_ln544_4       (zext             ) [ 000000001100000]
 kh_i_V_addr        (getelementptr    ) [ 000000001100000]
-specloopname_ln821 (specloopname     ) [ 000000000000000]
+specloopname_ln844 (specloopname     ) [ 000000000000000]
 tmp_2              (specregionbegin  ) [ 000000000000000]
-specpipeline_ln822 (specpipeline     ) [ 000000000000000]
+specpipeline_ln845 (specpipeline     ) [ 000000000000000]
 kh_i_V_load        (load             ) [ 000000000000000]
 kh_mem_V_addr      (getelementptr    ) [ 000000000000000]
-store_ln823        (store            ) [ 000000000000000]
+store_ln846        (store            ) [ 000000000000000]
 empty_26           (specregionend    ) [ 000000000000000]
-br_ln821           (br               ) [ 000000011100000]
+br_ln844           (br               ) [ 000000011100000]
 kh_word_V          (load             ) [ 000000000000000]
 xor_ln879          (xor              ) [ 000000000000000]
 or_ln879           (or               ) [ 000000000000000]
@@ -469,16 +469,16 @@ select_ln879       (select           ) [ 000000000000000]
 nc_V               (select           ) [ 000000000000100]
 select_ln700       (select           ) [ 000000000000000]
 add_ln700          (add              ) [ 000000000000000]
-store_ln782        (store            ) [ 000000000000000]
-store_ln781        (store            ) [ 000000000000000]
-call_ln861         (call             ) [ 000000000000000]
+store_ln805        (store            ) [ 000000000000000]
+store_ln804        (store            ) [ 000000000000000]
+call_ln884         (call             ) [ 000000000000000]
 tmp_6              (bitconcatenate   ) [ 000000000000000]
 zext_ln180_3       (zext             ) [ 000000000000000]
 dmem_V_addr_3      (getelementptr    ) [ 000000000000001]
-specloopname_ln848 (specloopname     ) [ 000000000000000]
+specloopname_ln871 (specloopname     ) [ 000000000000000]
 dmem_V_load        (load             ) [ 000000000000000]
-store_ln895        (store            ) [ 000000000000000]
-ret_ln905          (ret              ) [ 000000000000000]
+store_ln918        (store            ) [ 000000000000000]
+ret_ln928          (ret              ) [ 000000000000000]
 </LifeTime>
 
 <model>
@@ -937,7 +937,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 <pin id="99" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str50"/></StgValue>
+<StgValue><ssdm name="p_str53"/></StgValue>
 </bind>
 </comp>
 
@@ -973,7 +973,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 <pin id="107" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str9"/></StgValue>
+<StgValue><ssdm name="p_str9140"/></StgValue>
 </bind>
 </comp>
 
@@ -1090,7 +1090,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 <pin id="133" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str51"/></StgValue>
+<StgValue><ssdm name="p_str54"/></StgValue>
 </bind>
 </comp>
 
@@ -1099,7 +1099,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 <pin id="135" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str52"/></StgValue>
+<StgValue><ssdm name="p_str55"/></StgValue>
 </bind>
 </comp>
 
@@ -1198,7 +1198,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 <pin id="157" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str55"/></StgValue>
+<StgValue><ssdm name="p_str58"/></StgValue>
 </bind>
 </comp>
 
@@ -1337,7 +1337,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln804/3 store_ln802/3 store_ln799/3 dmem_V_load/13 "/>
+<opset="store_ln827/3 store_ln825/3 store_ln822/3 dmem_V_load/13 "/>
 </bind>
 </comp>
 
@@ -1406,7 +1406,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="269" class="1004" name="store_ln816_access_fu_269">
+<comp id="269" class="1004" name="store_ln839_access_fu_269">
 <pin_list>
 <pin id="270" dir="0" index="0" bw="13" slack="0"/>
 <pin id="271" dir="0" index="1" bw="64" slack="0"/>
@@ -1415,7 +1415,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln816/6 "/>
+<opset="store_ln839/6 "/>
 </bind>
 </comp>
 
@@ -1467,7 +1467,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln823/9 kh_word_V/10 "/>
+<opset="store_ln846/9 kh_word_V/10 "/>
 </bind>
 </comp>
 
@@ -1484,7 +1484,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="312" class="1004" name="store_ln895_access_fu_312">
+<comp id="312" class="1004" name="store_ln918_access_fu_312">
 <pin_list>
 <pin id="313" dir="0" index="0" bw="7" slack="10"/>
 <pin id="314" dir="0" index="1" bw="64" slack="0"/>
@@ -1493,7 +1493,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln895/14 "/>
+<opset="store_ln918/14 "/>
 </bind>
 </comp>
 
@@ -1633,7 +1633,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln861/11 "/>
+<opset="call_ln884/11 "/>
 </bind>
 </comp>
 
@@ -1685,14 +1685,14 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="413" class="1004" name="trunc_ln859_fu_413">
+<comp id="413" class="1004" name="trunc_ln882_fu_413">
 <pin_list>
 <pin id="414" dir="0" index="0" bw="2" slack="0"/>
 <pin id="415" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln859/1 "/>
+<opset="trunc_ln882/1 "/>
 </bind>
 </comp>
 
@@ -1757,25 +1757,25 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="449" class="1004" name="zext_ln791_fu_449">
+<comp id="449" class="1004" name="zext_ln814_fu_449">
 <pin_list>
 <pin id="450" dir="0" index="0" bw="3" slack="0"/>
 <pin id="451" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln791/1 "/>
+<opset="zext_ln814/1 "/>
 </bind>
 </comp>
 
-<comp id="453" class="1004" name="zext_ln791_1_fu_453">
+<comp id="453" class="1004" name="zext_ln814_1_fu_453">
 <pin_list>
 <pin id="454" dir="0" index="0" bw="3" slack="0"/>
 <pin id="455" dir="1" index="1" bw="5" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln791_1/1 "/>
+<opset="zext_ln814_1/1 "/>
 </bind>
 </comp>
 
@@ -2074,7 +2074,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="597" class="1004" name="select_ln806_fu_597">
+<comp id="597" class="1004" name="select_ln829_fu_597">
 <pin_list>
 <pin id="598" dir="0" index="0" bw="1" slack="0"/>
 <pin id="599" dir="0" index="1" bw="16" slack="0"/>
@@ -2083,11 +2083,11 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln806/2 "/>
+<opset="select_ln829/2 "/>
 </bind>
 </comp>
 
-<comp id="605" class="1004" name="select_ln806_1_fu_605">
+<comp id="605" class="1004" name="select_ln829_1_fu_605">
 <pin_list>
 <pin id="606" dir="0" index="0" bw="1" slack="0"/>
 <pin id="607" dir="0" index="1" bw="1" slack="0"/>
@@ -2096,7 +2096,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln806_1/2 "/>
+<opset="select_ln829_1/2 "/>
 </bind>
 </comp>
 
@@ -2429,7 +2429,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="780" class="1004" name="store_ln782_store_fu_780">
+<comp id="780" class="1004" name="store_ln805_store_fu_780">
 <pin_list>
 <pin id="781" dir="0" index="0" bw="16" slack="0"/>
 <pin id="782" dir="0" index="1" bw="16" slack="0"/>
@@ -2437,11 +2437,11 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln782/11 "/>
+<opset="store_ln805/11 "/>
 </bind>
 </comp>
 
-<comp id="786" class="1004" name="store_ln781_store_fu_786">
+<comp id="786" class="1004" name="store_ln804_store_fu_786">
 <pin_list>
 <pin id="787" dir="0" index="0" bw="2" slack="0"/>
 <pin id="788" dir="0" index="1" bw="2" slack="0"/>
@@ -2449,7 +2449,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln781/11 "/>
+<opset="store_ln804/11 "/>
 </bind>
 </comp>
 
@@ -2527,13 +2527,13 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="832" class="1005" name="trunc_ln859_reg_832">
+<comp id="832" class="1005" name="trunc_ln882_reg_832">
 <pin_list>
 <pin id="833" dir="0" index="0" bw="1" slack="7"/>
 <pin id="834" dir="1" index="1" bw="1" slack="7"/>
 </pin_list>
 <bind>
-<opset="trunc_ln859 "/>
+<opset="trunc_ln882 "/>
 </bind>
 </comp>
 
@@ -2567,13 +2567,13 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="855" class="1005" name="zext_ln791_reg_855">
+<comp id="855" class="1005" name="zext_ln814_reg_855">
 <pin_list>
 <pin id="856" dir="0" index="0" bw="16" slack="1"/>
 <pin id="857" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln791 "/>
+<opset="zext_ln814 "/>
 </bind>
 </comp>
 
@@ -2697,23 +2697,23 @@ ret_ln905          (ret              ) [ 000000000000000]
 </bind>
 </comp>
 
-<comp id="917" class="1005" name="select_ln806_reg_917">
+<comp id="917" class="1005" name="select_ln829_reg_917">
 <pin_list>
 <pin id="918" dir="0" index="0" bw="16" slack="0"/>
 <pin id="919" dir="1" index="1" bw="16" slack="0"/>
 </pin_list>
 <bind>
-<opset="select_ln806 "/>
+<opset="select_ln829 "/>
 </bind>
 </comp>
 
-<comp id="922" class="1005" name="select_ln806_1_reg_922">
+<comp id="922" class="1005" name="select_ln829_1_reg_922">
 <pin_list>
 <pin id="923" dir="0" index="0" bw="10" slack="0"/>
 <pin id="924" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
-<opset="select_ln806_1 "/>
+<opset="select_ln829_1 "/>
 </bind>
 </comp>
 
@@ -3385,11 +3385,11 @@ ret_ln905          (ret              ) [ 000000000000000]
   - Chain level:
 	State 1
 		p_Result_s : 1
-		trunc_ln859 : 1
+		trunc_ln882 : 1
 		t_V : 1
 		t_V_1 : 1
-		zext_ln791 : 1
-		zext_ln791_1 : 1
+		zext_ln814 : 1
+		zext_ln814_1 : 1
 		words_per_image_V : 2
 		icmp_ln879 : 1
 		zext_ln879 : 3
@@ -3397,7 +3397,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 	State 2
 		icmp_ln887 : 1
 		i_V_2 : 1
-		br_ln794 : 2
+		br_ln817 : 2
 		ret_V_7 : 1
 		ret_V_5 : 1
 		ret_V_3 : 1
@@ -3423,24 +3423,24 @@ ret_ln905          (ret              ) [ 000000000000000]
 		img_off_V : 1
 		icmp_ln879_2 : 2
 		img_idx_V : 1
-		select_ln806 : 3
-		select_ln806_1 : 3
+		select_ln829 : 3
+		select_ln829_1 : 3
 	State 3
 		tmp_5 : 1
 		zext_ln180_2 : 2
 		dmem_V_addr_2 : 3
-		store_ln804 : 4
+		store_ln827 : 4
 		zext_ln180_1 : 1
 		dmem_V_addr_1 : 2
-		store_ln802 : 3
+		store_ln825 : 3
 		dmem_V_addr : 1
-		store_ln799 : 2
+		store_ln822 : 2
 		empty_22 : 1
 	State 4
 	State 5
 		icmp_ln887_1 : 1
 		i_V : 1
-		br_ln814 : 2
+		br_ln837 : 2
 		ret_V : 1
 		tmp_7 : 1
 		zext_ln1372 : 2
@@ -3451,18 +3451,18 @@ ret_ln905          (ret              ) [ 000000000000000]
 		wt_i_V_load : 3
 	State 6
 		wt_mem_V_addr : 1
-		store_ln816 : 2
+		store_ln839 : 2
 		empty_24 : 1
 	State 7
 	State 8
 		icmp_ln887_2 : 1
 		i_V_1 : 1
-		br_ln821 : 2
+		br_ln844 : 2
 		zext_ln544_4 : 1
 		kh_i_V_addr : 2
 		kh_i_V_load : 3
 	State 9
-		store_ln823 : 1
+		store_ln846 : 1
 		empty_26 : 1
 	State 10
 	State 11
@@ -3470,16 +3470,16 @@ ret_ln905          (ret              ) [ 000000000000000]
 		tmp_V_1 : 1
 		tmp_V_2 : 1
 		nc_V : 1
-		call_ln861 : 2
-		store_ln782 : 1
-		store_ln781 : 1
+		call_ln884 : 2
+		store_ln805 : 1
+		store_ln804 : 1
 	State 12
 	State 13
 		zext_ln180_3 : 1
 		dmem_V_addr_3 : 2
 		dmem_V_load : 3
 	State 14
-		store_ln895 : 1
+		store_ln918 : 1
 
 
 ============================================================
@@ -3490,7 +3490,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|        Functional Unit        |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
-|   call   |      grp_bin_conv_fu_373      |    2    |    1    | 425.172 |  16670  |  28626  |    0    |
+|   call   |      grp_bin_conv_fu_373      |    4    |    1    | 234.159 |  21860  |  33100  |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
 |          |          i_V_2_fu_485         |    0    |    0    |    0    |    0    |    15   |    0    |
 |          |       add_ln180_2_fu_550      |    0    |    0    |    0    |    0    |    14   |    0    |
@@ -3503,8 +3503,8 @@ ret_ln905          (ret              ) [ 000000000000000]
 |          |        add_ln700_fu_775       |    0    |    0    |    0    |    0    |    23   |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
 |          |          t_V_1_fu_427         |    0    |    0    |    0    |    0    |    16   |    0    |
-|          |      select_ln806_fu_597      |    0    |    0    |    0    |    0    |    16   |    0    |
-|          |     select_ln806_1_fu_605     |    0    |    0    |    0    |    0    |    10   |    0    |
+|          |      select_ln829_fu_597      |    0    |    0    |    0    |    0    |    16   |    0    |
+|          |     select_ln829_1_fu_605     |    0    |    0    |    0    |    0    |    10   |    0    |
 |  select  |      select_ln180_fu_678      |    0    |    0    |    0    |    0    |    13   |    0    |
 |          |      select_ln879_fu_752      |    0    |    0    |    0    |    0    |    16   |    0    |
 |          |          nc_V_fu_760          |    0    |    0    |    0    |    0    |    16   |    0    |
@@ -3541,7 +3541,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 |          |         tmp_V_2_fu_742        |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
 |          |       trunc_ln792_fu_399      |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |       trunc_ln859_fu_413      |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |       trunc_ln882_fu_413      |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         ret_V_7_fu_491        |    0    |    0    |    0    |    0    |    0    |    0    |
 |   trunc  |         ret_V_5_fu_495        |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |         ret_V_3_fu_499        |    0    |    0    |    0    |    0    |    0    |    0    |
@@ -3555,8 +3555,8 @@ ret_ln905          (ret              ) [ 000000000000000]
 |          |          tmp_4_fu_631         |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |          tmp_6_fu_792         |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
-|          |       zext_ln791_fu_449       |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |      zext_ln791_1_fu_453      |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |       zext_ln814_fu_449       |    0    |    0    |    0    |    0    |    0    |    0    |
+|          |      zext_ln814_1_fu_453      |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |       zext_ln879_fu_469       |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |      zext_ln544_3_fu_513      |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |      zext_ln544_2_fu_518      |    0    |    0    |    0    |    0    |    0    |    0    |
@@ -3574,7 +3574,7 @@ ret_ln905          (ret              ) [ 000000000000000]
 |          |      zext_ln544_4_fu_713      |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |      zext_ln180_3_fu_799      |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                               |    2    |    1    | 425.172 |  16670  |  29013  |    0    |
+|   Total  |                               |    4    |    1    | 234.159 |  21860  |  33487  |    0    |
 |----------|-------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -3620,16 +3620,16 @@ Memories:
 |     ret_V_3_reg_887     |    6   |
 |     ret_V_5_reg_882     |    1   |
 |     ret_V_6_reg_892     |    6   |
-|  select_ln806_1_reg_922 |   10   |
-|   select_ln806_reg_917  |   16   |
+|  select_ln829_1_reg_922 |   10   |
+|   select_ln829_reg_917  |   16   |
 |      t_V_1_reg_843      |   16   |
 |       t_V_reg_837       |    1   |
 |   trunc_ln792_reg_827   |    1   |
-|   trunc_ln859_reg_832   |    1   |
+|   trunc_ln882_reg_832   |    1   |
 |width_mode_V_read_reg_809|    2   |
 |   wt_i_V_addr_reg_941   |   13   |
 |   zext_ln544_4_reg_955  |   64   |
-|    zext_ln791_reg_855   |   16   |
+|    zext_ln814_reg_855   |   16   |
 |    zext_ln879_reg_864   |   10   |
 +-------------------------+--------+
 |          Total          |   353  |
@@ -3655,10 +3655,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    2   |    1   |   425  |  16670 |  29013 |    0   |
+|  Function |    4   |    1   |   234  |  21860 |  33487 |    0   |
 |   Memory  |   50   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    6   |    -   |   96   |    -   |
 |  Register |    -   |    -   |    -   |   353  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   52   |    1   |   432  |  17023 |  29109 |    0   |
+|   Total   |   54   |    1   |   241  |  22213 |  33583 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

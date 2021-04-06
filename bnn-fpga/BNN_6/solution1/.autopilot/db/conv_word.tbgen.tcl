@@ -14,7 +14,7 @@ set isEnableWaveformDebug 1
 set C_modelName {conv_word}
 set C_modelType { int 640 }
 set C_modelArgList {
-	{ line_buffer_m_V int 2 regular {array 480 { 1 1 } 1 1 }  }
+	{ line_buffer_m_V int 2 regular {array 800 { 1 1 } 1 1 }  }
 	{ line_buffer_m_V_offset int 1 regular  }
 	{ conv_params_m_0_0_s int 1 regular  }
 	{ conv_params_m_0_0_6 int 1 regular  }
@@ -326,10 +326,10 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ line_buffer_m_V_address0 sc_out sc_lv 9 signal 0 } 
+	{ line_buffer_m_V_address0 sc_out sc_lv 10 signal 0 } 
 	{ line_buffer_m_V_ce0 sc_out sc_logic 1 signal 0 } 
 	{ line_buffer_m_V_q0 sc_in sc_lv 2 signal 0 } 
-	{ line_buffer_m_V_address1 sc_out sc_lv 9 signal 0 } 
+	{ line_buffer_m_V_address1 sc_out sc_lv 10 signal 0 } 
 	{ line_buffer_m_V_ce1 sc_out sc_logic 1 signal 0 } 
 	{ line_buffer_m_V_q1 sc_in sc_lv 2 signal 0 } 
 	{ line_buffer_m_V_offset sc_in sc_lv 1 signal 1 } 
@@ -617,10 +617,10 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "line_buffer_m_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address0" }} , 
+ 	{ "name": "line_buffer_m_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address0" }} , 
  	{ "name": "line_buffer_m_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "ce0" }} , 
  	{ "name": "line_buffer_m_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "q0" }} , 
- 	{ "name": "line_buffer_m_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address1" }} , 
+ 	{ "name": "line_buffer_m_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address1" }} , 
  	{ "name": "line_buffer_m_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "ce1" }} , 
  	{ "name": "line_buffer_m_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "q1" }} , 
  	{ "name": "line_buffer_m_V_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V_offset", "role": "default" }} , 
@@ -1295,7 +1295,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	line_buffer_m_V { ap_memory {  { line_buffer_m_V_address0 mem_address 1 9 }  { line_buffer_m_V_ce0 mem_ce 1 1 }  { line_buffer_m_V_q0 mem_dout 0 2 }  { line_buffer_m_V_address1 MemPortADDR2 1 9 }  { line_buffer_m_V_ce1 MemPortCE2 1 1 }  { line_buffer_m_V_q1 MemPortDOUT2 0 2 } } }
+	line_buffer_m_V { ap_memory {  { line_buffer_m_V_address0 mem_address 1 10 }  { line_buffer_m_V_ce0 mem_ce 1 1 }  { line_buffer_m_V_q0 mem_dout 0 2 }  { line_buffer_m_V_address1 MemPortADDR2 1 10 }  { line_buffer_m_V_ce1 MemPortCE2 1 1 }  { line_buffer_m_V_q1 MemPortDOUT2 0 2 } } }
 	line_buffer_m_V_offset { ap_none {  { line_buffer_m_V_offset in_data 0 1 } } }
 	conv_params_m_0_0_s { ap_none {  { conv_params_m_0_0_s in_data 0 1 } } }
 	conv_params_m_0_0_6 { ap_none {  { conv_params_m_0_0_6 in_data 0 1 } } }

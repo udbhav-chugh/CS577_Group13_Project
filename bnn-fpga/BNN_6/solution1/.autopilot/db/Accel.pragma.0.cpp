@@ -76363,6 +76363,7 @@ const static Word h01("0x0101010101010101", 16);
 
 template<typename T>
 void print_ap_bits(const T& in, const unsigned W) {
+#pragma HLS INLINE
 #pragma HLS PIPELINE II=1
  printf ("   ");
   for (unsigned i = 0; i < W; ++i)
@@ -76373,6 +76374,7 @@ void print_ap_bits(const T& in, const unsigned W) {
 
 template<typename T>
 void print_params(T params[CONVOLVERS][K][K]) {_ssdm_SpecArrayDimSize(params, 2);
+#pragma HLS INLINE
 #pragma HLS PIPELINE II=1
  for (unsigned m = 0; m < CONVOLVERS; ++m) {
     for (unsigned wr = 0; wr < K; ++wr) {
@@ -76388,6 +76390,7 @@ void print_params(T params[CONVOLVERS][K][K]) {_ssdm_SpecArrayDimSize(params, 2)
 
 template<typename T>
 void print_line_buffer_m(T lbuf[CONV_BANKS]) {_ssdm_SpecArrayDimSize(lbuf, 8);
+#pragma HLS INLINE
 #pragma HLS PIPELINE II=1
  for (unsigned wr = 0; wr < CONV_ROWS; ++wr) {
   for (unsigned bank = 0; bank < CONV_BANKS; ++bank) {
@@ -76402,6 +76405,7 @@ void print_line_buffer_m(T lbuf[CONV_BANKS]) {_ssdm_SpecArrayDimSize(lbuf, 8);
 }
 
 TwoBit encode_bit(const Bit& b) {
+#pragma HLS INLINE
 #pragma HLS PIPELINE II=1
  return (b == 0) ? TwoBit(1) : TwoBit(-1);
 }
@@ -76415,6 +76419,7 @@ ConvOut conv3x3b(
     const ap_uint<4> bank,
     const IdxType cc
 ) {_ssdm_SpecArrayDimSize(line_buffer_m, 8);_ssdm_SpecArrayDimSize(conv_params_m, 3);
+
 #pragma HLS PIPELINE II=1
  ConvOut sum = 0;
   for (ap_uint<2> kr = 0; kr < K; ++kr) {
@@ -76437,6 +76442,7 @@ void conv_word(
     const Bit conv_params_m[K][K],
     ConvOut conv_out_buffer_m[WORD_SIZE]
 ) {_ssdm_SpecArrayDimSize(line_buffer_m, 8);_ssdm_SpecArrayDimSize(conv_params_m, 3);_ssdm_SpecArrayDimSize(conv_out_buffer_m, 64);
+
 #pragma HLS PIPELINE II=1
  for (ap_uint<4> bank = 0; bank < CONV_BANKS; ++bank) {
     for (ap_uint<4> cc = 0; cc < BANK_WIDTH; ++cc) {
@@ -76570,9 +76576,9 @@ void bin_conv(
   const unsigned images_per_phase = PIX_PER_PHASE >> (2*log_width);
   const unsigned WORDS_PER_PHASE = PIX_PER_PHASE / WORD_SIZE;
 
-  (void) ((!!(n_phases % images_per_phase == 0)) || (_assert("n_phases % images_per_phase == 0","cpp/accel/Accel.cpp",224),0));
-  (void) ((!!(n_inputs % images_per_phase == 0)) || (_assert("n_inputs % images_per_phase == 0","cpp/accel/Accel.cpp",225),0));
-  (void) ((!!(images_per_phase*words_per_image == WORDS_PER_PHASE)) || (_assert("images_per_phase*words_per_image == WORDS_PER_PHASE","cpp/accel/Accel.cpp",226),0));
+  (void) ((!!(n_phases % images_per_phase == 0)) || (_assert("n_phases % images_per_phase == 0","cpp/accel/Accel.cpp",230),0));
+  (void) ((!!(n_inputs % images_per_phase == 0)) || (_assert("n_inputs % images_per_phase == 0","cpp/accel/Accel.cpp",231),0));
+  (void) ((!!(images_per_phase*words_per_image == WORDS_PER_PHASE)) || (_assert("images_per_phase*words_per_image == WORDS_PER_PHASE","cpp/accel/Accel.cpp",232),0));
 
 
 
@@ -76589,11 +76595,14 @@ void bin_conv(
   bool lb[CONV_BANKS];
   bool rb[CONV_BANKS];
 
+#pragma HLS ARRAY_MAP variable=&line_buffer instance=tryVertical1 horizontal
 
-
-
-
-  static Address wt_addr = 0;
+#pragma HLS ARRAY_MAP variable=&fixed_buffer instance=tryVertical2 horizontal
+#pragma HLS ARRAY_MAP variable=&fixed_temp instance=tryVertical2 horizontal
+#pragma HLS ARRAY_MAP variable=&word_buffer instance=tryVertical1 horizontal
+#pragma HLS ARRAY_MAP variable=&old_word_buffer instance=tryVertical1 horizontal
+# 270 "cpp/accel/Accel.cpp"
+ static Address wt_addr = 0;
   static ap_uint<3> wt_offset = 0;
   if (new_batch != 0) { wt_addr = 0; wt_offset = 0; }
 
@@ -76601,7 +76610,7 @@ void bin_conv(
 
   const ap_uint<4> log_slice = log_width - LOG_BANK_WIDTH;
   const ap_uint<4> w_div_8 = (1 << log_width) >> 3;
-  (void) ((!!(w_div_8 > 0)) || (_assert("w_div_8 > 0","cpp/accel/Accel.cpp",255),0));
+  (void) ((!!(w_div_8 > 0)) || (_assert("w_div_8 > 0","cpp/accel/Accel.cpp",278),0));
   ap_uint<4> mask = ~ap_uint<4>(0);
   mask = mask >> (4-log_slice);
   for (ap_uint<4> bank = 0; bank < 64/8; ++bank) {
@@ -76983,8 +76992,8 @@ void bin_dense(
     const unsigned n_outputs
 ) {_ssdm_SpecArrayDimSize(wt_mem, 2);_ssdm_SpecArrayDimSize(kh_mem, 64);_ssdm_SpecArrayDimSize(dmem, 2);
 
-  (void) ((!!(layer_type == LAYER_DENSE || n_outputs == 10)) || (_assert("layer_type == LAYER_DENSE || n_outputs == 10","cpp/accel/Accel.cpp",637),0));
-  (void) ((!!(n_inputs/WORD_SIZE % CONVOLVERS == 0)) || (_assert("n_inputs/WORD_SIZE % CONVOLVERS == 0","cpp/accel/Accel.cpp",638),0));
+  (void) ((!!(layer_type == LAYER_DENSE || n_outputs == 10)) || (_assert("layer_type == LAYER_DENSE || n_outputs == 10","cpp/accel/Accel.cpp",660),0));
+  (void) ((!!(n_inputs/WORD_SIZE % CONVOLVERS == 0)) || (_assert("n_inputs/WORD_SIZE % CONVOLVERS == 0","cpp/accel/Accel.cpp",661),0));
 
   DenseSum sum_m[CONVOLVERS];
 
@@ -77112,12 +77121,12 @@ void top(
   if (1 <= 0) printf ("  layer_mode = %d %d\n", layer_mode[0]==0 ? 0 : 1, layer_type.to_int());
   if (1 <= 0) printf ("  dmem_mode = %d\n", dmem_mode.to_int());
 
-  (void) ((!!(width <= MAX_WIDTH)) || (_assert("width <= MAX_WIDTH","cpp/accel/Accel.cpp",766),0));
-  (void) ((!!(n_inputs != 0)) || (_assert("n_inputs != 0","cpp/accel/Accel.cpp",767),0));
+  (void) ((!!(width <= MAX_WIDTH)) || (_assert("width <= MAX_WIDTH","cpp/accel/Accel.cpp",789),0));
+  (void) ((!!(n_inputs != 0)) || (_assert("n_inputs != 0","cpp/accel/Accel.cpp",790),0));
   if (layer_type <= LAYER_CONV) {
-    (void) ((!!(input_words % CONVOLVERS == 0)) || (_assert("input_words % CONVOLVERS == 0","cpp/accel/Accel.cpp",769),0));
-    (void) ((!!(n_inputs*width*width <= DMEM_WORDS*WORD_SIZE)) || (_assert("n_inputs*width*width <= DMEM_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",770),0));
-    (void) ((!!(n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE)) || (_assert("n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",771),0));
+    (void) ((!!(input_words % CONVOLVERS == 0)) || (_assert("input_words % CONVOLVERS == 0","cpp/accel/Accel.cpp",792),0));
+    (void) ((!!(n_inputs*width*width <= DMEM_WORDS*WORD_SIZE)) || (_assert("n_inputs*width*width <= DMEM_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",793),0));
+    (void) ((!!(n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE)) || (_assert("n_inputs*WT_SIZE <= WT_WORDS*WORD_SIZE","cpp/accel/Accel.cpp",794),0));
   }
 
   static Word dmem[2][CONVOLVERS][C_DMEM_WORDS];
@@ -77171,9 +77180,9 @@ void top(
 #pragma HLS PIPELINE II=1
  kh_mem[i] = kh_i[i];
   }
-# 844 "cpp/accel/Accel.cpp"
-    (void) ((!!(norm_mode != 2 || n_outputs % 4 == 0)) || (_assert("norm_mode != 2 || n_outputs % 4 == 0","cpp/accel/Accel.cpp",844),0));
-    (void) ((!!(n_inputs % CONVOLVERS == 0)) || (_assert("n_inputs % CONVOLVERS == 0","cpp/accel/Accel.cpp",845),0));
+# 867 "cpp/accel/Accel.cpp"
+    (void) ((!!(norm_mode != 2 || n_outputs % 4 == 0)) || (_assert("norm_mode != 2 || n_outputs % 4 == 0","cpp/accel/Accel.cpp",867),0));
+    (void) ((!!(n_inputs % CONVOLVERS == 0)) || (_assert("n_inputs % CONVOLVERS == 0","cpp/accel/Accel.cpp",868),0));
 
     LOOP_IMG_BATCH:
     for (IdxType i = 0; i < 1; ++i) {
@@ -77197,7 +77206,7 @@ void top(
       kh_index++;
       o_index++;
     }
-# 885 "cpp/accel/Accel.cpp"
+# 908 "cpp/accel/Accel.cpp"
   ap_uint<5> words_per_out = words_per_image / ((norm_mode!=2) ? 1 : 4);
   img_idx = 0;
   img_off = 0;

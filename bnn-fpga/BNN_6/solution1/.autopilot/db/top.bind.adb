@@ -358,7 +358,7 @@
 						<name>norm_mode_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>745</lineNumber>
+						<lineNumber>768</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -373,7 +373,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>745</second>
+										<second>768</second>
 									</item>
 								</second>
 							</item>
@@ -407,7 +407,7 @@
 						<name>width_mode_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>745</lineNumber>
+						<lineNumber>768</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -422,7 +422,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>745</second>
+										<second>768</second>
 									</item>
 								</second>
 							</item>
@@ -456,7 +456,7 @@
 						<name>dmem_mode_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>745</lineNumber>
+						<lineNumber>768</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -471,7 +471,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>745</second>
+										<second>768</second>
 									</item>
 								</second>
 							</item>
@@ -505,7 +505,7 @@
 						<name>layer_mode_V_read</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>745</lineNumber>
+						<lineNumber>768</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -520,7 +520,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>745</second>
+										<second>768</second>
 									</item>
 								</second>
 							</item>
@@ -554,7 +554,7 @@
 						<name>dmem_o_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>745</lineNumber>
+						<lineNumber>768</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -569,7 +569,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>745</second>
+										<second>768</second>
 									</item>
 								</second>
 							</item>
@@ -604,7 +604,7 @@
 						<name>layer_type_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>756</lineNumber>
+						<lineNumber>779</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -619,7 +619,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>756</second>
+										<second>779</second>
 									</item>
 								</second>
 							</item>
@@ -655,7 +655,7 @@
 						<name>trunc_ln792</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>780</lineNumber>
+						<lineNumber>803</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -670,7 +670,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>780</second>
+										<second>803</second>
 									</item>
 								</second>
 							</item>
@@ -703,7 +703,7 @@
 						<name>p_Result_s</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>780</lineNumber>
+						<lineNumber>803</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -718,7 +718,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>780</second>
+										<second>803</second>
 									</item>
 								</second>
 							</item>
@@ -752,7 +752,7 @@
 						<name>kh_index_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>784</lineNumber>
+						<lineNumber>807</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -767,7 +767,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>784</second>
+										<second>807</second>
 									</item>
 								</second>
 							</item>
@@ -797,10 +797,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>trunc_ln859</name>
+						<name>trunc_ln882</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>859</lineNumber>
+						<lineNumber>882</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -815,7 +815,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>859</second>
+										<second>882</second>
 									</item>
 								</second>
 							</item>
@@ -848,7 +848,7 @@
 						<name>o_index_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>859</lineNumber>
+						<lineNumber>882</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -863,7 +863,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>859</second>
+										<second>882</second>
 									</item>
 								</second>
 							</item>
@@ -896,7 +896,7 @@
 						<name>t_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>780</lineNumber>
+						<lineNumber>803</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -911,7 +911,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>780</second>
+										<second>803</second>
 									</item>
 								</second>
 							</item>
@@ -945,7 +945,7 @@
 						<name>t_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>780</lineNumber>
+						<lineNumber>803</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -960,7 +960,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>780</second>
+										<second>803</second>
 									</item>
 								</second>
 							</item>
@@ -995,7 +995,7 @@
 						<name>r_V_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>788</lineNumber>
+						<lineNumber>811</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1010,7 +1010,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>788</second>
+										<second>811</second>
 									</item>
 								</second>
 							</item>
@@ -1044,7 +1044,7 @@
 						<name>shl_ln</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>791</lineNumber>
+						<lineNumber>814</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1059,7 +1059,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>791</second>
+										<second>814</second>
 									</item>
 								</second>
 							</item>
@@ -1091,10 +1091,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>zext_ln791</name>
+						<name>zext_ln814</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>791</lineNumber>
+						<lineNumber>814</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1109,7 +1109,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>791</second>
+										<second>814</second>
 									</item>
 								</second>
 							</item>
@@ -1139,10 +1139,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>zext_ln791_1</name>
+						<name>zext_ln814_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>791</lineNumber>
+						<lineNumber>814</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1157,7 +1157,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>791</second>
+										<second>814</second>
 									</item>
 								</second>
 							</item>
@@ -1190,7 +1190,7 @@
 						<name>words_per_image_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>791</lineNumber>
+						<lineNumber>814</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1205,7 +1205,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>791</second>
+										<second>814</second>
 									</item>
 								</second>
 							</item>
@@ -1239,7 +1239,7 @@
 						<name>icmp_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>796</lineNumber>
+						<lineNumber>819</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1254,7 +1254,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>796</second>
+										<second>819</second>
 									</item>
 								</second>
 							</item>
@@ -1288,7 +1288,7 @@
 						<name>zext_ln879</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>801</lineNumber>
+						<lineNumber>824</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1303,7 +1303,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>801</second>
+										<second>824</second>
 									</item>
 								</second>
 							</item>
@@ -1336,7 +1336,7 @@
 						<name>icmp_ln879_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>801</lineNumber>
+						<lineNumber>824</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1351,7 +1351,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>801</second>
+										<second>824</second>
 									</item>
 								</second>
 							</item>
@@ -1382,10 +1382,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln794</name>
+						<name>_ln817</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1400,7 +1400,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1433,7 +1433,7 @@
 						<name>p_0730_0</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1448,7 +1448,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -1484,7 +1484,7 @@
 						<name>p_0886_0</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1499,7 +1499,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -1572,7 +1572,7 @@
 						<name>icmp_ln887</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1587,7 +1587,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1621,7 +1621,7 @@
 						<name>i_V_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1636,7 +1636,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1667,10 +1667,10 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>_ln794</name>
+						<name>_ln817</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1685,7 +1685,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1720,7 +1720,7 @@
 						<name>ret_V_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1735,7 +1735,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1768,7 +1768,7 @@
 						<name>ret_V_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1783,7 +1783,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1816,7 +1816,7 @@
 						<name>ret_V_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1831,7 +1831,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -1861,10 +1861,10 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>_ln796</name>
+						<name>_ln819</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>796</lineNumber>
+						<lineNumber>819</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1879,7 +1879,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>796</second>
+										<second>819</second>
 									</item>
 								</second>
 							</item>
@@ -1911,10 +1911,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>_ln801</name>
+						<name>_ln824</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>801</lineNumber>
+						<lineNumber>824</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1929,7 +1929,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>801</second>
+										<second>824</second>
 									</item>
 								</second>
 							</item>
@@ -1964,7 +1964,7 @@
 						<name>ret_V_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1979,7 +1979,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2015,7 +2015,7 @@
 						<name>ret_V_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2030,7 +2030,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2063,7 +2063,7 @@
 						<name>tmp_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2078,7 +2078,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2115,7 +2115,7 @@
 						<name>zext_ln180_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2130,7 +2130,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2163,7 +2163,7 @@
 						<name>dmem_V_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2178,7 +2178,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2213,7 +2213,7 @@
 						<name>zext_ln544_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2228,7 +2228,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2261,7 +2261,7 @@
 						<name>dmem_i_V_addr_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2276,7 +2276,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2311,7 +2311,7 @@
 						<name>dmem_i_V_load_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2326,7 +2326,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2356,10 +2356,10 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>dmem_V_addr_2_write_ln804</name>
+						<name>dmem_V_addr_2_write_ln827</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>804</lineNumber>
+						<lineNumber>827</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2374,7 +2374,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>804</second>
+										<second>827</second>
 									</item>
 								</second>
 							</item>
@@ -2442,7 +2442,7 @@
 						<name>tmp_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2457,7 +2457,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2493,7 +2493,7 @@
 						<name>zext_ln180_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2508,7 +2508,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2541,7 +2541,7 @@
 						<name>dmem_V_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2556,7 +2556,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2591,7 +2591,7 @@
 						<name>zext_ln544_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2606,7 +2606,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2639,7 +2639,7 @@
 						<name>dmem_i_V_addr_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2654,7 +2654,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2689,7 +2689,7 @@
 						<name>dmem_i_V_load_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2704,7 +2704,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2734,10 +2734,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>dmem_V_addr_1_write_ln802</name>
+						<name>dmem_V_addr_1_write_ln825</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2752,7 +2752,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2783,10 +2783,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>_ln802</name>
+						<name>_ln825</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>802</lineNumber>
+						<lineNumber>825</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2801,7 +2801,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>802</second>
+										<second>825</second>
 									</item>
 								</second>
 							</item>
@@ -2868,7 +2868,7 @@
 						<name>ret_V_9</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>798</lineNumber>
+						<lineNumber>821</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2883,7 +2883,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>798</second>
+										<second>821</second>
 									</item>
 								</second>
 							</item>
@@ -2919,7 +2919,7 @@
 						<name>ret_V_8</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>798</lineNumber>
+						<lineNumber>821</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2934,7 +2934,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>798</second>
+										<second>821</second>
 									</item>
 								</second>
 							</item>
@@ -2967,7 +2967,7 @@
 						<name>r_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2982,7 +2982,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3016,7 +3016,7 @@
 						<name>trunc_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3031,7 +3031,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3064,7 +3064,7 @@
 						<name>zext_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3079,7 +3079,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3112,7 +3112,7 @@
 						<name>add_ln180_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3127,7 +3127,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3161,7 +3161,7 @@
 						<name>tmp_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3176,7 +3176,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3212,7 +3212,7 @@
 						<name>zext_ln180_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3227,7 +3227,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3260,7 +3260,7 @@
 						<name>add_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3275,7 +3275,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3309,7 +3309,7 @@
 						<name>zext_ln180_5</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3324,7 +3324,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3357,7 +3357,7 @@
 						<name>dmem_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3372,7 +3372,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3407,7 +3407,7 @@
 						<name>zext_ln544</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3422,7 +3422,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3455,7 +3455,7 @@
 						<name>dmem_i_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3470,7 +3470,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3505,7 +3505,7 @@
 						<name>dmem_i_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3520,7 +3520,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3550,10 +3550,10 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>dmem_V_addr_write_ln799</name>
+						<name>dmem_V_addr_write_ln822</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>799</lineNumber>
+						<lineNumber>822</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3568,7 +3568,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>799</second>
+										<second>822</second>
 									</item>
 								</second>
 							</item>
@@ -3599,10 +3599,10 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>_ln800</name>
+						<name>_ln823</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>800</lineNumber>
+						<lineNumber>823</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3617,7 +3617,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>800</second>
+										<second>823</second>
 									</item>
 								</second>
 							</item>
@@ -3650,7 +3650,7 @@
 						<name>img_off_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3665,7 +3665,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -3699,7 +3699,7 @@
 						<name>icmp_ln879_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3714,7 +3714,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -3748,7 +3748,7 @@
 						<name>img_idx_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>808</lineNumber>
+						<lineNumber>831</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3763,7 +3763,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>808</second>
+										<second>831</second>
 									</item>
 								</second>
 							</item>
@@ -3794,10 +3794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>115</id>
-						<name>select_ln806</name>
+						<name>select_ln829</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3812,7 +3812,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -3844,10 +3844,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>select_ln806_1</name>
+						<name>select_ln829_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>806</lineNumber>
+						<lineNumber>829</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3862,7 +3862,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>806</second>
+										<second>829</second>
 									</item>
 								</second>
 							</item>
@@ -3894,10 +3894,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>_ln794</name>
+						<name>_ln817</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>794</lineNumber>
+						<lineNumber>817</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3912,7 +3912,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>794</second>
+										<second>817</second>
 									</item>
 								</second>
 							</item>
@@ -3942,10 +3942,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>_ln814</name>
+						<name>_ln837</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3960,7 +3960,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4030,7 +4030,7 @@
 						<name>icmp_ln887_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4045,7 +4045,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4079,7 +4079,7 @@
 						<name>i_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4094,7 +4094,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4125,10 +4125,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>_ln814</name>
+						<name>_ln837</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4143,7 +4143,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4178,7 +4178,7 @@
 						<name>ret_V</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4193,7 +4193,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4226,7 +4226,7 @@
 						<name>tmp_7</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4241,7 +4241,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4277,7 +4277,7 @@
 						<name>zext_ln1372</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4292,7 +4292,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4325,7 +4325,7 @@
 						<name>select_ln180</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4340,7 +4340,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4375,7 +4375,7 @@
 						<name>add_ln180_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4390,7 +4390,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4424,7 +4424,7 @@
 						<name>zext_ln180_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4439,7 +4439,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4472,7 +4472,7 @@
 						<name>wt_mem_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4487,7 +4487,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4522,7 +4522,7 @@
 						<name>zext_ln544_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4537,7 +4537,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4570,7 +4570,7 @@
 						<name>wt_i_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4585,7 +4585,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4620,7 +4620,7 @@
 						<name>wt_i_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4635,7 +4635,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4665,10 +4665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>wt_mem_V_addr_write_ln816</name>
+						<name>wt_mem_V_addr_write_ln839</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>816</lineNumber>
+						<lineNumber>839</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4683,7 +4683,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>816</second>
+										<second>839</second>
 									</item>
 								</second>
 							</item>
@@ -4714,10 +4714,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>_ln814</name>
+						<name>_ln837</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>814</lineNumber>
+						<lineNumber>837</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4732,7 +4732,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>814</second>
+										<second>837</second>
 									</item>
 								</second>
 							</item>
@@ -4762,10 +4762,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>_ln821</name>
+						<name>_ln844</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>821</lineNumber>
+						<lineNumber>844</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4780,7 +4780,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>821</second>
+										<second>844</second>
 									</item>
 								</second>
 							</item>
@@ -4850,7 +4850,7 @@
 						<name>icmp_ln887_2</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>821</lineNumber>
+						<lineNumber>844</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4865,7 +4865,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>821</second>
+										<second>844</second>
 									</item>
 								</second>
 							</item>
@@ -4899,7 +4899,7 @@
 						<name>i_V_1</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>821</lineNumber>
+						<lineNumber>844</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4914,7 +4914,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>821</second>
+										<second>844</second>
 									</item>
 								</second>
 							</item>
@@ -4945,10 +4945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>_ln821</name>
+						<name>_ln844</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>821</lineNumber>
+						<lineNumber>844</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4963,7 +4963,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>821</second>
+										<second>844</second>
 									</item>
 								</second>
 							</item>
@@ -4998,7 +4998,7 @@
 						<name>zext_ln544_4</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>823</lineNumber>
+						<lineNumber>846</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5013,7 +5013,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>823</second>
+										<second>846</second>
 									</item>
 								</second>
 							</item>
@@ -5046,7 +5046,7 @@
 						<name>kh_i_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>823</lineNumber>
+						<lineNumber>846</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5061,7 +5061,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>823</second>
+										<second>846</second>
 									</item>
 								</second>
 							</item>
@@ -5096,7 +5096,7 @@
 						<name>kh_i_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>823</lineNumber>
+						<lineNumber>846</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5111,7 +5111,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>823</second>
+										<second>846</second>
 									</item>
 								</second>
 							</item>
@@ -5144,7 +5144,7 @@
 						<name>kh_mem_V_addr</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>823</lineNumber>
+						<lineNumber>846</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5159,7 +5159,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>823</second>
+										<second>846</second>
 									</item>
 								</second>
 							</item>
@@ -5191,10 +5191,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>kh_mem_V_addr_write_ln823</name>
+						<name>kh_mem_V_addr_write_ln846</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>823</lineNumber>
+						<lineNumber>846</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5209,7 +5209,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>823</second>
+										<second>846</second>
 									</item>
 								</second>
 							</item>
@@ -5240,10 +5240,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>_ln821</name>
+						<name>_ln844</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>821</lineNumber>
+						<lineNumber>844</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5258,7 +5258,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>821</second>
+										<second>844</second>
 									</item>
 								</second>
 							</item>
@@ -5306,7 +5306,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5361,7 +5361,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5417,7 +5417,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5473,7 +5473,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5528,7 +5528,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5586,7 +5586,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5644,7 +5644,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5701,7 +5701,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>852</second>
+										<second>875</second>
 									</item>
 									<item>
 										<first>
@@ -5740,10 +5740,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>_ln861</name>
+						<name>_ln884</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>861</lineNumber>
+						<lineNumber>884</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5758,7 +5758,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>861</second>
+										<second>884</second>
 									</item>
 								</second>
 							</item>
@@ -5800,7 +5800,7 @@
 						<name>select_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>866</lineNumber>
+						<lineNumber>889</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5815,7 +5815,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>866</second>
+										<second>889</second>
 									</item>
 								</second>
 							</item>
@@ -5850,7 +5850,7 @@
 						<name>add_ln700</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>867</lineNumber>
+						<lineNumber>890</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5865,7 +5865,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>867</second>
+										<second>890</second>
 									</item>
 								</second>
 							</item>
@@ -5899,7 +5899,7 @@
 						<name>tmp_6</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>898</lineNumber>
+						<lineNumber>921</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5914,7 +5914,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>898</second>
+										<second>921</second>
 									</item>
 								</second>
 							</item>
@@ -5949,7 +5949,7 @@
 						<name>zext_ln180_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>898</lineNumber>
+						<lineNumber>921</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5964,7 +5964,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>898</second>
+										<second>921</second>
 									</item>
 								</second>
 							</item>
@@ -5997,7 +5997,7 @@
 						<name>dmem_V_addr_3</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>898</lineNumber>
+						<lineNumber>921</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6012,7 +6012,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>898</second>
+										<second>921</second>
 									</item>
 								</second>
 							</item>
@@ -6044,10 +6044,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>o_index_V_write_ln782</name>
+						<name>o_index_V_write_ln805</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>782</lineNumber>
+						<lineNumber>805</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6062,7 +6062,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>782</second>
+										<second>805</second>
 									</item>
 								</second>
 							</item>
@@ -6094,10 +6094,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>kh_index_V_write_ln781</name>
+						<name>kh_index_V_write_ln804</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>781</lineNumber>
+						<lineNumber>804</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6112,7 +6112,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>781</second>
+										<second>804</second>
 									</item>
 								</second>
 							</item>
@@ -6147,7 +6147,7 @@
 						<name>dmem_V_load</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>898</lineNumber>
+						<lineNumber>921</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6162,7 +6162,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>898</second>
+										<second>921</second>
 									</item>
 								</second>
 							</item>
@@ -6193,10 +6193,10 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>dmem_o_V_addr_write_ln895</name>
+						<name>dmem_o_V_addr_write_ln918</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>895</lineNumber>
+						<lineNumber>918</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6211,7 +6211,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>895</second>
+										<second>918</second>
 									</item>
 								</second>
 							</item>
@@ -6242,10 +6242,10 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>_ln905</name>
+						<name>_ln928</name>
 						<fileName>cpp/accel/Accel.cpp</fileName>
 						<fileDirectory>C:\Work\CS577_Group13_Project\bnn-fpga</fileDirectory>
-						<lineNumber>905</lineNumber>
+						<lineNumber>928</lineNumber>
 						<contextFuncName>top</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -6260,7 +6260,7 @@
 											<first>cpp/accel/Accel.cpp</first>
 											<second>top</second>
 										</first>
-										<second>905</second>
+										<second>928</second>
 									</item>
 								</second>
 							</item>
@@ -9402,8 +9402,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>75255</mMinLatency>
-			<mMaxLatency>80247</mMaxLatency>
+			<mMinLatency>107958</mMinLatency>
+			<mMaxLatency>139446</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -9565,8 +9565,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>70439</mMinLatency>
-			<mMaxLatency>75431</mMaxLatency>
+			<mMinLatency>103142</mMinLatency>
+			<mMaxLatency>134630</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -12962,7 +12962,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln806_1_fu_605</first>
+			<first>select_ln829_1_fu_605</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12970,7 +12970,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln806_fu_597</first>
+			<first>select_ln829_fu_597</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13090,7 +13090,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln859_fu_413</first>
+			<first>trunc_ln882_fu_413</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13234,7 +13234,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln791_1_fu_453</first>
+			<first>zext_ln814_1_fu_453</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13242,7 +13242,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln791_fu_449</first>
+			<first>zext_ln814_fu_449</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13315,7 +13315,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln781_store_fu_786</first>
+			<first>store_ln804_store_fu_786</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -13323,7 +13323,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln782_store_fu_780</first>
+			<first>store_ln805_store_fu_780</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -14003,7 +14003,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln806_1_reg_922</first>
+			<first>select_ln829_1_reg_922</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -14011,7 +14011,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln806_reg_917</first>
+			<first>select_ln829_reg_917</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -14043,7 +14043,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln859_reg_832</first>
+			<first>trunc_ln882_reg_832</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -14075,7 +14075,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln791_reg_855</first>
+			<first>zext_ln814_reg_855</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -2,14 +2,13 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Apr  2 19:40:00 2021
-# Process ID: 29892
+# Start of session at: Tue Apr  6 17:26:24 2021
+# Process ID: 11008
 # Current directory: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
 # Command line: wbtcv.exe -mode batch -source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/webtalk.log
 # Journal file: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog\webtalk.jou
 #-----------------------------------------------------------
 source C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr  2 19:40:07 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 109.328 ; gain = 17.891
-INFO: [Common 17-206] Exiting Webtalk at Fri Apr  2 19:40:07 2021...
+INFO: [Common 17-186] 'C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.dir/top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr  6 17:26:29 2021. For additional details about this file, please refer to the WebTalk help file at D:/Softwares/VLSI/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  6 17:26:29 2021...

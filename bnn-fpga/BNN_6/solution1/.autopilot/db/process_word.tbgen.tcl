@@ -14,18 +14,8 @@ set isEnableWaveformDebug 1
 set C_modelName {process_word}
 set C_modelType { int 640 }
 set C_modelArgList {
-	{ word_buffer_m_V int 2 regular {array 160 { 1 1 } 1 1 }  }
+	{ tryVertical1 int 2 regular {array 800 { 2 2 } 1 1 }  }
 	{ word_buffer_m_V_offset int 1 regular  }
-	{ old_word_buffer_m_0_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_1_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_2_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_3_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_4_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_5_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_6_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_7_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_8_V int 2 regular {array 16 { 1 3 } 1 1 }  }
-	{ old_word_buffer_m_9_V int 2 regular {array 16 { 1 3 } 1 1 }  }
 	{ old_word_buffer_m_V_offset int 1 regular  }
 	{ lb_1_read int 1 regular  }
 	{ lb_2_read int 1 regular  }
@@ -42,7 +32,6 @@ set C_modelArgList {
 	{ rb_5_read int 1 regular  }
 	{ rb_6_read int 1 regular  }
 	{ rb_7_read int 1 regular  }
-	{ line_buffer_m_V int 2 regular {array 480 { 2 2 } 1 1 }  }
 	{ line_buffer_m_V_offset int 1 regular  }
 	{ conv_params_m_0_0_s int 1 regular  }
 	{ conv_params_m_0_0_2 int 1 regular  }
@@ -197,18 +186,8 @@ set C_modelArgList {
 	{ wrd_V int 8 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "word_buffer_m_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
+	{ "Name" : "tryVertical1", "interface" : "memory", "bitwidth" : 2, "direction" : "READWRITE"} , 
  	{ "Name" : "word_buffer_m_V_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_0_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_1_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_2_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_3_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_4_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_5_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_6_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_7_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_8_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
- 	{ "Name" : "old_word_buffer_m_9_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "old_word_buffer_m_V_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "lb_1_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "lb_2_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
@@ -225,7 +204,6 @@ set C_modelArgMapList {[
  	{ "Name" : "rb_5_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "rb_6_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "rb_7_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "line_buffer_m_V", "interface" : "memory", "bitwidth" : 2, "direction" : "READWRITE"} , 
  	{ "Name" : "line_buffer_m_V_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "conv_params_m_0_0_s", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "conv_params_m_0_0_2", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
@@ -380,7 +358,7 @@ set C_modelArgMapList {[
  	{ "Name" : "wrd_V", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 640} ]}
 # RTL Port declarations: 
-set portNum 349
+set portNum 313
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -388,221 +366,185 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ word_buffer_m_V_address0 sc_out sc_lv 8 signal 0 } 
-	{ word_buffer_m_V_ce0 sc_out sc_logic 1 signal 0 } 
-	{ word_buffer_m_V_q0 sc_in sc_lv 2 signal 0 } 
-	{ word_buffer_m_V_address1 sc_out sc_lv 8 signal 0 } 
-	{ word_buffer_m_V_ce1 sc_out sc_logic 1 signal 0 } 
-	{ word_buffer_m_V_q1 sc_in sc_lv 2 signal 0 } 
+	{ tryVertical1_address0 sc_out sc_lv 10 signal 0 } 
+	{ tryVertical1_ce0 sc_out sc_logic 1 signal 0 } 
+	{ tryVertical1_we0 sc_out sc_logic 1 signal 0 } 
+	{ tryVertical1_d0 sc_out sc_lv 2 signal 0 } 
+	{ tryVertical1_q0 sc_in sc_lv 2 signal 0 } 
+	{ tryVertical1_address1 sc_out sc_lv 10 signal 0 } 
+	{ tryVertical1_ce1 sc_out sc_logic 1 signal 0 } 
+	{ tryVertical1_we1 sc_out sc_logic 1 signal 0 } 
+	{ tryVertical1_d1 sc_out sc_lv 2 signal 0 } 
+	{ tryVertical1_q1 sc_in sc_lv 2 signal 0 } 
 	{ word_buffer_m_V_offset sc_in sc_lv 1 signal 1 } 
-	{ old_word_buffer_m_0_V_address0 sc_out sc_lv 4 signal 2 } 
-	{ old_word_buffer_m_0_V_ce0 sc_out sc_logic 1 signal 2 } 
-	{ old_word_buffer_m_0_V_q0 sc_in sc_lv 2 signal 2 } 
-	{ old_word_buffer_m_1_V_address0 sc_out sc_lv 4 signal 3 } 
-	{ old_word_buffer_m_1_V_ce0 sc_out sc_logic 1 signal 3 } 
-	{ old_word_buffer_m_1_V_q0 sc_in sc_lv 2 signal 3 } 
-	{ old_word_buffer_m_2_V_address0 sc_out sc_lv 4 signal 4 } 
-	{ old_word_buffer_m_2_V_ce0 sc_out sc_logic 1 signal 4 } 
-	{ old_word_buffer_m_2_V_q0 sc_in sc_lv 2 signal 4 } 
-	{ old_word_buffer_m_3_V_address0 sc_out sc_lv 4 signal 5 } 
-	{ old_word_buffer_m_3_V_ce0 sc_out sc_logic 1 signal 5 } 
-	{ old_word_buffer_m_3_V_q0 sc_in sc_lv 2 signal 5 } 
-	{ old_word_buffer_m_4_V_address0 sc_out sc_lv 4 signal 6 } 
-	{ old_word_buffer_m_4_V_ce0 sc_out sc_logic 1 signal 6 } 
-	{ old_word_buffer_m_4_V_q0 sc_in sc_lv 2 signal 6 } 
-	{ old_word_buffer_m_5_V_address0 sc_out sc_lv 4 signal 7 } 
-	{ old_word_buffer_m_5_V_ce0 sc_out sc_logic 1 signal 7 } 
-	{ old_word_buffer_m_5_V_q0 sc_in sc_lv 2 signal 7 } 
-	{ old_word_buffer_m_6_V_address0 sc_out sc_lv 4 signal 8 } 
-	{ old_word_buffer_m_6_V_ce0 sc_out sc_logic 1 signal 8 } 
-	{ old_word_buffer_m_6_V_q0 sc_in sc_lv 2 signal 8 } 
-	{ old_word_buffer_m_7_V_address0 sc_out sc_lv 4 signal 9 } 
-	{ old_word_buffer_m_7_V_ce0 sc_out sc_logic 1 signal 9 } 
-	{ old_word_buffer_m_7_V_q0 sc_in sc_lv 2 signal 9 } 
-	{ old_word_buffer_m_8_V_address0 sc_out sc_lv 4 signal 10 } 
-	{ old_word_buffer_m_8_V_ce0 sc_out sc_logic 1 signal 10 } 
-	{ old_word_buffer_m_8_V_q0 sc_in sc_lv 2 signal 10 } 
-	{ old_word_buffer_m_9_V_address0 sc_out sc_lv 4 signal 11 } 
-	{ old_word_buffer_m_9_V_ce0 sc_out sc_logic 1 signal 11 } 
-	{ old_word_buffer_m_9_V_q0 sc_in sc_lv 2 signal 11 } 
-	{ old_word_buffer_m_V_offset sc_in sc_lv 1 signal 12 } 
-	{ lb_1_read sc_in sc_logic 1 signal 13 } 
-	{ lb_2_read sc_in sc_logic 1 signal 14 } 
-	{ lb_3_read sc_in sc_logic 1 signal 15 } 
-	{ lb_4_read sc_in sc_logic 1 signal 16 } 
-	{ lb_5_read sc_in sc_logic 1 signal 17 } 
-	{ lb_6_read sc_in sc_logic 1 signal 18 } 
-	{ lb_7_read sc_in sc_logic 1 signal 19 } 
-	{ rb_0_read sc_in sc_logic 1 signal 20 } 
-	{ rb_1_read sc_in sc_logic 1 signal 21 } 
-	{ rb_2_read sc_in sc_logic 1 signal 22 } 
-	{ rb_3_read sc_in sc_logic 1 signal 23 } 
-	{ rb_4_read sc_in sc_logic 1 signal 24 } 
-	{ rb_5_read sc_in sc_logic 1 signal 25 } 
-	{ rb_6_read sc_in sc_logic 1 signal 26 } 
-	{ rb_7_read sc_in sc_logic 1 signal 27 } 
-	{ line_buffer_m_V_address0 sc_out sc_lv 9 signal 28 } 
-	{ line_buffer_m_V_ce0 sc_out sc_logic 1 signal 28 } 
-	{ line_buffer_m_V_we0 sc_out sc_logic 1 signal 28 } 
-	{ line_buffer_m_V_d0 sc_out sc_lv 2 signal 28 } 
-	{ line_buffer_m_V_q0 sc_in sc_lv 2 signal 28 } 
-	{ line_buffer_m_V_address1 sc_out sc_lv 9 signal 28 } 
-	{ line_buffer_m_V_ce1 sc_out sc_logic 1 signal 28 } 
-	{ line_buffer_m_V_we1 sc_out sc_logic 1 signal 28 } 
-	{ line_buffer_m_V_d1 sc_out sc_lv 2 signal 28 } 
-	{ line_buffer_m_V_q1 sc_in sc_lv 2 signal 28 } 
-	{ line_buffer_m_V_offset sc_in sc_lv 1 signal 29 } 
-	{ conv_params_m_0_0_s sc_in sc_lv 1 signal 30 } 
-	{ conv_params_m_0_0_2 sc_in sc_lv 1 signal 31 } 
-	{ conv_params_m_0_1_s sc_in sc_lv 1 signal 32 } 
-	{ conv_params_m_0_1_2 sc_in sc_lv 1 signal 33 } 
-	{ conv_params_m_0_2_s sc_in sc_lv 1 signal 34 } 
-	{ conv_params_m_0_2_2 sc_in sc_lv 1 signal 35 } 
-	{ conv_params_m_1_0_s sc_in sc_lv 1 signal 36 } 
-	{ conv_params_m_1_0_2 sc_in sc_lv 1 signal 37 } 
-	{ conv_params_m_1_1_s sc_in sc_lv 1 signal 38 } 
-	{ conv_params_m_1_1_2 sc_in sc_lv 1 signal 39 } 
-	{ conv_params_m_1_2_s sc_in sc_lv 1 signal 40 } 
-	{ conv_params_m_1_2_2 sc_in sc_lv 1 signal 41 } 
-	{ conv_params_m_2_0_s sc_in sc_lv 1 signal 42 } 
-	{ conv_params_m_2_0_2 sc_in sc_lv 1 signal 43 } 
-	{ conv_params_m_2_1_s sc_in sc_lv 1 signal 44 } 
-	{ conv_params_m_2_1_2 sc_in sc_lv 1 signal 45 } 
-	{ conv_params_m_2_2_s sc_in sc_lv 1 signal 46 } 
-	{ conv_params_m_2_2_2 sc_in sc_lv 1 signal 47 } 
-	{ conv_params_m_V_offset sc_in sc_lv 1 signal 48 } 
-	{ conv_out_buffer_m_0 sc_in sc_lv 5 signal 49 } 
-	{ conv_out_buffer_m_0_2 sc_in sc_lv 5 signal 50 } 
-	{ conv_out_buffer_m_1 sc_in sc_lv 5 signal 51 } 
-	{ conv_out_buffer_m_1_2 sc_in sc_lv 5 signal 52 } 
-	{ conv_out_buffer_m_2 sc_in sc_lv 5 signal 53 } 
-	{ conv_out_buffer_m_2_2 sc_in sc_lv 5 signal 54 } 
-	{ conv_out_buffer_m_3 sc_in sc_lv 5 signal 55 } 
-	{ conv_out_buffer_m_3_2 sc_in sc_lv 5 signal 56 } 
-	{ conv_out_buffer_m_4 sc_in sc_lv 5 signal 57 } 
-	{ conv_out_buffer_m_4_2 sc_in sc_lv 5 signal 58 } 
-	{ conv_out_buffer_m_5 sc_in sc_lv 5 signal 59 } 
-	{ conv_out_buffer_m_5_2 sc_in sc_lv 5 signal 60 } 
-	{ conv_out_buffer_m_6 sc_in sc_lv 5 signal 61 } 
-	{ conv_out_buffer_m_6_2 sc_in sc_lv 5 signal 62 } 
-	{ conv_out_buffer_m_7 sc_in sc_lv 5 signal 63 } 
-	{ conv_out_buffer_m_7_2 sc_in sc_lv 5 signal 64 } 
-	{ conv_out_buffer_m_8 sc_in sc_lv 5 signal 65 } 
-	{ conv_out_buffer_m_8_2 sc_in sc_lv 5 signal 66 } 
-	{ conv_out_buffer_m_9 sc_in sc_lv 5 signal 67 } 
-	{ conv_out_buffer_m_9_2 sc_in sc_lv 5 signal 68 } 
-	{ conv_out_buffer_m_10 sc_in sc_lv 5 signal 69 } 
-	{ conv_out_buffer_m_10_2 sc_in sc_lv 5 signal 70 } 
-	{ conv_out_buffer_m_11 sc_in sc_lv 5 signal 71 } 
-	{ conv_out_buffer_m_11_2 sc_in sc_lv 5 signal 72 } 
-	{ conv_out_buffer_m_12 sc_in sc_lv 5 signal 73 } 
-	{ conv_out_buffer_m_12_2 sc_in sc_lv 5 signal 74 } 
-	{ conv_out_buffer_m_13 sc_in sc_lv 5 signal 75 } 
-	{ conv_out_buffer_m_13_2 sc_in sc_lv 5 signal 76 } 
-	{ conv_out_buffer_m_14 sc_in sc_lv 5 signal 77 } 
-	{ conv_out_buffer_m_14_2 sc_in sc_lv 5 signal 78 } 
-	{ conv_out_buffer_m_15 sc_in sc_lv 5 signal 79 } 
-	{ conv_out_buffer_m_15_2 sc_in sc_lv 5 signal 80 } 
-	{ conv_out_buffer_m_16 sc_in sc_lv 5 signal 81 } 
-	{ conv_out_buffer_m_16_2 sc_in sc_lv 5 signal 82 } 
-	{ conv_out_buffer_m_17 sc_in sc_lv 5 signal 83 } 
-	{ conv_out_buffer_m_17_2 sc_in sc_lv 5 signal 84 } 
-	{ conv_out_buffer_m_18 sc_in sc_lv 5 signal 85 } 
-	{ conv_out_buffer_m_18_2 sc_in sc_lv 5 signal 86 } 
-	{ conv_out_buffer_m_19 sc_in sc_lv 5 signal 87 } 
-	{ conv_out_buffer_m_19_2 sc_in sc_lv 5 signal 88 } 
-	{ conv_out_buffer_m_20 sc_in sc_lv 5 signal 89 } 
-	{ conv_out_buffer_m_20_2 sc_in sc_lv 5 signal 90 } 
-	{ conv_out_buffer_m_21 sc_in sc_lv 5 signal 91 } 
-	{ conv_out_buffer_m_21_2 sc_in sc_lv 5 signal 92 } 
-	{ conv_out_buffer_m_22 sc_in sc_lv 5 signal 93 } 
-	{ conv_out_buffer_m_22_2 sc_in sc_lv 5 signal 94 } 
-	{ conv_out_buffer_m_23 sc_in sc_lv 5 signal 95 } 
-	{ conv_out_buffer_m_23_2 sc_in sc_lv 5 signal 96 } 
-	{ conv_out_buffer_m_24 sc_in sc_lv 5 signal 97 } 
-	{ conv_out_buffer_m_24_2 sc_in sc_lv 5 signal 98 } 
-	{ conv_out_buffer_m_25 sc_in sc_lv 5 signal 99 } 
-	{ conv_out_buffer_m_25_2 sc_in sc_lv 5 signal 100 } 
-	{ conv_out_buffer_m_26 sc_in sc_lv 5 signal 101 } 
-	{ conv_out_buffer_m_26_2 sc_in sc_lv 5 signal 102 } 
-	{ conv_out_buffer_m_27 sc_in sc_lv 5 signal 103 } 
-	{ conv_out_buffer_m_27_2 sc_in sc_lv 5 signal 104 } 
-	{ conv_out_buffer_m_28 sc_in sc_lv 5 signal 105 } 
-	{ conv_out_buffer_m_28_2 sc_in sc_lv 5 signal 106 } 
-	{ conv_out_buffer_m_29 sc_in sc_lv 5 signal 107 } 
-	{ conv_out_buffer_m_29_2 sc_in sc_lv 5 signal 108 } 
-	{ conv_out_buffer_m_30 sc_in sc_lv 5 signal 109 } 
-	{ conv_out_buffer_m_30_2 sc_in sc_lv 5 signal 110 } 
-	{ conv_out_buffer_m_31 sc_in sc_lv 5 signal 111 } 
-	{ conv_out_buffer_m_31_2 sc_in sc_lv 5 signal 112 } 
-	{ conv_out_buffer_m_32 sc_in sc_lv 5 signal 113 } 
-	{ conv_out_buffer_m_32_2 sc_in sc_lv 5 signal 114 } 
-	{ conv_out_buffer_m_33 sc_in sc_lv 5 signal 115 } 
-	{ conv_out_buffer_m_33_2 sc_in sc_lv 5 signal 116 } 
-	{ conv_out_buffer_m_34 sc_in sc_lv 5 signal 117 } 
-	{ conv_out_buffer_m_34_2 sc_in sc_lv 5 signal 118 } 
-	{ conv_out_buffer_m_35 sc_in sc_lv 5 signal 119 } 
-	{ conv_out_buffer_m_35_2 sc_in sc_lv 5 signal 120 } 
-	{ conv_out_buffer_m_36 sc_in sc_lv 5 signal 121 } 
-	{ conv_out_buffer_m_36_2 sc_in sc_lv 5 signal 122 } 
-	{ conv_out_buffer_m_37 sc_in sc_lv 5 signal 123 } 
-	{ conv_out_buffer_m_37_2 sc_in sc_lv 5 signal 124 } 
-	{ conv_out_buffer_m_38 sc_in sc_lv 5 signal 125 } 
-	{ conv_out_buffer_m_38_2 sc_in sc_lv 5 signal 126 } 
-	{ conv_out_buffer_m_39 sc_in sc_lv 5 signal 127 } 
-	{ conv_out_buffer_m_39_2 sc_in sc_lv 5 signal 128 } 
-	{ conv_out_buffer_m_40 sc_in sc_lv 5 signal 129 } 
-	{ conv_out_buffer_m_40_2 sc_in sc_lv 5 signal 130 } 
-	{ conv_out_buffer_m_41 sc_in sc_lv 5 signal 131 } 
-	{ conv_out_buffer_m_41_2 sc_in sc_lv 5 signal 132 } 
-	{ conv_out_buffer_m_42 sc_in sc_lv 5 signal 133 } 
-	{ conv_out_buffer_m_42_2 sc_in sc_lv 5 signal 134 } 
-	{ conv_out_buffer_m_43 sc_in sc_lv 5 signal 135 } 
-	{ conv_out_buffer_m_43_2 sc_in sc_lv 5 signal 136 } 
-	{ conv_out_buffer_m_44 sc_in sc_lv 5 signal 137 } 
-	{ conv_out_buffer_m_44_2 sc_in sc_lv 5 signal 138 } 
-	{ conv_out_buffer_m_45 sc_in sc_lv 5 signal 139 } 
-	{ conv_out_buffer_m_45_2 sc_in sc_lv 5 signal 140 } 
-	{ conv_out_buffer_m_46 sc_in sc_lv 5 signal 141 } 
-	{ conv_out_buffer_m_46_2 sc_in sc_lv 5 signal 142 } 
-	{ conv_out_buffer_m_47 sc_in sc_lv 5 signal 143 } 
-	{ conv_out_buffer_m_47_2 sc_in sc_lv 5 signal 144 } 
-	{ conv_out_buffer_m_48 sc_in sc_lv 5 signal 145 } 
-	{ conv_out_buffer_m_48_2 sc_in sc_lv 5 signal 146 } 
-	{ conv_out_buffer_m_49 sc_in sc_lv 5 signal 147 } 
-	{ conv_out_buffer_m_49_2 sc_in sc_lv 5 signal 148 } 
-	{ conv_out_buffer_m_50 sc_in sc_lv 5 signal 149 } 
-	{ conv_out_buffer_m_50_2 sc_in sc_lv 5 signal 150 } 
-	{ conv_out_buffer_m_51 sc_in sc_lv 5 signal 151 } 
-	{ conv_out_buffer_m_51_2 sc_in sc_lv 5 signal 152 } 
-	{ conv_out_buffer_m_52 sc_in sc_lv 5 signal 153 } 
-	{ conv_out_buffer_m_52_2 sc_in sc_lv 5 signal 154 } 
-	{ conv_out_buffer_m_53 sc_in sc_lv 5 signal 155 } 
-	{ conv_out_buffer_m_53_2 sc_in sc_lv 5 signal 156 } 
-	{ conv_out_buffer_m_54 sc_in sc_lv 5 signal 157 } 
-	{ conv_out_buffer_m_54_2 sc_in sc_lv 5 signal 158 } 
-	{ conv_out_buffer_m_55 sc_in sc_lv 5 signal 159 } 
-	{ conv_out_buffer_m_55_2 sc_in sc_lv 5 signal 160 } 
-	{ conv_out_buffer_m_56 sc_in sc_lv 5 signal 161 } 
-	{ conv_out_buffer_m_56_2 sc_in sc_lv 5 signal 162 } 
-	{ conv_out_buffer_m_57 sc_in sc_lv 5 signal 163 } 
-	{ conv_out_buffer_m_57_2 sc_in sc_lv 5 signal 164 } 
-	{ conv_out_buffer_m_58 sc_in sc_lv 5 signal 165 } 
-	{ conv_out_buffer_m_58_2 sc_in sc_lv 5 signal 166 } 
-	{ conv_out_buffer_m_59 sc_in sc_lv 5 signal 167 } 
-	{ conv_out_buffer_m_59_2 sc_in sc_lv 5 signal 168 } 
-	{ conv_out_buffer_m_60 sc_in sc_lv 5 signal 169 } 
-	{ conv_out_buffer_m_60_2 sc_in sc_lv 5 signal 170 } 
-	{ conv_out_buffer_m_61 sc_in sc_lv 5 signal 171 } 
-	{ conv_out_buffer_m_61_2 sc_in sc_lv 5 signal 172 } 
-	{ conv_out_buffer_m_62 sc_in sc_lv 5 signal 173 } 
-	{ conv_out_buffer_m_62_2 sc_in sc_lv 5 signal 174 } 
-	{ conv_out_buffer_m_63 sc_in sc_lv 5 signal 175 } 
-	{ conv_out_buffer_m_63_2 sc_in sc_lv 5 signal 176 } 
-	{ conv_out_buffer_m_V_offset sc_in sc_lv 1 signal 177 } 
-	{ log_width_V sc_in sc_lv 3 signal 178 } 
-	{ words_per_image_V sc_in sc_lv 5 signal 179 } 
-	{ wrd_V sc_in sc_lv 8 signal 180 } 
+	{ old_word_buffer_m_V_offset sc_in sc_lv 1 signal 2 } 
+	{ lb_1_read sc_in sc_logic 1 signal 3 } 
+	{ lb_2_read sc_in sc_logic 1 signal 4 } 
+	{ lb_3_read sc_in sc_logic 1 signal 5 } 
+	{ lb_4_read sc_in sc_logic 1 signal 6 } 
+	{ lb_5_read sc_in sc_logic 1 signal 7 } 
+	{ lb_6_read sc_in sc_logic 1 signal 8 } 
+	{ lb_7_read sc_in sc_logic 1 signal 9 } 
+	{ rb_0_read sc_in sc_logic 1 signal 10 } 
+	{ rb_1_read sc_in sc_logic 1 signal 11 } 
+	{ rb_2_read sc_in sc_logic 1 signal 12 } 
+	{ rb_3_read sc_in sc_logic 1 signal 13 } 
+	{ rb_4_read sc_in sc_logic 1 signal 14 } 
+	{ rb_5_read sc_in sc_logic 1 signal 15 } 
+	{ rb_6_read sc_in sc_logic 1 signal 16 } 
+	{ rb_7_read sc_in sc_logic 1 signal 17 } 
+	{ line_buffer_m_V_offset sc_in sc_lv 1 signal 18 } 
+	{ conv_params_m_0_0_s sc_in sc_lv 1 signal 19 } 
+	{ conv_params_m_0_0_2 sc_in sc_lv 1 signal 20 } 
+	{ conv_params_m_0_1_s sc_in sc_lv 1 signal 21 } 
+	{ conv_params_m_0_1_2 sc_in sc_lv 1 signal 22 } 
+	{ conv_params_m_0_2_s sc_in sc_lv 1 signal 23 } 
+	{ conv_params_m_0_2_2 sc_in sc_lv 1 signal 24 } 
+	{ conv_params_m_1_0_s sc_in sc_lv 1 signal 25 } 
+	{ conv_params_m_1_0_2 sc_in sc_lv 1 signal 26 } 
+	{ conv_params_m_1_1_s sc_in sc_lv 1 signal 27 } 
+	{ conv_params_m_1_1_2 sc_in sc_lv 1 signal 28 } 
+	{ conv_params_m_1_2_s sc_in sc_lv 1 signal 29 } 
+	{ conv_params_m_1_2_2 sc_in sc_lv 1 signal 30 } 
+	{ conv_params_m_2_0_s sc_in sc_lv 1 signal 31 } 
+	{ conv_params_m_2_0_2 sc_in sc_lv 1 signal 32 } 
+	{ conv_params_m_2_1_s sc_in sc_lv 1 signal 33 } 
+	{ conv_params_m_2_1_2 sc_in sc_lv 1 signal 34 } 
+	{ conv_params_m_2_2_s sc_in sc_lv 1 signal 35 } 
+	{ conv_params_m_2_2_2 sc_in sc_lv 1 signal 36 } 
+	{ conv_params_m_V_offset sc_in sc_lv 1 signal 37 } 
+	{ conv_out_buffer_m_0 sc_in sc_lv 5 signal 38 } 
+	{ conv_out_buffer_m_0_2 sc_in sc_lv 5 signal 39 } 
+	{ conv_out_buffer_m_1 sc_in sc_lv 5 signal 40 } 
+	{ conv_out_buffer_m_1_2 sc_in sc_lv 5 signal 41 } 
+	{ conv_out_buffer_m_2 sc_in sc_lv 5 signal 42 } 
+	{ conv_out_buffer_m_2_2 sc_in sc_lv 5 signal 43 } 
+	{ conv_out_buffer_m_3 sc_in sc_lv 5 signal 44 } 
+	{ conv_out_buffer_m_3_2 sc_in sc_lv 5 signal 45 } 
+	{ conv_out_buffer_m_4 sc_in sc_lv 5 signal 46 } 
+	{ conv_out_buffer_m_4_2 sc_in sc_lv 5 signal 47 } 
+	{ conv_out_buffer_m_5 sc_in sc_lv 5 signal 48 } 
+	{ conv_out_buffer_m_5_2 sc_in sc_lv 5 signal 49 } 
+	{ conv_out_buffer_m_6 sc_in sc_lv 5 signal 50 } 
+	{ conv_out_buffer_m_6_2 sc_in sc_lv 5 signal 51 } 
+	{ conv_out_buffer_m_7 sc_in sc_lv 5 signal 52 } 
+	{ conv_out_buffer_m_7_2 sc_in sc_lv 5 signal 53 } 
+	{ conv_out_buffer_m_8 sc_in sc_lv 5 signal 54 } 
+	{ conv_out_buffer_m_8_2 sc_in sc_lv 5 signal 55 } 
+	{ conv_out_buffer_m_9 sc_in sc_lv 5 signal 56 } 
+	{ conv_out_buffer_m_9_2 sc_in sc_lv 5 signal 57 } 
+	{ conv_out_buffer_m_10 sc_in sc_lv 5 signal 58 } 
+	{ conv_out_buffer_m_10_2 sc_in sc_lv 5 signal 59 } 
+	{ conv_out_buffer_m_11 sc_in sc_lv 5 signal 60 } 
+	{ conv_out_buffer_m_11_2 sc_in sc_lv 5 signal 61 } 
+	{ conv_out_buffer_m_12 sc_in sc_lv 5 signal 62 } 
+	{ conv_out_buffer_m_12_2 sc_in sc_lv 5 signal 63 } 
+	{ conv_out_buffer_m_13 sc_in sc_lv 5 signal 64 } 
+	{ conv_out_buffer_m_13_2 sc_in sc_lv 5 signal 65 } 
+	{ conv_out_buffer_m_14 sc_in sc_lv 5 signal 66 } 
+	{ conv_out_buffer_m_14_2 sc_in sc_lv 5 signal 67 } 
+	{ conv_out_buffer_m_15 sc_in sc_lv 5 signal 68 } 
+	{ conv_out_buffer_m_15_2 sc_in sc_lv 5 signal 69 } 
+	{ conv_out_buffer_m_16 sc_in sc_lv 5 signal 70 } 
+	{ conv_out_buffer_m_16_2 sc_in sc_lv 5 signal 71 } 
+	{ conv_out_buffer_m_17 sc_in sc_lv 5 signal 72 } 
+	{ conv_out_buffer_m_17_2 sc_in sc_lv 5 signal 73 } 
+	{ conv_out_buffer_m_18 sc_in sc_lv 5 signal 74 } 
+	{ conv_out_buffer_m_18_2 sc_in sc_lv 5 signal 75 } 
+	{ conv_out_buffer_m_19 sc_in sc_lv 5 signal 76 } 
+	{ conv_out_buffer_m_19_2 sc_in sc_lv 5 signal 77 } 
+	{ conv_out_buffer_m_20 sc_in sc_lv 5 signal 78 } 
+	{ conv_out_buffer_m_20_2 sc_in sc_lv 5 signal 79 } 
+	{ conv_out_buffer_m_21 sc_in sc_lv 5 signal 80 } 
+	{ conv_out_buffer_m_21_2 sc_in sc_lv 5 signal 81 } 
+	{ conv_out_buffer_m_22 sc_in sc_lv 5 signal 82 } 
+	{ conv_out_buffer_m_22_2 sc_in sc_lv 5 signal 83 } 
+	{ conv_out_buffer_m_23 sc_in sc_lv 5 signal 84 } 
+	{ conv_out_buffer_m_23_2 sc_in sc_lv 5 signal 85 } 
+	{ conv_out_buffer_m_24 sc_in sc_lv 5 signal 86 } 
+	{ conv_out_buffer_m_24_2 sc_in sc_lv 5 signal 87 } 
+	{ conv_out_buffer_m_25 sc_in sc_lv 5 signal 88 } 
+	{ conv_out_buffer_m_25_2 sc_in sc_lv 5 signal 89 } 
+	{ conv_out_buffer_m_26 sc_in sc_lv 5 signal 90 } 
+	{ conv_out_buffer_m_26_2 sc_in sc_lv 5 signal 91 } 
+	{ conv_out_buffer_m_27 sc_in sc_lv 5 signal 92 } 
+	{ conv_out_buffer_m_27_2 sc_in sc_lv 5 signal 93 } 
+	{ conv_out_buffer_m_28 sc_in sc_lv 5 signal 94 } 
+	{ conv_out_buffer_m_28_2 sc_in sc_lv 5 signal 95 } 
+	{ conv_out_buffer_m_29 sc_in sc_lv 5 signal 96 } 
+	{ conv_out_buffer_m_29_2 sc_in sc_lv 5 signal 97 } 
+	{ conv_out_buffer_m_30 sc_in sc_lv 5 signal 98 } 
+	{ conv_out_buffer_m_30_2 sc_in sc_lv 5 signal 99 } 
+	{ conv_out_buffer_m_31 sc_in sc_lv 5 signal 100 } 
+	{ conv_out_buffer_m_31_2 sc_in sc_lv 5 signal 101 } 
+	{ conv_out_buffer_m_32 sc_in sc_lv 5 signal 102 } 
+	{ conv_out_buffer_m_32_2 sc_in sc_lv 5 signal 103 } 
+	{ conv_out_buffer_m_33 sc_in sc_lv 5 signal 104 } 
+	{ conv_out_buffer_m_33_2 sc_in sc_lv 5 signal 105 } 
+	{ conv_out_buffer_m_34 sc_in sc_lv 5 signal 106 } 
+	{ conv_out_buffer_m_34_2 sc_in sc_lv 5 signal 107 } 
+	{ conv_out_buffer_m_35 sc_in sc_lv 5 signal 108 } 
+	{ conv_out_buffer_m_35_2 sc_in sc_lv 5 signal 109 } 
+	{ conv_out_buffer_m_36 sc_in sc_lv 5 signal 110 } 
+	{ conv_out_buffer_m_36_2 sc_in sc_lv 5 signal 111 } 
+	{ conv_out_buffer_m_37 sc_in sc_lv 5 signal 112 } 
+	{ conv_out_buffer_m_37_2 sc_in sc_lv 5 signal 113 } 
+	{ conv_out_buffer_m_38 sc_in sc_lv 5 signal 114 } 
+	{ conv_out_buffer_m_38_2 sc_in sc_lv 5 signal 115 } 
+	{ conv_out_buffer_m_39 sc_in sc_lv 5 signal 116 } 
+	{ conv_out_buffer_m_39_2 sc_in sc_lv 5 signal 117 } 
+	{ conv_out_buffer_m_40 sc_in sc_lv 5 signal 118 } 
+	{ conv_out_buffer_m_40_2 sc_in sc_lv 5 signal 119 } 
+	{ conv_out_buffer_m_41 sc_in sc_lv 5 signal 120 } 
+	{ conv_out_buffer_m_41_2 sc_in sc_lv 5 signal 121 } 
+	{ conv_out_buffer_m_42 sc_in sc_lv 5 signal 122 } 
+	{ conv_out_buffer_m_42_2 sc_in sc_lv 5 signal 123 } 
+	{ conv_out_buffer_m_43 sc_in sc_lv 5 signal 124 } 
+	{ conv_out_buffer_m_43_2 sc_in sc_lv 5 signal 125 } 
+	{ conv_out_buffer_m_44 sc_in sc_lv 5 signal 126 } 
+	{ conv_out_buffer_m_44_2 sc_in sc_lv 5 signal 127 } 
+	{ conv_out_buffer_m_45 sc_in sc_lv 5 signal 128 } 
+	{ conv_out_buffer_m_45_2 sc_in sc_lv 5 signal 129 } 
+	{ conv_out_buffer_m_46 sc_in sc_lv 5 signal 130 } 
+	{ conv_out_buffer_m_46_2 sc_in sc_lv 5 signal 131 } 
+	{ conv_out_buffer_m_47 sc_in sc_lv 5 signal 132 } 
+	{ conv_out_buffer_m_47_2 sc_in sc_lv 5 signal 133 } 
+	{ conv_out_buffer_m_48 sc_in sc_lv 5 signal 134 } 
+	{ conv_out_buffer_m_48_2 sc_in sc_lv 5 signal 135 } 
+	{ conv_out_buffer_m_49 sc_in sc_lv 5 signal 136 } 
+	{ conv_out_buffer_m_49_2 sc_in sc_lv 5 signal 137 } 
+	{ conv_out_buffer_m_50 sc_in sc_lv 5 signal 138 } 
+	{ conv_out_buffer_m_50_2 sc_in sc_lv 5 signal 139 } 
+	{ conv_out_buffer_m_51 sc_in sc_lv 5 signal 140 } 
+	{ conv_out_buffer_m_51_2 sc_in sc_lv 5 signal 141 } 
+	{ conv_out_buffer_m_52 sc_in sc_lv 5 signal 142 } 
+	{ conv_out_buffer_m_52_2 sc_in sc_lv 5 signal 143 } 
+	{ conv_out_buffer_m_53 sc_in sc_lv 5 signal 144 } 
+	{ conv_out_buffer_m_53_2 sc_in sc_lv 5 signal 145 } 
+	{ conv_out_buffer_m_54 sc_in sc_lv 5 signal 146 } 
+	{ conv_out_buffer_m_54_2 sc_in sc_lv 5 signal 147 } 
+	{ conv_out_buffer_m_55 sc_in sc_lv 5 signal 148 } 
+	{ conv_out_buffer_m_55_2 sc_in sc_lv 5 signal 149 } 
+	{ conv_out_buffer_m_56 sc_in sc_lv 5 signal 150 } 
+	{ conv_out_buffer_m_56_2 sc_in sc_lv 5 signal 151 } 
+	{ conv_out_buffer_m_57 sc_in sc_lv 5 signal 152 } 
+	{ conv_out_buffer_m_57_2 sc_in sc_lv 5 signal 153 } 
+	{ conv_out_buffer_m_58 sc_in sc_lv 5 signal 154 } 
+	{ conv_out_buffer_m_58_2 sc_in sc_lv 5 signal 155 } 
+	{ conv_out_buffer_m_59 sc_in sc_lv 5 signal 156 } 
+	{ conv_out_buffer_m_59_2 sc_in sc_lv 5 signal 157 } 
+	{ conv_out_buffer_m_60 sc_in sc_lv 5 signal 158 } 
+	{ conv_out_buffer_m_60_2 sc_in sc_lv 5 signal 159 } 
+	{ conv_out_buffer_m_61 sc_in sc_lv 5 signal 160 } 
+	{ conv_out_buffer_m_61_2 sc_in sc_lv 5 signal 161 } 
+	{ conv_out_buffer_m_62 sc_in sc_lv 5 signal 162 } 
+	{ conv_out_buffer_m_62_2 sc_in sc_lv 5 signal 163 } 
+	{ conv_out_buffer_m_63 sc_in sc_lv 5 signal 164 } 
+	{ conv_out_buffer_m_63_2 sc_in sc_lv 5 signal 165 } 
+	{ conv_out_buffer_m_V_offset sc_in sc_lv 1 signal 166 } 
+	{ log_width_V sc_in sc_lv 3 signal 167 } 
+	{ words_per_image_V sc_in sc_lv 5 signal 168 } 
+	{ wrd_V sc_in sc_lv 8 signal 169 } 
 	{ ap_return_0 sc_out sc_lv 5 signal -1 } 
 	{ ap_return_1 sc_out sc_lv 5 signal -1 } 
 	{ ap_return_2 sc_out sc_lv 5 signal -1 } 
@@ -739,43 +681,17 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "word_buffer_m_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "address0" }} , 
- 	{ "name": "word_buffer_m_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "ce0" }} , 
- 	{ "name": "word_buffer_m_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "q0" }} , 
- 	{ "name": "word_buffer_m_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "address1" }} , 
- 	{ "name": "word_buffer_m_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "ce1" }} , 
- 	{ "name": "word_buffer_m_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "word_buffer_m_V", "role": "q1" }} , 
+ 	{ "name": "tryVertical1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "tryVertical1", "role": "address0" }} , 
+ 	{ "name": "tryVertical1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tryVertical1", "role": "ce0" }} , 
+ 	{ "name": "tryVertical1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tryVertical1", "role": "we0" }} , 
+ 	{ "name": "tryVertical1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "tryVertical1", "role": "d0" }} , 
+ 	{ "name": "tryVertical1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "tryVertical1", "role": "q0" }} , 
+ 	{ "name": "tryVertical1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "tryVertical1", "role": "address1" }} , 
+ 	{ "name": "tryVertical1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tryVertical1", "role": "ce1" }} , 
+ 	{ "name": "tryVertical1_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "tryVertical1", "role": "we1" }} , 
+ 	{ "name": "tryVertical1_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "tryVertical1", "role": "d1" }} , 
+ 	{ "name": "tryVertical1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "tryVertical1", "role": "q1" }} , 
  	{ "name": "word_buffer_m_V_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "word_buffer_m_V_offset", "role": "default" }} , 
- 	{ "name": "old_word_buffer_m_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_0_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_0_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_0_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_1_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_1_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_1_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_1_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_1_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_1_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_2_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_2_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_2_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_2_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_2_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_2_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_3_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_3_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_3_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_3_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_3_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_3_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_4_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_4_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_4_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_4_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_4_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_4_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_5_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_5_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_5_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_5_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_5_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_5_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_6_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_6_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_6_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_6_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_6_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_6_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_7_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_7_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_7_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_7_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_7_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_7_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_8_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_8_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_8_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_8_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_8_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_8_V", "role": "q0" }} , 
- 	{ "name": "old_word_buffer_m_9_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "old_word_buffer_m_9_V", "role": "address0" }} , 
- 	{ "name": "old_word_buffer_m_9_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_9_V", "role": "ce0" }} , 
- 	{ "name": "old_word_buffer_m_9_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "old_word_buffer_m_9_V", "role": "q0" }} , 
  	{ "name": "old_word_buffer_m_V_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "old_word_buffer_m_V_offset", "role": "default" }} , 
  	{ "name": "lb_1_read", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lb_1_read", "role": "default" }} , 
  	{ "name": "lb_2_read", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "lb_2_read", "role": "default" }} , 
@@ -792,16 +708,6 @@ set NewPortList {[
  	{ "name": "rb_5_read", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "rb_5_read", "role": "default" }} , 
  	{ "name": "rb_6_read", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "rb_6_read", "role": "default" }} , 
  	{ "name": "rb_7_read", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "rb_7_read", "role": "default" }} , 
- 	{ "name": "line_buffer_m_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address0" }} , 
- 	{ "name": "line_buffer_m_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "ce0" }} , 
- 	{ "name": "line_buffer_m_V_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "we0" }} , 
- 	{ "name": "line_buffer_m_V_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "d0" }} , 
- 	{ "name": "line_buffer_m_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "q0" }} , 
- 	{ "name": "line_buffer_m_V_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "address1" }} , 
- 	{ "name": "line_buffer_m_V_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "ce1" }} , 
- 	{ "name": "line_buffer_m_V_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "we1" }} , 
- 	{ "name": "line_buffer_m_V_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "d1" }} , 
- 	{ "name": "line_buffer_m_V_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "line_buffer_m_V", "role": "q1" }} , 
  	{ "name": "line_buffer_m_V_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buffer_m_V_offset", "role": "default" }} , 
  	{ "name": "conv_params_m_0_0_s", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_params_m_0_0_s", "role": "default" }} , 
  	{ "name": "conv_params_m_0_0_2", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "conv_params_m_0_0_2", "role": "default" }} , 
@@ -1090,7 +996,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "505", "EstimateLatencyMax" : "505",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "682", "EstimateLatencyMax" : "858",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -1098,20 +1004,12 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state75", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_conv_word_fu_7290"}],
+			{"State" : "ap_ST_fsm_state316", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_conv_word_fu_7250"}],
 		"Port" : [
-			{"Name" : "word_buffer_m_V", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "tryVertical1", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_conv_word_fu_7250", "Port" : "line_buffer_m_V"}]},
 			{"Name" : "word_buffer_m_V_offset", "Type" : "None", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_0_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_1_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_2_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_3_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_4_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_5_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_6_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_7_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_8_V", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "old_word_buffer_m_9_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "old_word_buffer_m_V_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "lb_1_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "lb_2_read", "Type" : "None", "Direction" : "I"},
@@ -1128,9 +1026,6 @@ set RtlHierarchyInfo {[
 			{"Name" : "rb_5_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "rb_6_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "rb_7_read", "Type" : "None", "Direction" : "I"},
-			{"Name" : "line_buffer_m_V", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_conv_word_fu_7290", "Port" : "line_buffer_m_V"}]},
 			{"Name" : "line_buffer_m_V_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_params_m_0_0_s", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_params_m_0_0_2", "Type" : "None", "Direction" : "I"},
@@ -1283,7 +1178,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "log_width_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "words_per_image_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "wrd_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv_word_fu_7290", "Parent" : "0", "Child" : ["2"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv_word_fu_7250", "Parent" : "0", "Child" : ["2"],
 		"CDFG" : "conv_word",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -1449,7 +1344,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "conv_out_buffer_m_63", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_out_buffer_m_63_7", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv_out_buffer_m_V_offset", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv_word_fu_7290.grp_conv3x3b_fu_1226", "Parent" : "1",
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv_word_fu_7250.grp_conv3x3b_fu_1226", "Parent" : "1",
 		"CDFG" : "conv3x3b",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -1490,18 +1385,8 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	process_word {
-		word_buffer_m_V {Type I LastRead 122 FirstWrite -1}
+		tryVertical1 {Type IO LastRead 474 FirstWrite -1}
 		word_buffer_m_V_offset {Type I LastRead 0 FirstWrite -1}
-		old_word_buffer_m_0_V {Type I LastRead 117 FirstWrite -1}
-		old_word_buffer_m_1_V {Type I LastRead 112 FirstWrite -1}
-		old_word_buffer_m_2_V {Type I LastRead 112 FirstWrite -1}
-		old_word_buffer_m_3_V {Type I LastRead 113 FirstWrite -1}
-		old_word_buffer_m_4_V {Type I LastRead 113 FirstWrite -1}
-		old_word_buffer_m_5_V {Type I LastRead 114 FirstWrite -1}
-		old_word_buffer_m_6_V {Type I LastRead 114 FirstWrite -1}
-		old_word_buffer_m_7_V {Type I LastRead 115 FirstWrite -1}
-		old_word_buffer_m_8_V {Type I LastRead 115 FirstWrite -1}
-		old_word_buffer_m_9_V {Type I LastRead 117 FirstWrite -1}
 		old_word_buffer_m_V_offset {Type I LastRead 0 FirstWrite -1}
 		lb_1_read {Type I LastRead 0 FirstWrite -1}
 		lb_2_read {Type I LastRead 0 FirstWrite -1}
@@ -1518,7 +1403,6 @@ set ArgLastReadFirstWriteLatency {
 		rb_5_read {Type I LastRead 0 FirstWrite -1}
 		rb_6_read {Type I LastRead 0 FirstWrite -1}
 		rb_7_read {Type I LastRead 0 FirstWrite -1}
-		line_buffer_m_V {Type IO LastRead 5 FirstWrite -1}
 		line_buffer_m_V_offset {Type I LastRead 0 FirstWrite -1}
 		conv_params_m_0_0_s {Type I LastRead 0 FirstWrite -1}
 		conv_params_m_0_0_2 {Type I LastRead 0 FirstWrite -1}
@@ -1850,26 +1734,16 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "505", "Max" : "505"}
-	, {"Name" : "Interval", "Min" : "505", "Max" : "505"}
+	{"Name" : "Latency", "Min" : "682", "Max" : "858"}
+	, {"Name" : "Interval", "Min" : "682", "Max" : "858"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	word_buffer_m_V { ap_memory {  { word_buffer_m_V_address0 mem_address 1 8 }  { word_buffer_m_V_ce0 mem_ce 1 1 }  { word_buffer_m_V_q0 mem_dout 0 2 }  { word_buffer_m_V_address1 MemPortADDR2 1 8 }  { word_buffer_m_V_ce1 MemPortCE2 1 1 }  { word_buffer_m_V_q1 MemPortDOUT2 0 2 } } }
+	tryVertical1 { ap_memory {  { tryVertical1_address0 mem_address 1 10 }  { tryVertical1_ce0 mem_ce 1 1 }  { tryVertical1_we0 mem_we 1 1 }  { tryVertical1_d0 mem_din 1 2 }  { tryVertical1_q0 mem_dout 0 2 }  { tryVertical1_address1 MemPortADDR2 1 10 }  { tryVertical1_ce1 MemPortCE2 1 1 }  { tryVertical1_we1 MemPortWE2 1 1 }  { tryVertical1_d1 MemPortDIN2 1 2 }  { tryVertical1_q1 MemPortDOUT2 0 2 } } }
 	word_buffer_m_V_offset { ap_none {  { word_buffer_m_V_offset in_data 0 1 } } }
-	old_word_buffer_m_0_V { ap_memory {  { old_word_buffer_m_0_V_address0 mem_address 1 4 }  { old_word_buffer_m_0_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_0_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_1_V { ap_memory {  { old_word_buffer_m_1_V_address0 mem_address 1 4 }  { old_word_buffer_m_1_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_1_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_2_V { ap_memory {  { old_word_buffer_m_2_V_address0 mem_address 1 4 }  { old_word_buffer_m_2_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_2_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_3_V { ap_memory {  { old_word_buffer_m_3_V_address0 mem_address 1 4 }  { old_word_buffer_m_3_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_3_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_4_V { ap_memory {  { old_word_buffer_m_4_V_address0 mem_address 1 4 }  { old_word_buffer_m_4_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_4_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_5_V { ap_memory {  { old_word_buffer_m_5_V_address0 mem_address 1 4 }  { old_word_buffer_m_5_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_5_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_6_V { ap_memory {  { old_word_buffer_m_6_V_address0 mem_address 1 4 }  { old_word_buffer_m_6_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_6_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_7_V { ap_memory {  { old_word_buffer_m_7_V_address0 mem_address 1 4 }  { old_word_buffer_m_7_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_7_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_8_V { ap_memory {  { old_word_buffer_m_8_V_address0 mem_address 1 4 }  { old_word_buffer_m_8_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_8_V_q0 mem_dout 0 2 } } }
-	old_word_buffer_m_9_V { ap_memory {  { old_word_buffer_m_9_V_address0 mem_address 1 4 }  { old_word_buffer_m_9_V_ce0 mem_ce 1 1 }  { old_word_buffer_m_9_V_q0 mem_dout 0 2 } } }
 	old_word_buffer_m_V_offset { ap_none {  { old_word_buffer_m_V_offset in_data 0 1 } } }
 	lb_1_read { ap_none {  { lb_1_read in_data 0 1 } } }
 	lb_2_read { ap_none {  { lb_2_read in_data 0 1 } } }
@@ -1886,7 +1760,6 @@ set Spec2ImplPortList {
 	rb_5_read { ap_none {  { rb_5_read in_data 0 1 } } }
 	rb_6_read { ap_none {  { rb_6_read in_data 0 1 } } }
 	rb_7_read { ap_none {  { rb_7_read in_data 0 1 } } }
-	line_buffer_m_V { ap_memory {  { line_buffer_m_V_address0 mem_address 1 9 }  { line_buffer_m_V_ce0 mem_ce 1 1 }  { line_buffer_m_V_we0 mem_we 1 1 }  { line_buffer_m_V_d0 mem_din 1 2 }  { line_buffer_m_V_q0 mem_dout 0 2 }  { line_buffer_m_V_address1 MemPortADDR2 1 9 }  { line_buffer_m_V_ce1 MemPortCE2 1 1 }  { line_buffer_m_V_we1 MemPortWE2 1 1 }  { line_buffer_m_V_d1 MemPortDIN2 1 2 }  { line_buffer_m_V_q1 MemPortDOUT2 0 2 } } }
 	line_buffer_m_V_offset { ap_none {  { line_buffer_m_V_offset in_data 0 1 } } }
 	conv_params_m_0_0_s { ap_none {  { conv_params_m_0_0_s in_data 0 1 } } }
 	conv_params_m_0_0_2 { ap_none {  { conv_params_m_0_0_2 in_data 0 1 } } }

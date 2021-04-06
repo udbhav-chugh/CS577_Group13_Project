@@ -9,8 +9,8 @@
 <ProductFamily>kintex7</ProductFamily>
 <Part>xc7k70t-fbv676-1</Part>
 <TopModelName>conv_word</TopModelName>
-<TargetClockPeriod>12.00</TargetClockPeriod>
-<ClockUncertainty>1.50</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 </UserAssignments>
 
@@ -18,7 +18,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.409</EstimatedClockPeriod>
+<EstimatedClockPeriod>8.447</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -32,8 +32,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>1447</FF>
-<LUT>4194</LUT>
+<FF>1452</FF>
+<LUT>4206</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -1530,7 +1530,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>10</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1563,7 +1563,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>9</Bits>
+<Bits>10</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
