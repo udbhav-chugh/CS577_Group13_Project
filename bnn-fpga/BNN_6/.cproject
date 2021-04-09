@@ -51,19 +51,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1980236688" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Work/CS577_Group13_Project/bnn-fpga"/>
-                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
                                     								
                                 </option>
                                 								
@@ -89,19 +87,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.643028314" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Work/CS577_Group13_Project/bnn-fpga"/>
-                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
                                     								
                                 </option>
                                 								
@@ -261,19 +257,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1194472487" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Work/CS577_Group13_Project/bnn-fpga"/>
-                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
                                     								
                                 </option>
                                 								
@@ -289,19 +283,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.602046447" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
+                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
+                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Work/CS577_Group13_Project/bnn-fpga"/>
-                                    									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Softwares/VLSI/Vivado/2019.1/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="D:/Work/CS577_Group13_Project/bnn-fpga"/>
                                     								
                                 </option>
                                 								

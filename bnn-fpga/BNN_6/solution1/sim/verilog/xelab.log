@@ -15,21 +15,9 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project
 INFO: [VRFC 10-311] analyzing module AESL_automem_wt_i_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bin_conv
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_burcU.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_burcU_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_fixed_burcU
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufbkb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufbkb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_line_bufdEe.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufdEe_ram
-INFO: [VRFC 10-311] analyzing module bin_conv_line_bufdEe
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv3x3b.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv3x3b
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/conv_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module conv_word
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/process_word.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module process_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/bin_conv_fixed_bubkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin_conv_fixed_bubkb_ram
+INFO: [VRFC 10-311] analyzing module bin_conv_fixed_bubkb
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_top_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.v" into library xil_defaultlib
@@ -40,9 +28,9 @@ INFO: [VRFC 10-311] analyzing module top_dmem_V
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_kh_mem_V.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_kh_mem_V_ram
 INFO: [VRFC 10-311] analyzing module top_kh_mem_V
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_btn.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_btn_DSP48_0
-INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_btn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mul_mul_15ns_bdk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_bdk_DSP48_0
+INFO: [VRFC 10-311] analyzing module top_mul_mul_15ns_bdk
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_mux_42_2_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_mux_42_2_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top_wt_mem_V.v" into library xil_defaultlib
@@ -59,18 +47,11 @@ Compiling module xil_defaultlib.top_wt_mem_V_ram
 Compiling module xil_defaultlib.top_wt_mem_V(DataWidth=64,Addres...
 Compiling module xil_defaultlib.top_kh_mem_V_ram
 Compiling module xil_defaultlib.top_kh_mem_V(DataWidth=64,Addres...
-Compiling module xil_defaultlib.bin_conv_line_bufbkb_ram
-Compiling module xil_defaultlib.bin_conv_line_bufbkb(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_line_bufdEe_ram
-Compiling module xil_defaultlib.bin_conv_line_bufdEe(DataWidth=2...
-Compiling module xil_defaultlib.bin_conv_fixed_burcU_ram
-Compiling module xil_defaultlib.bin_conv_fixed_burcU(DataWidth=1...
-Compiling module xil_defaultlib.conv3x3b
-Compiling module xil_defaultlib.conv_word
+Compiling module xil_defaultlib.bin_conv_fixed_bubkb_ram
+Compiling module xil_defaultlib.bin_conv_fixed_bubkb(DataWidth=1...
 Compiling module xil_defaultlib.top_mux_42_2_1_1(ID=1,din0_WIDTH...
-Compiling module xil_defaultlib.process_word
-Compiling module xil_defaultlib.top_mul_mul_15ns_btn_DSP48_0
-Compiling module xil_defaultlib.top_mul_mul_15ns_btn(ID=1,NUM_ST...
+Compiling module xil_defaultlib.top_mul_mul_15ns_bdk_DSP48_0
+Compiling module xil_defaultlib.top_mul_mul_15ns_bdk(ID=1,NUM_ST...
 Compiling module xil_defaultlib.bin_conv
 Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.AESL_automem_wt_i_V

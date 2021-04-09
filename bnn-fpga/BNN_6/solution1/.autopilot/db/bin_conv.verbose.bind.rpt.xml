@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bin_conv'" level="0">
-<item name = "Date">Tue Apr  6 18:11:04 2021
+<item name = "Date">Fri Apr  9 19:12:10 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00, 11.015, 3.12</column>
+<column name="ap_clk">25.00, 19.295, 3.12</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">103138, 134626, 103138, 134626, none</column>
+<column name="">228, 228, 228, 228, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_process_word_fu_7895">process_word, 682, 858, 682, 858, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">1024, 1024, 32, -, -, 32, no</column>
-<column name="- LOOP_WORDS_IN_PHASE">98048, 129536, 1532 ~ 2024, -, -, 64, no</column>
-<column name="- LOOP_ACC_PHASES_I">3968, 3968, 128, -, -, 31, no</column>
+<column name="- Loop 1">32, 32, 1, -, -, 32, no</column>
+<column name="- LOOP_WORDS_IN_PHASE">128, 128, 2, 2, 1, 64, yes</column>
+<column name="- LOOP_ACC_PHASES_I">62, 62, 2, -, -, 31, no</column>
 </table>
 </item>
 </section>

@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr  6 17:25:59 2021
-# Process ID: 4328
+# Start of session at: Fri Apr  9 19:18:21 2021
+# Process ID: 1432
 # Current directory: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/top/xsim_script.tcl}
 # Log file: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.log
@@ -22,9 +22,8 @@ source top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "163000"
-// RTL Simulation : 1 / 1 [100.00%] @ "1112788000"
+// RTL Simulation : 1 / 1 [100.00%] @ "126413000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1112887500 ps : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 635
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 221.582 ; gain = 0.000
+$finish called at time : 126512500 ps : File "C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/top.autotb.v" Line 635
 ## quit
-INFO: [Common 17-206] Exiting xsim at Tue Apr  6 17:26:29 2021...
+INFO: [Common 17-206] Exiting xsim at Fri Apr  9 19:18:31 2021...

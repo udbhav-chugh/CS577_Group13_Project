@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'top'" level="0">
-<item name = "Date">Tue Apr  6 18:11:12 2021
+<item name = "Date">Fri Apr  9 19:12:40 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">BNN_6</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00, 11.015, 3.12</column>
+<column name="ap_clk">25.00, 19.295, 3.12</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">107958, 139446, 107958, 139446, none</column>
+<column name="">5048, 5048, 5048, 5048, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_bin_conv_fu_373">bin_conv, 103138, 134626, 103138, 134626, none</column>
+<column name="grp_bin_conv_fu_373">bin_conv, 228, 228, 228, 228, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

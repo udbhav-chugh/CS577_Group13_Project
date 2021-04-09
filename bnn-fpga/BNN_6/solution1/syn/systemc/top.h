@@ -72,6 +72,8 @@ struct top : public sc_module {
     sc_signal< sc_logic > dmem_V_we0;
     sc_signal< sc_lv<64> > dmem_V_d0;
     sc_signal< sc_lv<64> > dmem_V_q0;
+    sc_signal< sc_logic > dmem_V_ce1;
+    sc_signal< sc_lv<64> > dmem_V_q1;
     sc_signal< sc_lv<13> > wt_mem_V_address0;
     sc_signal< sc_logic > wt_mem_V_ce0;
     sc_signal< sc_logic > wt_mem_V_we0;
@@ -89,16 +91,16 @@ struct top : public sc_module {
     sc_signal< sc_lv<7> > p_0582_0_reg_362;
     sc_signal< sc_lv<1> > trunc_ln792_fu_399_p1;
     sc_signal< sc_lv<1> > trunc_ln792_reg_827;
-    sc_signal< sc_lv<1> > trunc_ln882_fu_413_p1;
-    sc_signal< sc_lv<1> > trunc_ln882_reg_832;
+    sc_signal< sc_lv<1> > trunc_ln880_fu_413_p1;
+    sc_signal< sc_lv<1> > trunc_ln880_reg_832;
     sc_signal< sc_lv<1> > t_V_fu_421_p2;
     sc_signal< sc_lv<1> > t_V_reg_837;
     sc_signal< sc_lv<16> > t_V_1_fu_427_p3;
     sc_signal< sc_lv<16> > t_V_1_reg_843;
     sc_signal< sc_lv<1> > r_V_2_fu_435_p2;
     sc_signal< sc_lv<1> > r_V_2_reg_849;
-    sc_signal< sc_lv<16> > zext_ln814_fu_449_p1;
-    sc_signal< sc_lv<16> > zext_ln814_reg_855;
+    sc_signal< sc_lv<16> > zext_ln812_fu_449_p1;
+    sc_signal< sc_lv<16> > zext_ln812_reg_855;
     sc_signal< sc_lv<1> > icmp_ln879_fu_463_p2;
     sc_signal< sc_lv<1> > icmp_ln879_reg_860;
     sc_signal< sc_lv<10> > zext_ln879_fu_469_p1;
@@ -119,8 +121,8 @@ struct top : public sc_module {
     sc_signal< sc_lv<6> > ret_V_6_reg_892;
     sc_signal< sc_lv<14> > add_ln180_fu_569_p2;
     sc_signal< sc_lv<14> > add_ln180_reg_907;
-    sc_signal< sc_lv<16> > select_ln829_fu_597_p3;
-    sc_signal< sc_lv<10> > select_ln829_1_fu_605_p3;
+    sc_signal< sc_lv<16> > select_ln827_fu_597_p3;
+    sc_signal< sc_lv<10> > select_ln827_1_fu_605_p3;
     sc_signal< sc_lv<1> > icmp_ln887_1_fu_648_p2;
     sc_signal< sc_lv<1> > icmp_ln887_1_reg_927;
     sc_signal< sc_logic > ap_CS_fsm_pp1_stage0;
@@ -168,6 +170,8 @@ struct top : public sc_module {
     sc_signal< sc_logic > grp_bin_conv_fu_373_dmem_V_2_ce0;
     sc_signal< sc_logic > grp_bin_conv_fu_373_dmem_V_2_we0;
     sc_signal< sc_lv<64> > grp_bin_conv_fu_373_dmem_V_2_d0;
+    sc_signal< sc_lv<12> > grp_bin_conv_fu_373_dmem_V_2_address1;
+    sc_signal< sc_logic > grp_bin_conv_fu_373_dmem_V_2_ce1;
     sc_signal< sc_logic > grp_bin_conv_fu_373_ap_start_reg;
     sc_signal< sc_logic > ap_CS_fsm_state12;
     sc_signal< sc_lv<64> > zext_ln544_3_fu_513_p1;
@@ -188,7 +192,7 @@ struct top : public sc_module {
     sc_signal< sc_logic > ap_CS_fsm_state14;
     sc_signal< sc_lv<1> > p_Result_s_fu_403_p2;
     sc_signal< sc_lv<3> > shl_ln_fu_441_p3;
-    sc_signal< sc_lv<5> > zext_ln814_1_fu_453_p1;
+    sc_signal< sc_lv<5> > zext_ln812_1_fu_453_p1;
     sc_signal< sc_lv<2> > layer_type_V_fu_389_p4;
     sc_signal< sc_lv<5> > words_per_image_V_fu_457_p2;
     sc_signal< sc_lv<15> > ret_V_9_fu_523_p4;
@@ -224,7 +228,7 @@ struct top : public sc_module {
     sc_signal< sc_logic > ap_enable_pp1;
     sc_signal< sc_logic > ap_idle_pp2;
     sc_signal< sc_logic > ap_enable_pp2;
-    sc_signal< bool > ap_condition_739;
+    sc_signal< bool > ap_condition_745;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<11> ap_ST_fsm_state1;
@@ -311,7 +315,7 @@ struct top : public sc_module {
     void thread_ap_block_state6_pp1_stage0_iter1();
     void thread_ap_block_state8_pp2_stage0_iter0();
     void thread_ap_block_state9_pp2_stage0_iter1();
-    void thread_ap_condition_739();
+    void thread_ap_condition_745();
     void thread_ap_condition_pp0_exit_iter0_state2();
     void thread_ap_condition_pp1_exit_iter0_state5();
     void thread_ap_condition_pp2_exit_iter0_state8();
@@ -326,6 +330,7 @@ struct top : public sc_module {
     void thread_ap_ready();
     void thread_dmem_V_address0();
     void thread_dmem_V_ce0();
+    void thread_dmem_V_ce1();
     void thread_dmem_V_d0();
     void thread_dmem_V_we0();
     void thread_dmem_i_V_address0();
@@ -366,8 +371,8 @@ struct top : public sc_module {
     void thread_ret_V_fu_660_p1();
     void thread_select_ln180_fu_678_p3();
     void thread_select_ln700_fu_768_p3();
-    void thread_select_ln829_1_fu_605_p3();
-    void thread_select_ln829_fu_597_p3();
+    void thread_select_ln827_1_fu_605_p3();
+    void thread_select_ln827_fu_597_p3();
     void thread_select_ln879_fu_752_p3();
     void thread_shl_ln_fu_441_p3();
     void thread_t_V_1_fu_427_p3();
@@ -382,7 +387,7 @@ struct top : public sc_module {
     void thread_tmp_V_fu_728_p1();
     void thread_trunc_ln180_fu_542_p1();
     void thread_trunc_ln792_fu_399_p1();
-    void thread_trunc_ln882_fu_413_p1();
+    void thread_trunc_ln880_fu_413_p1();
     void thread_words_per_image_V_fu_457_p2();
     void thread_wt_i_V_address0();
     void thread_wt_i_V_ce0();
@@ -404,8 +409,8 @@ struct top : public sc_module {
     void thread_zext_ln544_3_fu_513_p1();
     void thread_zext_ln544_4_fu_713_p1();
     void thread_zext_ln544_fu_575_p1();
-    void thread_zext_ln814_1_fu_453_p1();
-    void thread_zext_ln814_fu_449_p1();
+    void thread_zext_ln812_1_fu_453_p1();
+    void thread_zext_ln812_fu_449_p1();
     void thread_zext_ln879_fu_469_p1();
     void thread_ap_NS_fsm();
     void thread_hdltv_gen();
