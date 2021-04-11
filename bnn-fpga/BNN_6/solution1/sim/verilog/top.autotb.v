@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "top.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_top_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 6.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 12.50
 
 `define AESL_MEM_wt_i_V AESL_automem_wt_i_V
 `define AESL_MEM_INST_wt_i_V mem_inst_wt_i_V
@@ -34,7 +34,6 @@
 `define AUTOTB_TVIN_kh_i_V  "../tv/cdatafile/c.top.autotvin_kh_i_V.dat"
 `define AUTOTB_TVIN_dmem_i_V  "../tv/cdatafile/c.top.autotvin_dmem_i_V.dat"
 `define AUTOTB_TVIN_dmem_o_V  "../tv/cdatafile/c.top.autotvin_dmem_o_V.dat"
-`define AUTOTB_TVIN_n_outputs_V  "../tv/cdatafile/c.top.autotvin_n_outputs_V.dat"
 `define AUTOTB_TVIN_layer_mode_V  "../tv/cdatafile/c.top.autotvin_layer_mode_V.dat"
 `define AUTOTB_TVIN_dmem_mode_V  "../tv/cdatafile/c.top.autotvin_dmem_mode_V.dat"
 `define AUTOTB_TVIN_width_mode_V  "../tv/cdatafile/c.top.autotvin_width_mode_V.dat"
@@ -43,7 +42,6 @@
 `define AUTOTB_TVIN_kh_i_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_kh_i_V.dat"
 `define AUTOTB_TVIN_dmem_i_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_dmem_i_V.dat"
 `define AUTOTB_TVIN_dmem_o_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_dmem_o_V.dat"
-`define AUTOTB_TVIN_n_outputs_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_n_outputs_V.dat"
 `define AUTOTB_TVIN_layer_mode_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_layer_mode_V.dat"
 `define AUTOTB_TVIN_dmem_mode_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_dmem_mode_V.dat"
 `define AUTOTB_TVIN_width_mode_V_out_wrapc  "../tv/rtldatafile/rtl.top.autotvin_width_mode_V.dat"
@@ -54,12 +52,11 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 2147483647;
+parameter LATENCY_ESTIMATION = 5048;
 parameter LENGTH_wt_i_V = 4682;
 parameter LENGTH_kh_i_V = 64;
 parameter LENGTH_dmem_i_V = 2048;
 parameter LENGTH_dmem_o_V = 128;
-parameter LENGTH_n_outputs_V = 1;
 parameter LENGTH_layer_mode_V = 1;
 parameter LENGTH_dmem_mode_V = 1;
 parameter LENGTH_width_mode_V = 1;
@@ -357,56 +354,6 @@ assign n_inputs_V = AESL_REG_n_inputs_V;
 // The signal of port n_outputs_V
 reg [15: 0] AESL_REG_n_outputs_V = 0;
 assign n_outputs_V = AESL_REG_n_outputs_V;
-initial begin : read_file_process_n_outputs_V
-    integer fp;
-    integer err;
-    integer ret;
-    integer proc_rand;
-    reg [159  : 0] token;
-    integer i;
-    reg transaction_finish;
-    integer transaction_idx;
-    transaction_idx = 0;
-    wait(AESL_reset === 0);
-    fp = $fopen(`AUTOTB_TVIN_n_outputs_V,"r");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_n_outputs_V);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    if (token != "[[[runtime]]]") begin
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    while (token != "[[[/runtime]]]") begin
-        if (token != "[[transaction]]") begin
-            $display("ERROR: Simulation using HLS TB failed.");
-              $finish;
-        end
-        read_token(fp, token);  // skip transaction number
-          read_token(fp, token);
-            # 0.2;
-            while(ready_wire !== 1) begin
-                @(posedge AESL_clock);
-                # 0.2;
-            end
-        if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_n_outputs_V);
-              if (ret != 1) begin
-                  $display("Failed to parse token!");
-                $display("ERROR: Simulation using HLS TB failed.");
-                  $finish;
-              end
-            @(posedge AESL_clock);
-              read_token(fp, token);
-        end
-          read_token(fp, token);
-    end
-    $fclose(fp);
-end
-
 
 // The signal of port input_words_V
 reg [15: 0] AESL_REG_input_words_V = 0;
@@ -706,9 +653,6 @@ reg [31:0] size_dmem_i_V_backup;
 reg end_dmem_o_V;
 reg [31:0] size_dmem_o_V;
 reg [31:0] size_dmem_o_V_backup;
-reg end_n_outputs_V;
-reg [31:0] size_n_outputs_V;
-reg [31:0] size_n_outputs_V_backup;
 reg end_layer_mode_V;
 reg [31:0] size_layer_mode_V;
 reg [31:0] size_layer_mode_V_backup;

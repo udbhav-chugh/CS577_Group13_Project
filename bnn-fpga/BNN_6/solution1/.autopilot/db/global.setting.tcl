@@ -1,6 +1,6 @@
 
 set TopModule "top"
-set ClockPeriod 12
+set ClockPeriod 25
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
@@ -40,9 +40,9 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7k70t:-fbv676:-1
-set SourceFiles {sc {} c {../../cpp/accel/Timer.cpp ../../cpp/accel/InputConv.cpp ../../cpp/accel/Dense.cpp ../../cpp/accel/Common.cpp ../../cpp/accel/AccelTest.cpp ../../cpp/accel/AccelSchedule.cpp ../../cpp/accel/AccelPrint.cpp ../../cpp/accel/Accel.cpp}}
+set SourceFiles {sc {} c {../../cpp/accel/Accel.cpp ../../cpp/accel/AccelPrint.cpp ../../cpp/accel/AccelSchedule.cpp ../../cpp/accel/AccelTest.cpp ../../cpp/accel/Common.cpp ../../cpp/accel/Dense.cpp ../../cpp/accel/InputConv.cpp ../../cpp/accel/Timer.cpp}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {} {}}}
-set DirectiveFile D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/solution1.directive
+set DirectiveFile C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/solution1.directive
 set TBFiles {verilog ../../cpp/accel/accel_test_random.cpp bc ../../cpp/accel/accel_test_random.cpp vhdl ../../cpp/accel/accel_test_random.cpp sc ../../cpp/accel/accel_test_random.cpp cas ../../cpp/accel/accel_test_random.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -1,4 +1,4 @@
-   Build using "D:/Installations/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Build using "D:/Softwares/VLSI/Vivado/2019.1/msys64/mingw64/bin/g++"
    Compiling AccelSchedule.cpp_pre.cpp.tb.cpp
    Compiling Common.cpp_pre.cpp.tb.cpp
    Compiling Dense.cpp_pre.cpp.tb.cpp

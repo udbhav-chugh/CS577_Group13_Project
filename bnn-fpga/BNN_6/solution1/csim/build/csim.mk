@@ -77,7 +77,7 @@ all: $(TARGET)
 
 $(ObjDir)/accel_test_random.o: ../../../../cpp/accel/accel_test_random.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../cpp/accel/accel_test_random.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -DHW_COSIM -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -DHW_COSIM -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/accel_test_random.d
 

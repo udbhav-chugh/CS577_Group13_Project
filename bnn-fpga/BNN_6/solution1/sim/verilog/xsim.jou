@@ -2,12 +2,12 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Mar 26 21:37:52 2021
-# Process ID: 17940
-# Current directory: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
+# Start of session at: Fri Apr  9 19:18:21 2021
+# Process ID: 1432
+# Current directory: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/top/xsim_script.tcl}
-# Log file: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.log
-# Journal file: D:/Mayank/Git_Repos/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog\xsim.jou
+# Log file: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog/xsim.log
+# Journal file: C:/Work/CS577_Group13_Project/bnn-fpga/BNN_6/solution1/sim/verilog\xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/top/xsim_script.tcl
 source top.tcl

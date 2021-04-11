@@ -24,12 +24,13 @@ add_files cpp/accel/SArray.h
 add_files cpp/accel/Timer.cpp
 add_files cpp/accel/Timer.h
 add_files cpp/accel/Typedefs.h
-add_files -tb cpp/accel/accel_test_random.cpp -cflags "-DHW_COSIM -Wno-unknown-pragmas"
+add_files -tb cpp/accel/accel_test_random.cpp -cflags "-DHW_COSIM -Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7k70tfbv676-1}
-create_clock -period 12 -name default
+set_part {xc7k70t-fbv676-1}
+create_clock -period 25 -name default
 config_sdx -target none
 config_export -vivado_optimization_level 2 -vivado_phys_opt place -vivado_report_level 0
+set_clock_uncertainty 12.5%
 #source "./BNN_6/solution1/directives.tcl"
 csim_design
 csynth_design
